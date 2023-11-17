@@ -1,0 +1,21 @@
+tags:: [[Biomass]], [[Competition]], [[Intercrop]], [[Land equivalent ratio]], [[Root separation]]
+date:: [[Mar 1st, 2017]]
+issn:: 0378-4290
+doi:: 10.1016/j.fcr.2016.12.007
+title:: @Effect of aboveground and belowground interactions on the intercrop yields in maize-soybean relay intercropping systems
+pages:: 16-23
+volume:: 203
+item-type:: [[journalArticle]]
+access-date:: 2023-11-14T16:16:43Z
+original-title:: Effect of aboveground and belowground interactions on the intercrop yields in maize-soybean relay intercropping systems
+url:: https://www.sciencedirect.com/science/article/pii/S0378429016306736
+publication-title:: Field Crops Research
+journal-abbreviation:: Field Crops Research
+authors:: [[Feng Yang]], [[Dunping Liao]], [[Xiaoling Wu]], [[Rencai Gao]], [[Yuanfang Fan]], [[Muhammad Ali Raza]], [[Xiaochun Wang]], [[Taiwen Yong]], [[Weiguo Liu]], [[Jiang Liu]], [[Junbo Du]], [[Kai Shu]], [[Wenyu Yang]]
+library-catalog:: ScienceDirect
+links:: [Local library](zotero://select/groups/5279196/items/YX4E6RYA), [Web library](https://www.zotero.org/groups/5279196/items/YX4E6RYA)
+
+- [[Abstract]]
+	- Aboveground and belowground interactions are crucial in the over-yielding of intercropping systems. However, the relative effects of aboveground and belowground interactions on yields of intercrops in maize (Zea mays L.) and soybean [Glycine max (L.) Merr.] relay intercropping systems are still unclear. Field experiments, including measurements of biomass, grain yield, and photosynthetic parameters, were conducted in 2013–2014 to analyze the advantages and effects of aboveground and belowground of interspecies interactions on yield. To analyze the aboveground interactions of intercrops for light interception, this study adopted three different row configurations [(P1) “160cm+40cm” and (P2) “120cm+80cm” maize wide-narrow row planting, where two rows of soybean with a 40-cm row width were planted in the wide rows, and (P3) “100cm +100cm” maize equal-row planting, where one row of maize and one row of soybean with a 50-cm spacing between the adjacent rows of both crops]. Moreover, to identify interspecies belowground competition, no root separation (R1) and root separation (R2) were employed between adjacent maize and soybean rows. The photosynthetically active radiation (PAR) transmittances of maize wide-row were significantly higher than those of maize narrow-row at the sixth leaf stage (jointing stage), twelfth leaf stage (bell stage), and tasseling stage. Specifically, PAR transmittances decreased as maize narrow-row spacing increased. No significant differences in the PAR transmittances of maize narrow-row or wide-row were found between the R1 and R2 conditions. Similarly, no significant differences between intercrop biomass and grain yield were observed between the R1 and R2 conditions. By contrast, different row configuration treatments exhibited significant differences in biomass (whole growth period for soybean and after tasseling stage for maize), grain yield and photosynthetic parameters of intercrops. These results implied that aboveground interactions, such as mutual shading, have more significant contributions to intercrop advantages than belowground interactions. In addition, the intercropped maize yields increased as maize narrow-row spacing (from P1 to P3 treatment) increased. However, contrasting trends were found for intercropped soybean yield and land equivalent ration (LER). No significant differences in LER were observed between R1 and R2 conditions in different row configurations. P1 treatment exhibited the maximum LER (1.64 for 2013 and 1.83 for 2014) and mixed yield (7430kgha−1 for 2013 and 9559kgha−1 for 2014), but the lower maize yield compared with P2 and P3 treatments. This result suggested that reducing the competitive ability of maize while increasing that of soybean significantly improves intercropping advantage in maize-soybean relay intercropping systems.
+- [[Attachments]]
+	- [ScienceDirect Snapshot](https://www.sciencedirect.com/science/article/pii/S0378429016306736?via%3Dihub) {{zotero-imported-file BHXSNMPF, "S0378429016306736.html"}}
