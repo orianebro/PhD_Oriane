@@ -415,5 +415,5 @@
  :zotero/settings-v2 {"default" {:type :group, :type-id "5279196", :prefer-citekey? false, :zotero-linked-attachment-base-directory "C:\\PhD_Oriane", :zotero-data-directory "C:\\Users\\cheriere\\Zotero"}}
  :graph/settings {:excluded-pages? false
  :orphan-pages? false
- :journal? false
- :builtin-pages? false}}
+ :journal? true
+ :builtin-pages? true}}
