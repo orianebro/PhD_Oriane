@@ -1,31 +1,24 @@
-- **Introduction**
+## Introduction
 - Recently, the STICS crop model, which has an option to simulate bi-specific intercrops, has been improved for the simulation of such intercropping systems ([[@Modeling soil-plant functioning of intercrops using comprehensive and generic formalisms implemented in the STICS model]]). The model implements new formalisms to better account for the main interactions in the system.
 - The main difficulty for the simulation of intercrops is to account for the **spatial and temporal heterogeneity** in the system for the **acquisition of resources**, including light, nutrients and water, and the potential **interactions between the plants, the soil and the atmosphere**.
 - STICS, as any crop model, make several simplifications to model these systems. It could simulate correctly temporal aspects, but it still **limited to simulate spatial designs** as it is not a 3D model and **does not consider spatial heterogeneity** of plants.
-- For example, the computation of the light interception does not consider the 3D structure of the plants, but rather use a 2.5D projection of the plant rows, and a Beer-Lambert law of extinction in the crop canopy. Usually, measurements can be performed using PAR sensors below and above the canopy to derive the value of k, the light extinction coefficient. This technique can be used to parameterize STICS on sole crops, and let the model simulate the light interception in the intercrop using the same parameter value. Unfortunately, the assumptions used with this formalism are not necessarily guaranteed in the intercrop system, due for example to clumping, or due to a change in plant structure between the sole and intercrop, that can depend on the associated species. We can quantify such changes using PAR sensors, but only the overall light transmittance (*i.e.* both species at the same time), can be evaluated with this technique, as it is difficult or impossible to partition the light intercepted by one species or the other. When the spatial design and plant partitioning is homogeneous, the STICS model could be relevant and sufficiently precise to simulate light capture, but for heterogenous intercrop covers, the intercrop could not be simulated correctly using the model. Moreover, the formalisms included in STICS are too simple to simulate some processes that need a more mechanistic approach to be more precise.
-- Functional-structural plant models (FSPM) can be used to simulate these processes at the scale they happen, *e.g.* light interception at the organ scale, and to derive the parameters that are too complex or impossible to measure in the field from the detailed FSPM simulations, and eventually for the validation of the crop model.
+- For example, the computation of the light interception does not consider the 3D structure of the plants, but rather use a 2.5D projection of the plant rows, and a Beer-Lambert law of extinction in the crop canopy. Usually, measurements can be performed using PAR sensors below and above the canopy to derive the value of k, the light extinction coefficient. This technique can be used to parameterize STICS on sole crops, and let the model simulate the light interception in the intercrop using the same parameter value. Unfortunately, the assumptions used with this formalism are not necessarily guaranteed in the intercrop system, due for example to clumping, or due to a change in plant structure between the sole and intercrop, that can depend on the associated species. We can quantify such changes using PAR sensors, but only the overall light transmittance (*i.e.* both species at the same time), can be evaluated with this technique, as it is difficult or impossible to partition the light intercepted by one species or the other. When the spatial design and plant partitioning is homogeneous, the STICS model could be relevant and sufficiently precise to simulate light capture, but for heterogenous intercrop covers, the intercrop could not be simulated correctly using the model.
+- Moreover, the formalisms included in STICS are too simple to simulate some processes that need a more **mechanistic approach** to be more precise.
+-
+- Functional-structural plant models **(FSPM) can be used to simulate these processes** at the scale they happen, *e.g.* light interception **at the organ scale**, and to **derive the parameters that are too complex or impossible to measure** in the field from the detailed FSPM simulations, and eventually for the validation of the crop model.
 - The objective of this work is to use FSPMs to compute the crop model parameters that are hard or impossible to measure, and evaluate the crop model outputs.
 - This objective is linked to the objectives of WP3: Improve understanding of G × G × E × M interactions in crop mixtures; and WP4: Optimize G × G × E × M to identify promising combinations and designs for specific conditions.
 -
-- We define the following workflow:
-- -
+- ## Workflow
 - Define which systems will be simulated with the crop models
-- -
 - Define a subset of those systems on which FSP modelling will be done. It will mainly depend on three aspects:
-- -
-- The type of data available for the FSPM (structure, function).
-- -
-- How easy the intercropping system is to model?
-- -
-- Do we already have a model or advanced components to model the system?
-- -
+	- The type of data available for the FSPM (structure, function).
+	- How easy the intercropping system is to model?
+	- Do we already have a model or advanced components to model the system?
 - Define a design of experiment (DOE) for the FSPM
-- -
 - Make the simulations with the FSPM
-- -
 - Compute parameters for the crop model based on the FSP outputs
-- -
-- (if we have time, define new formalisms to better represent the processes in the system)
+- (if we have time, define new formalisms to better represent the processes in the system, maybe with Mila)
 - **Choosing the systems**
 - The intercropping systems to be simulated with the FSPM will be chosen based on the following rules:
 - -
