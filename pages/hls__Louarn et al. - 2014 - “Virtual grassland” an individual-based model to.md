@@ -49,3 +49,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/23Y64J84/Louarn et al. - 201
   hl-page:: 2
   hl-color:: yellow
   id:: 655cd46c-64cd-4904-8fe2-0bb87484149d
+- Parameters for morphogenesis were identified on contrasting alfalfa and perennial ryegrass cultivars. Morphogenetic response to light competition, defoliation and water stress were shown to be qualitatively consistent. Increased light competition resulted in reduced tillering/branching (and overall plant leaf area development), reduced root elongation rate (and root volume) and decreased root length density. An interaction between shoot morphogenesis (defining light competition ability) and defoliation regime existed for the two functional groups, morphotypes with short leaves (grass) / procumbent shoots (legume) being relatively favoured by more intense defoliations. Soil water availability affected first local root development and then plant water status, shoot growth and C assimilation/partitioning (Figure 2). Sensitivity to water stress was shown to be strongly dependent to developmental stages, and in particular to the rooting depth at the beginning of the stress.
+  hl-page:: 2
+  ls-type:: annotation
+  id:: 655cd82f-1d09-4c61-a070-eacf60209055
+  hl-color:: purple
