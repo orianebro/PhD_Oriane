@@ -230,3 +230,13 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   ls-type:: annotation
   id:: 655df770-58da-4ff9-8a71-dea91a2ae760
   hl-color:: yellow
+	- This modification helps avoiding an underestimation of the N status of crops simulated in intercrops, as shown by Corre-Hellou et al. (2009) [[@Adaptation of the STICS intercrop model to simulate crop growth and N accumulation in pea–barley intercrops]].
+	  hl-page:: 4
+	  ls-type:: annotation
+	  id:: 655dfa48-93ba-4d88-97ab-e8aaeee96065
+	  hl-color:: yellow
+	- unless both development and biomass of the two crops are largely different (Louarn et al. 2021).
+	  ls-type:: annotation
+	  hl-page:: 5
+	  hl-color:: yellow
+	  id:: 655dfaea-5740-493f-aba3-70bf42517ce6
