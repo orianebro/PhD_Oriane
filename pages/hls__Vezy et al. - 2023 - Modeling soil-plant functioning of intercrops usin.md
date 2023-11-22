@@ -242,7 +242,7 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  id:: 655dfaea-5740-493f-aba3-70bf42517ce6
 -
 - #### 2.2.6 Water and nitrogen competition and complementarity
-- The **competition and/or complementarity processes for water and N dynamic budgets** are mainly determined by the **roots, their biomass, and density in the soil layers**.
+- The **competition and/or complementarity processes for water and N dynamic budgets** are mainly determined by the **roots, their biomass, and density in the soil layers** (1-cm layers).
   hl-page:: 5
   ls-type:: annotation
   id:: 655dfedc-d38e-4b4b-8a3b-b0f7d0907d9b
