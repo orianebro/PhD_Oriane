@@ -52,3 +52,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 		  hl-page:: 2
 		  hl-color:: yellow
 		  id:: 655dbecf-263b-4fc8-b3f9-e8bc3d8eddec
+- the formalisms had to be generic, simple, and robust in order to be able to simulate widely diversified cropping systems
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: green
+  id:: 655dc156-ec27-456b-b867-6aa4667e09d7
