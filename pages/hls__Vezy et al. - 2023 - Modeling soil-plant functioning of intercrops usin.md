@@ -252,9 +252,30 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 5
   hl-color:: yellow
   id:: 655e1454-d318-4da6-985e-564c0e9fdff3
-- we introduced a down-regulating effect of intra-specific plant density on the root length growth rate
+- we introduced a **down-regulating effect of intra-specific plant density on the root length growth rate**
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 655e14e4-2d08-4bfa-a8cc-036a00600ecf
+  hl-color:: yellow
+-
+- #### 2.2.7 Microclimate
+- the taller species can **decrease the wind** experienced by the smaller one
   ls-type:: annotation
   hl-page:: 5
   hl-color:: yellow
-  id:: 655e14e4-2d08-4bfa-a8cc-036a00600ecf
--
+  id:: 655e15db-0fdf-44a4-aa75-bfd2da615655
+- It can also **increase air humidity** and regulate the **local temperature**
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 655e15ea-cdab-48ff-97ae-db684c734c4e
+  hl-color:: yellow
+- modifying the **daily and cumulative thermal time**
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 655e15ff-80a0-475c-89c7-ed6880ad0829
+  hl-color:: yellow
+- a **resistive approach** already implemented, first presented in Brisson et al. (2004) and adapted from Shuttleworth and Wallace (1985).
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: yellow
+  id:: 655e1619-f7b6-4bab-bc96-72b50a306642
