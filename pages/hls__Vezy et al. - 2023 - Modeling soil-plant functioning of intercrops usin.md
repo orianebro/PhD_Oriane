@@ -210,8 +210,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  id:: 655df310-efb2-4340-84e8-86745801f2fb
 -
 - #### 2.2.5 Nitrogen demand
-- The N uptake of the crop depends on its N demand, N availability in the soil layers, and root exploration
-  ls-type:: annotation
+- The **N uptake of the crop depends on its N demand, N availability in the soil layers, and root exploration** (computed using the rooting depth and the root length density along the soil profile)
   hl-page:: 4
-  hl-color:: yellow
+  ls-type:: annotation
   id:: 655df443-2e0e-4747-8ff8-e65c0dac578f
+  hl-color:: yellow
+- The **N requirements** are computed using a **dilution curve** that relates the crop **aboveground biomass** to its **N concentration** (Corre-Hellou et al. 2009 [[@Adaptation of the STICS intercrop model to simulate crop growth and N accumulation in pea–barley intercrops]])
+  hl-page:: 4
+  ls-type:: annotation
+  id:: 655df576-d1d5-4cc5-9058-6504c8754520
+  hl-color:: yellow
+	- _Hypothesis_ : leaves have a higher N content compared to other organs, and as the plant/crop grows, the proportion of leaves compared to structural organs (e.g. straw) decreases, thereby diluting the N content in the aboveground biomass (Justes et al. 1994).
+	  hl-page:: 4
+	  ls-type:: annotation
+	  id:: 655df60c-8a03-4a59-af16-0d8e9e949e8c
+	  hl-color:: yellow
