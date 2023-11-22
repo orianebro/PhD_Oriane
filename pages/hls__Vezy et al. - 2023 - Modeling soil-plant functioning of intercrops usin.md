@@ -23,11 +23,11 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 2
   hl-color:: yellow
   id:: 655dbe2f-3508-4380-9f41-afd9083e2971
-	- grain yield nRMSE13–21% in Kherif et al. 2022
-	  ls-type:: annotation
+	- grain yield nRMSE13–21% in Kherif et al. (2022) [[@The first calibration and evaluation of the STICS soil-crop model on chickpea-based intercropping system under Mediterranean conditions]]
 	  hl-page:: 2
-	  hl-color:: yellow
+	  ls-type:: annotation
 	  id:: 655dbe35-607c-41de-b4a0-cc668ee1ffbd
+	  hl-color:: yellow
 - several inconsistencies
   ls-type:: annotation
   hl-page:: 2
@@ -48,7 +48,7 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  hl-page:: 2
 	  hl-color:: yellow
 	  id:: 655dbe8e-943a-4892-92c7-32eb7ad7a031
-		- computation of Leaf Area Index (LAI), aerial and belowground biomass, N acquisition, and light interception using the radiative transfer option, a formalism published two decades ago(Brisson et al. 2004)
+		- computation of Leaf Area Index (LAI), aerial and belowground biomass, N acquisition, and light interception using the radiative transfer option, a formalism published two decades ago (Brisson et al. 2004)
 		  ls-type:: annotation
 		  hl-page:: 2
 		  hl-color:: yellow
@@ -79,7 +79,7 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-color:: green
   id:: 655dc51a-0e56-49bd-a883-efe2125f79b1
   hl-stamp:: 1700644196306
-	- to ensure the formalisms could be used for in silico comparisons of species mixtures or management, for example by calculating their land equivalent ratio (LER) as shown by Launay et al. (2009)
+	- to ensure the formalisms could be used for in silico comparisons of species mixtures or management, for example by calculating their land equivalent ratio (LER) as shown by Launay et al. (2009) [[@Exploring options for managing strategies for pea–barley intercropping using a modeling approach]]
 	  ls-type:: annotation
 	  hl-page:: 3
 	  hl-color:: green
@@ -153,18 +153,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  id:: 655dd024-3b63-476d-b568-c3d791cd79e9
 -
 - #### 2.2.2 Beer‑Lambert law of light extinction
-- a simpler approach to account for intercrops with well-mixed canopies : the Beer-Lambert law of light extinction in plant canopies adapted for intercropping (Keating and Carberry 1993) by considering the leaf area index and extinction coefficients of both crops
+- a simpler approach to account **for intercrops with well-mixed canopies** : the **Beer-Lambert law of light extinction** in plant canopies adapted for intercropping (Keating and Carberry 1993) by considering the leaf area index and extinction coefficients of both crops
   hl-page:: 4
   ls-type:: annotation
   id:: 655dd04b-983a-4414-8160-03c7bf481ca9
   hl-color:: yellow
 -
 - #### 2.2.3 Plant density effect
-- the intraspecific competition for light interception and growth is computed using a density effect (S_D), to represent the intra-row competition
-  ls-type:: annotation
+- the intraspecific competition for light interception and growth is computed using a **density effect** (S_D), to represent the **intra-row competition**
   hl-page:: 4
-  hl-color:: yellow
+  ls-type:: annotation
   id:: 655dd0eb-be21-41fc-99c1-fa5288f83e39
+  hl-color:: yellow
 - The same algorithm, but using twice the intercrop plant density to use the same parameters determined on sole crops
   hl-page:: 4
   ls-type:: annotation
@@ -182,8 +182,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 4
   hl-color:: yellow
   id:: 655dd3ae-9e66-4a5d-ad1f-980c1514cd55
-- using the radiative transfer option, which was previously mandatory for intercrops (Brisson et al. 2003, 2008)
+- new formalism that computes **plant height** using **crop phasic development** instead ([[@Simulating potential growth in a relay-strip intercropping system: Model description, calibration and testing]]; [[@Identification of species traits enhancing yield in wheat-faba bean intercropping: development and sensitivity analysis of a minimalist mixture model]] )
   hl-page:: 4
   ls-type:: annotation
-  id:: 655dd3ba-9947-4642-af96-17ab58d98b86
+  id:: 655dd448-3eb5-453a-b979-258687717dba
   hl-color:: yellow
