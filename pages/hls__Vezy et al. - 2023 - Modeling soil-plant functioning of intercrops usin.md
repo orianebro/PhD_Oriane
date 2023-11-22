@@ -172,3 +172,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-color:: yellow
 -
 - #### 2.2.4 Plant traits and dimensions
+- The height of the crop canopy significantly influences the competition for light capture between the two species
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: green
+  id:: 655dd370-9ca1-4549-8efd-bca24639809c
+- The crop canopy height was computed using the LAI for sole crops
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: yellow
+  id:: 655dd3ae-9e66-4a5d-ad1f-980c1514cd55
+- using the radiative transfer option, which was previously mandatory for intercrops (Brisson et al. 2003, 2008)
+  hl-page:: 4
+  ls-type:: annotation
+  id:: 655dd3ba-9947-4642-af96-17ab58d98b86
+  hl-color:: yellow
