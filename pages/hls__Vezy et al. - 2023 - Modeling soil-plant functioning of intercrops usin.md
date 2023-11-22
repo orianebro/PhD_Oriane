@@ -175,8 +175,9 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 - The height of the crop canopy significantly influences the competition for light capture between the two species
   ls-type:: annotation
   hl-page:: 4
-  hl-color:: green
+  hl-color:: yellow
   id:: 655dd370-9ca1-4549-8efd-bca24639809c
+  hl-stamp:: 1700656200124
 - The crop canopy height was computed using the LAI for sole crops
   ls-type:: annotation
   hl-page:: 4
@@ -192,3 +193,25 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   ls-type:: annotation
   id:: 655ddd40-566c-4fa1-835a-ab5a4b311888
   hl-color:: yellow
+- The magnitude of the elongation of the crop height can theoretically change with the associated species depending on light quantity and quality, e.g. a proxy of the photomorphogenetic effect.
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: yellow
+  id:: 655df2b5-ef40-4efa-91b4-e82a5d8cf422
+	- However, the type of response, i.e. shade avoidant or shade tolerant, remains stable based on the plant species.
+	  ls-type:: annotation
+	  hl-page:: 4
+	  hl-color:: yellow
+	  id:: 655df2be-9ab6-49fd-9a91-09a94365bc99
+	- formalism that elongates the stem of the plant based on the relative surface of the plant that is shaded and a parameter of maximum elongation effect when the species is fully shaded.
+	  ls-type:: annotation
+	  hl-page:: 4
+	  hl-color:: yellow
+	  id:: 655df310-efb2-4340-84e8-86745801f2fb
+-
+- #### 2.2.5 Nitrogen demand
+- The N uptake of the crop depends on its N demand, N availability in the soil layers, and root exploration
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: yellow
+  id:: 655df443-2e0e-4747-8ff8-e65c0dac578f
