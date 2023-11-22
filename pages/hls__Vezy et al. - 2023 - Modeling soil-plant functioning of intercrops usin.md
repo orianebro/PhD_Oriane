@@ -146,5 +146,29 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 4
   hl-color:: yellow
   id:: 655dce8a-8c6a-4926-92e1-90d2249f2eef
+	- relative independence between the shapes of both crops
+	  ls-type:: annotation
+	  hl-page:: 4
+	  hl-color:: yellow
+	  id:: 655dd024-3b63-476d-b568-c3d791cd79e9
 -
 - #### 2.2.2 Beer‑Lambert law of light extinction
+- a simpler approach to account for intercrops with well-mixed canopies : the Beer-Lambert law of light extinction in plant canopies adapted for intercropping (Keating and Carberry 1993) by considering the leaf area index and extinction coefficients of both crops
+  hl-page:: 4
+  ls-type:: annotation
+  id:: 655dd04b-983a-4414-8160-03c7bf481ca9
+  hl-color:: yellow
+-
+- #### 2.2.3 Plant density effect
+- the intraspecific competition for light interception and growth is computed using a density effect (S_D), to represent the intra-row competition
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: yellow
+  id:: 655dd0eb-be21-41fc-99c1-fa5288f83e39
+- The same algorithm, but using twice the intercrop plant density to use the same parameters determined on sole crops
+  hl-page:: 4
+  ls-type:: annotation
+  id:: 655dd142-3a73-4194-a0ff-10270177b762
+  hl-color:: yellow
+-
+- #### 2.2.4 Plant traits and dimensions
