@@ -187,8 +187,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   ls-type:: annotation
   id:: 655dd448-3eb5-453a-b979-258687717dba
   hl-color:: yellow
-- The height of a crop can also be up- or down-regulated in response to stresses, such as light competition with another species, drought, root anoxia, low N availability, and frost.
-  ls-type:: annotation
+- The height of a crop can also be **up- or down-regulated in response to stresses**, such as light competition with another species, drought, root anoxia, low N availability, and frost. The **resulting integrated effect** arising from those individual stresses is computed as the **minimum of all down-regulating effects**, and the **up-regulating effect (i.e. the shoot elongation) separately**, which are both applied to the daily height increment.
   hl-page:: 4
-  hl-color:: yellow
+  ls-type:: annotation
   id:: 655ddd40-566c-4fa1-835a-ab5a4b311888
+  hl-color:: yellow
