@@ -52,8 +52,34 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 		  hl-page:: 2
 		  hl-color:: yellow
 		  id:: 655dbecf-263b-4fc8-b3f9-e8bc3d8eddec
-- the formalisms had to be generic, simple, and robust in order to be able to simulate widely diversified cropping systems
+- the **formalisms** had to be **generic, simple, and robust** in order to be able to simulate widely diversified cropping systems
+  hl-page:: 3
+  ls-type:: annotation
+  id:: 655dc156-ec27-456b-b867-6aa4667e09d7
+  hl-color:: green
+- the **number of parameters** had to be **minimal** with parameters **derived from sole-crop data** without the need for any re-calibration to simulate intercrops
+  hl-page:: 3
+  ls-type:: annotation
+  id:: 655dc44a-86f5-4261-9a45-2388f9acee6f
+  hl-color:: green
+	- This method assumes that there is either no significant influence of the other crop on a given process, and the model explicitly simulates those interspecific interactions, including trait plasticity such as enhanced shoot elongation growth or root exploration in the soil.
+	  ls-type:: annotation
+	  hl-page:: 3
+	  hl-color:: green
+	  id:: 655dc4cb-01a3-4677-9ffa-5c1e6834b680
+	- **plant-plant interspecific interactions** and the **balance between dynamic competition and complementarity** are **emerging properties** of the STICS model functioning
+	  hl-page:: 3
+	  ls-type:: annotation
+	  id:: 655dc4ea-c5da-4f0e-94bd-0a47a1f4e654
+	  hl-color:: yellow
+- the formalisms implemented in STICS had to generate a **similar or lower range of error for bi-specific intercrops** compared to sole crops, as defined by the error assessment proposed by Coucheney et al. (2015)
   ls-type:: annotation
   hl-page:: 3
   hl-color:: green
-  id:: 655dc156-ec27-456b-b867-6aa4667e09d7
+  id:: 655dc51a-0e56-49bd-a883-efe2125f79b1
+  hl-stamp:: 1700644196306
+	- to ensure the formalisms could be used for in silico comparisons of species mixtures or management, for example by calculating their land equivalent ratio (LER) as shown by Launay et al. (2009)
+	  ls-type:: annotation
+	  hl-page:: 3
+	  hl-color:: green
+	  id:: 655dc5c0-a348-4396-b2e7-9a9100eda638
