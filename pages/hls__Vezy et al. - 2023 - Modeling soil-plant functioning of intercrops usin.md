@@ -5,8 +5,9 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 - Soil-crop models are critical in understanding these interactions in dynamics during the **whole growing season**
   ls-type:: annotation
   hl-page:: 1
-  hl-color:: yellow
+  hl-color:: green
   id:: 655db308-e089-4589-9bea-8319e6798628
+  hl-stamp:: 1700645829333
 - **formalism** = the structure and mathematical representation necessary for designing a model
   hl-page:: 1
   ls-type:: annotation
@@ -83,3 +84,42 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  hl-page:: 3
 	  hl-color:: green
 	  id:: 655dc5c0-a348-4396-b2e7-9a9100eda638
+- ## Material and methods
+- ### General description of the STICS soil-crop model
+-
+- The STICS model is a **dynamic 1D soil-crop model** that combines crop development, growth and yield formation with the carbon, N, energy, and water cycles of the soilcrop system (Brisson et al. 1998, 2003, 2008; Beaudoin et al. 2023).
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: yellow
+  id:: 655dcacf-86ff-4ab2-af7e-2f0061e38ff1
+- The model runs at a **daily time-step** using input data related to climate, crop species, soil, agricultural management, and the state of the system at initialization, such as the water and N content of each soil layer.
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: yellow
+  id:: 655dcadf-1f81-4db7-bf7e-fc9f6d290fca
+- The crop is represented as a set of organs with a given development stage, biomass, and N content.
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: yellow
+  id:: 655dcaf7-4398-496e-a374-52a775ce363e
+- The **biomass growth** is mainly driven by **light interception** as a function of leaf area index with a big leaf approach, while **crop development** is driven by **thermal time** corrected by vernalization and photoperiodic effects.
+  hl-page:: 3
+  ls-type:: annotation
+  id:: 655dcb1b-6239-437b-8eb7-f62ae7545dda
+  hl-color:: yellow
+	- The **big leaf approach** uses the so-called Beer-Lambert law of light extinction coupled with a radiation use efficiency.
+	  ls-type:: annotation
+	  hl-page:: 3
+	  hl-color:: green
+	  id:: 655dcb81-3a5f-4eee-bd60-3e1adf0d79ff
+	  hl-stamp:: 1700645812783
+- **Stress** effects from frost, insufficient supply of N or water, and root anoxia can all potentially affect development, leaf area, growth, and yield.
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: yellow
+  id:: 655dcb99-b089-4d42-9d21-5e52d9736bb7
+- Both crop species are simulated sequentially **starting the first day from the a priori dominant one** (i.e. the usually taller one in sole crop conditions) and then dynamically computing dominance during the crop cycle **based on crop height**.
+  hl-page:: 3
+  ls-type:: annotation
+  id:: 655dcbfe-92d8-48b6-9b70-d7454d56d1d6
+  hl-color:: yellow
