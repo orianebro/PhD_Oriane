@@ -1,7 +1,7 @@
 file:: [Vezy et al. - 2023 - Modeling soil-plant functioning of intercrops usin.pdf](file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 - Modeling soil-plant functioning of intercrops usin.pdf)
 file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 - Modeling soil-plant functioning of intercrops usin.pdf
 
-- ## Introduction
+- ## 1 Introduction
 - Soil-crop models are critical in understanding these interactions in dynamics during the **whole growing season**
   ls-type:: annotation
   hl-page:: 1
@@ -84,9 +84,9 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  hl-page:: 3
 	  hl-color:: green
 	  id:: 655dc5c0-a348-4396-b2e7-9a9100eda638
-- ## Material and methods
-- ### General description of the STICS soil-crop model
 -
+- ## 2 Material and methods
+- ### 2.1 General description of the STICS soil-crop model
 - The STICS model is a **dynamic 1D soil-crop model** that combines crop development, growth and yield formation with the carbon, N, energy, and water cycles of the soilcrop system (Brisson et al. 1998, 2003, 2008; Beaudoin et al. 2023).
   ls-type:: annotation
   hl-page:: 3
@@ -123,3 +123,28 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   ls-type:: annotation
   id:: 655dcbfe-92d8-48b6-9b70-d7454d56d1d6
   hl-color:: yellow
+-
+- ### 2.2 Modifications to the model
+- #### 2.2.1 Radiative transfer
+- **2.5D projection** of the crop with homogeneous structure within the row
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: yellow
+  id:: 655dcdc7-0db0-47e3-a50a-710c3be7fc47
+- The crop leaf area density is represented using a geometric primitive (a rectangle or an up- or down-facing triangle) projected onto the 2D vertical plane, and the light interception computation is performed considering this shape re-projected in 3D along the crop row, e.g. the rectangle is used as a hexahedral volume to represent the whole row
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: yellow
+  id:: 655dce5d-07d3-4b21-801e-73db174be25b
+- using only the transmitted light as a medium
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: yellow
+  id:: 655dcea3-1cb8-4b23-aa1d-86f38a3932a0
+- **without any explicit knowledge of the shape of the other crop**
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: yellow
+  id:: 655dce8a-8c6a-4926-92e1-90d2249f2eef
+-
+- #### 2.2.2 Beer‑Lambert law of light extinction
