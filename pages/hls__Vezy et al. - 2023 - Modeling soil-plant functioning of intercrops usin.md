@@ -247,3 +247,14 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   ls-type:: annotation
   id:: 655dfedc-d38e-4b4b-8a3b-b0f7d0907d9b
   hl-color:: yellow
+- As for a sole crop, the root development and growth of each species in the intercrop depends on species–specific parameters, thermal time of soil temperature, several potential stresses, such as anoxia, drought, soil properties (high bulk density), frost, or low N content, and potentially a trophic linked production depending on the simulation option (Brisson et al.2004, 2008).
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: yellow
+  id:: 655e1454-d318-4da6-985e-564c0e9fdff3
+- we introduced a down-regulating effect of intra-specific plant density on the root length growth rate
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: yellow
+  id:: 655e14e4-2d08-4bfa-a8cc-036a00600ecf
+-
