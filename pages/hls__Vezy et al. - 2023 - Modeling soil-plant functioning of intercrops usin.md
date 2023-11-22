@@ -182,7 +182,7 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 4
   hl-color:: yellow
   id:: 655dd3ae-9e66-4a5d-ad1f-980c1514cd55
-- new formalism that computes **plant height** using **crop phasic development** instead ([[@Simulating potential growth in a relay-strip intercropping system: Model description, calibration and testing]]; [[@Identification of species traits enhancing yield in wheat-faba bean intercropping: development and sensitivity analysis of a minimalist mixture model]] )
+- new formalism that computes **plant height** using **crop phasic development** instead (Gou et al., 2017 [[@Simulating potential growth in a relay-strip intercropping system: Model description, calibration and testing]]; Berghuijs et al., 2020 [[@Identification of species traits enhancing yield in wheat-faba bean intercropping: development and sensitivity analysis of a minimalist mixture model]]) + the addition of the **effect of stresses**
   hl-page:: 4
   ls-type:: annotation
   id:: 655dd448-3eb5-453a-b979-258687717dba

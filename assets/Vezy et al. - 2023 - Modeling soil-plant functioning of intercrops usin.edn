@@ -1597,5 +1597,22 @@
                                    :height 1476.2831999999999}),
                           :page 4},
                :content {:text "Gou et al. (2017) and Berghuijs et al. (2020)"},
+               :properties {:color "yellow"}}
+              {:id #uuid "655dd6b4-6463-4639-9b98-e10493fd34c6",
+               :page 4,
+               :position {:bounding {:x1 600.0809936523438,
+                                     :y1 126.28125,
+                                     :x2 866.093017578125,
+                                     :y2 147.28125,
+                                     :width 1111.1818666666666,
+                                     :height 1476.2831999999999},
+                          :rects ({:x1 600.0809936523438,
+                                   :y1 126.28125,
+                                   :x2 866.093017578125,
+                                   :y2 147.28125,
+                                   :width 1111.1818666666666,
+                                   :height 1476.2831999999999}),
+                          :page 4},
+               :content {:text "the addition of the effect of stresses"},
                :properties {:color "yellow"}}],
- :extra {:page 2}}
+ :extra {:page 16}}
