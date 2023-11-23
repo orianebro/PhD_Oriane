@@ -466,7 +466,43 @@
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
 :nonce 1700747742922}}
-:block/updated-at 1700748243709})
+:block/updated-at 1700748243709} 
+{:block/content "[[@Modeling sorghum-cowpea intercropping for a site in the savannah zone of Mali: Strengths and weaknesses of the Stics model]]\n\n2022"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f59e5-49b2-47c2-acef-81a61e4701a1"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f5c9c-5db2-4556-b115-fc104c478e9f"} 
+{:block/created-at 1700748452988
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 12
+:scale [1 1]
+:pageId "655f5c9c-5db2-4556-b115-fc104c478e9f"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 137]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "9cec1380-8a09-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [656 48]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700748438716}}
+:block/updated-at 1700748452988})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -478,9 +514,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700748243709
+:block/updated-at 1700748453487
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
