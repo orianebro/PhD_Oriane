@@ -634,7 +634,77 @@
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
 :nonce 1700758114868}}
-:block/updated-at 1700758171916})
+:block/updated-at 1700758171916} 
+{:block/content "[[@Investigation of complex canopies with a functional–structural plant model as exemplified by leaf inclination effect on the functioning of pure and mixed stands of wheat during grain filling]]\nCoupling of CN-Wheat, ADEL-Wheat and Caribu\nMTG\nAvailable on OpenAlea\nShoot\nlight, C, N\n2019"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f8268-a6a0-48e6-a721-05ff120a29e4"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f8e21-85e7-480f-9d04-b9ebfbe8edc7"} 
+{:block/created-at 1700761509947
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 17
+:scale [1 1]
+:pageId "655f8e21-85e7-480f-9d04-b9ebfbe8edc7"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 280.80000973784263]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "21362be0-8a27-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [2040 280]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700761116072}}
+:block/updated-at 1700761509947} 
+{:block/content "[[@Assessing the effects of architectural variations on light partitioning within virtual wheat – pea mixtures]]"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f8e21-85e7-480f-9d04-b9ebfbe8edc7"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f8fc8-3858-4fdf-b6bd-7e439c409f79"} 
+{:block/created-at 1700761545592
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 18
+:scale [1 1]
+:pageId "655f8fc8-3858-4fdf-b6bd-7e439c409f79"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 112.80000305175781]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "1cc8f140-8a28-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [2512 280]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700761538135}}
+:block/updated-at 1700761545592})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -646,9 +716,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3" "21362be0-8a27-11ee-872b-d9a3e7460fd3" "1cc8f140-8a28-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700758171916
+:block/updated-at 1700761545592
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
