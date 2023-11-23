@@ -601,19 +601,22 @@
 :italic false
 :text "SIMULATIONS WITH IDEOMIXES"}}
 :block/updated-at 1700757811377} 
-{:block/content "FSPM"
+{:block/content ".......................................................................................... FSPM ..................................................................................................."
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f7eb0-0d34-4d11-9726-4be4f495a493"}
 :block/parent 
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
 :block/uuid #uuid "655f8268-a6a0-48e6-a721-05ff120a29e4"} 
-{:block/created-at 1700758171916
+{:block/created-at 1700766607675
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:blockType "B"
 :stroke ""
+:rotation 0
 :collapsed false
 :borderRadius 8
 :index 16
@@ -624,17 +627,17 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [800 81.5999984741211]
+:size [1832 81.59999595799628]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
 :id "24360290-8a20-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [2712 104]
+:point [2216 104]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700758114868}}
-:block/updated-at 1700758171916} 
+:nonce 1700758114952}}
+:block/updated-at 1700766607675} 
 {:block/content "[[@Investigation of complex canopies with a functional–structural plant model as exemplified by leaf inclination effect on the functioning of pure and mixed stands of wheat during grain filling]]\nCN-Wheat + ADEL-Wheat + Caribu\nMTG\navailable on OpenAlea\nshoot\nlight, C, N\n2019"
 :block/format :markdown
 :block/left 
@@ -815,7 +818,7 @@
 :collapsedHeight 0
 :nonce 1700763406154}}
 :block/updated-at 1700765104855} 
-{:block/created-at 1700763536445
+{:block/created-at 1700766621303
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -836,15 +839,15 @@
 :padding 4
 :fontWeight 400
 :noFill true
-:point [3336 192]
+:point [3880 200]
 :lineHeight 1.2
 :fontSize 16
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
-:nonce 1700763516054
+:nonce 1700763516148
 :italic false
 :text "emergent plasticity ?"}}
-:block/updated-at 1700763536445} 
-{:block/created-at 1700765006688
+:block/updated-at 1700766621303} 
+{:block/created-at 1700766624173
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -865,14 +868,14 @@
 :padding 4
 :fontWeight 400
 :noFill true
-:point [3408 216]
+:point [3944 232]
 :lineHeight 1.2
 :fontSize 16
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
-:nonce 1700764592016
+:nonce 1700764592100
 :italic false
 :text "+ RATP + ..."}}
-:block/updated-at 1700765006688} 
+:block/updated-at 1700766624173} 
 {:block/created-at 1700765078107
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -1070,7 +1073,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f9f3f-a73a-499c-8902-7e90c4cc23e1"} 
-{:block/created-at 1700765739044
+{:block/created-at 1700766554453
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1092,11 +1095,11 @@
 :opacity 1
 :id "55ff0130-8a31-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [3648 1032]
+:point [3640 1128]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700765499709}}
-:block/updated-at 1700765739044} 
+:nonce 1700765499783}}
+:block/updated-at 1700766554453} 
 {:block/content "[[@“Virtual grassland”: an individual-based model to deal with grassland community dynamics under fluctuating water and nitrogen availability]]\nshort paper\n2014"
 :block/format :markdown
 :block/left 
@@ -1106,7 +1109,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655fa24c-f1d2-4d36-adb2-26b293fa4149"} 
-{:block/created-at 1700766295035
+{:block/created-at 1700766550838
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1128,11 +1131,81 @@
 :opacity 1
 :id "26ce8d20-8a33-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [3664 848]
+:point [3640 968]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700766279414}}
-:block/updated-at 1700766295035})
+:nonce 1700766279558}}
+:block/updated-at 1700766550838} 
+{:block/content "[[@A generic individual-based model to simulate morphogenesis, C–N acquisition and population dynamics in contrasting forage legumes]]\ngrowth and morphogenesis responses\nlight, C, N, water\n2018"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655fa24c-f1d2-4d36-adb2-26b293fa4149"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655fa292-7b19-4413-9c6a-00dc5940d9af"} 
+{:block/created-at 1700766538743
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 32
+:scale [1 1]
+:pageId "655fa292-7b19-4413-9c6a-00dc5940d9af"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 160.79998388270437]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "50703480-8a33-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [3640 784]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700766349316}}
+:block/updated-at 1700766538743} 
+{:block/content "Multiscale approach"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655fa292-7b19-4413-9c6a-00dc5940d9af"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655fa3e8-791d-4ed9-bdae-28a74ceb12cf"} 
+{:block/created-at 1700766723840
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 33
+:scale [1 1]
+:pageId "655fa3e8-791d-4ed9-bdae-28a74ceb12cf"
+:scaleLevel "xl"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [800 81.5999984741211]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "1ae17620-8a34-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [1464 1392]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700766688980}}
+:block/updated-at 1700766723840})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -1144,9 +1217,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3" "21362be0-8a27-11ee-872b-d9a3e7460fd3" "1cc8f140-8a28-11ee-872b-d9a3e7460fd3" "812657d0-8a29-11ee-872b-d9a3e7460fd3" "c48ac680-8a2b-11ee-872b-d9a3e7460fd3" "760f1c80-8a2c-11ee-872b-d9a3e7460fd3" "b7a322e0-8a2c-11ee-872b-d9a3e7460fd3" "38e9da90-8a2f-11ee-872b-d9a3e7460fd3" "52a9ff40-8a30-11ee-872b-d9a3e7460fd3" "5dc726a0-8a30-11ee-872b-d9a3e7460fd3" "72192d60-8a30-11ee-872b-d9a3e7460fd3" "94fa9ee0-8a30-11ee-872b-d9a3e7460fd3" "06d7ca60-8a31-11ee-872b-d9a3e7460fd3" "202d62e0-8a31-11ee-872b-d9a3e7460fd3" "55ff0130-8a31-11ee-872b-d9a3e7460fd3" "26ce8d20-8a33-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3" "21362be0-8a27-11ee-872b-d9a3e7460fd3" "1cc8f140-8a28-11ee-872b-d9a3e7460fd3" "812657d0-8a29-11ee-872b-d9a3e7460fd3" "c48ac680-8a2b-11ee-872b-d9a3e7460fd3" "760f1c80-8a2c-11ee-872b-d9a3e7460fd3" "b7a322e0-8a2c-11ee-872b-d9a3e7460fd3" "38e9da90-8a2f-11ee-872b-d9a3e7460fd3" "52a9ff40-8a30-11ee-872b-d9a3e7460fd3" "5dc726a0-8a30-11ee-872b-d9a3e7460fd3" "72192d60-8a30-11ee-872b-d9a3e7460fd3" "94fa9ee0-8a30-11ee-872b-d9a3e7460fd3" "06d7ca60-8a31-11ee-872b-d9a3e7460fd3" "202d62e0-8a31-11ee-872b-d9a3e7460fd3" "55ff0130-8a31-11ee-872b-d9a3e7460fd3" "26ce8d20-8a33-11ee-872b-d9a3e7460fd3" "50703480-8a33-11ee-872b-d9a3e7460fd3" "1ae17620-8a34-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700766318547
+:block/updated-at 1700766723840
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
