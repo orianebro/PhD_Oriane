@@ -743,7 +743,7 @@
 :collapsedHeight 0
 :nonce 1700762136022}}
 :block/updated-at 1700762841908} 
-{:block/content "[[@Modelling root–soil interactions using three–dimensional models of root growth, architecture and function]]\nComparison of 6 root archi FSPM\nroot + soil\nNot \n2013"
+{:block/content "[[@Modelling root–soil interactions using three–dimensional models of root growth, architecture and function]]\nComparison of 6 root archi FSPM\nroot + soil\nNot specific to intercropping\n2013"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f9220-d9ff-4abb-bef1-44b6c3c07fa8"}
@@ -779,7 +779,7 @@
 :collapsedHeight 0
 :nonce 1700763108078}}
 :block/updated-at 1700763936699} 
-{:block/content "[[@WALTer: a three-dimensional wheat model to study competition for light through the prediction of tillering dynamics]]\nWALTer (dvlpt winter wheat aerial archi) + Caribu\nInspired from ADEL-Wheat formalism\nL-Py\ndeterministic + adaptive \nshoot\nlight\n(see if already )\n2019"
+{:block/content "[[@WALTer: a three-dimensional wheat model to study competition for light through the prediction of tillering dynamics]]\nWALTer (dvlpt winter wheat aerial archi) + Caribu\nInspired from ADEL-Wheat formalism\nL-Py\ndeterministic + adaptive \nshoot\nlight\nNot specific to intercropping\n2019"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f95ea-be61-4310-a994-ce1df83231dd"}
@@ -857,7 +857,7 @@
 :assets []
 :shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3" "21362be0-8a27-11ee-872b-d9a3e7460fd3" "1cc8f140-8a28-11ee-872b-d9a3e7460fd3" "812657d0-8a29-11ee-872b-d9a3e7460fd3" "c48ac680-8a2b-11ee-872b-d9a3e7460fd3" "760f1c80-8a2c-11ee-872b-d9a3e7460fd3" "b7a322e0-8a2c-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700763947975
+:block/updated-at 1700763979862
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
