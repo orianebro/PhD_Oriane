@@ -251,7 +251,7 @@
 :collapsedHeight 0
 :nonce 1700742164744}}
 :block/updated-at 1700742276982} 
-{:block/content "[[@Effect of root depth penetration on soil nitrogen competitive interactions and dry matter production in pea–barley intercrops given different soil nitrogen supplies]]\ncompetition for N in intercrops\nsimulations using STICS\ncalibration for pea/barley\n2007"
+{:block/content "[[@Effect of root depth penetration on soil nitrogen competitive interactions and dry matter production in pea–barley intercrops given different soil nitrogen supplies]]\ncompetition for N in intercrops\nsimulations using STICS\ncalibration for ideomix pea/barley\n2007"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f443a-d4b4-41e5-9bfb-12acd38d3fce"}
@@ -287,7 +287,7 @@
 :collapsedHeight 0
 :nonce 1700743747172}}
 :block/updated-at 1700747514623} 
-{:block/content "[[@Adaptation of the STICS intercrop model to simulate crop growth and N accumulation in pea–barley intercrops]]\nlink crop growth and N2 fixation and N accum\nsimulations using STICS\ncalibration for pea/barley\n2009"
+{:block/content "[[@Adaptation of the STICS intercrop model to simulate crop growth and N accumulation in pea–barley intercrops]]\nlink crop growth and N2 fixation and N accum\nsimulations using STICS\ncalibration for ideomix pea/barley\n2009"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f4a60-8331-4a9b-8c4c-bf2acaa402fe"}
@@ -359,7 +359,7 @@
 :collapsedHeight 0
 :nonce 1700746960882}}
 :block/updated-at 1700747119635} 
-{:block/content "[[@The first calibration and evaluation of the STICS soil-crop model on chickpea-based intercropping system under Mediterranean conditions]]\nsimulations using STICS\ncalibration for chickpea/durum wheat\nmanagement optimization\n2022"
+{:block/content "[[@The first calibration and evaluation of the STICS soil-crop model on chickpea-based intercropping system under Mediterranean conditions]]\nsimulations using STICS\ncalibration for ideomix chickpea/durum wheat\nmanagement optimization\n2022"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f56db-01c5-4b2e-9ae0-cf6633993b6d"}
@@ -395,7 +395,7 @@
 :collapsedHeight 0
 :nonce 1700747205223}}
 :block/updated-at 1700747387816} 
-{:block/content "[[@Exploring options for managing strategies for pea–barley intercropping using a modeling approach]]\nsimulations using STICS\nevaluate overyield pea/barley\nmanagement optimization\n2009"
+{:block/content "[[@Exploring options for managing strategies for pea–barley intercropping using a modeling approach]]\nsimulations using STICS\nevaluate overyield ideomix pea/barley\nmanagement optimization\n2009"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f57ca-fb84-4089-90c6-1f20dbb422ff"}
@@ -467,7 +467,7 @@
 :collapsedHeight 0
 :nonce 1700747742922}}
 :block/updated-at 1700748243709} 
-{:block/content "[[@Modeling sorghum-cowpea intercropping for a site in the savannah zone of Mali: Strengths and weaknesses of the Stics model]]\n\n2022"
+{:block/content "[[@Modeling sorghum-cowpea intercropping for a site in the savannah zone of Mali: Strengths and weaknesses of the Stics model]]\nsimulations using STICS\nevaluate ideomix cowpea/sorghum\nmanagement optimization\n2022"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f59e5-49b2-47c2-acef-81a61e4701a1"}
@@ -476,7 +476,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f5c9c-5db2-4556-b115-fc104c478e9f"} 
-{:block/created-at 1700748452988
+{:block/created-at 1700757133097
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -492,7 +492,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 137]
+:size [400 184.8000030517578]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -501,8 +501,44 @@
 :point [656 48]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700748438716}}
-:block/updated-at 1700748452988})
+:nonce 1700748438718}}
+:block/updated-at 1700757133097} 
+{:block/content "[[@Sustainable intensification of sorghum-based cropping systems in semi-arid sub-Saharan Africa: The role of improved varieties, mineral fertilizer, and legume integration]]\n\n2023"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f5c9c-5db2-4556-b115-fc104c478e9f"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f7eb0-0d34-4d11-9726-4be4f495a493"} 
+{:block/created-at 1700757289288
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 13
+:scale [1 1]
+:pageId "655f7eb0-0d34-4d11-9726-4be4f495a493"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 160.8000030517578]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "ec785da0-8a1d-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [1064 -48]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700757162284}}
+:block/updated-at 1700757289288})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -514,9 +550,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700748453487
+:block/updated-at 1700757289288
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
