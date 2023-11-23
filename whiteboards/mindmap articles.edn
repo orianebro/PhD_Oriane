@@ -644,7 +644,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f8e21-85e7-480f-9d04-b9ebfbe8edc7"} 
-{:block/created-at 1700761509947
+{:block/created-at 1700765052642
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -666,11 +666,11 @@
 :opacity 1
 :id "21362be0-8a27-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [2040 280]
+:point [2208 400]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700761116072}}
-:block/updated-at 1700761509947} 
+:nonce 1700761116308}}
+:block/updated-at 1700765052642} 
 {:block/content "[[@Assessing the effects of architectural variations on light partitioning within virtual wheat–pea mixtures]]\nL-Pea (L-Py) + ADEL-Wheat + Caribu\navailable on OpenAlea\nshoot\nlight\n2014"
 :block/format :markdown
 :block/left 
@@ -680,7 +680,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f8fc8-3858-4fdf-b6bd-7e439c409f79"} 
-{:block/created-at 1700763362311
+{:block/created-at 1700765050223
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -702,11 +702,11 @@
 :opacity 1
 :id "1cc8f140-8a28-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [2512 280]
+:point [2208 704]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700761538145}}
-:block/updated-at 1700763362311} 
+:nonce 1700761538261}}
+:block/updated-at 1700765050223} 
 {:block/content "[[@Simulating the effects of water limitation on plant biomass using a 3D functional–structural plant model of shoot and root driven by soil hydraulics]]\nGroIMP shoot FSPM + ArchiSimple + Min3P\navailable on OpenAlea ?\nshoot + root + soil\nwater\n2020"
 :block/format :markdown
 :block/left 
@@ -716,7 +716,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f9220-d9ff-4abb-bef1-44b6c3c07fa8"} 
-{:block/created-at 1700762841908
+{:block/created-at 1700765056266
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -738,11 +738,11 @@
 :opacity 1
 :id "812657d0-8a29-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [2984 288]
+:point [2648 400]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700762136022}}
-:block/updated-at 1700762841908} 
+:nonce 1700762136170}}
+:block/updated-at 1700765056266} 
 {:block/content "[[@Modelling root–soil interactions using three–dimensional models of root growth, architecture and function]]\nComparison of 6 root archi FSPM\nroot + soil\nNot specific to intercropping\n2013"
 :block/format :markdown
 :block/left 
@@ -752,7 +752,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f95ea-be61-4310-a994-ce1df83231dd"} 
-{:block/created-at 1700763936699
+{:block/created-at 1700765107901
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -774,11 +774,11 @@
 :opacity 1
 :id "c48ac680-8a2b-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [3000 600]
+:point [3120 696]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700763108078}}
-:block/updated-at 1700763936699} 
+:nonce 1700763108558}}
+:block/updated-at 1700765107901} 
 {:block/content "[[@WALTer: a three-dimensional wheat model to study competition for light through the prediction of tillering dynamics]]\nWALTer (dvlpt winter wheat aerial archi) + Caribu\nInspired from ADEL-Wheat formalism\nL-Py\ndeterministic + adaptive \nshoot\nlight\nNot specific to intercropping\n2019"
 :block/format :markdown
 :block/left 
@@ -788,7 +788,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f9713-53cc-4d8a-9414-a02586da8265"} 
-{:block/created-at 1700763915731
+{:block/created-at 1700765104855
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -810,11 +810,11 @@
 :opacity 1
 :id "760f1c80-8a2c-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [2512 544]
+:point [3120 400]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700763405906}}
-:block/updated-at 1700763915731} 
+:nonce 1700763406154}}
+:block/updated-at 1700765104855} 
 {:block/created-at 1700763536445
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -843,7 +843,123 @@
 :nonce 1700763516054
 :italic false
 :text "emergent plasticity ?"}}
-:block/updated-at 1700763536445})
+:block/updated-at 1700763536445} 
+{:block/created-at 1700765006688
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke ""
+:borderRadius 0
+:index 23
+:scale [1 1]
+:scaleLevel "sm"
+:fill ""
+:type "text"
+:size [99 29]
+:fontFamily "var(--ls-font-family)"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "38e9da90-8a2f-11ee-872b-d9a3e7460fd3"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [3408 216]
+:lineHeight 1.2
+:fontSize 16
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:nonce 1700764592016
+:italic false
+:text "+ RATP + ..."}}
+:block/updated-at 1700765006688} 
+{:block/created-at 1700765078107
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke ""
+:borderRadius 0
+:index 24
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "text"
+:size [81 34]
+:fontFamily "var(--ls-font-family)"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "52a9ff40-8a30-11ee-872b-d9a3e7460fd3"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [2352 344]
+:lineHeight 1.2
+:fontSize 20
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:nonce 1700765064595
+:italic false
+:text "SHOOT"}}
+:block/updated-at 1700765078107} 
+{:block/created-at 1700765099542
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke ""
+:borderRadius 0
+:index 25
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "text"
+:size [66 34]
+:fontFamily "var(--ls-font-family)"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "5dc726a0-8a30-11ee-872b-d9a3e7460fd3"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [2824 344]
+:lineHeight 1.2
+:fontSize 20
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:nonce 1700765083207
+:italic false
+:text "ROOT"}}
+:block/updated-at 1700765099542} 
+{:block/created-at 1700765125517
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke ""
+:borderRadius 0
+:index 26
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "text"
+:size [206 34]
+:fontFamily "var(--ls-font-family)"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "72192d60-8a30-11ee-872b-d9a3e7460fd3"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [3208 352]
+:lineHeight 1.2
+:fontSize 20
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:nonce 1700765117263
+:italic false
+:text "NOT SPECIFIC TO IC"}}
+:block/updated-at 1700765125517})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -855,9 +971,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3" "21362be0-8a27-11ee-872b-d9a3e7460fd3" "1cc8f140-8a28-11ee-872b-d9a3e7460fd3" "812657d0-8a29-11ee-872b-d9a3e7460fd3" "c48ac680-8a2b-11ee-872b-d9a3e7460fd3" "760f1c80-8a2c-11ee-872b-d9a3e7460fd3" "b7a322e0-8a2c-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3" "21362be0-8a27-11ee-872b-d9a3e7460fd3" "1cc8f140-8a28-11ee-872b-d9a3e7460fd3" "812657d0-8a29-11ee-872b-d9a3e7460fd3" "c48ac680-8a2b-11ee-872b-d9a3e7460fd3" "760f1c80-8a2c-11ee-872b-d9a3e7460fd3" "b7a322e0-8a2c-11ee-872b-d9a3e7460fd3" "38e9da90-8a2f-11ee-872b-d9a3e7460fd3" "52a9ff40-8a30-11ee-872b-d9a3e7460fd3" "5dc726a0-8a30-11ee-872b-d9a3e7460fd3" "72192d60-8a30-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700763979862
+:block/updated-at 1700765125517
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
