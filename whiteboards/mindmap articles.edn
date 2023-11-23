@@ -431,7 +431,7 @@
 :collapsedHeight 0
 :nonce 1700747410889}}
 :block/updated-at 1700747615357} 
-{:block/content "[[@A modelling chain combining soft and hard models to assess a bundle of ecosystem services provided by a diversity of cereal-legume intercrops]]\n\n2022"
+{:block/content "[[@A modelling chain combining soft and hard models to assess a bundle of ecosystem services provided by a diversity of cereal-legume intercrops]]\nhybrid modelling chain for intercropping\nsimulations using STICS\n2022"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f58a2-7399-4785-862e-8b597f45ed7c"}
@@ -440,7 +440,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f59e5-49b2-47c2-acef-81a61e4701a1"} 
-{:block/created-at 1700747759142
+{:block/created-at 1700748243709
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -456,17 +456,17 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 161]
+:size [400 185]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
 :id "fe2f2210-8a07-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [1128 200]
+:point [1120 160]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700747742901}}
-:block/updated-at 1700747759142})
+:nonce 1700747742922}}
+:block/updated-at 1700748243709})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -480,7 +480,7 @@
 :assets []
 :shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700747760517
+:block/updated-at 1700748243709
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
