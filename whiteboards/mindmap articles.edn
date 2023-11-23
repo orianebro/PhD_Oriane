@@ -260,7 +260,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f4a60-8331-4a9b-8c4c-bf2acaa402fe"} 
-{:block/created-at 1700745330090
+{:block/created-at 1700747514623
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -282,11 +282,11 @@
 :opacity 1
 :id "b031db60-89fe-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [680 352]
+:point [648 616]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700743747032}}
-:block/updated-at 1700745330090} 
+:nonce 1700743747172}}
+:block/updated-at 1700747514623} 
 {:block/content "[[@Adaptation of the STICS intercrop model to simulate crop growth and N accumulation in pea–barley intercrops]]\nlink crop growth and N2 fixation and N accum\nsimulations using STICS\ncalibration for pea/barley\n2009"
 :block/format :markdown
 :block/left 
@@ -296,7 +296,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f5037-1931-4603-8808-b1f60b1ac8a8"} 
-{:block/created-at 1700745313105
+{:block/created-at 1700747512005
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -318,11 +318,11 @@
 :opacity 1
 :id "3957ff20-8a02-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [680 616]
+:point [656 416]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700745265176}}
-:block/updated-at 1700745313105} 
+:nonce 1700745265264}}
+:block/updated-at 1700747512005} 
 {:block/content "[[@Recent advances in intercropping modelling: the new version of the STICS soil-crop model simulates consistently a wide range of bi-specific annual intercrops.]]\nhistory of STICS-Intercrop\nabstract\n2021"
 :block/format :markdown
 :block/left 
@@ -359,7 +359,7 @@
 :collapsedHeight 0
 :nonce 1700746960882}}
 :block/updated-at 1700747119635} 
-{:block/content "[[@The first calibration and evaluation of the STICS soil-crop model on chickpea-based intercropping system under Mediterranean conditions]]\nsimulations"
+{:block/content "[[@The first calibration and evaluation of the STICS soil-crop model on chickpea-based intercropping system under Mediterranean conditions]]\nsimulations using STICS\ncalibration for chickpea/durum wheat\nmanagement optimization\n2022"
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f56db-01c5-4b2e-9ae0-cf6633993b6d"}
@@ -368,7 +368,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f57ca-fb84-4089-90c6-1f20dbb422ff"} 
-{:block/created-at 1700747216285
+{:block/created-at 1700747387816
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -384,7 +384,7 @@
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 137]
+:size [400 209]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
@@ -393,8 +393,80 @@
 :point [1144 656]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700747205218}}
-:block/updated-at 1700747216285})
+:nonce 1700747205223}}
+:block/updated-at 1700747387816} 
+{:block/content "[[@Exploring options for managing strategies for pea–barley intercropping using a modeling approach]]\nsimulations using STICS\nevaluate overyield pea/barley\nmanagement optimization\n2009"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f57ca-fb84-4089-90c6-1f20dbb422ff"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f58a2-7399-4785-862e-8b597f45ed7c"} 
+{:block/created-at 1700747615357
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 10
+:scale [1 1]
+:pageId "655f58a2-7399-4785-862e-8b597f45ed7c"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 185]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "3844a110-8a07-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [672 208]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700747410889}}
+:block/updated-at 1700747615357} 
+{:block/content "[[@A modelling chain combining soft and hard models to assess a bundle of ecosystem services provided by a diversity of cereal-legume intercrops]]\n\n2022"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f58a2-7399-4785-862e-8b597f45ed7c"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f59e5-49b2-47c2-acef-81a61e4701a1"} 
+{:block/created-at 1700747759142
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 11
+:scale [1 1]
+:pageId "655f59e5-49b2-47c2-acef-81a61e4701a1"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 161]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "fe2f2210-8a07-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [1128 200]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700747742901}}
+:block/updated-at 1700747759142})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -406,9 +478,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700747223522
+:block/updated-at 1700747760517
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
