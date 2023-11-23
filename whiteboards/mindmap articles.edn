@@ -959,7 +959,144 @@
 :nonce 1700765117263
 :italic false
 :text "NOT SPECIFIC TO IC"}}
-:block/updated-at 1700765125517})
+:block/updated-at 1700765125517} 
+{:block/content "[[@Assessing key traits to promote overyielding in mixtures of legumes and non-legumes: A case study using the Virtual Grassland model]]\nideotyping\nlight, C, N\n2018"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f9713-53cc-4d8a-9414-a02586da8265"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f9dff-f03a-4135-8de2-c3fbbad31659"} 
+{:block/created-at 1700765745149
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 27
+:scale [1 1]
+:pageId "655f9dff-f03a-4135-8de2-c3fbbad31659"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 160.79998388270437]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "94fa9ee0-8a30-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [3640 608]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700765175911}}
+:block/updated-at 1700765745149} 
+{:block/created-at 1700765373834
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke ""
+:borderRadius 0
+:index 28
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "text"
+:size [50 34]
+:fontFamily "var(--ls-font-family)"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "06d7ca60-8a31-11ee-872b-d9a3e7460fd3"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [3808 352]
+:lineHeight 1.2
+:fontSize 20
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:nonce 1700765366864
+:italic false
+:text "VGL"}}
+:block/updated-at 1700765373834} 
+{:block/content "[[@Towards intercrop ideotypes: non-random trait assembly can promote overyielding and stability of species proportion in simulated legume-based mixtures]]\nideotyping\nlight, C, N\n2020"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f9dff-f03a-4135-8de2-c3fbbad31659"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f9ee5-4a2f-4189-85bb-e130e8291b6d"} 
+{:block/created-at 1700765742361
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 29
+:scale [1 1]
+:pageId "655f9ee5-4a2f-4189-85bb-e130e8291b6d"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 184.79997429251873]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "202d62e0-8a31-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [3640 408]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700765409351}}
+:block/updated-at 1700765742361} 
+{:block/content "[[@“Virtual grassland”: an OpenAlea package to deal with herbaceous plant architecture and grassland community dynamics]]\nabstract\nL-grass + L-egume\nMTG\nL-Py\navailable on OpenAlea\n2013"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f9ee5-4a2f-4189-85bb-e130e8291b6d"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f9f3f-a73a-499c-8902-7e90c4cc23e1"} 
+{:block/created-at 1700765739044
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 30
+:scale [1 1]
+:pageId "655f9f3f-a73a-499c-8902-7e90c4cc23e1"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 232.79997859358556]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "55ff0130-8a31-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [3648 1032]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700765499709}}
+:block/updated-at 1700765739044})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -971,9 +1108,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3" "21362be0-8a27-11ee-872b-d9a3e7460fd3" "1cc8f140-8a28-11ee-872b-d9a3e7460fd3" "812657d0-8a29-11ee-872b-d9a3e7460fd3" "c48ac680-8a2b-11ee-872b-d9a3e7460fd3" "760f1c80-8a2c-11ee-872b-d9a3e7460fd3" "b7a322e0-8a2c-11ee-872b-d9a3e7460fd3" "38e9da90-8a2f-11ee-872b-d9a3e7460fd3" "52a9ff40-8a30-11ee-872b-d9a3e7460fd3" "5dc726a0-8a30-11ee-872b-d9a3e7460fd3" "72192d60-8a30-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3" "21362be0-8a27-11ee-872b-d9a3e7460fd3" "1cc8f140-8a28-11ee-872b-d9a3e7460fd3" "812657d0-8a29-11ee-872b-d9a3e7460fd3" "c48ac680-8a2b-11ee-872b-d9a3e7460fd3" "760f1c80-8a2c-11ee-872b-d9a3e7460fd3" "b7a322e0-8a2c-11ee-872b-d9a3e7460fd3" "38e9da90-8a2f-11ee-872b-d9a3e7460fd3" "52a9ff40-8a30-11ee-872b-d9a3e7460fd3" "5dc726a0-8a30-11ee-872b-d9a3e7460fd3" "72192d60-8a30-11ee-872b-d9a3e7460fd3" "94fa9ee0-8a30-11ee-872b-d9a3e7460fd3" "06d7ca60-8a31-11ee-872b-d9a3e7460fd3" "202d62e0-8a31-11ee-872b-d9a3e7460fd3" "55ff0130-8a31-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700765125517
+:block/updated-at 1700765745149
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
