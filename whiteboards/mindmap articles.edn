@@ -250,7 +250,43 @@
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
 :nonce 1700742164744}}
-:block/updated-at 1700742276982})
+:block/updated-at 1700742276982} 
+{:block/content "[[@Effect of root depth penetration on soil nitrogen competitive interactions and dry matter production in pea–barley intercrops given different soil nitrogen supplies]]\ncompetition for N"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f443a-d4b4-41e5-9bfb-12acd38d3fce"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f4a60-8331-4a9b-8c4c-bf2acaa402fe"} 
+{:block/created-at 1700743829899
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 6
+:scale [1 1]
+:pageId "655f4a60-8331-4a9b-8c4c-bf2acaa402fe"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 161]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "b031db60-89fe-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [664 592]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700743746588}}
+:block/updated-at 1700743829899})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -262,9 +298,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700742289414
+:block/updated-at 1700743829899
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
