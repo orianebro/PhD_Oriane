@@ -71,7 +71,7 @@
 :block/parent 
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
 :block/uuid #uuid "655f22f9-1cb5-41dc-8759-ff36dd37bddd"} 
-{:block/content ".......................................................................  STICS _______________________________________________________________________"
+{:block/content "......................................................................... STICS ..................................................................................................................."
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "655f22f9-1cb5-41dc-8759-ff36dd37bddd"}
@@ -80,7 +80,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "655f2389-6b1c-4c05-b690-f0287e0eb7f0"} 
-{:block/created-at 1700757901129
+{:block/created-at 1700757970965
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -103,11 +103,11 @@
 :opacity 1
 :id "9a59a140-89e7-11ee-872b-d9a3e7460fd3"
 :noFill false
-:point [-352 112]
+:point [-352 104]
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
-:nonce 1700733831865}}
-:block/updated-at 1700757901129} 
+:nonce 1700733831941}}
+:block/updated-at 1700757970965} 
 {:block/content "Book of abstracts STICS\nmany use cases"
 :block/format :markdown
 :block/left 
@@ -600,7 +600,41 @@
 :nonce 1700757749924
 :italic false
 :text "SIMULATIONS WITH IDEOMIXES"}}
-:block/updated-at 1700757811377})
+:block/updated-at 1700757811377} 
+{:block/content "FSPM"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f7eb0-0d34-4d11-9726-4be4f495a493"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f8268-a6a0-48e6-a721-05ff120a29e4"} 
+{:block/created-at 1700758171916
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 16
+:scale [1 1]
+:pageId "655f8268-a6a0-48e6-a721-05ff120a29e4"
+:scaleLevel "xl"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [800 81.5999984741211]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "24360290-8a20-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [2712 104]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700758114868}}
+:block/updated-at 1700758171916})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -612,9 +646,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3" "f5ec8530-89f7-11ee-872b-d9a3e7460fd3" "9746e860-89fa-11ee-872b-d9a3e7460fd3" "01443d30-89fb-11ee-872b-d9a3e7460fd3" "b031db60-89fe-11ee-872b-d9a3e7460fd3" "3957ff20-8a02-11ee-872b-d9a3e7460fd3" "2c0fe4a0-8a06-11ee-872b-d9a3e7460fd3" "bdb35ef0-8a06-11ee-872b-d9a3e7460fd3" "3844a110-8a07-11ee-872b-d9a3e7460fd3" "fe2f2210-8a07-11ee-872b-d9a3e7460fd3" "9cec1380-8a09-11ee-872b-d9a3e7460fd3" "ec785da0-8a1d-11ee-872b-d9a3e7460fd3" "3b62bd10-8a1f-11ee-872b-d9a3e7460fd3" "4ac33370-8a1f-11ee-872b-d9a3e7460fd3" "24360290-8a20-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700757947181
+:block/updated-at 1700758171916
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
