@@ -1,0 +1,125 @@
+{:blocks (
+{:block/content "[[@Modeling soil-plant functioning of intercrops using comprehensive and generic formalisms implemented in the STICS model]]\nformalisms adapted to intercropping\ncrop model level\nequations available"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/properties 
+{}
+:block/uuid #uuid "655f21db-3173-41e4-b012-28ea51f5c7e1"} 
+{:block/created-at 1700733885296
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "655f21db-3173-41e4-b012-28ea51f5c7e1"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 161]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "96975e90-89e6-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [168 240]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700733395990}}
+:block/updated-at 1700733885296} 
+{:block/content "formalisms adapted to intercropping"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f2261-d37b-4599-bf43-969eff0c2eca"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f2260-38a8-48f5-a4cd-08b5726c1769"} 
+{:block/content "equations in supplementary materials"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f2260-38a8-48f5-a4cd-08b5726c1769"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f2260-f190-40c5-9f80-03c91593743e"} 
+{:block/content "formalisms adapted to intercropping"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f21db-3173-41e4-b012-28ea51f5c7e1"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f2261-0db7-4e77-99db-f44bc73b6412"} 
+{:block/content "equations in supplementary materials"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f2261-0db7-4e77-99db-f44bc73b6412"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f2261-d37b-4599-bf43-969eff0c2eca"} 
+{:block/content "STICS"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f2260-f190-40c5-9f80-03c91593743e"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f22f9-1cb5-41dc-8759-ff36dd37bddd"} 
+{:block/content "STICS"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f22f9-1cb5-41dc-8759-ff36dd37bddd"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f2389-6b1c-4c05-b690-f0287e0eb7f0"} 
+{:block/created-at 1700733863034
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 1
+:scale [1 1]
+:pageId "655f2389-6b1c-4c05-b690-f0287e0eb7f0"
+:scaleLevel "xl"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [144 82]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "9a59a140-89e7-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [296 112]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700733831673}}
+:block/updated-at 1700733863034})
+:pages (
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "655f20cc-3a7c-4adb-b279-adbda5819200"
+:name "mindmap articles"
+:bindings 
+{}
+:nonce 1
+:assets []
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3")}}
+:block/journal? false
+:block/updated-at 1700733895456
+:block/created-at 1700733132770
+:block/type "whiteboard"
+:block/name "mindmap articles"
+:block/original-name "mindmap articles"})}
