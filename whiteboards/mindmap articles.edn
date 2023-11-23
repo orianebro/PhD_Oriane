@@ -104,7 +104,41 @@
 :parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
 :collapsedHeight 0
 :nonce 1700733831673}}
-:block/updated-at 1700733863034})
+:block/updated-at 1700733863034} 
+{:block/content "Book of abstracts STICS"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "655f2389-6b1c-4c05-b690-f0287e0eb7f0"}
+:block/parent 
+{:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"}
+:block/uuid #uuid "655f3db4-3dd5-4a60-94f7-cdec9e10d016"} 
+{:block/created-at 1700740532771
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 2
+:scale [1 1]
+:pageId "655f3db4-3dd5-4a60-94f7-cdec9e10d016"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 65]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3"
+:noFill false
+:point [376 488]
+:parentId "655f20cc-3a7c-4adb-b279-adbda5819200"
+:collapsedHeight 0
+:nonce 1700740492687}}
+:block/updated-at 1700740532771})
 :pages (
 {:block/uuid #uuid "655f20cc-3a7c-4adb-b279-adbda5819200"
 :block/properties 
@@ -116,9 +150,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3")}}
+:shapes-index ("96975e90-89e6-11ee-872b-d9a3e7460fd3" "9a59a140-89e7-11ee-872b-d9a3e7460fd3" "1cb86cc0-89f7-11ee-872b-d9a3e7460fd3")}}
 :block/journal? false
-:block/updated-at 1700733895456
+:block/updated-at 1700740532771
 :block/created-at 1700733132770
 :block/type "whiteboard"
 :block/name "mindmap articles"
