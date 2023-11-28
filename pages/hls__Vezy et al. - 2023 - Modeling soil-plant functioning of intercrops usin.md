@@ -418,3 +418,28 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 9
   hl-color:: yellow
   id:: 6565f88e-ddb7-4f14-aa5e-e067f871157b
+- highlight the ability of the model to simulate facilitation for N between the two species
+  ls-type:: annotation
+  hl-page:: 10
+  hl-color:: yellow
+  id:: 6566124e-38d4-4938-9b5e-ce05b09b9fc6
+- Legume species typically exhibit lower competitiveness for soil mineral N uptake when compared to cereal crops
+  ls-type:: annotation
+  hl-page:: 10
+  hl-color:: green
+  id:: 6566125a-d974-42f7-8cd2-ef0ca8edc4ca
+- This characteristic enables cereal crops to achieve a superior N nutrition status per plant, initiating a positive feedback loop. As crop biomass increases, there is enhanced root exploration in the soil, resulting in greater N uptake (Bedoussac and Justes 2010).
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661275-84f0-48ab-9aa6-55eb190edd77
+- During their first development phases, legume crops may experience an increase in the number of nodules due to the soil nitrate concentration that drops off as a result of the greater competition for N uptake by the cereal crop, which also stimulates N2 fixation rate (Bedoussac and Justes2010).
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661355-b766-4872-b93e-168dfdc89a44
+- This niche complementarity for N sources between cereal and legume crops is an important property of this type of intercropping
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661456-88f2-43cb-9c4e-53b91666883b
