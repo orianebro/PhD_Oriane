@@ -334,3 +334,5 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 6
   hl-color:: yellow
   id:: 6565e716-167f-4c68-a2d6-787dfb6bdf00
+-
+- #### 2.4.2 Parameters calibrated for intercrops
