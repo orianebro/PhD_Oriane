@@ -151,6 +151,11 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  hl-page:: 4
 	  hl-color:: yellow
 	  id:: 655dd024-3b63-476d-b568-c3d791cd79e9
+- with the assumption that both crop canopies are homogeneous along the row, and that one of the two crops is dominant over the other in terms of height
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: yellow
+  id:: 6565ca66-043f-41ab-a34a-00039583cbd3
 -
 - #### 2.2.2 Beer‑Lambert law of light extinction
 - a simpler approach to account **for intercrops with well-mixed canopies** : the **Beer-Lambert law of light extinction** in plant canopies adapted for intercropping (Keating and Carberry 1993) by considering the leaf area index and extinction coefficients of both crops
@@ -275,7 +280,26 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   id:: 655e15ff-80a0-475c-89c7-ed6880ad0829
   hl-color:: yellow
 - a **resistive approach** already implemented, first presented in Brisson et al. (2004) and adapted from Shuttleworth and Wallace (1985).
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 655e1619-f7b6-4bab-bc96-72b50a306642
+  hl-color:: yellow
+-
+- ### 2.3 Spatial designs that theoretically define the validity domain of STICS
+-
+- STICS is conceptually able to simulate intercropping in **alternate rows** (each species in a different row, inter-row set to distance between rows of the same species) and **mixed within-row** (inter-row set to distance between each row).
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 6565c91c-de3c-438e-b14a-2c8ecdd240da
+  hl-color:: yellow
+- **root distribution** can be **assumed horizontally homogeneous**, or in other words, that the distribution of roots is uniform inside each horizontal soil layer of 1 cm
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 6565c97b-8e8a-412f-bb4b-a7dccf1007f3
+  hl-color:: yellow
+- STICS is also able to simulate **relay intercropping** in alternate rows—or with the second crop sown in the inter-row of the first crop— where the two species are not sown, neither harvested, at the same time
   ls-type:: annotation
   hl-page:: 5
   hl-color:: yellow
-  id:: 655e1619-f7b6-4bab-bc96-72b50a306642
+  id:: 6565cae1-ed2e-4fdc-b46c-78b10c676710
+-
