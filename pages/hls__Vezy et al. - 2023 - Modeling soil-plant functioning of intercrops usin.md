@@ -336,3 +336,20 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   id:: 6565e716-167f-4c68-a2d6-787dfb6bdf00
 -
 - #### 2.4.2 Parameters calibrated for intercrops
+- The formalisms implemented only need two parameters to be calibrated in the case of the radiative transfer option for the simulation of bi-specific intercrops:
+  ls-type:: annotation
+  hl-page:: 6
+  hl-color:: yellow
+  id:: 6565e9ca-f68b-4988-8e94-cb8b65810e0a
+- (i) a threshold for the difference in crop height defining a dominance effect from one crop over the other, i.e. the model falls back to the computation of Beer-Lambert below this value
+  ls-type:: annotation
+  hl-page:: 6
+  hl-color:: yellow
+  id:: 6565e9d2-35e4-4000-b131-3367cc3512c4
+- (ii) an elongation effect due to shading for the dominated crop (but no elongation due to shading for the intercrops tested)
+  hl-page:: 6
+  ls-type:: annotation
+  id:: 6565e9db-dec3-4134-9989-dfde596c220c
+  hl-color:: yellow
+-
+- #### 2.4.3 Combination of strategies to evaluate the new formalisms in STICS
