@@ -453,3 +453,13 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  hl-page:: 11
 	  hl-color:: yellow
 	  id:: 6566177a-beab-41bc-8c68-07a53d8fdd4f
+- Our simulation results reflect a particularly interesting emergent property of STICS that is able to simulate this niche complementarity for N without any explicit formalism sensu stricto, and with equations that require no recalibration or new specific implementation procedure.
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661da9-bf8c-426d-ada4-a83c28907773
+- This is precisely what we seek in soil-crop models, i.e. implementing simple and generic formalisms that once coupled make the model able to dynamically simulate the functioning of more complex systems thanks to emerging properties arising from the process’s interaction.
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: green
+  id:: 65661db7-8751-479d-84e7-c04d55bfad6c
