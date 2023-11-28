@@ -292,18 +292,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   ls-type:: annotation
   id:: 6565c91c-de3c-438e-b14a-2c8ecdd240da
   hl-color:: yellow
-- **root distribution** can be **assumed horizontally homogeneous**, or in other words, that the distribution of roots is uniform inside each horizontal soil layer of 1 cm
-  hl-page:: 5
-  ls-type:: annotation
-  id:: 6565c97b-8e8a-412f-bb4b-a7dccf1007f3
-  hl-color:: yellow
 - STICS is also able to simulate **relay intercropping** in alternate rows—or with the second crop sown in the inter-row of the first crop— where the two species are not sown, neither harvested, at the same time
   ls-type:: annotation
   hl-page:: 5
   hl-color:: yellow
   id:: 6565cae1-ed2e-4fdc-b46c-78b10c676710
-- root systems that are homogeneously distributed along the horizontal soil layers
-  ls-type:: annotation
+- **root systems** are assumed **homogeneously distributed along the horizontal soil layers** (i.e. the distribution of roots is uniform inside each horizontal soil layer of 1 cm)
   hl-page:: 5
-  hl-color:: yellow
+  ls-type:: annotation
   id:: 6565cb32-b993-4d35-aed6-bf86a0a7f085
+  hl-color:: yellow
+- shoots forming a **canopy** that is at least **homogeneously distributed in the row**
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 6565e431-5429-4ef7-8f58-d83a71d764d1
+  hl-color:: yellow
