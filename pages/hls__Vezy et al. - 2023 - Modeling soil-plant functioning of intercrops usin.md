@@ -302,4 +302,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 5
   hl-color:: yellow
   id:: 6565cae1-ed2e-4fdc-b46c-78b10c676710
--
+- root systems that are homogeneously distributed along the horizontal soil layers
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: yellow
+  id:: 6565cb32-b993-4d35-aed6-bf86a0a7f085
