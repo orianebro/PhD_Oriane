@@ -443,3 +443,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 11
   hl-color:: yellow
   id:: 65661456-88f2-43cb-9c4e-53b91666883b
+- an increase in N acquisition in wheat crops thanks to a higher competitiveness that forced the pea to increase its NDFA
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 6566151f-793c-42fa-8a23-a92e8ed375ee
