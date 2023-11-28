@@ -376,6 +376,11 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 -
 - ### 2.5 Dataset
 - #### 2.5.1 Sites and experiments
+	- Fig. 2
+	  ls-type:: annotation
+	  hl-page:: 8
+	  hl-color:: yellow
+	  id:: 6565f8b6-5679-4092-b758-25ba241b2022
 - #### 2.5.2 Measurements and calculations
 -
 - ## 3 Results and discussion
@@ -391,4 +396,25 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   id:: 6565f74f-b097-4c0a-b96a-b064dfa372a1
   hl-color:: yellow
 -
+- ### 3.2 Interspecific interactions
 -
+- **calibrate** the model on **solecrop** data only and let the model simulate the **intercrop** plant-plant interactions **without any re-calibration** of the parameters
+  hl-page:: 8
+  ls-type:: annotation
+  id:: 6565f7fe-ddd0-4748-be5e-07ead12d4f54
+  hl-color:: yellow
+	- to simulate interspecific interactions and possible plant plasticity resulting from calculations as an emerging property
+	  hl-page:: 9
+	  ls-type:: annotation
+	  id:: 6565f840-f589-4909-9ae3-9855553c26c5
+	  hl-color:: yellow
+- Sole-crop and intercrop simulation results were compared to observations for each individual species to investigate whether STICS simulates species behavior from sole crop to intercrop
+  ls-type:: annotation
+  hl-page:: 9
+  hl-color:: yellow
+  id:: 6565f881-7ce7-4792-af7e-804cc4cf158e
+- In sole crops, the simulations were close to the observations for all variables tested
+  ls-type:: annotation
+  hl-page:: 9
+  hl-color:: yellow
+  id:: 6565f88e-ddb7-4f14-aa5e-e067f871157b
