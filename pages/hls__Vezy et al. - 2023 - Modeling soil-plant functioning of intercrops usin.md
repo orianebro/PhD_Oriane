@@ -463,3 +463,33 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 11
   hl-color:: green
   id:: 65661db7-8751-479d-84e7-c04d55bfad6c
+- This approach has also proven useful in studies on nutrient stress (Bouain et al. 2019), periodic patterns in plant development (Mathieu et al. 2008; Vezy et al. 2020), environnemental impact on plant architecture(Eschenbach 2005), and even population and community dynamics predicted from individual-based algorithms (Hammond and Niklas 2009)
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661e1f-5123-4b2d-89b6-6ce24dfb1f50
+- Numerous studies have found that plant architecture is influenced by the type of species mixture (Liu et al. 2017). 
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661e32-06bb-45da-85c1-3f3c480bc399
+	- In STICS, we do not implement such behavior explicitly except for the shoot elongation, which was not found significant in the field observations of our data base
+	  ls-type:: annotation
+	  hl-page:: 11
+	  hl-color:: yellow
+	  id:: 65661e4c-935e-431a-9867-1df3b2c68d2d
+- Accordingly, simulations for durum wheat were consistent for situations where the crop was dominant (associated with pea) and dominated (associated with faba bean, see Fig. 5)
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661f78-a7f7-4c5c-aac1-1c2cf119a8cd
+- Such results may indicate another possible emergent property of STICS, showing that plant plasticity in the field may also act as a buffer to such behavioral changes when considering plants at the community scale instead of the plant scale.
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661f98-e98a-4b2f-9121-fa381e4de427
+- In other words, the heterogeneity in architectural traits of the dominant crop could help reduce the elongation effect of the dominated crop, and the intensity of the elongation effect of the dominated crop could also be uneven between individuals.
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 65661fd5-879f-4425-9523-a2fff3b2134a
