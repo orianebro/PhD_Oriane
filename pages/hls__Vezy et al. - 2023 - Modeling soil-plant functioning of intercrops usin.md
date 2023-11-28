@@ -286,7 +286,6 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-color:: yellow
 -
 - ### 2.3 Spatial designs that theoretically define the validity domain of STICS
--
 - STICS is conceptually able to simulate intercropping in **alternate rows** (each species in a different row, inter-row set to distance between rows of the same species) and **mixed within-row** (inter-row set to distance between each row).
   hl-page:: 5
   ls-type:: annotation
@@ -307,3 +306,31 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   ls-type:: annotation
   id:: 6565e431-5429-4ef7-8f58-d83a71d764d1
   hl-color:: yellow
+- **shoots interacting for light capture**, either mixed or with a significant or large dominance between the two species, the **dominance** may change over time.
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 6565e4f6-35bf-42cd-a79c-9211c8cf726f
+  hl-color:: yellow
+-
+- ### 2.4 Methodology for the calibration and evaluation of STICS
+- #### 2.4.1 Parameter calibration
+- an automatic calibration was performed based on the recommendations of Guillaume et al. (2011), Buis et al. (2011), and Ruget et al. (2002) on the most influential parameters following the same procedure consisting of 15 steps of calibration for 25 parameters optimized over 13 variables
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: yellow
+  id:: 6565e5fc-e896-48c2-b5af-5cd169375cae
+- The parameters were first optimized using the BeerLambert law of extinction for the light interception, and then using the radiative transfer option, because the latter can fall back to the Beer-Lambert law whenever the plant height of the two species are close, and by doing so, the light extinction parameter of the Beer-Lambert law is used.
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: yellow
+  id:: 6565e661-1bd9-4648-9559-4ae7ecff1b8d
+- The parameters were optimized using the standard workflow proposed by the “CroptimizeR” R package (Buis et al. 2023) with the Nelder–Mead simplex algorithm (Nelder and Mead 1965) and seven repetitions with different initial parameter values to better sample the range of values while reducing the risk of converging to a local minimum.
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 6565e6a9-1e98-4653-b01c-e6d589bf7411
+  hl-color:: yellow
+- Analyses of the estimated against initial values were performed to investigate whether the initial values had any impact on the optimized value.
+  ls-type:: annotation
+  hl-page:: 6
+  hl-color:: yellow
+  id:: 6565e716-167f-4c68-a2d6-787dfb6bdf00
