@@ -353,3 +353,27 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-color:: yellow
 -
 - #### 2.4.3 Combination of strategies to evaluate the new formalisms in STICS
+- First, the model formalisms were evaluated on sole crops, as “**self-intercrop**,” using the new version of STICS to compare with the same formalisms in both setups, including the corrections made in the code.
+  hl-page:: 6
+  ls-type:: annotation
+  id:: 6565ec30-e2f9-46b6-8712-8d673f23ebbb
+  hl-color:: yellow
+	- Another objective of this analysis was to investigate whether there is an **effect of the order** each plant is computed in the sequence
+	  ls-type:: annotation
+	  hl-page:: 6
+	  hl-color:: yellow
+	  id:: 6565ec87-d001-4e25-838b-3b4c9937428d
+- Second, we used data from two crops either grown as **sole crops or intercropped** and simulated both cases to evaluate the ability of STICS to reproduce the **interspecific interactions** as well as the **intraspecific interactions**.
+  hl-page:: 6
+  ls-type:: annotation
+  id:: 6565ed58-64d2-4150-96ad-1a5bfde4da14
+  hl-color:: yellow
+- Third, we evaluated the model using **experimental data of bispecific intercrops** with contrasting species mixtures and spatial heterogeneity, at contrasting sites, to investigate its **potential genericity** and the **domain of validity** of STICS for intercropping systems.
+  hl-page:: 6
+  ls-type:: annotation
+  id:: 6565ed92-7ea4-481a-9f6a-ac2185f2795f
+  hl-color:: yellow
+-
+- ### 2.5 Dataset
+- #### 2.5.1 Sites and experiments
+- #### 2.5.2 Measurements and calculations
