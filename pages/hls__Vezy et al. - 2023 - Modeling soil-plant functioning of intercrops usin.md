@@ -377,3 +377,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 - ### 2.5 Dataset
 - #### 2.5.1 Sites and experiments
 - #### 2.5.2 Measurements and calculations
+-
+- ## 3 Results and discussion
+- ### 3.1 Intraspecific interactions
+- The “self-intercrop” simulations were close to the regular sole-crop simulations for all variables and all crops
+  ls-type:: annotation
+  hl-page:: 8
+  hl-color:: yellow
+  id:: 6565f734-b2ae-4e78-9bef-73db0f716dda
+- STICS has a consistent behavior in the simulation of both sole crops simulated as usual and as “self-intercrops”
+  hl-page:: 8
+  ls-type:: annotation
+  id:: 6565f74f-b097-4c0a-b96a-b064dfa372a1
+  hl-color:: yellow
+-
+-
