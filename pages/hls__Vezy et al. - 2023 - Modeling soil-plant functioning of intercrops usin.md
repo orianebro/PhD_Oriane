@@ -448,3 +448,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 11
   hl-color:: yellow
   id:: 6566151f-793c-42fa-8a23-a92e8ed375ee
+	- This effect comes from a higher competition from the wheat to soil mineral-N, but is described as a facilitation process for the intercrop because it leads to a higher overall N content in the intercrop canopy compared to the cereal sole crop, and to an over-yielding illustrated by an LER significantly above one (Justes et al. 2021).
+	  ls-type:: annotation
+	  hl-page:: 11
+	  hl-color:: yellow
+	  id:: 6566177a-beab-41bc-8c68-07a53d8fdd4f
