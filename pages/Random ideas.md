@@ -1,0 +1,1 @@
+- define different types of area in the intercrop :
