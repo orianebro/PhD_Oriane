@@ -626,3 +626,23 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 15
   hl-color:: yellow
   id:: 656744bc-781c-4e2d-80aa-611f853309dd
+- While the evaluation of the model based on a limited number of data points in this study may raise concerns (5 to 83 observations depending on the variable), it is crucial to consider that the model in question is a process-based model, rather than a statistical model.
+  ls-type:: annotation
+  hl-page:: 15
+  hl-color:: yellow
+  id:: 656747a6-1f75-4bbf-b1fa-2ef1d3f4d41e
+	- Notably, the model was not specifically calibrated (or trained) to simulate intercrop systems but instead calibrated on the sole crop system.
+	  ls-type:: annotation
+	  hl-page:: 15
+	  hl-color:: yellow
+	  id:: 656747b0-6281-4db6-821e-eb5f98e2cd98
+	- Consequently, the accuracy of the model when applied to intercrops demonstrates its ability to replicate such systems successfully **without prior knowledge of species interactions**.
+	  ls-type:: annotation
+	  hl-page:: 15
+	  hl-color:: yellow
+	  id:: 6567481e-59cb-4010-8da7-3e899e1e0b28
+- However, it is worth noting that further investigation is necessary to comprehensively assess the new formalisms across a wider range of conditions, including climates, soils, species, and associations. 
+  ls-type:: annotation
+  hl-page:: 15
+  hl-color:: yellow
+  id:: 6567483e-2bcd-40e2-b39b-a692878e2176
