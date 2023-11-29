@@ -493,3 +493,10 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 11
   hl-color:: yellow
   id:: 65661fd5-879f-4425-9523-a2fff3b2134a
+- These plasticity effects of both crops could then reduce the overall effect of plant elongation at the intercrop scale, which could be the reason why no significant effect was measured at this scale in our database, and in the end alleviate the need for changes in parameter values in the model (Louarn et al. 2020).
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 6566f756-974c-4050-8b4c-9429d1b01663
+-
+- ### 3.3 Genericity of the formalisms: simulation of contrasted intercrops
