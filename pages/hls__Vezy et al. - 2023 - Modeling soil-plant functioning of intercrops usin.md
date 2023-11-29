@@ -621,3 +621,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 15
   hl-color:: yellow
   id:: 65674389-3c88-4624-b44b-99cb2ecf2584
+- These formalisms are simple enough to parameterize and fast to compute, which is required for long-term simulations and mathematical optimization of parameters that need repeated execution of the model until convergence of the statistical criteria.
+  ls-type:: annotation
+  hl-page:: 15
+  hl-color:: yellow
+  id:: 656744bc-781c-4e2d-80aa-611f853309dd
