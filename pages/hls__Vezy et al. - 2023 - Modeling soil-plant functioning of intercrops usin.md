@@ -599,3 +599,25 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  hl-page:: 15
 	  hl-color:: green
 	  id:: 65673e4f-881c-42ed-acab-7fb10935c78c
+-
+- ### 3.4 Model limitations and improvements
+- The type of spatial design to avoid using the proposed formalisms is a horizontally heterogeneous canopy with no strong dominance between species, e.g. crops grown further apart with the same height, or crops grown in wide strips with interaction only at the interface of both crops.
+  ls-type:: annotation
+  hl-page:: 15
+  hl-color:: yellow
+  id:: 65674286-b3bc-48f9-9c69-f6f5c0c01814
+- Although the threshold value for the acceptable width of the strip has not yet been determined, we recommend not simulating large strip intercrops with a strip width superior to the plant height or to the horizontal root distribution
+  ls-type:: annotation
+  hl-page:: 15
+  hl-color:: yellow
+  id:: 656742b2-0617-4412-bcce-a7d2df3142ef
+- Our results showed that STICS can simulate strip intercrops with narrow width and few rows (i.e. 2 to3 close rows per strip), which were found to exhibit the most benefits from intercropping (van Oort et al. 2020).
+  ls-type:: annotation
+  hl-page:: 15
+  hl-color:: yellow
+  id:: 656742cd-8692-4653-9042-097438c93c23
+- we show for the first time an implementation of a complete set of formalisms that are generic enough to simulate properly different types of interspecific plant-plant interactions regardless of the two species intercropped.
+  ls-type:: annotation
+  hl-page:: 15
+  hl-color:: yellow
+  id:: 65674389-3c88-4624-b44b-99cb2ecf2584
