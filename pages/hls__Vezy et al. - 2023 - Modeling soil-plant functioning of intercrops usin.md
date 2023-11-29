@@ -514,13 +514,28 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
 	  ls-type:: annotation
 	  id:: 6566f9dd-f3f2-4b63-98e1-ffedebd67e95
 	  hl-color:: yellow
-- the evaluation indicated a modeling efficiency (EF) equal to or higher than 0.71 for all variables considered dynamically throughout the growing season; this indicates correct performances per se and also in comparison to what is widely published for crop models for classical sole crops.
+- the evaluation indicated a **modeling efficiency (EF)** equal to or higher than 0.71 for all variables considered dynamically throughout the growing season; this indicates correct performances per se and also in comparison to what is widely published for crop models for classical sole crops.
   ls-type:: annotation
   hl-page:: 12
   hl-color:: yellow
   id:: 65671231-be8f-417e-8302-bf715aa3e5d0
-- The simulated variables were all assessed as “very good” using the method of Coucheney et al. (2015), except for NDFA and N acquired that were classified as “good”
+- The simulated variables were all assessed as “very good” **using the method of Coucheney et al.** (2015), except for NDFA and N acquired that were classified as “good”
   ls-type:: annotation
   hl-page:: 12
   hl-color:: yellow
   id:: 65671244-8f1e-47e2-8c77-23c47f5e8c6a
+- STICS was also evaluated at critical crop growth stages, which produces a better evaluation of its capability to reproduce the system behavior and dynamic processes at crucial stages and over time.
+  ls-type:: annotation
+  hl-page:: 12
+  hl-color:: yellow
+  id:: 656714fa-634f-41a5-93df-a8a1f3bf6f61
+- STICS could also satisfactorily reproduce crop functioning for all variables, with an EF above 0.5, except for the N content in the grains at harvest that showed lower efficiency
+  ls-type:: annotation
+  hl-page:: 12
+  hl-color:: yellow
+  id:: 65671503-bcd8-4b43-947b-b84bacaf2292
+- The N acquisition is the variable that usually presents the highest modeling error for soil-crop models, a behavior that was recognized in previous versions of the model (Coucheney et al. 2015).
+  ls-type:: annotation
+  hl-page:: 12
+  hl-color:: green
+  id:: 65671529-5c60-4422-889d-a982c1d1f52e
