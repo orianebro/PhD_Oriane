@@ -569,3 +569,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 14
   hl-color:: yellow
   id:: 6567349c-6e75-4d41-880a-8a35fbc3e8a9
+- STICS was able to reproduce with high accuracy the grain yield and the partial LER and total LER, which were calculated using simulated variables. This accuracy is crucial when employing the model as a tool to study new systems computationally, such as intercropping systems versus traditional sole crops.
+  ls-type:: annotation
+  hl-page:: 14
+  hl-color:: yellow
+  id:: 65673a8f-345c-4f64-aff2-3d8fc014c5ad
+- Additionally, the model proves valuable in estimating output variables that are not directly measured in field experiments, particularly environmental outputs like drainage (Tournebize et al. 2004), NO3 leaching (Schnebelen et al. 2004; Constantin et al. 2012; Jégo et al. 2012), emissions of CO 2 (Wattenbach et al. 2010) and N 2 O (Plaza-Bonilla et al. 2018), and organic C content in the soil (Justes et al. 2009; Levavasseur et al. 2021).
+  ls-type:: annotation
+  hl-page:: 14
+  hl-color:: yellow
+  id:: 65673a98-8b0c-48e3-be01-9dd4c35049be
+- It should be noted that the formalisms proposed and implemented in this study, and more generally STICS, were only calibrated on sole crops and applied with sole crop parameter values on intercrop simulations, the hypothesis being that STICS should simulate all interactions directly rather than adding or tuning parameters.
+  hl-page:: 14
+  ls-type:: annotation
+  id:: 65673aba-1744-45b8-b56a-27937f46f9be
+  hl-color:: yellow
