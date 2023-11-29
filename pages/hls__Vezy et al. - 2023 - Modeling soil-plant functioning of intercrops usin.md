@@ -539,3 +539,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 12
   hl-color:: green
   id:: 65671529-5c60-4422-889d-a982c1d1f52e
+	- This variable is one of the most complex to simulate because it depends on many processes that interact throughout the crop development cycle in intercrop systems (Bedoussac and Justes 2010).
+	  ls-type:: annotation
+	  hl-page:: 12
+	  hl-color:: green
+	  id:: 6567158b-5ed6-473f-aca9-6988c0e93d42
+- It is also worth noting that it presented a low bias of 0.13%, which is still encouraging.
+  ls-type:: annotation
+  hl-page:: 12
+  hl-color:: yellow
+  id:: 6567159d-fefc-473b-8e2d-793dcdd26820
+- sunflower biomass was overestimated
+  ls-type:: annotation
+  hl-page:: 12
+  hl-color:: yellow
+  id:: 656715c2-08de-40ff-ad12-5bbbbcf311c8
