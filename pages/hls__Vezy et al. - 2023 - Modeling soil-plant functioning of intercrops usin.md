@@ -554,3 +554,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 12
   hl-color:: yellow
   id:: 656715c2-08de-40ff-ad12-5bbbbcf311c8
+- A good surprise was that STICS was able to correctly simulate the performance of intercrop in terms of the partial LER calculated from the output variables simulated, with an EF of 0.78, an nRMSE of21%, and a bias close to zero.
+  ls-type:: annotation
+  hl-page:: 13
+  hl-color:: yellow
+  id:: 656717a2-0c1a-4ddf-a1df-f6c3701f6050
