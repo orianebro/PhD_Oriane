@@ -564,3 +564,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 14
   hl-color:: yellow
   id:: 65672ced-3f09-4e84-9629-dbad4e014c1c
+- These findings suggest that our current formalism for simulating N concentration in grain needs to be improved for simulating the process of N assimilates transfer to grains in intercropping.
+  ls-type:: annotation
+  hl-page:: 14
+  hl-color:: yellow
+  id:: 6567349c-6e75-4d41-880a-8a35fbc3e8a9
