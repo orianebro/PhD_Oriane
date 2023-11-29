@@ -559,3 +559,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 13
   hl-color:: yellow
   id:: 656717a2-0c1a-4ddf-a1df-f6c3701f6050
+- the model’s ability to effectively simulate the trends between various species associations and spatial designs of intercropping systems, coupled with its low bias when compared to observations, indicates that it is already suitable for conducting reliable intercomparisons of different agricultural systems and scenario analyses
+  ls-type:: annotation
+  hl-page:: 14
+  hl-color:: yellow
+  id:: 65672ced-3f09-4e84-9629-dbad4e014c1c
