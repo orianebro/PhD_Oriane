@@ -397,7 +397,6 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-color:: yellow
 -
 - ### 3.2 Interspecific interactions
--
 - **calibrate** the model on **solecrop** data only and let the model simulate the **intercrop** plant-plant interactions **without any re-calibration** of the parameters
   hl-page:: 8
   ls-type:: annotation
@@ -488,11 +487,11 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   hl-page:: 11
   hl-color:: yellow
   id:: 65661f98-e98a-4b2f-9121-fa381e4de427
-- In other words, the heterogeneity in architectural traits of the dominant crop could help reduce the elongation effect of the dominated crop, and the intensity of the elongation effect of the dominated crop could also be uneven between individuals.
-  ls-type:: annotation
-  hl-page:: 11
-  hl-color:: yellow
-  id:: 65661fd5-879f-4425-9523-a2fff3b2134a
+	- In other words, the heterogeneity in architectural traits of the dominant crop could help reduce the elongation effect of the dominated crop, and the intensity of the elongation effect of the dominated crop could also be uneven between individuals.
+	  ls-type:: annotation
+	  hl-page:: 11
+	  hl-color:: yellow
+	  id:: 65661fd5-879f-4425-9523-a2fff3b2134a
 - These plasticity effects of both crops could then reduce the overall effect of plant elongation at the intercrop scale, which could be the reason why no significant effect was measured at this scale in our database, and in the end alleviate the need for changes in parameter values in the model (Louarn et al. 2020).
   ls-type:: annotation
   hl-page:: 11
@@ -500,3 +499,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   id:: 6566f756-974c-4050-8b4c-9429d1b01663
 -
 - ### 3.3 Genericity of the formalisms: simulation of contrasted intercrops
+- The simulation results indicated that the model **failed to replicate the highest values for LAI, N acquired, and N fixation**.
+  ls-type:: annotation
+  hl-page:: 11
+  hl-color:: yellow
+  id:: 6566f9c0-7abc-4cc7-ada8-f5dd5e23ef35
+	- This discrepancy can be attributed to the **calibration** of the model using a **sole crop** dataset where **such values were not observed**
+	  hl-page:: 11
+	  ls-type:: annotation
+	  id:: 6566f9d1-b3a9-4ccf-94a8-253fc02bc6b2
+	  hl-color:: yellow
+	- This issue could be rectified in future studies by using a **larger training dataset** encompassing a wider range of observed values.
+	  hl-page:: 11
+	  ls-type:: annotation
+	  id:: 6566f9dd-f3f2-4b63-98e1-ffedebd67e95
+	  hl-color:: yellow
