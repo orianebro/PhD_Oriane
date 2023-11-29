@@ -584,3 +584,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/STSXN6K5/Vezy et al. - 2023 
   ls-type:: annotation
   id:: 65673aba-1744-45b8-b56a-27937f46f9be
   hl-color:: yellow
+- Of all the new formalisms implemented in STICS, one stands out particularly for its relevance and accuracy, yet of a relative simplicity: the computation of plant height using the phasic development of the crop based on the thermal time corrected by (i) vernalization and photoperiodic effects,(ii) abiotic stresses on stem elongation rate, and (iii) shading on etiolation of plants in intercropping.
+  ls-type:: annotation
+  hl-page:: 15
+  hl-color:: yellow
+  id:: 65673e1b-2a30-48c5-ab39-a0d1b6d0a752
+	- generic enough to provide accurate simulations for both sole crops and intercrops using the parameter values optimized on sole crops
+	  ls-type:: annotation
+	  hl-page:: 15
+	  hl-color:: yellow
+	  id:: 65673e39-8943-4507-bf6d-9a84d83a1695
+	- plant height was repeatedly identified as one of the most important factors for intercrop simulation because of its role in determining competition for light (Corre-Hellou et al. 2009; Launay et al. 2009; Berghuijs et al. 2021)
+	  ls-type:: annotation
+	  hl-page:: 15
+	  hl-color:: green
+	  id:: 65673e4f-881c-42ed-acab-7fb10935c78c
