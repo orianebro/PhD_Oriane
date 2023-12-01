@@ -1,5 +1,11 @@
-- What is the goal of the European project IntercropValuES ?
-	- What is intercropping ?
-	- What are the benefits of intercropping ?
-	- What are the limits of intercropping today ?
-		- To what extent can modelisation be helpful to address these issues ?
+- *What is the goal of the European project IntercropValuES ?*
+	- *What is intercropping ? How is it done ?*
+	- *What are the benefits of intercropping ?*
+	- *What are the limits of intercropping today ?*
+		- *To what extent can modelisation be helpful to address these issues ?*
+			- *Why modeling intercropping ?*
+			- *How is it currently modelized ?* process-based crop models (STICS, APSIM, etc), FSPMs, IBMs
+				- *What are the strengths and weaknesses of each modelisation approach ? What are their complementarities ?*
+					- *Which plant processes are the least well modelized ?* N, etc
+					-
+						-
