@@ -1,0 +1,5 @@
+- What is the goal of the European project IntercropValuES ?
+	- What is intercropping ?
+	- What are the benefits of intercropping ?
+	- What are the limits of intercropping today ?
+		- To what extent can modelisation be helpful to address these issues ?
