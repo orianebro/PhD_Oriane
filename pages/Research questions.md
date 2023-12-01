@@ -13,8 +13,9 @@
 						- ***Where should complexity be necessary, and where should we better make it simple ?***
 						- ***Which hypotheses should we retain ?***
 							- ***Which formalisms (at any scale) fit these hypotheses ?***
-						- ***Which processes would require to consider plant architecture for optimal modeling ?***
+						- ***Which processes would require to consider plant (and/or root) architecture for optimal modeling ?***
 						- ***Should we upscale some processes occurring at smaller scales in order to gain in efficiency ? How ?***
+						- emergent properties (plasticity, etc)
 -
 -
 - ideotyping, GxGxExM
