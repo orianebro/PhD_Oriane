@@ -7,7 +7,7 @@
 			- ***Why modeling intercropping ?***
 			- ***How is it currently modeled ?*** process-based crop models (STICS, APSIM, etc), FSPMs, IBMs
 				- ***What are the strengths and weaknesses of each modelisation approach ?***
-					- ***Which plant processes are the least well modeled at bigger scale (i.e. in crop models) according to literature ?*** N, etc
+					- ***Which plant processes are the least well modeled at bigger scale (i.e. in crop models) according to literature ?*** N, etc [[hls__Vezy et al. - 2023 - Modeling soil-plant functioning of intercrops usin]]
 					- ***Do the strengths of some models respond to weaknesses of others ? What are their similarities, differences and complementarities ?*** [[@Exploring complementarities between modelling approaches that enable upscaling from plant community functioning to ecosystem services as a way to support agroecological transition]] [[@Coupling Process-Based Models and Plant Architectural Models: A Key Issue for Simulating Crop Production]]
 					- ***What new approaches could be implemented to make modeling of intercrops both precise and efficient ?*** inverse modeling (calibrate one model with the outputs of another one at smaller scale), hybrid modeling ("import new simulation capacities from another model and/or database" Gaudio et al. 2022), metamodeling
 						- ***Where should complexity be necessary, and where should we better make it simple ?***
