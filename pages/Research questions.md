@@ -13,13 +13,13 @@
 						- [[@Exploring complementarities between modelling approaches that enable upscaling from plant community functioning to ecosystem services as a way to support agroecological transition]]
 						- [[@Coupling Process-Based Models and Plant Architectural Models: A Key Issue for Simulating Crop Production]]
 						-
-					- ***What new approaches could be implemented to make modeling of intercrops both precise and efficient ?*** inverse modeling (calibrate one model with the outputs of another one at smaller scale), hybrid modeling ("import new simulation capacities from another model and/or database" Gaudio et al. 2022), metamodeling
-						- ***Where should complexity be necessary, and where should we better make it simple ?***
-						- ***Which hypotheses should we retain ?***
-							- ***Which formalisms (at any scale) fit these hypotheses ?***
-						- ***Which processes would require to consider plant (and/or root) architecture for optimal modeling ?***
-						- ***Should we upscale some processes occurring at smaller scales in order to gain in efficiency ? How ?***
-						- emergent properties (plasticity, etc)
+			- ***What new approaches could be implemented to make modeling of intercrops both precise and efficient ?*** inverse modeling (calibrate one model with the outputs of another one at smaller scale), hybrid modeling ("import new simulation capacities from another model and/or database" Gaudio et al. 2022), metamodeling
+				- ***Where should complexity be necessary, and where should we better make it simple ?***
+				- ***Which hypotheses should we retain ?***
+					- ***Which formalisms (at any scale) fit these hypotheses ?***
+				- ***Which processes would require to consider plant (and/or root) architecture for optimal modeling ?***
+				- ***Should we upscale some processes occurring at smaller scales in order to gain in efficiency ? How ?***
+				- emergent properties (plasticity, etc)
 -
 -
 - ideotyping, GxGxExM
