@@ -1,3 +1,3 @@
 - From outputs from crop models,
 - fix 1 plant feature (ex: leaf length = f(plant height), giving LAI as integral +/- ?)
--
+- then simulate
