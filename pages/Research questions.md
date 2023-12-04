@@ -18,9 +18,10 @@
 				- ***Which hypotheses should we retain ?***
 					- ***Which formalisms (at any scale) fit these hypotheses ?***
 				- ***How to take heterogeneity into account while modeling intercrops ?***
+				- ***How important is spatialization while modeling intercrops ?***
 				- ***Which processes would require to consider plant (and/or root) architecture for optimal modeling ?***
 				- ***Should we upscale some processes occurring at smaller scales in order to gain in efficiency ? How ?***
-				- Should emergent properties like plasticity of intercrops
+				- ***Should emergent properties, like plasticity, of intercrops be explicitly implemented in models ?***
 -
 -
 - ideotyping, GxGxExM
