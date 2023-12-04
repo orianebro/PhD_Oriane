@@ -5,7 +5,7 @@
 	- *What are the limits of intercropping today ?*
 		- ***To what extent can modelisation be helpful to address these issues ?***
 			- ***Why modeling intercropping ?***
-			- ***How is it currently modeled ?*** process-based crop models (STICS, APSIM, etc), FSPMs, IBMs
+			- ***How is it currently modeled ?*** process-based crop models (STICS, APSIM, etc), FSPMs (see shoot and root), IBMs (FlorSys, etc)
 				- ***What are the strengths and weaknesses of each modelisation approach ?***
 					- ***Which plant processes are the least well modeled at bigger scale (i.e. in crop models) according to literature ?*** N, etc [[hls__Vezy et al. - 2023 - Modeling soil-plant functioning of intercrops usin]]
 					- ***Do the strengths of some models respond to weaknesses of others ? What are their similarities, differences and complementarities ?***
