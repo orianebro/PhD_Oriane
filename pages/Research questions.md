@@ -17,9 +17,10 @@
 				- ***Where should complexity be necessary, and where should we better make it simple ?***
 				- ***Which hypotheses should we retain ?***
 					- ***Which formalisms (at any scale) fit these hypotheses ?***
+				- ***How to take heterogeneity into account while modeling intercrops ?***
 				- ***Which processes would require to consider plant (and/or root) architecture for optimal modeling ?***
 				- ***Should we upscale some processes occurring at smaller scales in order to gain in efficiency ? How ?***
-				- emergent properties (plasticity, etc)
+				- Should emergent properties like plasticity of intercrops
 -
 -
 - ideotyping, GxGxExM
