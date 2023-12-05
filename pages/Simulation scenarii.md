@@ -2,7 +2,7 @@
 -
 - With a FSPM, simulate a given plant
 - fixing 1 plant feature with outputs from crop model
-	- *ex: leaf length = f(plant height), giving LAI as integral +/- (?)*
+	- *ex: repartition of leaf length on plant : leaf length = f(plant height), giving LAI as integral +/- (?)*
 - then varying other parameters
 	- *ex: azimuth, folding angle, SLA, etc*
 - and see how plant process involved evolves
