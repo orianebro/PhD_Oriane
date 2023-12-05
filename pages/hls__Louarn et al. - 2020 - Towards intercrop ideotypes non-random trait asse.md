@@ -11,15 +11,10 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-page:: 2
   hl-color:: blue
   id:: 656f01a4-7783-4989-bee5-777f4babea38
-- L-system formalism
-  ls-type:: annotation
+- L-system formalism coupled within VGL to two environmental models dealing with radiation transfer and light interception above ground and soil water and mineral N balances below ground
   hl-page:: 2
-  hl-color:: blue
+  ls-type:: annotation
   id:: 656f01aa-5189-48cf-bc00-0407f6efe393
-- coupled within VGL to two environmental models dealing with radiation transfer and light interception above ground and soil water and mineral N balances below ground
-  hl-page:: 2
-  ls-type:: annotation
-  id:: 656f01b3-6e58-48cd-be6e-6c04d96d6be2
   hl-color:: blue
 - daily time step
   ls-type:: annotation
@@ -31,8 +26,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 656f1d64-ceea-4a16-85f6-4216debd31a4
   hl-color:: blue
-- Biomass allocation between shoots and roots is assumed to follow an **allometric** relationship in the absence of trophic limitations.
-  ls-type:: annotation
+- **Biomass allocation** between shoots and roots is assumed to follow an **allometric** relationship in the **absence of trophic limitations**.
   hl-page:: 2
-  hl-color:: blue
+  ls-type:: annotation
   id:: 656f1db0-ea2d-45f8-a0ba-8019e3fc66a5
+  hl-color:: blue
