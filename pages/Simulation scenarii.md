@@ -11,4 +11,4 @@
 - validate or not STICS formalisms' hypotheses
 -
 - #### STICS hypotheses
--
+- [[@Adaptation of the crop model STICS to intercropping. Theoretical basis and parameterisation]]
