@@ -1,12 +1,12 @@
 ### Proof by the absurd of hypotheses in STICS
 -
-- With a FSPM, simulate a given plant
+- With a FSPM (VGL ?), simulate a given plant or intercrop
 - fixing 1 plant feature with outputs from crop model
 	- *ex: repartition of leaf length on plant : leaf length = f(plant height), giving LAI as integral +/- (?)*
 - then varying other parameters
 	- *ex: azimuth, folding angle, density, sowing distance, etc*
 - and see how plant process involved evolves
-	- *ex: light interception*
+	- *ex: light interception, architectural plasticity, etc*
 - plot the results in a morphospace (?)
 - validate or not STICS hypotheses
 -
