@@ -8,7 +8,7 @@
 - and see how plant process involved evolves
 	- *ex: light interception, architectural plasticity, etc*
 - plot the results in a morphospace (?)
-- validate or not STICS hypotheses
+- validate or not STICS formalisms' hypotheses
 -
 - #### STICS hypotheses
 -
