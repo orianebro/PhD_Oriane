@@ -4,7 +4,11 @@
 - fixing 1 plant feature with outputs from crop model
 	- *ex: repartition of leaf length on plant : leaf length = f(plant height), giving LAI as integral +/- (?)*
 - then varying other parameters
-	- *ex: azimuth, folding angle, SLA, etc*
+	- *ex: azimuth, folding angle, density, sowing distance, etc*
 - and see how plant process involved evolves
 	- *ex: light interception*
-- by plotting the results in a morphospace (?)
+- plot the results in a morphospace (?)
+- validate or not STICS hypotheses
+-
+- #### STICS hypotheses
+-
