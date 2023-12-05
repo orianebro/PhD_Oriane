@@ -17,6 +17,7 @@
 				- ***Where should complexity be necessary, and where should we better make it simple ?***
 				- ***Which hypotheses should we retain ?***
 					- ***Which formalisms (at any scale) fit these hypotheses ?***
+					- ***What specific aspects of intercrops do we aim to capture with a new approach ?***
 				- ***How to take heterogeneity into account while modeling intercrops ?***
 				- ***How important is spatialization while modeling intercrops ?***
 				- ***Which processes would require to consider plant (and/or root) architecture for optimal modeling ?***
