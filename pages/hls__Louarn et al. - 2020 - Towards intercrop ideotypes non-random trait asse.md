@@ -26,3 +26,13 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-page:: 2
   hl-color:: blue
   id:: 656f01cc-3cdd-44a7-85ba-c59d6ab6bee0
+- Total plant **dry matter production** is determined from **light interception** by shoots using a **radiation use efficiency** approach, which in turn defines the **water and N required to sustain maximum plant growth**.
+  hl-page:: 2
+  ls-type:: annotation
+  id:: 656f1d64-ceea-4a16-85f6-4216debd31a4
+  hl-color:: blue
+- Biomass allocation between shoots and roots is assumed to follow an **allometric** relationship in the absence of trophic limitations.
+  ls-type:: annotation
+  hl-page:: 2
+  hl-color:: blue
+  id:: 656f1db0-ea2d-45f8-a0ba-8019e3fc66a5
