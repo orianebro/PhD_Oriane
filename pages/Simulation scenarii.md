@@ -5,7 +5,7 @@
 	- *ex: repartition of leaf length on plant : leaf length = f(plant height), giving LAI as integral +/- (?)*
 - then varying other parameters to get a set of architectures
 	- *ex: azimuth, folding angle, density, sowing distance, etc*
-- and see how plant process involved evolves, compare results for STICS and FSPM, for each generated morp
+- and see how plant process involved evolves, compare results for STICS and FSPM, for each generated morphotype
 	- *ex: light interception, architectural plasticity, etc*
 - plot the results in a morphospace (?)
 - validate or not STICS formalisms' hypotheses
