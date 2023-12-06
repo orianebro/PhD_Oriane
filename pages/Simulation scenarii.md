@@ -1,11 +1,11 @@
-### Proof by the absurd of hypotheses in STICS
+### Proof by the absurd of hypotheses in crop models (STICS)
 -
 - With a FSPM (VGL ?), simulate a given plant or intercrop
-- fixing 1 plant feature with outputs from crop model
+- fixing/constraining 1 plant feature with outputs from crop model
 	- *ex: repartition of leaf length on plant : leaf length = f(plant height), giving LAI as integral +/- (?)*
-- then varying other parameters
+- then varying other parameters to get a set of architectures
 	- *ex: azimuth, folding angle, density, sowing distance, etc*
-- and see how plant process involved evolves
+- and see how plant process involved evolves, compare results for STICS and FSPM, for each generated morp
 	- *ex: light interception, architectural plasticity, etc*
 - plot the results in a morphospace (?)
 - validate or not STICS formalisms' hypotheses
