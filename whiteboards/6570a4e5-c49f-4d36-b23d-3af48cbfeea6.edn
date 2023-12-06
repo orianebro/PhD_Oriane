@@ -1,0 +1,298 @@
+{:blocks (
+{:block/content "FSPM"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "6570a525-b007-4894-bb03-bb50e3b4c418"} 
+{:block/created-at 1701881294798
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "6570a525-b007-4894-bb03-bb50e3b4c418"
+:scaleLevel "xl"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [152 82]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "d99d0a30-9456-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [432 200]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701881123559}}
+:block/updated-at 1701881294798} 
+{:block/content "Development"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a525-b007-4894-bb03-bb50e3b4c418"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "6570a597-13d5-4799-b4f6-59e04bea8c46"} 
+{:block/created-at 1701881247348
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 1
+:scale [1 1]
+:pageId "6570a597-13d5-4799-b4f6-59e04bea8c46"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [144 41]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "1994ecc0-9457-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [264 320]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701881230789}}
+:block/updated-at 1701881247348} 
+{:block/content "Growth"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a597-13d5-4799-b4f6-59e04bea8c46"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "6570a5a8-c8b6-41c0-9898-fd152dbbc616"} 
+{:block/created-at 1701881261534
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 2
+:scale [1 1]
+:pageId "6570a5a8-c8b6-41c0-9898-fd152dbbc616"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [96 41]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "25d844a0-9457-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [456 320]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701881251387}}
+:block/updated-at 1701881261534} 
+{:block/content "Archi"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a5a8-c8b6-41c0-9898-fd152dbbc616"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "6570a5b9-b83a-4557-b565-1140213b4ea8"} 
+{:block/created-at 1701881281577
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 3
+:scale [1 1]
+:pageId "6570a5b9-b83a-4557-b565-1140213b4ea8"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [88 41]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2e8fddb0-9457-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [608 320]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701881265974}}
+:block/updated-at 1701881281577} 
+{:block/content "CROP MODEL"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a5b9-b83a-4557-b565-1140213b4ea8"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "6570a5dc-2792-455d-bce1-db8f82cc4717"} 
+{:block/created-at 1701881324840
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 4
+:scale [1 1]
+:pageId "6570a5dc-2792-455d-bce1-db8f82cc4717"
+:scaleLevel "xl"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [280 82]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "42f126b0-9457-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [936 208]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701881300157}}
+:block/updated-at 1701881324840} 
+{:block/content "Growth"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a5dc-2792-455d-bce1-db8f82cc4717"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "6570a5ff-5ea6-4195-9630-0c79b88bac1f"} 
+{:block/created-at 1701881352678
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 5
+:scale [1 1]
+:pageId "6570a5ff-5ea6-4195-9630-0c79b88bac1f"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [104 41]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "55f94850-9457-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [1024 320]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701881332164}}
+:block/updated-at 1701881352678} 
+{:block/content "Physiological knowledge"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a5ff-5ea6-4195-9630-0c79b88bac1f"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "6570a62f-a57c-4c3c-9066-89c8a6b89407"} 
+{:block/created-at 1701881395223
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 6
+:scale [1 1]
+:pageId "6570a62f-a57c-4c3c-9066-89c8a6b89407"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [232 41.000030517578125]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "6ffef6f0-9457-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [208 416]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701881375746}}
+:block/updated-at 1701881395223} 
+{:block/content "Empirical functions"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a62f-a57c-4c3c-9066-89c8a6b89407"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "6570a641-d09a-414e-8dc0-43139b9e4179"} 
+{:block/created-at 1701881417028
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 7
+:scale [1 1]
+:pageId "6570a641-d09a-414e-8dc0-43139b9e4179"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [192 41.000030517578125]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "8040f3b0-9457-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [1088 416]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701881403076}}
+:block/updated-at 1701881417028})
+:pages (
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:name "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:bindings 
+{}
+:nonce 1
+:assets []
+:shapes-index ("d99d0a30-9456-11ee-b65f-b7ff04400c0c" "1994ecc0-9457-11ee-b65f-b7ff04400c0c" "25d844a0-9457-11ee-b65f-b7ff04400c0c" "2e8fddb0-9457-11ee-b65f-b7ff04400c0c" "42f126b0-9457-11ee-b65f-b7ff04400c0c" "55f94850-9457-11ee-b65f-b7ff04400c0c" "6ffef6f0-9457-11ee-b65f-b7ff04400c0c" "8040f3b0-9457-11ee-b65f-b7ff04400c0c")}}
+:block/updated-at 1701881417028
+:block/created-at 1701881061974
+:block/type "whiteboard"
+:block/name "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:block/original-name "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"})}
