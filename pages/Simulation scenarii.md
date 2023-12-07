@@ -2,7 +2,7 @@
 -
 - With a FSPM (VGL ?), simulate a given plant or intercrop
 - fixing/constraining 1 plant feature with outputs from crop model
-	- *ex: LAI, integrable from repartition of leaf length on plant : leaf length = f(plant height)*
+	- *ex: LAI, integrable from : leaf length = f(plant height)*
 - then varying other parameters to get a set of architectures
 	- *ex: azimuth, folding angle, density, sowing distance, etc*
 - and see how plant process involved evolves, compare results for STICS and FSPM, for each generated morphotype
