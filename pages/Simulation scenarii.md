@@ -1,4 +1,6 @@
-### Proof by the absurd of hypotheses in crop models (STICS)
+## How robust are the current hypotheses of STICS intercrop ?
+-
+- ### Proof by the absurd of robustness hypotheses in crop models (STICS)
 -
 - With a FSPM (VGL ?), simulate a given plant or intercrop
 - fixing/constraining 1 plant feature with outputs from crop model
