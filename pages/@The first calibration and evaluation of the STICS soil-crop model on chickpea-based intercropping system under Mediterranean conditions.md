@@ -83,3 +83,24 @@ links:: [Local library](zotero://select/groups/5279196/items/WI3B986S), [Web lib
 - [[Attachments]]
 	- [ScienceDirect Snapshot](https://www.sciencedirect.com/science/article/pii/S1161030121002203?via%3Dihub) {{zotero-imported-file D27KDUZF, "S1161030121002203.html"}}
 	- [ScienceDirect Full Text PDF](https://www.sciencedirect.com/science/article/pii/S1161030121002203/pdfft?md5=1e3640716ea7585908bbbb6f845de94a&pid=1-s2.0-S1161030121002203-main.pdf&isDTMRedir=Y) {{zotero-imported-file W66GZAUN, "Kherif et al. - 2022 - The first calibration and evaluation of the STICS .pdf"}}
+- tags:: [[Chickpea]], [[Crop diversification]], [[Model efficiency]], [[N fertilization]], [[Optimization]], [[Temporal dynamic]]
+  date:: [[Feb 1st, 2022]]
+  issn:: 1161-0301
+  doi:: 10.1016/j.eja.2021.126449
+  title:: @The first calibration and evaluation of the STICS soil-crop model on chickpea-based intercropping system under Mediterranean conditions
+  pages:: 126449
+  volume:: 133
+  item-type:: [[journalArticle]]
+  access-date:: 2023-11-16T14:42:13Z
+  original-title:: The first calibration and evaluation of the STICS soil-crop model on chickpea-based intercropping system under Mediterranean conditions
+  url:: https://www.sciencedirect.com/science/article/pii/S1161030121002203
+  publication-title:: European Journal of Agronomy
+  journal-abbreviation:: European Journal of Agronomy
+  authors:: [[Omar Kherif]], [[Mounir Seghouani]], [[Eric Justes]], [[Daniel Plaza-Bonilla]], [[Abderrahim Bouhenache]], [[Bahia Zemmouri]], [[Peter Dokukin]], [[Mourad Latati]]
+  library-catalog:: ScienceDirect
+  links:: [Local library](zotero://select/groups/5279196/items/WI3B986S), [Web library](https://www.zotero.org/groups/5279196/items/WI3B986S)
+- [[Abstract]]
+	- Soil-crop models are widely used as valuable tools to assess the combined effects of cropping practices, soil management and climate on the agro-environmental indicators. They provide a wide range of predictive information that are useful to design and evaluate innovative cropping systems. However, intercropping modeling is still under development, especially for grain legumes-based intercropping system. We performed here the first calibration of the STICS (v 9.2) model on chickpea grown under contrasting nitrogen (N) levels during two copping seasons (2018/2019 and 2019/2020). This calibration allowed us to simulate a wide range of agronomic scenarios (climate, N-fertilization and cropping system) to optimize intercrops (durum wheat-chickpea) management. 37 parameters were estimated by using a sequential optimization method. Our results showed that STICS performs well in predicting Leaf Area Index (LAI), above ground biomass (AGB) and N uptake (AGPN) for both intercropped and sole cropped species, with satisfactory model efficiency (EF ranged from 0.62 to 0.93). In addition, grain yield was correctly predicted by the model with small error (NRMSE≤13%) especially for wheat crop (EF≥0.50), while it was less correctly predicted for chickpea crop (EF≤0.24 and NRMSE≤21%). STICS predicted well root depth under the conditions of our field study (EF ≥ 0.65 and NRMSE ≤ 37%). For soil outputs variables, the model simulated adequately soil water content with a satisfactory model efficiency (EF ≥ 0.65) and low relative error (NRMSE ≤. 8.8%) especially for sole cropped and intercropped chickpea. The soil N stocks were less adequately predicted (EF ≤ 0.28) with high relative error (NRMSE ≥ 56%) in sole cropping system, while it was moderately adequately predicted (EF ≤ 0.44) in intercropping. Under the two contrasted years and N-application conditions of this study, the temporal dynamic was well reproduced by the model for both plant and soil outputs with low simulation errors. RMSE values were lesser than 0.6 m2m-2 (9%), 0.2 t ha-1 (14%) and 30 kg ha-1 (12%), respectively for LAI, grain yield and AGPN of sole cropped chickpea. The dynamic of soil water content was also well reproduced among all N-application rate and during the two cropping year, with RMSE equal to 27 mm (<10%). The present work provides the first calibration for chickpea sole crop and an evaluation for durum wheat-chickpea intercrops, which will allow to use the STICS model to simulate scenarios of innovative cropping practices based on crop diversification (i.e. grain legumes and cereals) and N-fertilization management.
+- [[Attachments]]
+	- [ScienceDirect Snapshot](https://www.sciencedirect.com/science/article/pii/S1161030121002203?via%3Dihub) {{zotero-imported-file D27KDUZF, "S1161030121002203.html"}}
+	- [ScienceDirect Full Text PDF](https://www.sciencedirect.com/science/article/pii/S1161030121002203/pdfft?md5=1e3640716ea7585908bbbb6f845de94a&pid=1-s2.0-S1161030121002203-main.pdf&isDTMRedir=Y) {{zotero-imported-file W66GZAUN, "Kherif et al. - 2022 - The first calibration and evaluation of the STICS .pdf"}}
