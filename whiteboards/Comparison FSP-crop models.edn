@@ -278,21 +278,56 @@
 :parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
 :collapsedHeight 0
 :nonce 1701881403076}}
-:block/updated-at 1701881417028})
+:block/updated-at 1701881417028} 
+{:block/content "[[@Coupling Process-Based Models and Plant Architectural Models: A Key Issue for Simulating Crop Production]]"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6570a641-d09a-414e-8dc0-43139b9e4179"}
+:block/parent 
+{:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"}
+:block/uuid #uuid "657188fd-f32b-445b-b203-849338a1f667"} 
+{:block/created-at 1701939475134
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 8
+:scale [1 1]
+:pageId "657188fd-f32b-445b-b203-849338a1f667"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [232 137]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "a71d7440-94de-11ee-b65f-b7ff04400c0c"
+:noFill false
+:point [88 40]
+:parentId "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:collapsedHeight 0
+:nonce 1701939450505}}
+:block/updated-at 1701939475134})
 :pages (
 {:block/uuid #uuid "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
 :block/properties 
 {:ls-type :whiteboard-page
 :logseq.tldraw.page 
 {:id "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
-:name "6570a4e5-c49f-4d36-b23d-3af48cbfeea6"
+:name "comparison fsp-crop models"
 :bindings 
 {}
 :nonce 1
 :assets []
-:shapes-index ("d99d0a30-9456-11ee-b65f-b7ff04400c0c" "1994ecc0-9457-11ee-b65f-b7ff04400c0c" "25d844a0-9457-11ee-b65f-b7ff04400c0c" "2e8fddb0-9457-11ee-b65f-b7ff04400c0c" "42f126b0-9457-11ee-b65f-b7ff04400c0c" "55f94850-9457-11ee-b65f-b7ff04400c0c" "6ffef6f0-9457-11ee-b65f-b7ff04400c0c" "8040f3b0-9457-11ee-b65f-b7ff04400c0c")}}
-:block/updated-at 1701881417028
+:shapes-index ("d99d0a30-9456-11ee-b65f-b7ff04400c0c" "1994ecc0-9457-11ee-b65f-b7ff04400c0c" "25d844a0-9457-11ee-b65f-b7ff04400c0c" "2e8fddb0-9457-11ee-b65f-b7ff04400c0c" "42f126b0-9457-11ee-b65f-b7ff04400c0c" "55f94850-9457-11ee-b65f-b7ff04400c0c" "6ffef6f0-9457-11ee-b65f-b7ff04400c0c" "8040f3b0-9457-11ee-b65f-b7ff04400c0c" "a71d7440-94de-11ee-b65f-b7ff04400c0c")}}
+:block/updated-at 1701939475134
 :block/created-at 1701881061974
 :block/type "whiteboard"
 :block/name "comparison fsp-crop models"
-:block/original-name "Comparison FSP-crop models"})}
+:block/original-name "comparison fsp-crop models"})}
