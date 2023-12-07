@@ -3,7 +3,7 @@
 - ### Proof by the absurd of robustness hypotheses in crop models (STICS), with simulations with a FSPM
 -
 - With a FSPM (VGL ?), simulate a given plant or intercrop
-- fixing/constraining 1 plant feature with outputs from crop model
+- fixing/constraining 1 parameter with outputs from crop model
 	- *ex: LAI, integrable from : leaf length = f(plant height)*
 - then varying other parameters to get a set of architectures
 	- *ex: azimuth, folding angle, density, sowing distance, etc*
