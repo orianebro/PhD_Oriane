@@ -33,9 +33,9 @@
 - #### Light interception
 	- The simulation of the light interception will be used to parameterize the coefficient of light extinction for STICS in sole crop, and to evaluate the potential changes in its value in the intercrop.
 - #### Root growth
-	- The simulation of the development of the root system in 3D will be used to parameterize STICS. The 3D root system architecture will be used to derive a 1D density profile.
+	- The simulation of the development of the root system in 3D will be used to parameterize STICS. The 3D root system architecture will be used to derive a **1D density profile**.
 - #### Nitrogen demand
-	- The nitrogen demand of the plant can be computed using an objective N content of each organ in the plant. Currently it is simplified in STICS by using a nitrogen dilution curve, with the hypothesis that structural organs have a lower demand compared to non-structural (*e.g.* leaves, fruits). The FSPM can help parameterize such curve by explicitly computing the N demand of each organ in the plant at any stage.
+	- The nitrogen demand of the plant can be computed using an objective N content of each organ in the plant. Currently it is simplified in STICS by using a nitrogen dilution curve, with the **hypothesis that structural organs have a lower demand compared to non-structural** (*e.g.* leaves, fruits). The FSPM can help parameterize such curve by explicitly computing the N demand of each organ in the plant at any stage.
 - #### Water acquisition
 	- Water fluxes could be simulated using an FSPM with *e.g.* 3D root systems spatialized in a voxelized soil profile, where the fluxes would be computed between each voxel in dynamic.
 - #### Nitrogen acquisition
