@@ -10,6 +10,7 @@
 					- ***Which plant processes are the least well modeled at bigger scale (i.e. in crop models) according to literature ?*** N, etc [[hls__Vezy et al. - 2023 - Modeling soil-plant functioning of intercrops usin]]
 					- ***Do the strengths of some models respond to weaknesses of others ? What are their similarities, differences and complementarities ?***
 						- ***What could FSPM bring to crop models ? What could crop models provide to FSPM ?***
+						- [[comparison fsp-crop models]]
 						- [[@Exploring complementarities between modelling approaches that enable upscaling from plant community functioning to ecosystem services as a way to support agroecological transition]]
 						- [[@Coupling Process-Based Models and Plant Architectural Models: A Key Issue for Simulating Crop Production]]
 						-
