@@ -12,9 +12,9 @@
 - plot the results in a morphospace (?)
 - validate or not STICS formalisms' hypotheses
 -
-- Two goals :
-	- Compare means
-	- Sensitivity analysis to spot influencing parameters in FSPMs on given processes
+- ### Goals
+	- Compare trends and means
+	- Sensitivity analysis to spot influencing parameters on given processes
 -
 - To identify potential shortcomings in STICS, we aim to employ a method of *reductio ad absurdum*. We will isolate and treat some output from STICS as a hypothesis within the context of a FSPM. By adopting these outputs as assumptions and manipulating other relevant parameters, we will examine whether the simulated plant behavior remains within the expected ranges predicted by STICS. This approach allows us to scrutinize the accuracy of STICS predictions and discern any discrepancies or deviations that may indicate faulty formalisms within the model. Through this process, we aim to pinpoint areas of improvement or refinement in STICS to enhance its predictive capabilities.
 -
