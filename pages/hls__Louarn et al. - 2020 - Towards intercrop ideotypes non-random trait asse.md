@@ -61,3 +61,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-page:: 3
   hl-color:: blue
   id:: 65781934-f36c-43b0-b0c6-8c0d3a125e4c
+- The model is thus able to take into account both negative (i.e. competition for light, water and mineral N) and positive (N facilitation) plant–plant interactions
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: blue
+  id:: 6578196e-dd83-4cb0-bedb-172c9fe90e21
+- we synthesized several publications to find an adequate range of variation for each parameter covering an interspecific range of values among herbaceous grassland species
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: green
+  id:: 657819e0-0335-497e-b201-3703f43a2e07
+- During this screening phase, no interactions between the parameters were considered and only the main effect of each parameter on the variance of model outputs was computed
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: green
+  id:: 65781a19-f0c9-4aff-a0c6-e383c82ccd3d
