@@ -76,3 +76,13 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-page:: 4
   hl-color:: green
   id:: 65781a19-f0c9-4aff-a0c6-e383c82ccd3d
+- four model parameters associated with these four physiological functions were selected from the 28 parameters previously tested. They corresponded to the parameters which displayed the strongest effects on model outputs in mixtures for each physiological function
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: green
+  id:: 65782f2c-9cf7-4b42-afbf-6520036169b9
+- The virtual experiment then consisted of testing a large range of the possible binary mixtures involving combinations of parameter value differences for these four traits under a factorial design with three levels allowed for each trait (sampled in the range between the highest differential in favour of the legume and half of the highest differential in favour of the non-legume
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: green
+  id:: 65782fac-0dad-4405-9347-de3e2add5a06
