@@ -31,3 +31,33 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 656f1db0-ea2d-45f8-a0ba-8019e3fc66a5
   hl-color:: blue
+	- Relative C demands to sustain maximum organ expansion are then assumed to drive the partitioning of dry matter between shoot leaves and stems
+	  ls-type:: annotation
+	  hl-page:: 2
+	  hl-color:: blue
+	  id:: 65781842-6f2c-4a95-951b-7070bf234304
+- Two feedback loops are implemented to account for plant plasticity and the regulation of plant growth and morphogenesis by the environment
+  ls-type:: annotation
+  hl-page:: 2
+  hl-color:: blue
+  id:: 65781857-e1aa-4359-9545-e013bdbcf00a
+	- light quality distribution is deemed to trigger local photo-morphogenetic responses, which down-regulate phytomer production by shoot axes and modulate organ expansion
+	  hl-page:: 2
+	  ls-type:: annotation
+	  id:: 6578186c-c266-4361-9a2b-97e133b95475
+	  hl-color:: blue
+	- the soil resources available to plant roots are compared with water and N requirements in order to scale actual plant growth
+	  ls-type:: annotation
+	  hl-page:: 3
+	  hl-color:: blue
+	  id:: 657818e0-4839-4764-aebf-0984d7197cf1
+- N fixation comes at a C cost associated with nodule formation and turnover
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: blue
+  id:: 65781909-af0b-486a-bc49-bd1694ccee72
+- Shoot organs and roots are subject to tissue senescence. Dead plant parts enter fresh pools of C and N residues released into the soil that follow a kinetic of mineralization which depends on their C/N composition and on soil conditions
+  ls-type:: annotation
+  hl-page:: 3
+  hl-color:: blue
+  id:: 65781934-f36c-43b0-b0c6-8c0d3a125e4c
