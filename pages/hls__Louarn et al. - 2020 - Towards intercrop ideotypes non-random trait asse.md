@@ -36,58 +36,58 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
 	  hl-page:: 2
 	  hl-color:: blue
 	  id:: 65781842-6f2c-4a95-951b-7070bf234304
-- Two feedback loops are implemented to account for plant plasticity and the regulation of plant growth and morphogenesis by the environment
-  ls-type:: annotation
+- Two **feedback loops** are implemented to account for plant plasticity and the regulation of plant growth and morphogenesis by the environment
   hl-page:: 2
-  hl-color:: blue
+  ls-type:: annotation
   id:: 65781857-e1aa-4359-9545-e013bdbcf00a
-	- light quality distribution is deemed to trigger local photo-morphogenetic responses, which down-regulate phytomer production by shoot axes and modulate organ expansion
+  hl-color:: blue
+	- **light quality distribution** is deemed to trigger **local photo-morphogenetic responses**, which down-regulate phytomer production by shoot axes and modulate organ expansion
 	  hl-page:: 2
 	  ls-type:: annotation
 	  id:: 6578186c-c266-4361-9a2b-97e133b95475
 	  hl-color:: blue
-	- the soil resources available to plant roots are compared with water and N requirements in order to scale actual plant growth
-	  ls-type:: annotation
+	- the **soil resources** available to plant roots are compared with **water and N requirements** in order to scale actual plant growth
 	  hl-page:: 3
-	  hl-color:: blue
+	  ls-type:: annotation
 	  id:: 657818e0-4839-4764-aebf-0984d7197cf1
-- N fixation comes at a C cost associated with nodule formation and turnover
+	  hl-color:: blue
+- N fixation comes at a **C cost associated with nodule formation** and turnover
   ls-type:: annotation
   hl-page:: 3
   hl-color:: blue
   id:: 65781909-af0b-486a-bc49-bd1694ccee72
-- Shoot organs and roots are subject to tissue senescence. Dead plant parts enter fresh pools of C and N residues released into the soil that follow a kinetic of mineralization which depends on their C/N composition and on soil conditions
+- Shoot organs and roots are subject to tissue **senescence**. Dead plant parts enter fresh pools of C and N residues released into the soil that follow a kinetic of mineralization which depends on their C/N composition and on soil conditions
   ls-type:: annotation
   hl-page:: 3
   hl-color:: blue
   id:: 65781934-f36c-43b0-b0c6-8c0d3a125e4c
-- The model is thus able to take into account both negative (i.e. competition for light, water and mineral N) and positive (N facilitation) plant–plant interactions
-  ls-type:: annotation
+- The model is thus able to take into account both **negative** (i.e. competition for light, water and mineral N) and **positive** (N facilitation) plant–plant **interactions**
   hl-page:: 3
-  hl-color:: blue
+  ls-type:: annotation
   id:: 6578196e-dd83-4cb0-bedb-172c9fe90e21
-- we synthesized several publications to find an adequate range of variation for each parameter covering an interspecific range of values among herbaceous grassland species
+  hl-color:: blue
+- we synthesized several publications to find an adequate **range of variation for each parameter** covering an interspecific range of values among herbaceous grassland species
   ls-type:: annotation
   hl-page:: 3
   hl-color:: green
   id:: 657819e0-0335-497e-b201-3703f43a2e07
-- During this screening phase, no interactions between the parameters were considered and only the main effect of each parameter on the variance of model outputs was computed
-  ls-type:: annotation
+- During this screening phase, **no interactions between the parameters** were **considered** and only the main effect of each parameter on the variance of model outputs was computed
   hl-page:: 4
-  hl-color:: green
+  ls-type:: annotation
   id:: 65781a19-f0c9-4aff-a0c6-e383c82ccd3d
-- four model parameters associated with these four physiological functions were selected from the 28 parameters previously tested. They corresponded to the parameters which displayed the strongest effects on model outputs in mixtures for each physiological function
-  ls-type:: annotation
-  hl-page:: 4
   hl-color:: green
+- **four model parameters** associated with these four physiological functions were **selected** from the 28 parameters previously tested. They corresponded to the parameters which displayed the **strongest effects** on model outputs in mixtures for each physiological function
+  hl-page:: 4
+  ls-type:: annotation
   id:: 65782f2c-9cf7-4b42-afbf-6520036169b9
-- The virtual experiment then consisted of testing a large range of the possible binary mixtures involving combinations of parameter value differences for these four traits under a factorial design with three levels allowed for each trait (sampled in the range between the highest differential in favour of the legume and half of the highest differential in favour of the non-legume
+  hl-color:: green
+- The virtual experiment then consisted of **testing a large range of the possible binary mixtures** involving combinations of parameter value differences for these four traits under a factorial design with three levels allowed for each trait (sampled in the range between the highest differential in favour of the legume and half of the highest differential in favour of the non-legume
   ls-type:: annotation
   hl-page:: 4
   hl-color:: green
   id:: 65782fac-0dad-4405-9347-de3e2add5a06
-- As the outcome of competition experiments is usually affected by intra- and inter-specific competition, and is thus sensitive to both absolute and relative plant densities
-  ls-type:: annotation
+- As the outcome of competition experiments is usually affected by intra- and inter-specific competition, and is thus sensitive to both **absolute and relative plant densities**
   hl-page:: 4
-  hl-color:: blue
+  ls-type:: annotation
   id:: 6578353f-d160-4e0a-839f-1ee616e2bd5e
+  hl-color:: blue
