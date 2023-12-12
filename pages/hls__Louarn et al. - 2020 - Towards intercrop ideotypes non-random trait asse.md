@@ -86,3 +86,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-page:: 4
   hl-color:: green
   id:: 65782fac-0dad-4405-9347-de3e2add5a06
+- As the outcome of competition experiments is usually affected by intra- and inter-specific competition, and is thus sensitive to both absolute and relative plant densities
+  ls-type:: annotation
+  hl-page:: 4
+  hl-color:: blue
+  id:: 6578353f-d160-4e0a-839f-1ee616e2bd5e
