@@ -91,3 +91,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 6578353f-d160-4e0a-839f-1ee616e2bd5e
   hl-color:: blue
+- The parameters that most affected yield in pure stands (Fig. 2A) were related to the kinetics of canopy development (phyllo1, LmaxL, q) and to radiation use efficiency (RUE, FixMax, NODcost).
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: blue
+  id:: 657874c4-ac74-4d8c-95f2-0f6bd2ed3e6f
