@@ -126,8 +126,13 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 6579af50-dd6b-41e6-baa4-de445439deb4
   hl-color:: blue
-- the parameters **affecting species balance** were those with significant **effects on light and/ or soil N capture efficiency**
-  hl-page:: 6
+- the parameters with the strongest impact on mixture balance (q, Phyllo1, LmaxIn, del50In, FixMax) generally **affected both competition for light and soil mineral N**.
   ls-type:: annotation
-  id:: 6579b53d-7a7f-45c1-8c4f-d4191872c69b
+  hl-page:: 6
   hl-color:: blue
+  id:: 6579b768-2ac5-4b40-a9a3-fb15877a2853
+	- Some parameters were more specific to light (e.g. LmaxL) or mineral N (e.g. Vmax2, Dldm, Dmax, Vmax1) competition, the latter being those with the weakest influence on mixture balance
+	  ls-type:: annotation
+	  hl-page:: 6
+	  hl-color:: blue
+	  id:: 6579b880-e898-4fdb-910a-a145209db63e
