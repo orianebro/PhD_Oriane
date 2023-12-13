@@ -111,8 +111,13 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 657994a6-d6f4-433d-8161-c71b67cfbf42
   hl-color:: blue
-- the **mixture composition** was much more sensitive to trait values than community productivity
-  ls-type:: annotation
+- the **mixture composition** was much **more sensitive** to trait values than **community productivity**
   hl-page:: 5
-  hl-color:: blue
+  ls-type:: annotation
   id:: 65799590-b565-4c99-861c-4c18ada3cf8c
+  hl-color:: blue
+- **compensatory effects** occurred between the associated species (as indicated by the opposite signs of their yield variations), thus explaining the **buffered effect** on biomass production at the **community** level
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 657995bf-110e-454f-9907-97ed3a605779
+  hl-color:: blue
