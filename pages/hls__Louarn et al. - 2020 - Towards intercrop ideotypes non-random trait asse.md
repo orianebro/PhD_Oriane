@@ -66,6 +66,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 6578196e-dd83-4cb0-bedb-172c9fe90e21
   hl-color:: blue
+-
+- ### Sensitivity analysis
 - we synthesized several publications to find an adequate **range of variation for each parameter** covering an interspecific range of values among herbaceous grassland species
   ls-type:: annotation
   hl-page:: 3
@@ -76,6 +78,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 65781a19-f0c9-4aff-a0c6-e383c82ccd3d
   hl-color:: green
+-
+- ### Virtual experiments
 - **four model parameters** associated with these four physiological functions were **selected** from the 28 parameters previously tested. They corresponded to the parameters which displayed the **strongest effects** on model outputs in mixtures for each physiological function
   hl-page:: 4
   ls-type:: annotation
@@ -91,6 +95,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 6578353f-d160-4e0a-839f-1ee616e2bd5e
   hl-color:: blue
+-
+- ### Comparison of sensitive parameters in pure and mixed stands
 - The parameters that most affected yield in **pure stands** (Fig. 2A) were related to the **kinetics of canopy development** (phyllo1, LmaxL, q) and to **radiation use efficiency** (RUE, FixMax, NODcost).
   hl-page:: 5
   ls-type:: annotation
@@ -136,3 +142,13 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
 	  hl-page:: 6
 	  hl-color:: blue
 	  id:: 6579b880-e898-4fdb-910a-a145209db63e
+- 4 model parameters for each physiological function: **growth kinetics (q), light acquisition (LmaxIn), mineral N acquisition (Vmax2) and radiation use efficiency(RUE)**
+  hl-page:: 6
+  ls-type:: annotation
+  id:: 6579b8d4-8468-47fc-959a-399c9d00ee3f
+  hl-color:: blue
+- Parameters involved in N stress responses had little effect on model outputs under the conditions tested and were not considered in subsequent analyses.
+  ls-type:: annotation
+  hl-page:: 6
+  hl-color:: blue
+  id:: 6579bac4-e16b-4d79-a83a-97a8d8dac12a
