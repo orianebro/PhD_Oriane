@@ -121,8 +121,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 657995bf-110e-454f-9907-97ed3a605779
   hl-color:: blue
-- parameters involved in **stem elongation** (LmaxIn, Del50In), root growth (DlDm, Dmax) and mineral N uptake (Vmax2, Vmax1)
-  ls-type:: annotation
+- parameters involved in **stem elongation** (**LmaxIn, Del50In**), **root growth** (**DlDm, Dmax**) and **mineral N uptake** (**Vmax2, Vmax1**)
   hl-page:: 6
-  hl-color:: blue
+  ls-type:: annotation
   id:: 6579af50-dd6b-41e6-baa4-de445439deb4
+  hl-color:: blue
