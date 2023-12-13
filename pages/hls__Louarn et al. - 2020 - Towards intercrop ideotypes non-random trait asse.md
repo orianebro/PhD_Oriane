@@ -91,8 +91,28 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 6578353f-d160-4e0a-839f-1ee616e2bd5e
   hl-color:: blue
-- The parameters that most affected yield in pure stands (Fig. 2A) were related to the kinetics of canopy development (phyllo1, LmaxL, q) and to radiation use efficiency (RUE, FixMax, NODcost).
+- The parameters that most affected yield in **pure stands** (Fig. 2A) were related to the **kinetics of canopy development** (phyllo1, LmaxL, q) and to **radiation use efficiency** (RUE, FixMax, NODcost).
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 657874c4-ac74-4d8c-95f2-0f6bd2ed3e6f
+  hl-color:: blue
+- Despite the low N availability, a **greater sensitivity of yield to the parameters involved in shoot morphogenesis** could be noted when compared to the root morphogenesis, root functioning and N stress response parameters.
   ls-type:: annotation
   hl-page:: 5
   hl-color:: blue
-  id:: 657874c4-ac74-4d8c-95f2-0f6bd2ed3e6f
+  id:: 657993f8-24e6-48cc-9282-348d9443ac40
+- The total annual yield of the community in **mixed stands** displayed a pattern of sensitive parameters remarkably **similar** to that of the pure stands (Fig. 2B). The same four parameters had the strongest influence (i.e. **RUE, q, LmaxL and phyllo1**).
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 65799425-e975-4321-9829-6c16be23b109
+  hl-color:: blue
+- However, for all the parameters tested, the **sensitivity of total annual yield** to parameter variations appeared to be **lower in mixed than in pure stands** (y = 0.48x, r2 = 0.89)
+  hl-page:: 5
+  ls-type:: annotation
+  id:: 657994a6-d6f4-433d-8161-c71b67cfbf42
+  hl-color:: blue
+- the **mixture composition** was much more sensitive to trait values than community productivity
+  ls-type:: annotation
+  hl-page:: 5
+  hl-color:: blue
+  id:: 65799590-b565-4c99-861c-4c18ada3cf8c
