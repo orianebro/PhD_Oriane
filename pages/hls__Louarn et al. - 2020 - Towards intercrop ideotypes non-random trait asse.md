@@ -167,3 +167,10 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-page:: 7
   hl-color:: blue
   id:: 6579bd38-256a-48d5-ba07-43373fb4505e
+- the **increase in legume proportion** which was noted with such a convergent mixture was **not able to overcompensate** for the simulated **reduction of production by the non-legume** in all situations, and more particularly under **scarce mineral N availability**
+  hl-page:: 7
+  ls-type:: annotation
+  id:: 6579bf25-682a-451a-8033-db8928c81ec6
+  hl-color:: blue
+-
+- ### Impact of soil N fertility and species proportion on overyielding achieved by mixed stands
