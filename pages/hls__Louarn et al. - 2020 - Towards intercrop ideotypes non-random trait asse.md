@@ -1,6 +1,8 @@
 file:: [Louarn et al. - 2020 - Towards intercrop ideotypes non-random trait asse.pdf](file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 2020 - Towards intercrop ideotypes non-random trait asse.pdf)
 file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 2020 - Towards intercrop ideotypes non-random trait asse.pdf
 
+- ## MATERIALS AND METHODS
+- ### Overview of the model
 - 3-D shoot and root morphogenesis for contrasting plant morphotypes
   ls-type:: annotation
   hl-page:: 2
@@ -96,6 +98,7 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   id:: 6578353f-d160-4e0a-839f-1ee616e2bd5e
   hl-color:: blue
 -
+- ## RESULTS
 - ### Comparison of sensitive parameters in pure and mixed stands
 - The parameters that most affected yield in **pure stands** (Fig. 2A) were related to the **kinetics of canopy development** (phyllo1, LmaxL, q) and to **radiation use efficiency** (RUE, FixMax, NODcost).
   hl-page:: 5
@@ -152,3 +155,15 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-page:: 6
   hl-color:: blue
   id:: 6579bac4-e16b-4d79-a83a-97a8d8dac12a
+-
+- ### Impact of soil N fertility and legume introduction on the neutral situation of competition in mixed stands
+- To analyse the impact of trait combinations on mixture performance, a **neutral situation of competition** was defined for binary mixtures with and without legumes (i.e. perfect trait convergence between the companion species: all parameters with identical values except for FixMax in legume-based mixtures)
+  ls-type:: annotation
+  hl-page:: 6
+  hl-color:: blue
+  id:: 6579bcc2-db07-40b4-a70b-d3fe4fc9119e
+- Irrespective of the N treatments, pure legume stands showed higher productivity than non-legume stand
+  ls-type:: annotation
+  hl-page:: 7
+  hl-color:: blue
+  id:: 6579bd38-256a-48d5-ba07-43373fb4505e
