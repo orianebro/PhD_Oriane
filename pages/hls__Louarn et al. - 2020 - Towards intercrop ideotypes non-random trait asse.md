@@ -174,3 +174,25 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-color:: blue
 -
 - ### Impact of soil N fertility and species proportion on overyielding achieved by mixed stands
+- Despite the presence of legumes, **most trait combinations actually produced less than expected** from the proportions they achieved under these conditions.
+  ls-type:: annotation
+  hl-page:: 7
+  hl-color:: blue
+  id:: 6579c7ee-88fe-4ece-a479-59bb1d5e4cc1
+- Nevertheless, many still produced **more than the neutral model**, which was negative at all proportions.
+  ls-type:: annotation
+  hl-page:: 7
+  hl-color:: blue
+  id:: 6579c7f7-c6aa-46d8-bc70-f43f89662eac
+- Very **low mineral N availability favoured legume development** but at the same time **limited the possibilities of complementarity** regarding N sources.
+  hl-page:: 7
+  ls-type:: annotation
+  id:: 6579c80a-217b-4885-aa23-541a0758d40d
+  hl-color:: blue
+- **Trait combinations maximizing OY** and with the highest frequency above the neutral model were found at **intermediate N levels** and achieved up to 250–300 g m −2.
+  hl-page:: 7
+  ls-type:: annotation
+  id:: 6579c81e-75c9-4115-b54a-772f6ecfef16
+  hl-color:: blue
+-
+- ### Impact of trait combinations on maximum overyielding in mixtures
