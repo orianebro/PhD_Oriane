@@ -126,3 +126,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 6579af50-dd6b-41e6-baa4-de445439deb4
   hl-color:: blue
+- the parameters **affecting species balance** were those with significant **effects on light and/ or soil N capture efficiency**
+  hl-page:: 6
+  ls-type:: annotation
+  id:: 6579b53d-7a7f-45c1-8c4f-d4191872c69b
+  hl-color:: blue
