@@ -196,3 +196,18 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   hl-color:: blue
 -
 - ### Impact of trait combinations on maximum overyielding in mixtures
+- Analysing the relationship between OY and trait combinations was achieved by projecting model outputs in triangular planes defined by the differences in parameter values between the mixed species
+  ls-type:: annotation
+  hl-page:: 7
+  hl-color:: blue
+  id:: 657ab419-e5a1-46cc-8d36-afd92e124a17
+	- the neutral situation of competition is at the incentre of the triangle
+	  ls-type:: annotation
+	  hl-page:: 7
+	  hl-color:: blue
+	  id:: 657ab428-b00e-437b-be48-1cd7c7281fd4
+- This indicated that **q differences**, which shaped the **response to temperature** and the **relative temporal growth of the mixed species**, had the **strongest impact on OYmax**
+  hl-page:: 7
+  ls-type:: annotation
+  id:: 657ab48e-aecf-42c3-9995-0cb9658fb680
+  hl-color:: blue
