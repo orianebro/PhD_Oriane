@@ -211,3 +211,8 @@ file-path:: file://C:\Users\cheriere\Zotero/storage/KC3MMESX/Louarn et al. - 202
   ls-type:: annotation
   id:: 657ab48e-aecf-42c3-9995-0cb9658fb680
   hl-color:: blue
+- Within the range of situations tested, only divergences that led to a **favoured establishment of the non-legume** with respect to the legume enabled **maximization** of the outcome in terms of **OY**
+  hl-page:: 7
+  ls-type:: annotation
+  id:: 657aba19-74e2-4087-a7e4-59089ff593db
+  hl-color:: blue
