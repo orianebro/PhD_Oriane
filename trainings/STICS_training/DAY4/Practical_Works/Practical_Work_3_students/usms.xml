@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<usms version="10.0">
+  <usm nom="01_T5_2009_b1">
+    <datedebut>62</datedebut>
+    <datefin>213</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2009</fclim1>
+    <fclim2>ACBB_Mons.2009</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>proto_barley_plt.xml</fplt>
+      <ftec>T5_2009_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="02_T5_2010_a1">
+    <datedebut>214</datedebut>
+    <datefin>425</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2009</fclim1>
+    <fclim2>ACBB_Mons.2010</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>mustard_CoverCrop_plt.xml</fplt>
+      <ftec>T5_2010_a1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>02_T5_2010_a1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="03_T5_2010_b1">
+    <datedebut>61</datedebut>
+    <datefin>201</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2010</fclim1>
+    <fclim2>ACBB_Mons.2010</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>pea_v10_plt.xml</fplt>
+      <ftec>T5_2010_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>03_T5_2010_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="04_T5_2011_b1">
+    <datedebut>202</datedebut>
+    <datefin>579</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2010</fclim1>
+    <fclim2>ACBB_Mons.2011</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>wheat_plt.xml</fplt>
+      <ftec>T5_2011_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>04_T5_2011_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="05_T5_2012_b1">
+    <datedebut>215</datedebut>
+    <datefin>573</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2011</fclim1>
+    <fclim2>ACBB_Mons.2012</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>rapeseed_v10_plt.xml</fplt>
+      <ftec>T5_2012_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>05_T5_2012_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="06_T5_2013_a1">
+    <datedebut>209</datedebut>
+    <datefin>426</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2012</fclim1>
+    <fclim2>ACBB_Mons.2013</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>CrimsonClover_CoverCrop_plt.xml</fplt>
+      <ftec>T5_2013_a1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>06_T5_2013_a1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="07_T5_2013_b1">
+    <datedebut>61</datedebut>
+    <datefin>224</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2013</fclim1>
+    <fclim2>ACBB_Mons.2013</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>proto_barley_plt.xml</fplt>
+      <ftec>T5_2013_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>07_T5_2013_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="08_T5_2014_a1">
+    <datedebut>225</datedebut>
+    <datefin>425</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2013</fclim1>
+    <fclim2>ACBB_Mons.2014</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>vetch_CoverCrop_plt.xml</fplt>
+      <ftec>T5_2014_a1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>08_T5_2014_a1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="09_T5_2014_b1">
+    <datedebut>61</datedebut>
+    <datefin>297</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2014</fclim1>
+    <fclim2>ACBB_Mons.2014</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>corn_v10_plt.xml</fplt>
+      <ftec>T5_2014_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>09_T5_2014_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="10_T5_2015_b1">
+    <datedebut>298</datedebut>
+    <datefin>579</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2014</fclim1>
+    <fclim2>ACBB_Mons.2015</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>wheat_plt.xml</fplt>
+      <ftec>T5_2015_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>10_T5_2015_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="11_T5_2016_a1">
+    <datedebut>215</datedebut>
+    <datefin>425</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2015</fclim1>
+    <fclim2>ACBB_Mons.2016</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>mustard_CoverCrop_plt.xml</fplt>
+      <ftec>T5_2016_a1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>11_T5_2016_a1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="12_T5_2016_b1">
+    <datedebut>61</datedebut>
+    <datefin>250</datefin>
+    <finit>ACBB_Mons_T5_alfY1_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2016</fclim1>
+    <fclim2>ACBB_Mons.2016</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>alfalfa_v10_plt.xml</fplt>
+      <ftec>T5_2016_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>12_T5_2016_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="13_T5_2017_b1">
+    <datedebut>251</datedebut>
+    <datefin>617</datefin>
+    <finit>ACBB_Mons_T5_alfYn_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2016</fclim1>
+    <fclim2>ACBB_Mons.2017</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>alfalfa_v10_plt.xml</fplt>
+      <ftec>T5_2017_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>13_T5_2017_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="14_T5_2018_b1">
+    <datedebut>252</datedebut>
+    <datefin>564</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2017</fclim1>
+    <fclim2>ACBB_Mons.2018</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>wheat_plt.xml</fplt>
+      <ftec>T5_2018_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>14_T5_2018_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="15_T5_2019_a1">
+    <datedebut>200</datedebut>
+    <datefin>448</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2018</fclim1>
+    <fclim2>ACBB_Mons.2019</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>vetch_CoverCrop_plt.xml</fplt>
+      <ftec>T5_2019_a1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>15_T5_2019_a1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="16_T5_2019_b1">
+    <datedebut>84</datedebut>
+    <datefin>214</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2019</fclim1>
+    <fclim2>ACBB_Mons.2019</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>proto_barley_plt.xml</fplt>
+      <ftec>T5_2019_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>16_T5_2019_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="17_T5_2020_a1">
+    <datedebut>215</datedebut>
+    <datefin>425</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2019</fclim1>
+    <fclim2>ACBB_Mons.2020</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>vetch_CoverCrop_plt.xml</fplt>
+      <ftec>T5_2020_a1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>17_T5_2020_a1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="18_T5_2020_b1">
+    <datedebut>61</datedebut>
+    <datefin>297</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2020</fclim1>
+    <fclim2>ACBB_Mons.2020</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>corn_v10_plt.xml</fplt>
+      <ftec>T5_2020_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>18_T5_2020_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="19_T5_2021_b1">
+    <datedebut>298</datedebut>
+    <datefin>592</datefin>
+    <finit>ACBB_Mons_T5_ini.xml</finit>
+    <nomsol>ACBB_Mons_T5</nomsol>
+    <fstation>ACBB_Mons_sta.xml</fstation>
+    <fclim1>ACBB_Mons.2020</fclim1>
+    <fclim2>ACBB_Mons.2021</fclim2>
+    <culturean>2</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>wheat_plt.xml</fplt>
+      <ftec>T5_2021_b1_tec.xml</ftec>
+      <flai>null</flai>
+      <fobs>19_T5_2021_b1.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+</usms>
+

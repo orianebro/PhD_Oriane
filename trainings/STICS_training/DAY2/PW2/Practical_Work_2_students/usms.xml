@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<usms version="10.0">
+    <usm nom="Wheat_2011">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_ini.xml</finit>
+        <nomsol>Mons</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2010</fclim1>
+        <fclim2>Mons.2011</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_2011_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="Wheat_2011_ini">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_new_ini.xml</finit>
+        <nomsol>Mons</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2010</fclim1>
+        <fclim2>Mons.2011</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_2011_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="Wheat_2020">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_ini.xml</finit>
+        <nomsol>Mons</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2019</fclim1>
+        <fclim2>Mons.2020</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_2011_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="Wheat_2020_highN">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_ini.xml</finit>
+        <nomsol>Mons_highN</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2019</fclim1>
+        <fclim2>Mons.2020</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_2011_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="Wheat_2020_lowN">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_ini.xml</finit>
+        <nomsol>Mons_LowN</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2019</fclim1>
+        <fclim2>Mons.2020</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_2011_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="Wheat_2011_fert">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_ini.xml</finit>
+        <nomsol>Mons</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2010</fclim1>
+        <fclim2>Mons.2011</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_fert_2011_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="Wheat_2011_var">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_ini.xml</finit>
+        <nomsol>Mons</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2010</fclim1>
+        <fclim2>Mons.2011</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_2011_var_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="Wheat_2011_sup">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_ini.xml</finit>
+        <nomsol>Mons_sup</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2010</fclim1>
+        <fclim2>Mons.2011</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_2011_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="Wheat_2011_sup_Irr">
+        <datedebut>203</datedebut>
+        <datefin>579</datefin>
+        <finit>wheat_2011_ini.xml</finit>
+        <nomsol>Mons_sup</nomsol>
+        <fstation>Mons_sta.xml</fstation>
+        <fclim1>Mons.2010</fclim1>
+        <fclim2>Mons.2011</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>Wheat_Irr_2011_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>Wheat_2011.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+</usms>

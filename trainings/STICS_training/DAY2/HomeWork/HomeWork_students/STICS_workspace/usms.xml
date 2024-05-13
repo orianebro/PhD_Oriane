@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<usms version="10.0">
+    <usm nom="maize">
+        <datedebut>112</datedebut>
+        <datefin>360</datefin>
+        <finit>mais_ini.xml</finit>
+        <nomsol>solmais</nomsol>
+        <fstation>climaisj_sta.xml</fstation>
+        <fclim1>climaisj.1996</fclim1>
+        <fclim2>climaisj.1996</fclim2>
+        <culturean>1</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>corn_plt.xml</fplt>
+            <ftec>Mais_tec.xml</ftec>
+            <flai>mais.lai</flai>
+            <fobs>maize.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="SpringBarley">
+        <datedebut>213</datedebut>
+        <datefin>609</datefin>
+        <finit>INITIALIZATION_ini.xml</finit>
+        <nomsol>SUCS</nomsol>
+        <fstation>SUCS_sta.xml</fstation>
+        <fclim1>clima_RAIMAT.2010</fclim1>
+        <fclim2>clima_RAIMAT.2020</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>proto_barley_plt.xml</fplt>
+            <ftec>ORIGINAL_tec.xml</ftec>
+            <flai>mais.lai</flai>
+            <fobs>null</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="WinterWheat">
+        <datedebut>213</datedebut>
+        <datefin>609</datefin>
+        <finit>INITIALIZATION_ini.xml</finit>
+        <nomsol>SUCS</nomsol>
+        <fstation>SUCS_sta.xml</fstation>
+        <fclim1>clima_RAIMAT.2010</fclim1>
+        <fclim2>clima_RAIMAT.2020</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>wheat_plt.xml</fplt>
+            <ftec>ORIGINAL_tec.xml</ftec>
+            <flai>mais.lai</flai>
+            <fobs>null</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="SpringFieldpea">
+        <datedebut>213</datedebut>
+        <datefin>609</datefin>
+        <finit>INITIALIZATION_ini.xml</finit>
+        <nomsol>SUCS</nomsol>
+        <fstation>SUCS_sta.xml</fstation>
+        <fclim1>clima_RAIMAT.2010</fclim1>
+        <fclim2>clima_RAIMAT.2020</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>pea_plt.xml</fplt>
+            <ftec>ORIGINAL_tec.xml</ftec>
+            <flai>mais.lai</flai>
+            <fobs>null</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="SpringDurumWheat">
+        <datedebut>213</datedebut>
+        <datefin>609</datefin>
+        <finit>INITIALIZATION_ini.xml</finit>
+        <nomsol>SUCS</nomsol>
+        <fstation>SUCS_sta.xml</fstation>
+        <fclim1>clima_RAIMAT.2010</fclim1>
+        <fclim2>clima_RAIMAT.2020</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>DurumWheat_ACALOU_plt.xml</fplt>
+            <ftec>ORIGINAL_tec.xml</ftec>
+            <flai>mais.lai</flai>
+            <fobs>null</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+   </usm>
+   </usms>

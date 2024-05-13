@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<usms version="10.0">
+  <usm nom="sit1t096">
+    <datedebut>107</datedebut>
+    <datefin>366</datefin>
+    <finit>sit1t096_ini.xml</finit>
+    <nomsol>sit1</nomsol>
+    <fstation>sit1_sta.xml</fstation>
+    <fclim1>weather.1996</fclim1>
+    <fclim2>weather.1996</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>my_corn_plt.xml</fplt>
+      <ftec>sit1t096_tec.xml</ftec>
+      <flai>sit1t096.lai</flai>
+      <fobs>sit1t096.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="sit1t196">
+    <datedebut>107</datedebut>
+    <datefin>366</datefin>
+    <finit>sit1t196_ini.xml</finit>
+    <nomsol>sit1</nomsol>
+    <fstation>sit1_sta.xml</fstation>
+    <fclim1>weather.1996</fclim1>
+    <fclim2>weather.1996</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>my_corn_plt.xml</fplt>
+      <ftec>sit1t196_tec.xml</ftec>
+      <flai>sit1t196.lai</flai>
+      <fobs>sit1t196.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="sit1t296">
+    <datedebut>107</datedebut>
+    <datefin>366</datefin>
+    <finit>sit1t296_ini.xml</finit>
+    <nomsol>sit1</nomsol>
+    <fstation>sit1_sta.xml</fstation>
+    <fclim1>weather.1996</fclim1>
+    <fclim2>weather.1996</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>my_corn_plt.xml</fplt>
+      <ftec>sit1t296_tec.xml</ftec>
+      <flai>sit1t296.lai</flai>
+      <fobs>sit1t296.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="sit1t396">
+    <datedebut>107</datedebut>
+    <datefin>366</datefin>
+    <finit>sit1t396_ini.xml</finit>
+    <nomsol>sit1</nomsol>
+    <fstation>sit1_sta.xml</fstation>
+    <fclim1>weather.1996</fclim1>
+    <fclim2>weather.1996</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>my_corn_plt.xml</fplt>
+      <ftec>sit1t396_tec.xml</ftec>
+      <flai>sit1t396.lai</flai>
+      <fobs>sit1t396.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="sit396">
+    <datedebut>113</datedebut>
+    <datefin>366</datefin>
+    <finit>sit396_ini.xml</finit>
+    <nomsol>sit3</nomsol>
+    <fstation>sit3_sta.xml</fstation>
+    <fclim1>weathersit3.1996</fclim1>
+    <fclim2>weathersit3.1996</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>my_corn_plt.xml</fplt>
+      <ftec>sit396_tec.xml</ftec>
+      <flai>sit396.lai</flai>
+      <fobs>sit396.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="sit2t197">
+    <datedebut>1</datedebut>
+    <datefin>365</datefin>
+    <finit>sit2t197_ini.xml</finit>
+    <nomsol>sit2</nomsol>
+    <fstation>sit2_sta.xml</fstation>
+    <fclim1>weather.1997</fclim1>
+    <fclim2>weather.1997</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>my_corn_plt.xml</fplt>
+      <ftec>sit2t197_tec.xml</ftec>
+      <flai>sit2t197.lai</flai>
+      <fobs>sit2t197.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+  <usm nom="sit2t397">
+    <datedebut>1</datedebut>
+    <datefin>365</datefin>
+    <finit>sit2t397_ini.xml</finit>
+    <nomsol>sit2</nomsol>
+    <fstation>sit2_sta.xml</fstation>
+    <fclim1>weather.1997</fclim1>
+    <fclim2>weather.1997</fclim2>
+    <culturean>1</culturean>
+    <nbplantes>1</nbplantes>
+    <codesimul>0</codesimul>
+    <plante dominance="1">
+      <fplt>my_corn_plt.xml</fplt>
+      <ftec>sit2t397_tec.xml</ftec>
+      <flai>sit2t397.lai</flai>
+      <fobs>sit2t397.obs</fobs>
+    </plante>
+    <plante dominance="2">
+      <fplt>null</fplt>
+      <ftec>null</ftec>
+      <flai>null</flai>
+      <fobs>null</fobs>
+    </plante>
+  </usm>
+</usms>
