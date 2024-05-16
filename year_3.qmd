@@ -11,6 +11,6 @@ Which formalisms would enable to translate spatial and structural considerations
 For each plant process targeted previously:  
 - Develop formalisms to implement in STICS, by any appropriate method.  
 - Run simulations and compare with simulations with previous version and with field data, to make sure new version of STICS fits data even better. (see with Mathilde de Freitas ?)  
-*(2026)*  
+ 
 
  
