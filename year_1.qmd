@@ -15,12 +15,12 @@ Develop a dynamic shoot parametric FSPM for each type of plant
 where growth is constrained by outputs from a crop model (e.g. LAI(t) and height(t)), 
 leaving degrees of freedom for features that are not explicitly considered in the crop model (e.g. plant architecture and spatial arrangement).   
 Implement well-known structural reactions to stresses.  
-*(march -> may 2024)*  
+
 
 Run simulations of various GxGxExM with both FSPM and STICS (stressless and stressed conditions : Vezy et al., 2023; Traore et al., 2022, 2023), 
 varying (define variations ranges) when possible: shoot structures (explore phenotypic space, i.e. create many morphotypes), 
 spatial arrangement (with all same plants or all different to separate effects), env/stresses (N, water, light)  
-*(june -> august 2024)*  
+ 
 
 From outputs from my models and from STICS for given processes and given conditions:  
 - Compare means and analyze variance of chosen output variables: light intercepted, RUE, N demand /organ, etc.  
@@ -29,7 +29,7 @@ Expected results: see which processes are the most impacted by the uncertainty i
 - Analyse sensitivity of some plant processes to structural variability and spatial heterogeneity. 
 Expected results: spot parameters of interest that can make a change if better considered in a crop model when modeling intercrops.  
 Unvalidate some formalisms in STICS 
-*(september -> december 2024)*  
+
 
 
 
