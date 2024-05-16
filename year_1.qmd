@@ -28,7 +28,7 @@ From outputs from my models and from STICS for given processes and given conditi
 Expected results: see which processes are the most impacted by the uncertainty in crop model outputs.  
 - Analyse sensitivity of some plant processes to structural variability and spatial heterogeneity. 
 Expected results: spot parameters of interest that can make a change if better considered in a crop model when modeling intercrops.  
-Unvalidate some formalisms in STICS 
+Unvalidate some formalisms in STICS  
 
 
 
