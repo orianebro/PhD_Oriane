@@ -1,76 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PhD Oriane",
-    "section": "",
-    "text": "Preface\nThis book keeps track of the work made during the PhD of Oriane Braud, entitled “Multiscale hybrid modeling framework for intercrops: the best of plant and crop models”. This PhD is carried out from November 2023 to 2026 at CIRAD (UMRs AGAP and AMAP), as part of European project IntercropValuES, and is supervised by Myriam Adam, Marc Jaeger, Christophe Pradal, Remi Vezy and Thomas Arsouze.",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "abstract.html",
-    "href": "abstract.html",
-    "title": "Abstract",
-    "section": "",
-    "text": "1. Concevoir un FSPM contraint par un modèle de culture pour les cultures intercalaires\nUn FSPM dynamique paramétrique, aérien et racinaire, adapté pour les céréales et les légumineuses, et visant à être contraint par les sorties d’un modèle de culture (par exemple, reconstruire la croissance et le développement d’une plante à partir du LAI et de la hauteur du couvert pour la partie aérienne) est en cours de création.\nCela laisse autant de degrés de liberté que la structure 3D implémentée dans le modèle le permet, et donc une variabilité architecturale aussi grande qu’il y a de paramètres architecturaux. En somme, le but est de pouvoir représenter un modèle de culture avec une structure 3D et un arrangement spatial explicite des cultures intercalaires.\nRéalisation : modèle FSPM",
-    "crumbs": [
-      "Abstract"
-    ]
-  },
-  {
-    "objectID": "abstract.html#identifier-les-processus-perfectibles-des-modèles-de-culture",
-    "href": "abstract.html#identifier-les-processus-perfectibles-des-modèles-de-culture",
-    "title": "Abstract",
-    "section": "2. Identifier les processus perfectibles des modèles de culture",
-    "text": "2. Identifier les processus perfectibles des modèles de culture\nEn utilisant le FSPM précédemment créé, il sera possible, pour une simulation avec un modèle de culture, d’en obtenir un grand nombre en explorant un espace phénotypique défini pour chaque espèce par les paramètres architecturaux non pris en compte dans le modèle de culture, ainsi qu’en modifiant l’arrangement spatial explicite des cultures intercalaires. Une vaste expérience de simulation sera réalisée pour comprendre comment les différents processus (interception de la lumière, absorption de l’eau et de l’azote, etc.) sont modifiés en fonction des variations des caractéristiques architecturales des plantes, de l’arrangement spatial des cultures intercalaires, mais aussi en tenant compte de l’échelle spatiale et temporelle des processus simulés.\nDes analyses statistiques (comparaison de moyennes, analyse de la variance, de propagation d’incertitude, de sensibilité) seront faites sur les sorties de ces simulations pour identifier les processus pour lesquels la prise en compte d’échelles plus fines a une influence, ainsi que des paramètres d’intérêt.\nLes espèces et variétés de plantes utilisées pour simuler les cultures intercalaires seront choisies en fonction de la paramétrisation existante de STICS pour les cultures intercalaires, ainsi que des expériences disponibles dans le projet IntercropValuES.\nRéalisation : méthodologie + application avec STICS",
-    "crumbs": [
-      "Abstract"
-    ]
-  },
-  {
-    "objectID": "abstract.html#tester-différentes-approches-pour-améliorer-la-prise-en-compte-des-paramètres-structuraux-dintérêt-pour-la-modélisation-des-cultures-intercalaires-dans-les-formalismes-du-modèle-de-culture-stics-intercrop-avec-une-approche-multi-échelle",
-    "href": "abstract.html#tester-différentes-approches-pour-améliorer-la-prise-en-compte-des-paramètres-structuraux-dintérêt-pour-la-modélisation-des-cultures-intercalaires-dans-les-formalismes-du-modèle-de-culture-stics-intercrop-avec-une-approche-multi-échelle",
-    "title": "Abstract",
-    "section": "3. Tester différentes approches pour améliorer la prise en compte des paramètres structuraux d’intérêt pour la modélisation des cultures intercalaires dans les formalismes du modèle de culture STICS-Intercrop avec une approche multi-échelle",
-    "text": "3. Tester différentes approches pour améliorer la prise en compte des paramètres structuraux d’intérêt pour la modélisation des cultures intercalaires dans les formalismes du modèle de culture STICS-Intercrop avec une approche multi-échelle\nLes processus identifiés précédemment seront étudiés à différentes échelles spatiales et temporelles. Pour passer d’une échelle (par exemple l’échelle de l’organe) à une autre (par exemple l’échelle de la culture), plusieurs stratégies seront étudiées : comment trouver un modèle analytique équivalent pour l’absorption d’eau en utilisant des hypothèses homogènes (Couveur et al., 2012) ? Comment estimer un modèle de substitution basé sur la sortie du modèle à une échelle plus fine pour capturer les propriétés émergentes ? Ou encore, comment concevoir des modèles hybrides en combinant des modules existants à la même échelle ou à des échelles différentes ?\nCela conduira à de nouveaux formalismes dans le modèle de culture.\nRéalisation : nouveaux formalismes pour la prochaine version de STICS",
-    "crumbs": [
-      "Abstract"
-    ]
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "In progress …\nTalk about intercropping as an agro-ecological practice, the barriers, the importance of modeling, the existing models (crop and FSPM) and their characteristics, their limits as for modeling intercrops, focus on evaluating how hypotheses in crop models are off the mark, for processes occuring in shoot and root, and how to modify the formalisms corresping to processes that are off the mark in STICS crop model in particular.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
-    "objectID": "year_1.html",
-    "href": "year_1.html",
-    "title": "First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability",
-    "section": "",
-    "text": "Analysis - shoot: Does considering plant shoot structural variability change a crop model’s outputs in an intercropping context ?\nHypothesis: The error of crop models, when it comes to modeling intercrops, are mainly due to the average plant hypothesis and the non-consideration of the plant shoot architecture.\nIs the variability generated by structural considerations large enough to unvalidate crop model hypotheses ?\nWhat is the sensitivity of intercrops to variations of plant structure (and spatial arrangement) ?\nHow do the uncertainties linked to crop model hypotheses propagate when considering plant structure ?\nDevelop a dynamic shoot parametric FSPM for each type of plant (cereals and legumes, inspiration from OpenAlea models Cereal, L-Pea, WeberPenn, etc., to adapt for intercrops for which we have data), where growth is constrained by outputs from a crop model (e.g. LAI(t) and height(t)), leaving degrees of freedom for features that are not explicitly considered in the crop model (e.g. plant architecture and spatial arrangement).\nImplement well-known structural reactions to stresses.\nRun simulations of various GxGxExM with both FSPM and STICS (stressless and stressed conditions : Vezy et al., 2023; Traore et al., 2022, 2023), varying (define variations ranges) when possible: shoot structures (explore phenotypic space, i.e. create many morphotypes), spatial arrangement (with all same plants or all different to separate effects), env/stresses (N, water, light)\nFrom outputs from my models and from STICS for given processes and given conditions:\n- Compare means and analyze variance of chosen output variables: light intercepted, RUE, N demand /organ, etc.\n- Analyse uncertainty propagation in simulations. Expected results: see which processes are the most impacted by the uncertainty in crop model outputs.\n- Analyse sensitivity of some plant processes to structural variability and spatial heterogeneity. Expected results: spot parameters of interest that can make a change if better considered in a crop model when modeling intercrops.\nUnvalidate some formalisms in STICS",
-    "crumbs": [
-      "First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability"
-    ]
-  },
-  {
-    "objectID": "intro_1.html",
-    "href": "intro_1.html",
-    "title": "2  Introduction",
-    "section": "",
-    "text": "In progress …",
-    "crumbs": [
-      "First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
     "objectID": "structural_cereal_model.html",
     "href": "structural_cereal_model.html",
     "title": "3  Structural cereal model",
@@ -218,7 +147,7 @@
     "href": "dynamic_model.html#fit-plant-growth-and-development-to-lait-and-heightt-curves-from-crop-model",
     "title": "4  Dynamic model",
     "section": "4.5 Fit plant growth and development to LAI(t) and height(t) curves from crop model",
-    "text": "4.5 Fit plant growth and development to LAI(t) and height(t) curves from crop model\nTwo constraints :\n\\[ \\mathcal{A} = \\mathcal{A_scaled} = 2 w |\\int_{L}^{0} \\mathcal{C}(\\frac{s(u)}{L})d\\frac{s(u)}{L}| \\] where \\[\\mathcal{C}(x) = \\alpha x^2 - 2 (\\alpha + \\sqrt{-\\alpha}) x + 2 \\sqrt{-\\alpha} + \\alpha\\]\nand \\[ \\text{leaf length} = L  e^{-\\log(skew) * (2 (z - zmax)^2 + (z - zmax)^3)} \\]\n\n\nCode\nshoot, g = build_shoot(nb_phy=nb_phy,\n                        height=height,\n                        max_leaf_length=max_leaf_length)\n\n# For loop for generating plants at different stages\nfor time in [0,84,136,249,385,465,598,672,723,862,942,1025,1148,1295,1363,1472,1538,1618,1702,1899,1988]:\n    LAs = compute_leaf_area(grow_plant(g, time=time, phyllochron=110))\n\n\n# plt.clf()\n# plt.plot(range(0,nb_phy), LAs)\n# plt.show()\n\n\n\n\nCode\nfrom scipy.optimize import curve_fit, least_squares\n\n# Sources\n# Toungos, 2019, 10.5281/Zendo.2653098. \n# dos Santos et al., 2022, 10.3389/fpls.2022.872738\n\ndef parametric_model_maize(thermal_time, max_leaf_length, phyllochron):\n    \"\"\"\n    Define parametric model.\n\n    Args:\n    - thermal_time: Input values\n    - max_leaf_length, phyllochron: Parameters of the model\n\n    Returns:\n    - leaf_areas: Output values corresponding to the model\n    \"\"\"\n    \n    height=300                 \n    nb_phy=20 \n    \n    shoot, g = build_shoot(nb_phy=nb_phy,\n                            height=height,\n                            max_leaf_length=max_leaf_length,\n                            wl=0.15, diam_base=2.5, diam_top=1.0, \n                            insertion_angle=30, scurv=0.7, curvature=90, \n                            alpha=-2.3, stem_q=1.2, rmax=0.8, skew=0.2,\n                            phyllotactic_angle=180, phyllotactic_deviation=0, plant_orientation=0, spiral=True)\n\n\n    leaf_areas = []\n    for t in thermal_time:\n        leaf_areas.append(sum(compute_leaf_area(grow_plant(g, time=t, phyllochron=phyllochron))))\n\n    return leaf_areas\n\n\n\n4.5.1 From STICS simulation for maize\n\n\nCode\n## From a STICS simulation for maize\n\ndef read_columns_from_file(filename, separator=';'):\n    with open(filename, 'r') as file:\n        columns = []\n        for line in file:\n            values = line.strip().split(separator) # Strip any extra whitespace and split the line by the separator\n            if not columns:\n                columns = [[] for _ in values]\n            while len(columns) &lt; len(values):\n                columns.append([])\n            for i, value in enumerate(values):\n                columns[i].append(value)\n            # Handle lines with fewer values than columns\n            for i in range(len(values), len(columns)):\n                columns[i].append('')\n    return columns\n\n\nfilename = 'mod_smaize.sti'\ncolumns = read_columns_from_file(filename)\ncolumns = columns[5:]\n\nend = 115\ndensity = 0.00095 # density = 9.5 plant/m2 = 0.00095 plant/cm2\ncm_la = [float(i)/density for i in columns[0][18:end]] \ncm_height = [float(i) for i in columns[1][18:end]]\ncm_tt = np.cumsum([float(i) for i in columns[2][18:end]])\n\nx_data = []\ny_data = []\nfor i,t in enumerate(cm_tt):\n    x_data.append(t)\n    y_data.append(cm_la[i])\nx_data = np.array(x_data)  # input data\ny_data = np.array(y_data)  # output data\n\n\n\n\nCode\n# Fit the model to crop model data and obtain optimal parameters\noptimal_params, covariance = curve_fit(f=parametric_model_maize, xdata=x_data, ydata=y_data, bounds=([50,20],[100,90]), method='trf') # bounds to set from lit\nse = np.sqrt(np.diag(covariance))\n\nprint(\"                  Max leaf length  Phyllochron\")\nprint(\"Optimized parameters:\", optimal_params)\n# print(\"Covariances:\", covariance)\nprint(\"Standard errors:\", se)\n\n# Visualize the fit\nplt.clf()\nplt.scatter(x_data, y_data*density, color=(228/255,27/255,143/255), label='Simulation with STICS') # R 228, G 27, B 143\nres = parametric_model_maize(x_data, *optimal_params)\nplt.plot(x_data, np.array(res)*density, color=(12/255,165/255,54/255), label='Simulation with ArchiCrop') # R 12, G 165, B 54\nplt.xlabel('Thermal time (°C.d)')\nplt.ylabel('LAI')\nplt.legend()\nplt.show()\n\n\n                  Max leaf length  Phyllochron\nOptimized parameters: [56.70458281 35.4181157 ]\nStandard errors: [0.29165666 0.19766131]\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Define the model function\ndef parametric_model_maize_ls(params, thermal_time, y_data):\n    \"\"\"\n    Define parametric model.\n\n    Args:\n    - thermal_time: Input values\n    - max_leaf_length, phyllochron: Parameters of the model\n\n    Returns:\n    - leaf_areas: Output values corresponding to the model\n    \"\"\"\n\n    max_leaf_length=params[0]\n    phyllochron=params[1]\n    \n    height=300                 \n    nb_phy=20 \n    \n    shoot, g = build_shoot(nb_phy=nb_phy,\n                            height=height,\n                            max_leaf_length=max_leaf_length,\n                            wl=0.15, diam_base=2.5, diam_top=1.0, \n                            insertion_angle=30, scurv=0.7, curvature=90, \n                            alpha=-2.3, stem_q=1.2, rmax=0.8, skew=0.2,\n                            phyllotactic_angle=180, phyllotactic_deviation=0, plant_orientation=0, spiral=True)\n\n\n    leaf_areas = []\n    for t in thermal_time:\n        leaf_areas.append(sum(compute_leaf_area(grow_plant(g, time=t, phyllochron=phyllochron))))\n\n    return y_data - leaf_areas\n\n\n\n\nCode\n# Initial guess for the parameters\nx0 = [80, 45]\n\n# Perform the least squares optimization\nresult = least_squares(parametric_model_maize_ls, x0, args=(x_data, y_data), method='dogbox')\n\n# Extract the optimized parameters\nmax_leaf_length_opt, phyllochron_opt = result.x\nprint(\"                   Max leaf length  Phyllochron\")\nprint(\"Optimized parameters:\", max_leaf_length_opt, phyllochron_opt)\n\n# Visualize the fit\nplt.clf()\nplt.scatter(x_data, y_data, label='Data')\nplt.plot(x_data, parametric_model_maize(x_data, *result.x), color='red', label='Fitted Curve')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.show()\n\n\n                   Max leaf length  Phyllochron\nOptimized parameters: 56.70457981293104 35.41811165900665\n\n\n\n\n\n\n\n\n\n\n\nCode\n## Imports\n\n# from installed packages\nfrom random import *\n\n# from archicrop\nfrom openalea.archicrop.stand import agronomic_plot\n\n# Enable plotting with PlantGL\n%gui qt\n\n## Code for generating ...\n# Fix a seed\nseed(100)\n\n# Initialize the list of plants\nplants_in_crop=[]\n\n# Fixed parameters for all plants\nlength_plot=5\nwidth_plot=5\nsowing_density=9.5\nplant_density=9.5\ninter_row=0.5\nnplants, positions, domain, domain_area, unit = agronomic_plot(length_plot, \n                                                               width_plot, \n                                                               sowing_density, \n                                                               plant_density, \n                                                               inter_row, \n                                                               noise=0.1)\n\n# For loop over all the plants in the crop\nfor n in range(nplants):\n\n    # Parameters \n    max_leaf_length=optimal_params[0]\n    phyllochron=optimal_params[1]\n    height=300                 \n    nb_phy=20 \n    \n    \n    shoot, g = build_shoot(nb_phy=nb_phy,\n                            height=height,\n                            max_leaf_length=max_leaf_length,\n                            wl=0.15, diam_base=2.5, diam_top=1.0, \n                            insertion_angle=30, scurv=0.7, curvature=90, \n                            alpha=-2.3, stem_q=1.2, rmax=0.8, skew=0.2,\n                            phyllotactic_angle=180,\n                            plant_orientation=random()*360,\n                            phyllotactic_deviation=20)\n    \n    # Fill the list of plants\n    plants_in_crop.append(g) # put all plants in the same mtg to be able to visualize the dynamic growth easily\n\n# Build and display scene\nscene_var, nump = build_scene(plants_in_crop, positions, leaf_material=Material(nice_green), stem_material=Material(nice_green))\nPlantGL(scene_var)\n# interact(grow_plant_and_display_in_NB, g=fixed(plants_in_crop), time=IntSlider(min=20, max=2000, step=20, value=1000))",
+    "text": "4.5 Fit plant growth and development to LAI(t) and height(t) curves from crop model\nTwo constraints :\n\\[ \\mathcal{A} = \\mathcal{A_scaled} = 2 w |\\int_{L}^{0} \\mathcal{C}(\\frac{s(u)}{L})d\\frac{s(u)}{L}| \\] where \\[\\mathcal{C}(x) = \\alpha x^2 - 2 (\\alpha + \\sqrt{-\\alpha}) x + 2 \\sqrt{-\\alpha} + \\alpha\\]\nand \\[ \\text{leaf length} = L  e^{-\\log(skew) * (2 (z - zmax)^2 + (z - zmax)^3)} \\]\n\n\nCode\nshoot, g = build_shoot(nb_phy=nb_phy,\n                        height=height,\n                        max_leaf_length=max_leaf_length)\n\n# For loop for generating plants at different stages\nfor time in [0,84,136,249,385,465,598,672,723,862,942,1025,1148,1295,1363,1472,1538,1618,1702,1899,1988]:\n    LAs = compute_leaf_area(grow_plant(g, time=time, phyllochron=110))\n\n\n# plt.clf()\n# plt.plot(range(0,nb_phy), LAs)\n# plt.show()\n\n\n\n\nCode\nfrom scipy.optimize import curve_fit, least_squares\n\n# Sources\n# Toungos, 2019, 10.5281/Zendo.2653098. \n# dos Santos et al., 2022, 10.3389/fpls.2022.872738\n\ndef parametric_model_maize(thermal_time, max_leaf_length, phyllochron):\n    \"\"\"\n    Define parametric model.\n\n    Args:\n    - thermal_time: Input values\n    - max_leaf_length, phyllochron: Parameters of the model\n\n    Returns:\n    - leaf_areas: Output values corresponding to the model\n    \"\"\"\n    \n    height=300                 \n    nb_phy=20 \n    \n    shoot, g = build_shoot(nb_phy=nb_phy,\n                            height=height,\n                            max_leaf_length=max_leaf_length,\n                            wl=0.15, diam_base=2.5, diam_top=1.0, \n                            insertion_angle=30, scurv=0.7, curvature=90, \n                            alpha=-2.3, stem_q=1.2, rmax=0.8, skew=0.2,\n                            phyllotactic_angle=180, phyllotactic_deviation=0, plant_orientation=0, spiral=True)\n\n\n    leaf_areas = []\n    for t in thermal_time:\n        leaf_areas.append(sum(compute_leaf_area(grow_plant(g, time=t, phyllochron=phyllochron))))\n\n    return leaf_areas\n\n\n\n4.5.1 From STICS simulation for maize\n\n\nCode\n## From a STICS simulation for maize\n\ndef read_columns_from_file(filename, separator=';'):\n    with open(filename, 'r') as file:\n        columns = []\n        for line in file:\n            values = line.strip().split(separator) # Strip any extra whitespace and split the line by the separator\n            if not columns:\n                columns = [[] for _ in values]\n            while len(columns) &lt; len(values):\n                columns.append([])\n            for i, value in enumerate(values):\n                columns[i].append(value)\n            # Handle lines with fewer values than columns\n            for i in range(len(values), len(columns)):\n                columns[i].append('')\n    return columns\n\n\nfilename = 'mod_smaize.sti'\ncolumns = read_columns_from_file(filename)\ncolumns = columns[5:]\n\nend = 115\ndensity = 0.00095 # density = 9.5 plant/m2 = 0.00095 plant/cm2\ncm_la = [float(i)/density for i in columns[0][18:end]] \ncm_height = [float(i) for i in columns[1][18:end]]\ncm_tt = np.cumsum([float(i) for i in columns[2][18:end]])\n\nx_data = []\ny_data = []\nfor i,t in enumerate(cm_tt):\n    x_data.append(t)\n    y_data.append(cm_la[i])\nx_data = np.array(x_data)  # input data\ny_data = np.array(y_data)  # output data\n\n\n\n\nCode\n# Fit the model to crop model data and obtain optimal parameters\noptimal_params, covariance = curve_fit(f=parametric_model_maize, xdata=x_data, ydata=y_data, bounds=([50,20],[100,90]), method='trf') # bounds to set from lit\nse = np.sqrt(np.diag(covariance))\n\nprint(\"                  Max leaf length  Phyllochron\")\nprint(\"Optimized parameters:\", optimal_params)\n# print(\"Covariances:\", covariance)\nprint(\"Standard errors:\", se)\n\n# Visualize the fit\nplt.clf()\nplt.scatter(x_data, y_data*density, color=(243/255,146/255,0/255), label='Simulation with STICS') # R 243, G 146, B 0\nres = parametric_model_maize(x_data, *optimal_params)\n# plt.plot(x_data, np.array(res)*density, color=(57/255,151/255,88/255), label='Simulation with ArchiCrop') # R 57, G 151, B 88\nplt.xlabel('Thermal time (°C.d)')\nplt.ylabel('LAI')\nplt.legend()\nplt.show()\n\n\n                  Max leaf length  Phyllochron\nOptimized parameters: [56.70458281 35.4181157 ]\nStandard errors: [0.29165666 0.19766131]\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Define the model function\ndef parametric_model_maize_ls(params, thermal_time, y_data):\n    \"\"\"\n    Define parametric model.\n\n    Args:\n    - thermal_time: Input values\n    - max_leaf_length, phyllochron: Parameters of the model\n\n    Returns:\n    - leaf_areas: Output values corresponding to the model\n    \"\"\"\n\n    max_leaf_length=params[0]\n    phyllochron=params[1]\n    \n    height=300                 \n    nb_phy=20 \n    \n    shoot, g = build_shoot(nb_phy=nb_phy,\n                            height=height,\n                            max_leaf_length=max_leaf_length,\n                            wl=0.15, diam_base=2.5, diam_top=1.0, \n                            insertion_angle=30, scurv=0.7, curvature=90, \n                            alpha=-2.3, stem_q=1.2, rmax=0.8, skew=0.2,\n                            phyllotactic_angle=180, phyllotactic_deviation=0, plant_orientation=0, spiral=True)\n\n\n    leaf_areas = []\n    for t in thermal_time:\n        leaf_areas.append(sum(compute_leaf_area(grow_plant(g, time=t, phyllochron=phyllochron))))\n\n    return y_data - leaf_areas\n\n\n\n\nCode\n# Initial guess for the parameters\nx0 = [80, 45]\n\n# Perform the least squares optimization\nresult = least_squares(parametric_model_maize_ls, x0, args=(x_data, y_data), method='dogbox')\n\n# Extract the optimized parameters\nmax_leaf_length_opt, phyllochron_opt = result.x\nprint(\"                   Max leaf length  Phyllochron\")\nprint(\"Optimized parameters:\", max_leaf_length_opt, phyllochron_opt)\n\n# Visualize the fit\nplt.clf()\nplt.scatter(x_data, y_data, label='Data')\nplt.plot(x_data, parametric_model_maize(x_data, *result.x), color='red', label='Fitted Curve')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.show()\n\n\n                   Max leaf length  Phyllochron\nOptimized parameters: 56.70457981293104 35.41811165900665\n\n\n\n\n\n\n\n\n\n\n\nCode\n## Imports\n\n# from installed packages\nfrom random import *\n\n# from archicrop\nfrom openalea.archicrop.stand import agronomic_plot\n\n# Enable plotting with PlantGL\n%gui qt\n\n## Code for generating ...\n# Fix a seed\nseed(100)\n\n# Initialize the list of plants\nplants_in_crop=[]\n\n# Fixed parameters for all plants\nlength_plot=5\nwidth_plot=5\nsowing_density=9.5\nplant_density=9.5\ninter_row=0.5\nnplants, positions, domain, domain_area, unit = agronomic_plot(length_plot, \n                                                               width_plot, \n                                                               sowing_density, \n                                                               plant_density, \n                                                               inter_row, \n                                                               noise=0.1)\n\n# For loop over all the plants in the crop\nfor n in range(nplants):\n\n    # Parameters \n    max_leaf_length=optimal_params[0]\n    phyllochron=optimal_params[1]\n    height=300                 \n    nb_phy=20 \n    \n    \n    shoot, g = build_shoot(nb_phy=nb_phy,\n                            height=height,\n                            max_leaf_length=max_leaf_length,\n                            wl=0.15, diam_base=2.5, diam_top=1.0, \n                            insertion_angle=30, scurv=0.7, curvature=90, \n                            alpha=-2.3, stem_q=1.2, rmax=0.8, skew=0.2,\n                            phyllotactic_angle=180,\n                            plant_orientation=random()*360,\n                            phyllotactic_deviation=20)\n    \n    # Fill the list of plants\n    plants_in_crop.append(g) # put all plants in the same mtg to be able to visualize the dynamic growth easily\n\n# Build and display scene\nscene_var, nump = build_scene(plants_in_crop, positions, leaf_material=Material(nice_green), stem_material=Material(nice_green))\nPlantGL(scene_var)\n# interact(grow_plant_and_display_in_NB, g=fixed(plants_in_crop), time=IntSlider(min=20, max=2000, step=20, value=1000))",
     "crumbs": [
       "First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamic model</span>"
@@ -269,13 +198,64 @@
     ]
   },
   {
-    "objectID": "year_2.html",
-    "href": "year_2.html",
-    "title": "Second chapter : Analyzing accuracy of formalisms in crop model when adding root structural variability",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PhD Oriane",
     "section": "",
-    "text": "Analysis - root : Would considering root structure in an intercropping system be relevant for crop models ?\nHypothesis: The error of crop models, when it comes to modeling intercrops, are mainly due to the average plant hypothesis and the non-consideration of the plant root architecture.\nCreate a dynamic root FSPM for all 4 plants (cf lit), that enables to constrain root growth with density=f(depth) from STICS, in STICS’ 1D soil.\nImplement well-known structural reactions to stresses.\nRun simulations with both FSPM and STICS (stressless and stressed conditions : Vezy et al., 2023; Traore et al., 2022, 2023), varying (define variations ranges) when possible: root structures, spatial arrangement (with all same plants or all different to separate effects), env/stresses (N, water, light)\nFrom outputs from my models and from STICS for given processes and given conditions:\nCompare means and analyze variance of chosen output variables: water and N uptake, N fixing, etc.\nAnalyse uncertainty propagation in simulations; expected results: see which processes (integrated in root density) are the most impacted by the uncertainty in STICS’ root density.\nAnalyse sensitivity of some plant processes to structural variability (and spatial heterogeneity). Expected results: spot parameters of interest to implement in STICS as a parameter or different equation.\nCouple shoot and root models (when ?)\nCollaboration with post-doc from WUR, Jie Lu",
+    "text": "Preface\nThis book keeps track of the work made during the PhD of Oriane Braud, entitled “Multiscale hybrid modeling framework for intercrops: the best of plant and crop models”. This PhD is carried out from November 2023 to 2026 at CIRAD (UMRs AGAP and AMAP), as part of European project IntercropValuES, and is supervised by Myriam Adam, Marc Jaeger, Christophe Pradal, Remi Vezy and Thomas Arsouze.",
     "crumbs": [
-      "Second chapter : Analyzing accuracy of formalisms in crop model when adding root structural variability"
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "abstract.html",
+    "href": "abstract.html",
+    "title": "Abstract",
+    "section": "",
+    "text": "1. Concevoir un FSPM contraint par un modèle de culture pour les cultures intercalaires\nUn FSPM dynamique paramétrique, aérien et racinaire, adapté pour les céréales et les légumineuses, et visant à être contraint par les sorties d’un modèle de culture (par exemple, reconstruire la croissance et le développement d’une plante à partir du LAI et de la hauteur du couvert pour la partie aérienne) est en cours de création.\nCela laisse autant de degrés de liberté que la structure 3D implémentée dans le modèle le permet, et donc une variabilité architecturale aussi grande qu’il y a de paramètres architecturaux. En somme, le but est de pouvoir représenter un modèle de culture avec une structure 3D et un arrangement spatial explicite des cultures intercalaires.\nRéalisation : modèle FSPM",
+    "crumbs": [
+      "Abstract"
+    ]
+  },
+  {
+    "objectID": "abstract.html#identifier-les-processus-perfectibles-des-modèles-de-culture",
+    "href": "abstract.html#identifier-les-processus-perfectibles-des-modèles-de-culture",
+    "title": "Abstract",
+    "section": "2. Identifier les processus perfectibles des modèles de culture",
+    "text": "2. Identifier les processus perfectibles des modèles de culture\nEn utilisant le FSPM précédemment créé, il sera possible, pour une simulation avec un modèle de culture, d’en obtenir un grand nombre en explorant un espace phénotypique défini pour chaque espèce par les paramètres architecturaux non pris en compte dans le modèle de culture, ainsi qu’en modifiant l’arrangement spatial explicite des cultures intercalaires. Une vaste expérience de simulation sera réalisée pour comprendre comment les différents processus (interception de la lumière, absorption de l’eau et de l’azote, etc.) sont modifiés en fonction des variations des caractéristiques architecturales des plantes, de l’arrangement spatial des cultures intercalaires, mais aussi en tenant compte de l’échelle spatiale et temporelle des processus simulés.\nDes analyses statistiques (comparaison de moyennes, analyse de la variance, de propagation d’incertitude, de sensibilité) seront faites sur les sorties de ces simulations pour identifier les processus pour lesquels la prise en compte d’échelles plus fines a une influence, ainsi que des paramètres d’intérêt.\nLes espèces et variétés de plantes utilisées pour simuler les cultures intercalaires seront choisies en fonction de la paramétrisation existante de STICS pour les cultures intercalaires, ainsi que des expériences disponibles dans le projet IntercropValuES.\nRéalisation : méthodologie + application avec STICS",
+    "crumbs": [
+      "Abstract"
+    ]
+  },
+  {
+    "objectID": "abstract.html#tester-différentes-approches-pour-améliorer-la-prise-en-compte-des-paramètres-structuraux-dintérêt-pour-la-modélisation-des-cultures-intercalaires-dans-les-formalismes-du-modèle-de-culture-stics-intercrop-avec-une-approche-multi-échelle",
+    "href": "abstract.html#tester-différentes-approches-pour-améliorer-la-prise-en-compte-des-paramètres-structuraux-dintérêt-pour-la-modélisation-des-cultures-intercalaires-dans-les-formalismes-du-modèle-de-culture-stics-intercrop-avec-une-approche-multi-échelle",
+    "title": "Abstract",
+    "section": "3. Tester différentes approches pour améliorer la prise en compte des paramètres structuraux d’intérêt pour la modélisation des cultures intercalaires dans les formalismes du modèle de culture STICS-Intercrop avec une approche multi-échelle",
+    "text": "3. Tester différentes approches pour améliorer la prise en compte des paramètres structuraux d’intérêt pour la modélisation des cultures intercalaires dans les formalismes du modèle de culture STICS-Intercrop avec une approche multi-échelle\nLes processus identifiés précédemment seront étudiés à différentes échelles spatiales et temporelles. Pour passer d’une échelle (par exemple l’échelle de l’organe) à une autre (par exemple l’échelle de la culture), plusieurs stratégies seront étudiées : comment trouver un modèle analytique équivalent pour l’absorption d’eau en utilisant des hypothèses homogènes (Couveur et al., 2012) ? Comment estimer un modèle de substitution basé sur la sortie du modèle à une échelle plus fine pour capturer les propriétés émergentes ? Ou encore, comment concevoir des modèles hybrides en combinant des modules existants à la même échelle ou à des échelles différentes ?\nCela conduira à de nouveaux formalismes dans le modèle de culture.\nRéalisation : nouveaux formalismes pour la prochaine version de STICS",
+    "crumbs": [
+      "Abstract"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "In progress …\nTalk about intercropping as an agro-ecological practice, the barriers, the importance of modeling, the existing models (crop and FSPM) and their characteristics, their limits as for modeling intercrops, focus on evaluating how hypotheses in crop models are off the mark, for processes occuring in shoot and root, and how to modify the formalisms corresping to processes that are off the mark in STICS crop model in particular.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro_1.html",
+    "href": "intro_1.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "In progress …",
+    "crumbs": [
+      "First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
@@ -290,16 +270,6 @@
     ]
   },
   {
-    "objectID": "year_3.html",
-    "href": "year_3.html",
-    "title": "Third chapter: Improving STICS",
-    "section": "",
-    "text": "Modeling : How to model intercrops more accurately at crop scale, considering spatial issues when needed ?\nHypothesis: New crop models formalisms created through a multiscale approach would enable a better accuracy of the crop models.\nWhich formalisms would enable to translate spatial and structural considerations for chosen plant processes in a crop model ?\nFor each plant process targeted previously:\n- Develop formalisms to implement in STICS, by any appropriate method.\n- Run simulations and compare with simulations with previous version and with field data, to make sure new version of STICS fits data even better. (see with Mathilde de Freitas ?)",
-    "crumbs": [
-      "Third chapter: Improving STICS"
-    ]
-  },
-  {
     "objectID": "intro_3.html",
     "href": "intro_3.html",
     "title": "7  Introduction",
@@ -308,6 +278,36 @@
     "crumbs": [
       "Third chapter: Improving STICS",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "year_1.html",
+    "href": "year_1.html",
+    "title": "First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability",
+    "section": "",
+    "text": "Analysis - shoot: Does considering plant shoot structural variability change a crop model’s outputs in an intercropping context ?\nHypothesis: The error of crop models, when it comes to modeling intercrops, are mainly due to the average plant hypothesis and the non-consideration of the plant shoot architecture.\nIs the variability generated by structural considerations large enough to unvalidate crop model hypotheses ?\nWhat is the sensitivity of intercrops to variations of plant structure (and spatial arrangement) ?\nHow do the uncertainties linked to crop model hypotheses propagate when considering plant structure ?\nDevelop a dynamic shoot parametric FSPM for each type of plant (cereals and legumes, inspiration from OpenAlea models Cereal, L-Pea, WeberPenn, etc., to adapt for intercrops for which we have data), where growth is constrained by outputs from a crop model (e.g. LAI(t) and height(t)), leaving degrees of freedom for features that are not explicitly considered in the crop model (e.g. plant architecture and spatial arrangement).\nImplement well-known structural reactions to stresses.\nRun simulations of various GxGxExM with both FSPM and STICS (stressless and stressed conditions : Vezy et al., 2023; Traore et al., 2022, 2023), varying (define variations ranges) when possible: shoot structures (explore phenotypic space, i.e. create many morphotypes), spatial arrangement (with all same plants or all different to separate effects), env/stresses (N, water, light)\nFrom outputs from my models and from STICS for given processes and given conditions:\n- Compare means and analyze variance of chosen output variables: light intercepted, RUE, N demand /organ, etc.\n- Analyse uncertainty propagation in simulations. Expected results: see which processes are the most impacted by the uncertainty in crop model outputs.\n- Analyse sensitivity of some plant processes to structural variability and spatial heterogeneity. Expected results: spot parameters of interest that can make a change if better considered in a crop model when modeling intercrops.\nUnvalidate some formalisms in STICS",
+    "crumbs": [
+      "First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability"
+    ]
+  },
+  {
+    "objectID": "year_2.html",
+    "href": "year_2.html",
+    "title": "Second chapter : Analyzing accuracy of formalisms in crop model when adding root structural variability",
+    "section": "",
+    "text": "Analysis - root : Would considering root structure in an intercropping system be relevant for crop models ?\nHypothesis: The error of crop models, when it comes to modeling intercrops, are mainly due to the average plant hypothesis and the non-consideration of the plant root architecture.\nCreate a dynamic root FSPM for all 4 plants (cf lit), that enables to constrain root growth with density=f(depth) from STICS, in STICS’ 1D soil.\nImplement well-known structural reactions to stresses.\nRun simulations with both FSPM and STICS (stressless and stressed conditions : Vezy et al., 2023; Traore et al., 2022, 2023), varying (define variations ranges) when possible: root structures, spatial arrangement (with all same plants or all different to separate effects), env/stresses (N, water, light)\nFrom outputs from my models and from STICS for given processes and given conditions:\nCompare means and analyze variance of chosen output variables: water and N uptake, N fixing, etc.\nAnalyse uncertainty propagation in simulations; expected results: see which processes (integrated in root density) are the most impacted by the uncertainty in STICS’ root density.\nAnalyse sensitivity of some plant processes to structural variability (and spatial heterogeneity). Expected results: spot parameters of interest to implement in STICS as a parameter or different equation.\nCouple shoot and root models (when ?)\nCollaboration with post-doc from WUR, Jie Lu",
+    "crumbs": [
+      "Second chapter : Analyzing accuracy of formalisms in crop model when adding root structural variability"
+    ]
+  },
+  {
+    "objectID": "year_3.html",
+    "href": "year_3.html",
+    "title": "Third chapter: Improving STICS",
+    "section": "",
+    "text": "Modeling : How to model intercrops more accurately at crop scale, considering spatial issues when needed ?\nHypothesis: New crop models formalisms created through a multiscale approach would enable a better accuracy of the crop models.\nWhich formalisms would enable to translate spatial and structural considerations for chosen plant processes in a crop model ?\nFor each plant process targeted previously:\n- Develop formalisms to implement in STICS, by any appropriate method.\n- Run simulations and compare with simulations with previous version and with field data, to make sure new version of STICS fits data even better. (see with Mathilde de Freitas ?)",
+    "crumbs": [
+      "Third chapter: Improving STICS"
     ]
   }
 ]
