@@ -1,0 +1,5 @@
+ArchiSimple, OpenSimRoot, CRootBox, CPlantBox, DigR, RootTyp
+
+La simulation de la partie racinaire par un modèle paramétrique 3D, 
+prenant en compte les traits architecturaux, servira à définir la fonction de 
+densité racinaire au cours du temps qui sera fournie en entrée du modèle de culture.
