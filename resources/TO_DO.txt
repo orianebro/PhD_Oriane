@@ -1,0 +1,8 @@
+save all MTGs of potential/growing plants
+save all results in organized files and folders
+
+retrieve growing pattern of each organ
+
+# compare values of PAR intercepted of canopy through time with both models, with and without architectural variability
+# per trait and density
+# uncertainty analysis
