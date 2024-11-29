@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -72,10 +72,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-f2a1071e85750ec973bbb8a8f120da0f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b72aa43c4b700e74a32346e1c7109463.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -768,1694 +768,16 @@ The different scales are: - Plant<br>
 </script>
 </div>
 </div>
-<div id="cell-32" class="cell" data-execution_count="17">
+<div id="cell-32" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">help</span>(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># help(g)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Help on MTG in module openalea.mtg.mtg object:
-
-class MTG(openalea.mtg.tree.PropertyTree)
- |  MTG(filename='', has_date=False)
- |
- |  A Multiscale Tree Graph (MTG) class.
- |
- |  MTGs describe tree structures at different levels
- |  of details, named scales.
- |  For example, a botanist can described plants at different scales :
- |
- |      - at scale 0, the whole scene.
- |      - at scale 1, the individual plants.
- |      - at scale 2, the axes of each plants.
- |      - at scale 3, the growth units of each axis, and so on.
- |
- |  Each scale can have a label, e.g. :
- |
- |   - scale 1 : P(lant)
- |   - scale 2 : A(xis)
- |   - sclae 3 : U(nit of growth)
- |
- |  Compared to a classical tree, :func:`complex` can be seen as :func:`parent`
- |  and :func:`components` as :func:`children`.
- |  An element at :func:`scale` N belongs to a :func:`complex` at :func:`scale` N-1 and has :func:`components` at scale N+1:
- |
- |   - /P/A/U (decomposition is noted using "/")
- |
- |  Each scale is itself described as a tree or a forest (i.e. set of trees), e.g.:
- |
- |   - /P1/P2/P3
- |   - A1+A2&lt;A3
- |   - ...
- |
- |  Method resolution order:
- |      MTG
- |      openalea.mtg.tree.PropertyTree
- |      openalea.mtg.tree.Tree
- |      builtins.object
- |
- |  Methods defined here:
- |
- |  AlgHeight(self, v1, v2)
- |      Algebraic value defining the number of components between two components.
- |
- |      This function is similar to function `Height(v1, v2)` : it returns the number of components
- |      between two components, at the same scale, but takes into account the order of vertices
- |      `v1` and `v2`.
- |
- |      The result is positive if `v1` is an ancestor of `v2`,
- |      and negative if `v2` is an ancestor of `v1`.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          AlgHeight(v1, v2)
- |
- |      :Parameters:
- |
- |          - v1 (int) : vertex of the active MTG.
- |          - v2 (int) : vertex of the active MTG.
- |
- |      :Returns:
- |
- |          int
- |
- |          If `v1` is not an ancestor of `v2` (or vise versa), or if `v1` and `v2` are not defined
- |          at the same scale, an error value None is returned.
- |
- |      .. seealso:: :func:`MTG`, :func:`Rank`, :func:`Order`, :func:`Height`, :func:`EdgeType`, :func:`AlgOrder`, :func:`AlgRank`.
- |
- |  AlgOrder(self, v1, v2)
- |      Algebraic value defining the relative order of one vertex with respect to another one.
- |
- |      This function is similar to function `Order(v1, v2)` : it returns the number of `+`-type edges
- |      between two components, at the same scale, but takes into account the order of vertices
- |      `v1` and `v2`.
- |
- |      The result is positive if `v1` is an ancestor of `v2`,
- |      and negative if `v2` is an ancestor of `v1`.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          AlgOrder(v1, v2)
- |
- |      :Parameters:
- |
- |          - v1 (int) : vertex of the active MTG.
- |          - v2 (int) : vertex of the active MTG.
- |
- |      :Returns:
- |
- |          int
- |
- |          If `v1` is not an ancestor of `v2` (or vise versa), or if `v1` and `v2` are not defined
- |          at the same scale, an error value None is returned.
- |
- |
- |      .. seealso:: :func:`MTG`, :func:`Rank`, :func:`Order`, :func:`Height`, :func:`EdgeType`, :func:`AlgHeight`, :func:`AlgRank`.
- |
- |  AlgRank(self, v1, v2)
- |      Algebraic value defining the relative rank of one vertex with respect to another one.
- |
- |      This function is similar to function `Rank(v1, v2)` : it returns the number of `&lt;`-type edges
- |      between two components, at the same scale, but takes into account the order of vertices
- |      `v1` and `v2`.
- |
- |      The result is positive if `v1` is an ancestor of `v2`,
- |      and negative if `v2` is an ancestor of `v1`.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          AlgRank(v1, v2)
- |
- |      :Parameters:
- |
- |          - v1 (int) : vertex of the active MTG.
- |          - v2 (int) : vertex of the active MTG.
- |
- |      :Returns:
- |
- |          int
- |
- |          If `v1` is not an ancestor of `v2` (or vise versa), or if `v1` and `v2` are not defined
- |          at the same scale, an error value None is returned.
- |
- |      .. seealso:: :func:`MTG`, :func:`Rank`, :func:`Order`, :func:`Height`, :func:`EdgeType`, :func:`AlgHeight`, :func:`AlgOrder`.
- |
- |  Ancestors(self, v, EdgeType='*', RestrictedTo='NoRestriction', ContainedIn=None)
- |      Array of all vertices which are ancestors of a given vertex
- |
- |      This function returns the array of vertices which are located
- |      before the vertex passed as an argument.
- |      These vertices are defined at the same scale as `v`. The array starts by `v`,
- |      then contains the vertices on the path from `v` back to the root (in this order)
- |      and finishes by the tree root.
- |
- |      .. note:: The anscestor array always contains at least the argument vertex `v`.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.Ancestors(v)
- |
- |      :Parameters:
- |
- |          - v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - RestrictedTo (str): cf. `Father`
- |          - ContainedIn (int): cf. `Father`
- |          - EdgeType (str): cf. `Father`
- |
- |      :Returns:
- |
- |          list of vertices's id (int)
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; v # prints vertex v
- |          78
- |          &gt;&gt;&gt; g.Ancestors(v) # set of ancestors of v at the same scale
- |          [78,45,32,10,4]
- |          &gt;&gt;&gt; list(reversed(g.Ancestors(v))) # To get the vertices in the order from the root to the vertex v
- |          [4,10,32,45,78]
- |
- |
- |      .. seealso:: :func:`MTG`, :func:`Descendants`.
- |
- |  Axis(self, v, Scale=-1)
- |      Array of vertices constituting a botanical axis
- |
- |      An axis is a maximal sequence of vertices connected by '&lt;'-type edges.
- |      Axis return the array of vertices representing the botanical axis which the argument v belongs to.
- |      The optional argument enables the user to choose the scale at which the axis decomposition is required.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          Axis(v)
- |          Axis(v, Scale=s)
- |
- |      :Parameters:
- |
- |          - v (int) : Vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - Scale (str): scale at which the axis components are required.
- |
- |      :Returns:
- |
- |          list of vertices ids
- |
- |      .. image:: ../user/mtg_axis.png
- |
- |      .. seealso:: :func:`MTG`, :func:`Path`, :func:`Ancestors`.
- |
- |  Class = class_name(self, vid)
- |
- |  ClassScale(self, c)
- |      Scale at which appears a given class of vertex
- |
- |      Every vertex is associated with a unique class.
- |      Vertices from a given class only appear at a given scale
- |      which can be retrieved using this function.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          ClassScale(c)
- |
- |      :Parameters:
- |
- |          - `c` (str) : symbol of the considered class
- |
- |      :Returns:
- |
- |          int
- |
- |      .. seealso:: :func:`MTG`, :func:`Class`, :func:`Scale`, :func:`Index`.
- |
- |  Complex(self, v, Scale=-1)
- |      Complex of a vertex.
- |
- |      Returns the complex of `v`. The complex of a vertex `v` has a scale lower than `v` :
- |      `Scale(v)` - 1. In a MTG, every vertex except for the MTG root (cf. `MTGRoot`),
- |      has a uniq complex. None is returned if the argument is the MTG Root
- |      or if the vertex is undefined.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.Complex(v)
- |          g.Complex(v, Scale=2)
- |
- |      :Parameters:
- |
- |          - `v` (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - `Scale` (int) : scale of the complex
- |
- |      :Returns:
- |
- |          Returns vertex's id (int)
- |
- |      :Details:
- |
- |          When a scale different form Scale(v)-1 is specified using the optional parameter
- |          `Scale`, this scale must be lower than that of the vertex argument.
- |
- |      .. todo:: Complex(v, Scale=10) returns v why ? is this expected
- |
- |      .. seealso:: :func:`MTG`, :func:`Components`.
- |
- |  ComponentRoots(self, v, Scale=-1)
- |      Set of roots of the tree graphs that compose a vertex
- |
- |      In a MTG, a vertex may have be decomposed into components.
- |      Some of these components are connected to each other, while other are not.
- |      In the most general case, the components of a vertex are organized into several tree-graphs.
- |      This is for example the case of a MTG containing the description of several plants:
- |      the MTG root vertex can be decomposed into tree graphs (not connected)
- |      that represent the different plants.
- |      This function returns the set of roots of these tree graphs at scale *Scale(v)+1*.
- |      The order of these roots is not significant.
- |
- |      When a scale different from *Scale(v)+1* is specified using the optional argument :func:`Scale`,
- |      this scale must be greater than that of the vertex argument.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.ComponentRoots(v)
- |          g.ComponentRoots(v, Scale=s)
- |
- |      :Parameters:
- |
- |          - v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - Scale (str): scale of the component roots.
- |
- |      :Returns:
- |
- |          list of vertices's id (int)
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; v=g.MTGRoot() # global MTG root
- |          0
- |          &gt;&gt;&gt; g.ComponentRoots(v) # set of first vertices at scale 1
- |          [1,34,76,100,199,255]
- |          &gt;&gt;&gt; g.ComponentRoots(v, Scale=2) # set of first vertices at scale 2
- |          [2,35,77,101,200,256]
- |
- |      .. image:: ../user/mtg_componentroots.png
- |
- |      .. seealso:: :func:`MTG`, :func:`Components`, :func:`Trunk`.
- |
- |  Components(self, v, Scale=-1)
- |      Set of components of a vertex.
- |
- |      The set of components of a vertex is returned as a list of vertices.
- |      If **s** defines the scale of **v**, components are defined at scale **s** + 1.
- |      The array is empty if the vertex has no components.
- |      The order of the components in the array is not significant.
- |
- |      When a scale is specified using optional argument :arg:Scale,
- |      it must be necessarily greater than the scale of the argument.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          Components(v)
- |          Components(v, Scale=2)
- |
- |      :Parameters:
- |
- |          - v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - Scale (int) : scale of the components.
- |
- |      :Returns:
- |
- |          list of int
- |
- |      .. image:: ../user/mtg_components.png
- |
- |      .. seealso:: :func:`MTG`, :func:`Complex`.
- |
- |  Defined(self, vid)
- |      Test whether a given vertex belongs to the active MTG.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          Defined(v)
- |
- |      :Parameters:
- |
- |          - v (int) : vertex of the active MTG
- |
- |      :Returns:
- |
- |          True or False
- |
- |      .. seealso:: :func:`MTG`.
- |
- |  Descendants(self, v, EdgeType='*', RestrictedTo='NoRestriction', ContainedIn=None)
- |      Set of vertices in the branching system borne by a vertex.
- |
- |      This function returns the set of descendants of its argument as an array of vertices.
- |      The array thus consists of all the vertices, at the same scale as `v`,
- |      that belong to the branching system starting at `v`.
- |      The order of the vertices in the array is not significant.
- |
- |      .. note:: The argument always belongs to the set of its descendants.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.Descendants(v)
- |
- |      :Parameters:
- |
- |          - v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - RestrictedTo (str): cf. `Father`
- |          - ContainedIn (int): cf. `Father`
- |          - EdgeType (str): cf. `Father`
- |
- |      :Returns:
- |
- |          list of int.
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; v
- |          78
- |          &gt;&gt;&gt; g.Sons(v) # set of sons of v
- |          [78,99,101]
- |          &gt;&gt;&gt; g.Descendants(v) # set of descendants of v
- |          [78,99,101,121,133,135,156,171,190]
- |
- |      .. image:: ../user/mtg_descendants.png
- |
- |      .. seealso:: :func:`MTG`, :func:`Ancestors`.
- |
- |  EdgeType(self, v1, v2)
- |      Type of connection between two vertices.
- |
- |      Returns the symbol of the type of connection between two vertices (either `&lt;` or `+`).
- |      If the vertices are not connected, None is returned.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          EdgeType(v1, v2)
- |
- |      :Parameters:
- |
- |          - v1 (int) : vertex of the active MTG
- |          - v2 (int) : vertex of the active MTG
- |
- |      :Returns:
- |
- |          '&lt;' (successor), '+' (branching) or `None`
- |
- |      .. image:: ../user/mtg_edgetype.png
- |
- |      .. seealso:: :func:`MTG`, :func:`Sons`, :func:`Father`.
- |
- |  Extremities(self, v, RestrictedTo='NoRestriction', ContainedIn=None)
- |      Set of vertices that are the extremities of the branching system
- |      born by a given vertex.
- |
- |      This function returns the extremities of the branching system defined by the argument
- |      as a list of vertices. These vertices have the same scale as `v` and their order in
- |      the list is not signifiant. The result is always a non empty array.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          Extremities(v)
- |
- |      :Properties:
- |
- |          -  v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - RestrictedTo (str): cf. :func:`Father`
- |          - ContainedIn (int): cf. :func:`Father`
- |
- |      :Returns:
- |
- |          list of vertices's id (int)
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; g.Descendants(v)
- |          [3, 45, 47, 78, 102]
- |          &gt;&gt;&gt; g.Extremities(v)
- |          [47, 102]
- |
- |      .. seealso:: :func:`MTG`, :func:`Descendants`, :func:`Root`, :func:`MTGRoot`.
- |
- |  Father(self, v, EdgeType='*', RestrictedTo='NoRestriction', ContainedIn=None, Scale=-1)
- |      Topological father of a given vertex.
- |
- |      Returns the topological father of a given vertex. And `None` if the father does not exist.
- |      If the argument is not a valid vertex, `None` is returned.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.Father(v)
- |          g.Father(v, EdgeType='&lt;')
- |          g.Father(v, RestrictedTo='SameComplex')
- |          g.Father(v, ContainedIn=complex_id)
- |          g.Father(v, Scale=s)
- |
- |      :Parameters:
- |
- |          v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          If no optional argument is specified,  the function returns the topological father
- |          of the argument (vertex that bears or precedes to the vertex passed as an argument).
- |
- |          It may be usefull in some cases to consider that the function only applies to a
- |          subpart of the MTG (e.g. an axis).
- |
- |          The following options enables us to specify such restrictions:
- |
- |          - EdgeType (str) : filter on the type of edge that connect the vertex to its father.
- |
- |            Values can be '&lt;', '+', and '*'. Values '*' means both '&lt;' and '+'.
- |            Only the vertex connected with the specified type of edge will be considered.
- |
- |          - RestrictedTo (str) : filter defining a subpart of the MTG where the father
- |            must be considered. If the father is actually outside this subpart,
- |            the result is `None`. Possible subparts are defined using keywords in
- |            ['SameComplex', 'SameAxis', 'NoRestriction'].
- |
- |            For instance, if `RestrictedTo` is set to 'SameComplex', :func:`Father(v)` returns a
- |            defined vertex only if the father `f` of `v` existsin the MTG and if `v` and `f`
- |            have the same complex.
- |
- |          - ContainedIn (int) : filter defining a subpart of the MTG where the father
- |            must be considered. If the father is actually outside this subpart,
- |            the result is `None`.
- |
- |            In this case, the subpart of the MTG is made of the vertices
- |            that composed `composite_id` (at any scale).
- |
- |          - Scale (int) : the scale of the considered father. Returns the vertex from scale `s`
- |            which either bears and precedes the argument.
- |
- |            The scale `s` can be lower than the argument's (corresponding to a question such as
- |            'which axis bears the internode?') or greater
- |            (e.g. 'which internodes bears this annual shoot?').
- |
- |      :Returns:
- |
- |          the vertex id of the Father (int)
- |
- |      .. seealso:: :func:`MTG`, :func:`Defined`, :func:`Sons`, :func:`EdgeType`, :func:`Complex`, :func:`Components`.
- |
- |  Height(self, v1, v2=None)
- |      Number of components existing between two components in a tree graph.
- |
- |      The height of a vertex (`v2`) with respect to another vertex (`v1`)
- |      is the number of edges (of either type '+' or '&lt;') that must be crossed
- |      when going from `v1` to `v2` in the graph.
- |
- |      This is a non-negative integer. When the function has only one argument `v1`,
- |      the height of `v1` correspond to the height of `v1`with respect
- |      to the root of the branching system containing `v1`.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          Height(v1)
- |          Height(v1, v2)
- |
- |      :Parameters:
- |
- |          - v1 (int) : vertex of the active MTG
- |          - v2 (int) : vertex of the active MTG
- |
- |      :Returns:
- |
- |          int
- |
- |      .. note::
- |
- |          When the function takes two arguments, the order of the arguments is not important
- |          provided that one is an ancestor of the other. When the order is relevant, use
- |          function `AlgHeight`.
- |
- |      .. seealso:: :func:`MTG`, :func:`Order`, :func:`Rank`, :func:`EdgeType`, :func:`AlgHeight`, :func:`AlgHeight`, :func:`AlgOrder`.
- |
- |  Index = index(self, vid)
- |
- |  Label = label(self, vid)
- |
- |  Path(self, v1, v2)
- |      List of vertices defining the path between two vertices
- |
- |      This function returns the list of vertices defining the path
- |      between two vertices that are in an ancestor relationship.
- |      The vertex `v1` must be an ancestor of vertex `v2`.
- |      Otherwise, if both vertices are valid, then the empty array is returned
- |      and if at least one vertex is undefined, None is returned.
- |
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.Path(v1, v2)
- |
- |      :Parameters:
- |
- |          - `v1` (int) : vertex of the active MTG
- |          - `v2` (int) : vertex of the active MTG
- |
- |      :Returns:
- |
- |          list of vertices's id (int)
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; v # print the value of v
- |          78
- |          &gt;&gt;&gt; g.Ancestors(v)
- |          [78,45,32,10,4]
- |          &gt;&gt;&gt; g.Path(10,v)
- |          [10,32,45,78]
- |          &gt;&gt;&gt; g.Path(9,v) # 9 is not an ancestor of 78
- |          []
- |
- |      .. note:: `v1` can be equal to `v2`.
- |
- |      .. image:: ../user/mtg_path.png
- |
- |      .. seealso:: :func:`MTG`, :func:`Axis`, :func:`Ancestors`.
- |
- |  Predecessor(self, v, **kwds)
- |      Father of a vertex connected to it by a '&lt;' edge
- |
- |      This function is equivalent to Father(v, EdgeType-&gt; '&lt;').
- |      It thus returns the father (at the same scale) of the argument
- |      if it is located in the same botanical.
- |      If it does not exist, None is returned.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          Predecessor(v)
- |
- |      :Parameters:
- |
- |          - v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - RestrictedTo (str): cf. `Father`
- |          - ContainedIn (int): cf. `Father`
- |
- |      :Returns:
- |
- |          return the vertex id (int)
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; Predecessor(v)
- |          7
- |          &gt;&gt;&gt; Father(v, EdgeType='+')
- |          &gt;&gt;&gt; Father(v, EdgeType-&gt; '&lt;')
- |          7
- |
- |      .. seealso:: :func:`MTG`, :func:`Father`, :func:`Successor`.
- |
- |  Rank(self, v1, v2=None)
- |      Rank of one vertex with respect to another one.
- |
- |      This function returns the number of consecutive '&lt;'-type edges between two components,
- |      at the same scale, and does not take into account the order of vertices v1 and v2.
- |      The result is a non negative integer.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          Rank(v1)
- |          Rank(v1, v2)
- |
- |      :Parameters:
- |
- |          - v1 (int) : vertex of the active MTG
- |          - v2 (int) : vertex of the active MTG
- |
- |      :Returns:
- |
- |          `int`
- |
- |          If v1 is not an ancestor of v2 (or vise versa) within the same botanical axis,
- |          or if v1 and v2 are not defined at the same scale, an error value Undef id returned.
- |
- |      .. seealso:: :func:`MTG`, :func:`Order`, :func:`Height`, :func:`EdgeType`, :func:`AlgRank`, :func:`AlgHeight`, :func:`AlgOrder`.
- |
- |  Root(self, v, RestrictedTo='*', ContainedIn=None)
- |      Root of the branching system containing a vertex
- |
- |      This function is equivalent to Ancestors(v, EdgeType='&lt;')[-1].
- |      It thus returns the root of the branching system containing the argument.
- |      This function never returns None.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.Root(v)
- |
- |      :Parameters:
- |
- |          - v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - RestrictedTo (str): cf. Father
- |          - ContainedIn (int): cf. Father
- |
- |      :Returns:
- |
- |         return vertex's id (int)
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; g.Ancestors(v) # set of ancestors of v
- |          [102,78,35,33,24,12]
- |          &gt;&gt;&gt; g.Root(v) # root of the branching system containing v
- |          12
- |
- |      .. image:: ../user/mtg_root.png
- |
- |      .. seealso:: :func:`MTG`, :func:`Extremities`.
- |
- |  Scale = scale(self, vid)
- |
- |  Sons(self, v, RestrictedTo='NoRestriction', EdgeType='*', Scale=-1, ContainedIn=None)
- |      Set of vertices born or preceded by a vertex
- |
- |      The set of sons of a given vertex is returned as an array of vertices.
- |      The order of the vertices in the array is not significant.
- |      The array can be empty if there are no son vertices.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.Sons(v)
- |          g.Sons(v, EdgeType= '+')
- |          g.Sons(v, Scale= 3)
- |
- |      :Parameters:
- |
- |          - v (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - RestrictedTo (str) : cf. :meth:`Father`
- |          - ContainedIn (int) : cf. :meth:`Father`
- |          - EdgeType (str) : filter on the type of sons.
- |          - Scale (int) : set the scale at which sons are considered.
- |
- |      :Returns:
- |
- |          list(vid)
- |
- |      :Details:
- |
- |          When the option EdgeType is applied, the function returns the set of sons
- |          that are connected to the argument with the specified type of relation.
- |
- |      .. note:: `Sons(v, EdgeType= '&lt;')` is not equivalent to `Successor(v)`.
- |          The first function returns an array of vertices while the second function
- |          returns a vertex.
- |
- |          The returned vertices have the same scale as the argument.
- |          However, coarser or finer vertices can be obtained by specifying
- |          the optional argument `Scale` at which the sons are considered.
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; g.Sons(v)
- |          [3,45,47,78,102]
- |          &gt;&gt;&gt;  g.Sons(v, EdgeType= '+') # set of vertices borne by v
- |          [3,45,47,102]
- |          &gt;&gt;&gt;  g.Sons(v, EdgeType= '&lt;') # set of successors of v on the same axis
- |          [78]
- |
- |      .. seealso:: :func:`MTG`, :func:`Father`, :func:`Successor`, :func:`Descendants`.
- |
- |  Successor(self, v, RestrictedTo='NoRestriction', ContainedIn=None)
- |      Vertex that is connected to a given vertex by a '&lt;' edge type (i.e. in the same botanical axis).
- |
- |      This function is equivalent to Sons(v, EdgeType='&lt;')[0].
- |      It returns the vertex that is connected to a given vertex by a '&lt;' edge type
- |      (i.e. in the same botanical axis).
- |      If many such vertices exist, an arbitrary one is returned by the function.
- |      If no such vertex exists, None is returned.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.Successor(v)
- |
- |      :Parameters:
- |
- |          - v1 (int) : vertex of the active MTG
- |
- |      :Optional Parameters:
- |
- |          - RestrictedTo (str): cf. Father
- |          - ContainedIn (int): cf. Father
- |
- |      :Returns:
- |
- |          Returns vertex's id (int)
- |
- |
- |      :Examples:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; g.Sons(v)
- |          [3, 45, 47, 78, 102]
- |          &gt;&gt;&gt; g.Sons(v, EdgeType='+') # set of vertices borne by v
- |          [3, 45, 47, 102]
- |          &gt;&gt;&gt; g.Sons(v, EdgeType-&gt; '&lt;') # set of successors of v
- |          [78]
- |          &gt;&gt;&gt; g.Successor(v)
- |          78
- |
- |      .. seealso:: :func:`MTG`, :func:`Sons`, :func:`Predecessor`.
- |
- |  Trunk(self, v, Scale=-1)
- |      List of vertices constituting the bearing botanical axis of a branching system.
- |
- |      Trunk returns the list of vertices representing the botanical axis defined as
- |      the bearing axis of the whole branching system defined by `v`.
- |      The optional argument enables the user to choose the scale at which the trunk should be detailed.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          Trunk(v)
- |          Trunk(v, Scale= s)
- |
- |      :Parameters:
- |
- |          - `v` (int) : Vertex of the active MTG.
- |
- |      :Optional Parameters:
- |
- |          - `Scale` (str): scale at which the axis components are required.
- |
- |      :Returns:
- |
- |          list of vertices ids
- |
- |      .. todo:: check the usage of the optional argument Scale
- |
- |      .. seealso:: :func:`MTG`, :func:`Path`, :func:`Ancestors`, :func:`Axis`.
- |
- |  VtxList(self, Scale=-1)
- |      Array of vertices contained in a MTG
- |
- |      The set of all vertices in the :func:`MTG` is returned as an array.
- |      Vertices from all scales are returned if no option is used.
- |      The order of the elements in this array is not significant.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; VtxList()
- |          &gt;&gt;&gt; VtxList(Scale=2)
- |
- |      :Optional Parameters:
- |
- |          - `Scale` (int): used to select components at a particular scale.
- |
- |      :Returns:
- |
- |          - list of vid
- |
- |      :Background:
- |
- |          :func:`MTGs`
- |
- |      .. seealso:: :meth:`MTG`, :meth:`scale`, :meth:`Class`, :meth:`index`.
- |
- |  __contains__(self, vid)
- |      Container interface
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          if v in g:
- |              print v, " is in the mtg."
- |
- |  __getitem__(self, vtx_id)
- |      A simple getitem to extract relevant information on a vertex.
- |
- |  __init__(self, filename='', has_date=False)
- |      Create a new MTG object.
- |
- |      :Usage:
- |
- |          &gt;&gt;&gt; g = MTG()
- |          &gt;&gt;&gt; g = MTG('my_mtg.mtg')
- |
- |  __iter__(self)
- |      Iterable interface.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          for v in g:
- |              print g.class_name(v)
- |
- |  __str__(self)
- |      Return str(self).
- |
- |  add_child(self, parent, child=None, **properties)
- |      Add a child to a parent. Child is appended to the parent's child list.
- |
- |      :Parameters:
- |       - `parent` (int) - The parent identifier.
- |       - `child`  (int or None) - The child identifier. If None,
- |                  an ID is generated.
- |
- |      :Returns:
- |          Identifier of the inserted vertex (child)
- |      :Returns Type:
- |          int
- |
- |  add_child_and_complex(self, parent, child=None, complex=None, **properties)
- |      Add a child at the end of children that belong to an other complex.
- |
- |      :Parameters:
- |       - `parent`: The parent identifier.
- |       - `child`: Set the child identifier to this value if defined.
- |       - `complex`: Set the complex identifier to this value if defined.
- |      :returns: (vid, vid): child and complex ids.
- |
- |  add_component(self, complex_id, component_id=None, **properties)
- |      Add a component at the end of the components
- |
- |      :Parameters:
- |       - `complex_id`: The complex identifier.
- |       - `component_id`: Set the component identifier to this value if defined.
- |
- |      :Returns: The id of the new component or the component_id if given.
- |
- |  add_element(self, parent_id, edge_type='/', scale_id=None)
- |      Add an element to the graph, if vid is not provided create a new vid ???
- |      .. warning: Not Implemented.
- |
- |      :Parameters:
- |      - `parent_id` (int) - The id of the parent vertex
- |      - `edge_type` (str) - The type of relation:
- |          - "/" : component (default)
- |          - "+" : branch
- |          - "&lt;" : successor.
- |      - `scale_id` (int)  - The id of the scale in which to
- |          add the vertex.
- |
- |      :Returns:
- |          The vid of the created vertex
- |
- |  class_name(self, vid)
- |      Class of a vertex.
- |
- |      The Class of a vertex are the first characters of the label.
- |      The label of a vertex is the string defined by the concatenation
- |      of the class and its index.
- |
- |      The label thus provides general information about a vertex and
- |      enable to encode the plant components.
- |
- |      The class_name may be not defined. Then, an empty string is returned.
- |
- |      :Usage:
- |
- |          &gt;&gt;&gt; g.class_name(1)
- |
- |      :Parameters:
- |
- |          - `vid` (int)
- |
- |      :Returns:
- |          The class name of the vertex (str).
- |
- |      .. seealso:: :func:`MTG`, :func:`openalea.mtg.aml.Index`, :func:`openalea.mtg.aml.Class`
- |
- |  clear(self)
- |      Remove all vertices and edges from the MTG.
- |
- |      This also removes all vertex properties.
- |      Don't change references to object such as internal dictionaries.
- |
- |      :Example:
- |          .. code-block:: python
- |
- |              &gt;&gt;&gt; g.clear()
- |              &gt;&gt;&gt; g.nb_vertices()
- |              0
- |              &gt;&gt;&gt; len(g)
- |              0
- |
- |  clear_properties(self, exclude=[])
- |      Remove all the properties of the MTG.
- |
- |      :Example:
- |          .. code-block:: python
- |
- |              &gt;&gt;&gt; g.clear_properties()
- |
- |  complex(self, vtx_id)
- |      Returns the complex of `vtx_id`.
- |
- |      :Parameters:
- |       - `vtx_id` (int) - The vertex identifier.
- |
- |      :Returns:
- |          complex identifier or None if vtx_id has no parent.
- |      :Return Type:
- |          int
- |
- |  complex_at_scale(self, vtx_id, scale)
- |      Returns the complex of `vtx_id` at scale `scale`.
- |
- |      :Parameters:
- |       - `vtx_id`: The vertex identifier.
- |       - `scale`: The scale identifier.
- |
- |      :returns:
- |          vertex identifier
- |      :Returns Type:
- |          int
- |
- |  component_roots(self, vtx_id)
- |      Return the set of roots of the tree graphs that compose a vertex.
- |
- |  component_roots_at_scale(self, vtx_id, scale)
- |      Return the list of roots of the tree graphs that compose a vertex.
- |
- |  component_roots_at_scale_iter(self, vtx_id, scale)
- |      Return the set of roots of the tree graphs that compose a vertex.
- |
- |  component_roots_iter(self, vtx_id)
- |      Return an iterator of the roots of the tree graphs that compose a vertex.
- |
- |  components(self, vid)
- |      returns the components of a vertex
- |
- |      :param vid: The vertex identifier.
- |
- |      :returns: list of vertex identifier
- |
- |  components_at_scale(self, vid, scale)
- |      returns a vertex iterator
- |
- |      :Parameters:
- |       - `vid`: The vertex identifier.
- |
- |      :returns: iter of vertex identifier
- |
- |  components_at_scale_iter(self, vid, scale)
- |      returns a vertex iterator
- |
- |      :Parameters:
- |       - `vid`: The vertex identifier.
- |
- |      :returns: iter of vertex identifier
- |
- |  components_iter(self, vid)
- |      returns a vertex iterator
- |
- |      :param vid: The vertex identifier.
- |
- |      :returns: iter of vertex identifier
- |
- |  copy(self)
- |      Return a copy of the graph.
- |
- |      :Returns:
- |          - `g` (MTG) - A copy of the MTG
- |
- |  display(self, max_scale=0, display_id=True, display_scale=False, nb_tab=12, **kwds)
- |      Print an MTG on the console.
- |
- |      :Optional Parameters:
- |          - `max_scale`: do not print vertices of scale greater than max_scale
- |          - `display_id`: display the vid of the vertices
- |          - `display_scale`: display the scale of the vertices
- |          - `nb_tab`: display the MTG using nb_tab columns
- |
- |  edge_type(self, vid)
- |      Type of the edge between a vertex and its parent.
- |
- |      The different values are '&lt;' for successor, and '+' for ramification.
- |
- |  edges(self, scale=-1)
- |      :Parameters:
- |       - `scale` (int) - Scale at which to iterate.
- |      :Returns:
- |          Iterator on the edges of the MTG at a given scale
- |          or on all edges if scale &lt; 0.
- |      :Returns Type:
- |          iter
- |
- |  has_vertex(self, vid)
- |      Tests whether a vertex belongs to the graph.
- |
- |      :Parameters:
- |       - `vid` (int) - vertex id to test
- |      :Returns Type:
- |          bool
- |
- |  index(self, vid)
- |      Index of a vertex
- |
- |      The Index of a vertex is a feature always defined and independent of time
- |      (like the index).
- |      It is represented by a non negative integer.
- |      The label of a vertex is the string defined by the concatenation
- |      of its class and its index.
- |      The label thus provides general information about a vertex and
- |      enables us to encode the plant components.
- |
- |  insert_parent(self, vtx_id, parent_id=None, **properties)
- |      Insert parent_id between vtx_id and its actual parent.
- |      Inherit of the complex of the parent of vtx_id.
- |
- |      :Parameters:
- |       - `vtx_id` (int): a vertex identifier
- |       - `parent_id` (int): a vertex identifier
- |
- |      :Returns:
- |          Identifier of the inserted vertex (parent_id).
- |      :Returns Type:
- |          int
- |
- |  insert_scale(self, inf_scale=None, partition=None, default_label=None, preserve_order=True)
- |      Add a scale to MTG
- |
- |      :Parameters:
- |      - `inf_scale` (int) - New scale is inserted between inf_scale and inf_scale-1
- |      - `partition` (lambda v: bool) - Function defining new scale by quotienting vertices at inf_scale
- |      - `default_label` (str) - default label of inserted vertices
- |      - `preserve_order` (bool) - True iif children at new scale are ordered consistently
- |          with children at inf_scale
- |
- |      :Returns:
- |          MTG with inserted scale
- |
- |      :Remark:
- |          - New scale is inserted in self as well.
- |          - function partition should return True at roots of subtrees where partition changes
- |          and False elsewhere.
- |
- |  insert_sibling(self, vtx_id1, vtx_id2=None, **properties)
- |      Insert a sibling of vtk_id1. The vertex in inserted before vtx_id1.
- |
- |      :Parameters:
- |       - `vtx_id1` (int) : a vertex identifier
- |       - `vtx_id2` (int) : the vertex to insert
- |
- |      :Returns:
- |          Identifier of the inserted vertex (vtx_id2)
- |      :Returns Type:
- |          int
- |
- |  is_valid(self)
- |      Tests the validity of the graph. Currently
- |      always returns True.
- |
- |      :Returns Type:
- |          bool
- |      :todo: Implement this function.
- |
- |  iter_edges(self, scale=-1)
- |      :Parameters:
- |       - `scale` (int) - Scale at which to iterate.
- |      :Returns:
- |          Iterator on the edges of the MTG at a given scale
- |          or on all edges if scale &lt; 0.
- |      :Returns Type:
- |          iter
- |
- |  iteredges(self, scale=-1)
- |      Iter on the edges of the tree.
- |
- |  label(self, vid)
- |      Label of a vertex.
- |
- |      :Usage:
- |
- |          &gt;&gt;&gt; g.label(v)
- |
- |      :Parameters:
- |          - `vid` (int) : vertex of the MTG
- |
- |      :Returns:
- |          The class and Index of the vertex (str).
- |
- |      .. seealso:: :func:`MTG`, :func:`index`, :func:`class_name`
- |
- |  max_scale(self)
- |      Return the max scale identifier.
- |
- |      By convention, the mtg contains scales in :math:`[0,max\_scale]`.
- |
- |      :Usage:
- |          &gt;&gt;&gt; print g.max_scale()
- |
- |      :Returns:
- |          S, the maximum scale identifier.
- |
- |      .. note:: The complexity is :math:`O(n)`.
- |      .. seealso:: :func:`scale`, :func:`scales`
- |
- |  nb_components(self, vid)
- |      returns the number of components
- |
- |      :Parameters:
- |       - `vid`: The vertex identifier.
- |
- |      :returns: int
- |
- |  nb_scales(self)
- |      :Returns:
- |          The number of scales defined in the mtg..
- |      :Returns Type:
- |          int
- |
- |      .. note:: The complexity is :math:`O(n)`.
- |
- |  nb_vertices(self, scale=-1)
- |      Returns the number of vertices.
- |
- |      :Usage:
- |          &gt;&gt;&gt; g.nb_vertices()
- |          100
- |          &gt;&gt;&gt; g.nb_vertices(scale=3)
- |          68
- |
- |      :Parameters:
- |       - `scale` (int) - Id of scale for which to count
- |         vertices.
- |
- |      :Returns:
- |          Number of vertices at `scale` or total
- |          number of vertices if scale &lt; 0.
- |
- |  node(self, vid, klass=None)
- |      Return a node associated to the vertex `vid`.
- |
- |      It allows to access to the properties with an object oriented interface.
- |
- |      :Example:
- |
- |      .. code-block:: python
- |
- |          node = g.node(1)
- |          print node.edge_type
- |          print node.label
- |          node.label = 'B'
- |          print g.label(1)
- |
- |          print node.parent
- |          print list(node.children)
- |
- |  order(self, v1)
- |      Order of a vertex in a graph.
- |
- |      The order of a vertex in a graph is the number of '+' edges crossed
- |      when going from `v1`to `v2`.
- |
- |      If v2 is None, the order of v1 correspond to the order of v1 with
- |      respect to the root.
- |
- |  plot_property(self, prop, **kwds)
- |      Plot properties of MTG using matplotlib
- |
- |      :Example:
- |
- |          &gt;&gt;&gt; g.plot_property('length')
- |
- |  reindex(self, mapping=None, copy=False)
- |      Assign a new identifier to each vertex.
- |
- |      This method assigns a new identifier to each vertex of the MTG. The mapping can be user defined or
- |      is implicit (`mapping`). This method modify the MTG in place or return a new MTG (`copy`).
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          &gt;&gt;&gt; g.reindex()
- |          &gt;&gt;&gt; g1 = g.reindex(copy=True)
- |          &gt;&gt;&gt; mymap = dict(zip(list(traversal.iter_mtg2(g,g.root)), range(len(g))))
- |          &gt;&gt;&gt; g2 = g.reindex(mapping=mymap, copy=True)
- |
- |      :Optional Parameters:
- |
- |          - `mapping` (dict): define a mapping between old and new vertex identifiers.
- |          - `copy` (bool) : modify the object in place or return a new MTG.
- |
- |      :Returns:
- |
- |          - a MTG
- |
- |      :Background:
- |
- |          :func:`MTGs`
- |
- |      .. seealso:: :meth:`sub_mtg`
- |
- |  remove_scale(self, scale)
- |      Remove all the vertices at a given scale.
- |
- |      The upper and lower scale are then connected.
- |
- |      Parameters:
- |      ===========
- |          - scale : the scale that have to be removed
- |
- |      Returns
- |      =======
- |          - g : the input MTG modified in place.
- |          - results : a list of dict
- |              all the vertices that have been removed
- |
- |  remove_vertex(self, vid, reparent_child=False)
- |      Remove a specified vertex of the graph and
- |      remove all the edges attached to it.
- |
- |      :Parameters:
- |          - `vid` (int) : the id of the vertex to remove
- |          - `reparent_child` (bool) : reparent the children of `vid` to its parent.
- |      :Returns: None
- |
- |  replace_parent(self, vtx_id, new_parent_id, **properties)
- |      Change the parent of vtx_id to new_parent_id.
- |      The new parent of vtx_id is new_parent_id.
- |      vtx_id and new_parent_id must have the same scale.
- |
- |      This function do not change the edge_type between vtx_id and its parent.
- |
- |      Inherit of the complex of the parent of vtx_id.
- |
- |      :Parameters:
- |       - `vtx_id` (int): a vertex identifier
- |       - `new_parent_id` (int): a vertex identifier
- |
- |      :Returns:
- |          None
- |
- |  roots(self, scale=0)
- |      Returns a list of the roots of the tree graphs at a given scale.
- |
- |      In an MTG, the MTG root vertex, namely the vertex `g.root`,
- |      can be decomposed into several, non-connected, tree graphs at a given scale.
- |      This is for example the case of an MTG containing the description of several plants.
- |
- |      :Usage: ::
- |
- |          roots = g.roots(scale=g.max_scale()
- |
- |      :Returns:
- |          list on vertex identifiers of root vertices at a given `scale`.
- |      :Returns Type:
- |          list of vid
- |
- |      .. image:: ../user/mtg_componentroots.png
- |
- |  roots_iter(self, scale=0)
- |      Returns an iterator of the roots of the tree graphs at a given scale.
- |
- |      In an MTG, the MTG root vertex, namely the vertex `g.root`,
- |      can be decomposed into several, non-connected, tree graphs at a given scale.
- |      This is for example the case of an MTG containing the description of several plants.
- |
- |      :Usage: ::
- |
- |          roots = list(g.roots(scale=g.max_scale())
- |
- |      :Returns:
- |          iterator on vertex identifiers of root vertices at a given `scale`.
- |      :Returns Type:
- |          iter
- |
- |      .. image:: ../user/mtg_componentroots.png
- |
- |  scale(self, vid)
- |      Returns the scale of a vertex.
- |
- |      All vertices should belong to a given scale.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g.scale(vid)
- |
- |      :Parameters:
- |
- |          - `vid` (int) - vertex identifier.
- |
- |      :Returns:
- |          The scale of the vertex.
- |          It is a positive int in [0,g.max_scale()].
- |
- |  scales(self)
- |      Return the different scales of the mtg.
- |
- |      :Returns:
- |          Iterator on scale identifiers (ints).
- |
- |      .. note:: The complexity is :math:`O(n)`.
- |
- |  scales_iter(self)
- |      Return the different scales of the mtg.
- |
- |      :Returns:
- |          Iterator on scale identifiers (ints).
- |
- |      .. note:: The complexity is :math:`O(n)`.
- |
- |  sub_mtg(self, vtx_id, copy=True)
- |      Return the submtg rooted on `vtx_id`.
- |
- |      The induced sub mtg of the mtg are all the vertices which have vtx_id
- |      has a complex plus vtx_id.
- |
- |      :Parameters:
- |        - `vtx_id`: A vertex of the original tree.
- |        - `copy`:
- |          If True, return a new tree holding the subtree. If False, the subtree is
- |          created using the original tree by deleting all vertices not in the subtree.
- |
- |      :returns: A sub mtg of the mtg. If copy=True, a new MTG is returned.
- |          Else the sub mtg is created inplace by modifying the original tree.
- |
- |  vertices(self, scale=-1)
- |      Return a list of the vertices contained in an MTG.
- |
- |      The set of all vertices in the MTG is returned.
- |      Vertices from all scales are returned if no scale is given.
- |      Otherwise, it returns only the vertices of the given scale.
- |      The order of the elements in this array is not significant.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g = MTG()
- |          len(g) == len(list(g.vertices()))
- |          for vid in g.vertices(scale=2):
- |              print g.class_name(vid)
- |
- |      :Optional Parameters:
- |          - `scale` (int): used to select vertices at a given scale.
- |
- |      :Returns:
- |          Iterator on vertices at "scale" or on all
- |          vertices if scale &lt; 0.
- |
- |      :Returns Type:
- |          list of vid
- |
- |      :Background:
- |
- |      .. seealso:: :meth:`children`, :meth:`components`, :meth:`vertices_iter`..
- |
- |  vertices_iter(self, scale=-1)
- |      Return an iterator of the vertices contained in an MTG.
- |
- |      The set of all vertices in the MTG is returned.
- |      Vertices from all scales are returned if no scale is given.
- |      Otherwise, it returns only the vertices of the given scale.
- |      The order of the elements in this array is not significant.
- |
- |      :Usage:
- |
- |      .. code-block:: python
- |
- |          g = MTG()
- |          len(g) == len(list(g.vertices()))
- |          for vid in g.vertices(scale=2):
- |              print g.class_name(vid)
- |
- |      :Optional Parameters:
- |          - `scale` (int): used to select vertices at a given scale.
- |
- |      :Returns:
- |          Iterator on vertices at "scale" or on all
- |          vertices if scale &lt; 0.
- |
- |      :Returns Type:
- |          iter of vid
- |
- |      :Background:
- |
- |      .. seealso:: :meth:`children`, :meth:`components`.
- |
- |  ----------------------------------------------------------------------
- |  Methods inherited from openalea.mtg.tree.PropertyTree:
- |
- |  add_child_tree(self, parent, tree)
- |      Add a tree after the children of the parent vertex.
- |      Complexity have to be O(1) if tree == sub_tree()
- |
- |      :param parent: vertex identifier
- |      :param tree: a rooted tree
- |
- |  add_property(self, property_name)
- |      Add a new map between vid and a data
- |      Do not fill this property for any vertex
- |
- |  get_vertex_property(self, vid)
- |      Returns all the properties defined on a vertex.
- |
- |  graph_properties(self)
- |      return a dict containing the graph properties/
- |
- |      :rtype: dict of ``{property_name:data}``
- |
- |  insert_sibling_tree(self, vid, tree)
- |      Insert a tree before the vid.
- |      vid and the root of the tree are siblings.
- |      Complexity have to be O(1) if tree comes from the actual tree
- |      ( tree= self.sub_tree() )
- |
- |      :param vid: vertex identifier
- |      :param tree: a rooted tree
- |
- |  properties(self)
- |      Returns all the property maps contain in the graph.
- |
- |  property(self, name)
- |      Returns the property map between the vid and the data.
- |      :returns:  dict of {vid:data}
- |
- |  property_names(self)
- |      names of all property maps.
- |      Properties are defined only on vertices, even edge properties.
- |      return iter of names
- |
- |  property_names_iter(self)
- |      iter on names of all property maps.
- |      Properties are defined only on vertices, even edge properties.
- |      return iter of names
- |
- |  remove_property(self, property_name)
- |      Remove the property map called property_name from the graph.
- |
- |  remove_tree(self, vtx_id)
- |      Remove the sub tree rooted on `vtx_id`.
- |
- |      :returns: bool
- |
- |  sub_tree(self, vtx_id, copy=True)
- |      Return the subtree rooted on `vtx_id`.
- |
- |      The induced subtree of the tree has the vertices in the ancestors of vtx_id.
- |
- |      :Parameters:
- |        - `vtx_id`: A vertex of the original tree.
- |        - `copy`:
- |          If True, return a new tree holding the subtree. If False, the subtree is
- |          created using the original tree by deleting all vertices not in the subtree.
- |
- |      :returns: A sub tree of the tree. If copy=True, a new Tree is returned.
- |          Else the subtree is created inplace by modifying the original tree.
- |
- |  ----------------------------------------------------------------------
- |  Methods inherited from openalea.mtg.tree.Tree:
- |
- |  __len__(self)
- |
- |  children(self, vtx_id)
- |      returns a vertex iterator
- |
- |      :param vtx_id: The vertex identifier.
- |
- |      :returns: iter of vertex identifier
- |
- |  children_iter(self, vtx_id)
- |      returns a vertex iterator
- |
- |      :param vtx_id: The vertex identifier.
- |
- |      :returns: iter of vertex identifier
- |
- |  get_root(self)
- |      Return the tree root.
- |
- |      :return: vertex identifier
- |
- |  is_leaf(self, vtx_id)
- |      Test if `vtx_id` is a leaf.
- |
- |      :returns: bool
- |
- |  nb_children(self, vtx_id)
- |      returns the number of children
- |
- |      :Parameters:
- |       - `vtx_id`: The vertex identifier.
- |
- |      :returns: int
- |
- |  nb_siblings(self, vtx_id)
- |      returns the number of siblings
- |
- |      :returns: int
- |
- |  parent(self, vtx_id)
- |      Return the parent of `vtx_id`.
- |
- |      :Parameters:
- |       - `vtx_id`: The vertex identifier.
- |
- |      :returns: vertex identifier
- |
- |  set_root(self, vtx_id)
- |      Set the tree root.
- |
- |      :param vtx_id: The vertex identifier.
- |
- |  siblings(self, vtx_id)
- |      returns an iterator of vtx_id siblings.
- |      vtx_id is not include in siblings.
- |
- |      :Parameters:
- |       - `vtx_id`: The vertex identifier.
- |
- |      :returns: iter of vertex identifier
- |
- |  siblings_iter(self, vtx_id)
- |      returns an iterator of vtx_id siblings.
- |      vtx_id is not include in siblings.
- |
- |      :Parameters:
- |       - `vtx_id`: The vertex identifier.
- |
- |      :returns: iter of vertex identifier
- |
- |  ----------------------------------------------------------------------
- |  Data descriptors inherited from openalea.mtg.tree.Tree:
- |
- |  __dict__
- |      dictionary for instance variables
- |
- |  __weakref__
- |      list of weak references to the object
- |
- |  root
- |      Return the tree root.
- |
- |      :return: vertex identifier
-</code></pre>
-</div>
 </div>
 <div id="cell-33" class="cell" data-execution_count="23">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>g.vertices()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>g.vertices()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <pre><code>[0,
@@ -2510,8 +832,8 @@ class MTG(openalea.mtg.tree.PropertyTree)
 <div id="cell-34" class="cell" data-execution_count="25">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="bu">id</span> <span class="kw">in</span> g.vertices():</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(g[<span class="bu">id</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="bu">id</span> <span class="kw">in</span> g.vertices():</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(g[<span class="bu">id</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>{'vid': 0, 'index': 0, 'complex': None, 'parent': None, 'scale': 0}
@@ -2743,47 +1065,47 @@ class MTG(openalea.mtg.tree.PropertyTree)
 <div id="cell-36" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Imports</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># from installed packages</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> oawidgets.mtg <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for exploring the MTG of the generated cereal shoot</span></span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Properties on the MTG: this exclude all the topological properties</span></span>
-<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(g_single.property_names())</span>
-<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Retrieve one property for the MTG (dict)</span></span>
-<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> g_single.<span class="bu">property</span>(<span class="st">'label'</span>)</span>
-<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a><span class="co"># print(labels)</span></span>
-<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>i_length <span class="op">=</span> g_single.<span class="bu">property</span>(<span class="st">'mature_length'</span>)</span>
-<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>l_length <span class="op">=</span> g_single.<span class="bu">property</span>(<span class="st">'shape_mature_length'</span>)</span>
-<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>leaf_lengths<span class="op">=</span>[]</span>
-<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>leaf_ind<span class="op">=</span>[]</span>
-<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>internode_lengths<span class="op">=</span>[]</span>
-<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>internode_ind<span class="op">=</span>[]</span>
-<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k,v <span class="kw">in</span> i_length.items():</span>
-<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a>    internode_ind.append(k)</span>
-<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a>    internode_lengths.append(v)</span>
-<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k,v <span class="kw">in</span> l_length.items():</span>
-<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>    leaf_ind.append(k)</span>
-<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a>    leaf_lengths.append(v)</span>
-<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-33"><a href="#cb19-33" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
-<span id="cb19-34"><a href="#cb19-34" aria-hidden="true" tabindex="-1"></a>plt.plot(leaf_ind, leaf_lengths, c<span class="op">=</span><span class="st">"green"</span>, label<span class="op">=</span><span class="st">"Leaf lengths"</span>) <span class="co"># == 'shape_mature_length' for final plant</span></span>
-<span id="cb19-35"><a href="#cb19-35" aria-hidden="true" tabindex="-1"></a>plt.plot(internode_ind, internode_lengths, c<span class="op">=</span><span class="st">"orange"</span>, label<span class="op">=</span><span class="st">"Internode lengths"</span>)</span>
-<span id="cb19-36"><a href="#cb19-36" aria-hidden="true" tabindex="-1"></a>plt.plot(internode_ind, np.cumsum(internode_lengths), c<span class="op">=</span><span class="st">"orange"</span>, label<span class="op">=</span><span class="st">"Plant height"</span>, ls<span class="op">=</span><span class="st">'--'</span>)</span>
-<span id="cb19-37"><a href="#cb19-37" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Vertices"</span>)</span>
-<span id="cb19-38"><a href="#cb19-38" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Lengths (cm)"</span>)</span>
-<span id="cb19-39"><a href="#cb19-39" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"MTG properties"</span>)</span>
-<span id="cb19-40"><a href="#cb19-40" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
-<span id="cb19-41"><a href="#cb19-41" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Imports</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># from installed packages</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> oawidgets.mtg <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for exploring the MTG of the generated cereal shoot</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Properties on the MTG: this exclude all the topological properties</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(g_single.property_names())</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Retrieve one property for the MTG (dict)</span></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> g_single.<span class="bu">property</span>(<span class="st">'label'</span>)</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="co"># print(labels)</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>i_length <span class="op">=</span> g_single.<span class="bu">property</span>(<span class="st">'mature_length'</span>)</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>l_length <span class="op">=</span> g_single.<span class="bu">property</span>(<span class="st">'shape_mature_length'</span>)</span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>leaf_lengths<span class="op">=</span>[]</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>leaf_ind<span class="op">=</span>[]</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>internode_lengths<span class="op">=</span>[]</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>internode_ind<span class="op">=</span>[]</span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k,v <span class="kw">in</span> i_length.items():</span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a>    internode_ind.append(k)</span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a>    internode_lengths.append(v)</span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k,v <span class="kw">in</span> l_length.items():</span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a>    leaf_ind.append(k)</span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>    leaf_lengths.append(v)</span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a>plt.plot(leaf_ind, leaf_lengths, c<span class="op">=</span><span class="st">"green"</span>, label<span class="op">=</span><span class="st">"Leaf lengths"</span>) <span class="co"># == 'shape_mature_length' for final plant</span></span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a>plt.plot(internode_ind, internode_lengths, c<span class="op">=</span><span class="st">"orange"</span>, label<span class="op">=</span><span class="st">"Internode lengths"</span>)</span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a>plt.plot(internode_ind, np.cumsum(internode_lengths), c<span class="op">=</span><span class="st">"orange"</span>, label<span class="op">=</span><span class="st">"Plant height"</span>, ls<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Vertices"</span>)</span>
+<span id="cb18-38"><a href="#cb18-38" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Lengths (cm)"</span>)</span>
+<span id="cb18-39"><a href="#cb18-39" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"MTG properties"</span>)</span>
+<span id="cb18-40"><a href="#cb18-40" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb18-41"><a href="#cb18-41" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
@@ -2823,62 +1145,62 @@ Local cdn resources have problems on chrome/safari when used in jupyter-notebook
 <div id="cell-40" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Imports</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># from installed packages</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> random <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># from openalea.archicrop</span></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openalea.archicrop.stand <span class="im">import</span> agronomic_plot</span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Enable plotting with PlantGL</span></span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>gui qt</span>
-<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for generating a random cereal crop from descritive parameters with variability </span></span>
-<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Fix a seed</span></span>
-<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="co">#seed(1)</span></span>
-<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize the list of plants</span></span>
-<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>plants_in_crop<span class="op">=</span>[]</span>
-<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Fixed parameters for all plants</span></span>
-<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>length_plot<span class="op">=</span><span class="dv">5</span></span>
-<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>width_plot<span class="op">=</span><span class="dv">5</span></span>
-<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>sowing_density<span class="op">=</span><span class="dv">10</span></span>
-<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>plant_density<span class="op">=</span><span class="dv">5</span></span>
-<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a>inter_row<span class="op">=</span><span class="fl">0.5</span></span>
-<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a>nplants, positions, domain, domain_area, unit <span class="op">=</span> agronomic_plot(length_plot, </span>
-<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>                                                               width_plot, </span>
-<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a>                                                               sowing_density, </span>
-<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>                                                               plant_density, </span>
-<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>                                                               inter_row, </span>
-<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>                                                               noise<span class="op">=</span><span class="fl">0.1</span>)</span>
-<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-32"><a href="#cb21-32" aria-hidden="true" tabindex="-1"></a><span class="co"># For loop over all the plants in the crop</span></span>
-<span id="cb21-33"><a href="#cb21-33" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(nplants):</span>
-<span id="cb21-34"><a href="#cb21-34" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Parameters varying among plants</span></span>
-<span id="cb21-35"><a href="#cb21-35" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">300</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>) </span>
-<span id="cb21-36"><a href="#cb21-36" aria-hidden="true" tabindex="-1"></a>    nb_phy<span class="op">=</span><span class="dv">15</span></span>
-<span id="cb21-37"><a href="#cb21-37" aria-hidden="true" tabindex="-1"></a>    max_leaf_length<span class="op">=</span><span class="dv">50</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
-<span id="cb21-38"><a href="#cb21-38" aria-hidden="true" tabindex="-1"></a>    insertion_angle<span class="op">=</span><span class="dv">40</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
-<span id="cb21-39"><a href="#cb21-39" aria-hidden="true" tabindex="-1"></a>    scurv<span class="op">=</span><span class="fl">0.7</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
-<span id="cb21-40"><a href="#cb21-40" aria-hidden="true" tabindex="-1"></a>    curvature<span class="op">=</span><span class="dv">70</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
-<span id="cb21-41"><a href="#cb21-41" aria-hidden="true" tabindex="-1"></a>    phyllotactic_angle<span class="op">=</span><span class="dv">137</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
-<span id="cb21-42"><a href="#cb21-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-43"><a href="#cb21-43" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Functions calls</span></span>
-<span id="cb21-44"><a href="#cb21-44" aria-hidden="true" tabindex="-1"></a>    shoot, g_var <span class="op">=</span> build_shoot(nb_phy<span class="op">=</span>nb_phy, height<span class="op">=</span>height, max_leaf_length<span class="op">=</span>max_leaf_length, </span>
-<span id="cb21-45"><a href="#cb21-45" aria-hidden="true" tabindex="-1"></a>                                wl<span class="op">=</span><span class="fl">0.1</span>, diam_base<span class="op">=</span><span class="fl">2.5</span>, diam_top<span class="op">=</span><span class="fl">1.0</span>, </span>
-<span id="cb21-46"><a href="#cb21-46" aria-hidden="true" tabindex="-1"></a>                                insertion_angle<span class="op">=</span>insertion_angle, scurv<span class="op">=</span>scurv, curvature<span class="op">=</span>curvature, </span>
-<span id="cb21-47"><a href="#cb21-47" aria-hidden="true" tabindex="-1"></a>                                alpha<span class="op">=-</span><span class="fl">2.3</span>, stem_q<span class="op">=</span><span class="fl">1.25</span>, rmax<span class="op">=</span><span class="fl">0.9</span>, skew<span class="op">=</span><span class="fl">0.2</span>,</span>
-<span id="cb21-48"><a href="#cb21-48" aria-hidden="true" tabindex="-1"></a>                                phyllotactic_angle<span class="op">=</span>phyllotactic_angle, phyllotactic_deviation<span class="op">=</span><span class="dv">15</span>, plant_orientation<span class="op">=</span>random()<span class="op">*</span><span class="dv">360</span>, spiral<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb21-49"><a href="#cb21-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-50"><a href="#cb21-50" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fill the list of plants</span></span>
-<span id="cb21-51"><a href="#cb21-51" aria-hidden="true" tabindex="-1"></a>    plants_in_crop.append(g_var)</span>
-<span id="cb21-52"><a href="#cb21-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-53"><a href="#cb21-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Build and display scene</span></span>
-<span id="cb21-54"><a href="#cb21-54" aria-hidden="true" tabindex="-1"></a>scene_var, nump <span class="op">=</span> build_scene(plants_in_crop, positions, leaf_material<span class="op">=</span>Material(nice_green), stem_material<span class="op">=</span>Material(nice_green))</span>
-<span id="cb21-55"><a href="#cb21-55" aria-hidden="true" tabindex="-1"></a><span class="co"># display_scene(scene_var)</span></span>
-<span id="cb21-56"><a href="#cb21-56" aria-hidden="true" tabindex="-1"></a>PlantGL(scene_var)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Imports</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># from installed packages</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> random <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="co"># from openalea.archicrop</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openalea.archicrop.stand <span class="im">import</span> agronomic_plot</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Enable plotting with PlantGL</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>gui qt</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for generating a random cereal crop from descritive parameters with variability </span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Fix a seed</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="co">#seed(1)</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize the list of plants</span></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>plants_in_crop<span class="op">=</span>[]</span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Fixed parameters for all plants</span></span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>length_plot<span class="op">=</span><span class="dv">5</span></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>width_plot<span class="op">=</span><span class="dv">5</span></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>sowing_density<span class="op">=</span><span class="dv">10</span></span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>plant_density<span class="op">=</span><span class="dv">5</span></span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>inter_row<span class="op">=</span><span class="fl">0.5</span></span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a>nplants, positions, domain, domain_area, unit <span class="op">=</span> agronomic_plot(length_plot, </span>
+<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a>                                                               width_plot, </span>
+<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a>                                                               sowing_density, </span>
+<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a>                                                               plant_density, </span>
+<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a>                                                               inter_row, </span>
+<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a>                                                               noise<span class="op">=</span><span class="fl">0.1</span>)</span>
+<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a><span class="co"># For loop over all the plants in the crop</span></span>
+<span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(nplants):</span>
+<span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Parameters varying among plants</span></span>
+<span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">300</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>) </span>
+<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a>    nb_phy<span class="op">=</span><span class="dv">15</span></span>
+<span id="cb20-37"><a href="#cb20-37" aria-hidden="true" tabindex="-1"></a>    max_leaf_length<span class="op">=</span><span class="dv">50</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
+<span id="cb20-38"><a href="#cb20-38" aria-hidden="true" tabindex="-1"></a>    insertion_angle<span class="op">=</span><span class="dv">40</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
+<span id="cb20-39"><a href="#cb20-39" aria-hidden="true" tabindex="-1"></a>    scurv<span class="op">=</span><span class="fl">0.7</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
+<span id="cb20-40"><a href="#cb20-40" aria-hidden="true" tabindex="-1"></a>    curvature<span class="op">=</span><span class="dv">70</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
+<span id="cb20-41"><a href="#cb20-41" aria-hidden="true" tabindex="-1"></a>    phyllotactic_angle<span class="op">=</span><span class="dv">137</span><span class="op">*</span>(<span class="dv">1</span><span class="op">+</span>random()<span class="op">-</span><span class="fl">0.5</span>)</span>
+<span id="cb20-42"><a href="#cb20-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-43"><a href="#cb20-43" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Functions calls</span></span>
+<span id="cb20-44"><a href="#cb20-44" aria-hidden="true" tabindex="-1"></a>    shoot, g_var <span class="op">=</span> build_shoot(nb_phy<span class="op">=</span>nb_phy, height<span class="op">=</span>height, max_leaf_length<span class="op">=</span>max_leaf_length, </span>
+<span id="cb20-45"><a href="#cb20-45" aria-hidden="true" tabindex="-1"></a>                                wl<span class="op">=</span><span class="fl">0.1</span>, diam_base<span class="op">=</span><span class="fl">2.5</span>, diam_top<span class="op">=</span><span class="fl">1.0</span>, </span>
+<span id="cb20-46"><a href="#cb20-46" aria-hidden="true" tabindex="-1"></a>                                insertion_angle<span class="op">=</span>insertion_angle, scurv<span class="op">=</span>scurv, curvature<span class="op">=</span>curvature, </span>
+<span id="cb20-47"><a href="#cb20-47" aria-hidden="true" tabindex="-1"></a>                                alpha<span class="op">=-</span><span class="fl">2.3</span>, stem_q<span class="op">=</span><span class="fl">1.25</span>, rmax<span class="op">=</span><span class="fl">0.9</span>, skew<span class="op">=</span><span class="fl">0.2</span>,</span>
+<span id="cb20-48"><a href="#cb20-48" aria-hidden="true" tabindex="-1"></a>                                phyllotactic_angle<span class="op">=</span>phyllotactic_angle, phyllotactic_deviation<span class="op">=</span><span class="dv">15</span>, plant_orientation<span class="op">=</span>random()<span class="op">*</span><span class="dv">360</span>, spiral<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb20-49"><a href="#cb20-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-50"><a href="#cb20-50" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fill the list of plants</span></span>
+<span id="cb20-51"><a href="#cb20-51" aria-hidden="true" tabindex="-1"></a>    plants_in_crop.append(g_var)</span>
+<span id="cb20-52"><a href="#cb20-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-53"><a href="#cb20-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Build and display scene</span></span>
+<span id="cb20-54"><a href="#cb20-54" aria-hidden="true" tabindex="-1"></a>scene_var, nump <span class="op">=</span> build_scene(plants_in_crop, positions, leaf_material<span class="op">=</span>Material(nice_green), stem_material<span class="op">=</span>Material(nice_green))</span>
+<span id="cb20-55"><a href="#cb20-55" aria-hidden="true" tabindex="-1"></a><span class="co"># display_scene(scene_var)</span></span>
+<span id="cb20-56"><a href="#cb20-56" aria-hidden="true" tabindex="-1"></a>PlantGL(scene_var)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -2887,46 +1209,46 @@ Local cdn resources have problems on chrome/safari when used in jupyter-notebook
 <div id="cell-42" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Imports</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co"># from installed packages</span></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openalea.plantgl.<span class="bu">all</span> <span class="im">import</span> Material, Color3, Shape, Scene, Viewer, Translated, AxisRotated</span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Enable plotting with PlantGL</span></span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>gui qt</span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for generating an intercrop from descritive parameters</span></span>
-<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Fix a seed</span></span>
-<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>seed(<span class="dv">1</span>)</span>
-<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plant(height, nb_phy, max_leaf_length, phyllotactic_angle):</span>
-<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">""" return the MTG of a cereal shoot generative from descriptive parameters """</span></span>
-<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>    shoot, g <span class="op">=</span> build_shoot(nb_phy<span class="op">=</span>nb_phy, height<span class="op">=</span>height, max_leaf_length<span class="op">=</span>max_leaf_length, phyllotactic_angle<span class="op">=</span>phyllotactic_angle, plant_orientation<span class="op">=</span>random()<span class="op">*</span><span class="dv">360</span>)</span>
-<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> g</span>
-<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Organize the plant mixture in alternate rows</span></span>
-<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>n_rows <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>len_rows <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>d_inter <span class="op">=</span> <span class="dv">70</span></span>
-<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a>d_intra <span class="op">=</span> <span class="dv">50</span></span>
-<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plant_in_row(i):</span>
-<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>     <span class="cf">if</span> i<span class="op">%</span>(<span class="dv">4</span><span class="op">*</span>d_inter)<span class="op">==</span><span class="dv">0</span> <span class="kw">or</span> i<span class="op">%</span>(<span class="dv">4</span><span class="op">*</span>d_inter)<span class="op">==</span>d_inter: <span class="cf">return</span> plant(height<span class="op">=</span><span class="dv">1700</span>, nb_phy<span class="op">=</span><span class="dv">18</span>, max_leaf_length<span class="op">=</span><span class="dv">100</span>, phyllotactic_angle<span class="op">=</span><span class="dv">137</span>)</span>
-<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a>     <span class="cf">else</span>: <span class="cf">return</span> plant(height<span class="op">=</span><span class="dv">900</span>, nb_phy<span class="op">=</span><span class="dv">18</span>, max_leaf_length<span class="op">=</span><span class="dv">40</span>, phyllotactic_angle<span class="op">=</span><span class="dv">60</span>)</span>
-<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a>plants_in_intercrop <span class="op">=</span> [plant_in_row(x) <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n_rows<span class="op">*</span>d_inter, d_inter) <span class="cf">for</span> y <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, len_rows<span class="op">*</span>d_intra, d_intra)]</span>
-<span id="cb22-34"><a href="#cb22-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-35"><a href="#cb22-35" aria-hidden="true" tabindex="-1"></a>positions<span class="op">=</span>[(x,y,<span class="dv">0</span>) <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n_rows<span class="op">*</span>d_inter, d_inter) <span class="cf">for</span> y <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, len_rows<span class="op">*</span>d_intra, d_intra)]</span>
-<span id="cb22-36"><a href="#cb22-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-37"><a href="#cb22-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Build and display scene</span></span>
-<span id="cb22-38"><a href="#cb22-38" aria-hidden="true" tabindex="-1"></a>scene_ic, nump <span class="op">=</span> build_scene(plants_in_intercrop, positions, leaf_material<span class="op">=</span>Material(nice_green), stem_material<span class="op">=</span>Material(nice_green))</span>
-<span id="cb22-39"><a href="#cb22-39" aria-hidden="true" tabindex="-1"></a><span class="co"># display_scene(scene_ic)</span></span>
-<span id="cb22-40"><a href="#cb22-40" aria-hidden="true" tabindex="-1"></a>PlantGL(scene_ic)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Imports</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># from installed packages</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openalea.plantgl.<span class="bu">all</span> <span class="im">import</span> Material, Color3, Shape, Scene, Viewer, Translated, AxisRotated</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Enable plotting with PlantGL</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>gui qt</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for generating an intercrop from descritive parameters</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Fix a seed</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>seed(<span class="dv">1</span>)</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plant(height, nb_phy, max_leaf_length, phyllotactic_angle):</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">""" return the MTG of a cereal shoot generative from descriptive parameters """</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>    shoot, g <span class="op">=</span> build_shoot(nb_phy<span class="op">=</span>nb_phy, height<span class="op">=</span>height, max_leaf_length<span class="op">=</span>max_leaf_length, phyllotactic_angle<span class="op">=</span>phyllotactic_angle, plant_orientation<span class="op">=</span>random()<span class="op">*</span><span class="dv">360</span>)</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> g</span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Organize the plant mixture in alternate rows</span></span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>n_rows <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>len_rows <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a>d_inter <span class="op">=</span> <span class="dv">70</span></span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>d_intra <span class="op">=</span> <span class="dv">50</span></span>
+<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plant_in_row(i):</span>
+<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>     <span class="cf">if</span> i<span class="op">%</span>(<span class="dv">4</span><span class="op">*</span>d_inter)<span class="op">==</span><span class="dv">0</span> <span class="kw">or</span> i<span class="op">%</span>(<span class="dv">4</span><span class="op">*</span>d_inter)<span class="op">==</span>d_inter: <span class="cf">return</span> plant(height<span class="op">=</span><span class="dv">1700</span>, nb_phy<span class="op">=</span><span class="dv">18</span>, max_leaf_length<span class="op">=</span><span class="dv">100</span>, phyllotactic_angle<span class="op">=</span><span class="dv">137</span>)</span>
+<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>     <span class="cf">else</span>: <span class="cf">return</span> plant(height<span class="op">=</span><span class="dv">900</span>, nb_phy<span class="op">=</span><span class="dv">18</span>, max_leaf_length<span class="op">=</span><span class="dv">40</span>, phyllotactic_angle<span class="op">=</span><span class="dv">60</span>)</span>
+<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-32"><a href="#cb21-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-33"><a href="#cb21-33" aria-hidden="true" tabindex="-1"></a>plants_in_intercrop <span class="op">=</span> [plant_in_row(x) <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n_rows<span class="op">*</span>d_inter, d_inter) <span class="cf">for</span> y <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, len_rows<span class="op">*</span>d_intra, d_intra)]</span>
+<span id="cb21-34"><a href="#cb21-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-35"><a href="#cb21-35" aria-hidden="true" tabindex="-1"></a>positions<span class="op">=</span>[(x,y,<span class="dv">0</span>) <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n_rows<span class="op">*</span>d_inter, d_inter) <span class="cf">for</span> y <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, len_rows<span class="op">*</span>d_intra, d_intra)]</span>
+<span id="cb21-36"><a href="#cb21-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-37"><a href="#cb21-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Build and display scene</span></span>
+<span id="cb21-38"><a href="#cb21-38" aria-hidden="true" tabindex="-1"></a>scene_ic, nump <span class="op">=</span> build_scene(plants_in_intercrop, positions, leaf_material<span class="op">=</span>Material(nice_green), stem_material<span class="op">=</span>Material(nice_green))</span>
+<span id="cb21-39"><a href="#cb21-39" aria-hidden="true" tabindex="-1"></a><span class="co"># display_scene(scene_ic)</span></span>
+<span id="cb21-40"><a href="#cb21-40" aria-hidden="true" tabindex="-1"></a>PlantGL(scene_ic)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -3036,8 +1358,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -3148,7 +1468,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
