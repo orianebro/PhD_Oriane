@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Oriane Braud">
 
-<title>4&nbsp; Dynamic model – PhD Oriane</title>
+<title>PhD Oriane - 4&nbsp; Dynamic model</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +21,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./light_inter.html" rel="next">
+<link href="./year_2.html" rel="next">
 <link href="./structural_cereal_model.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-f2a1071e85750ec973bbb8a8f120da0f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b254e9e3fad484ce9648ad97f95daba8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,8 +103,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -108,13 +146,13 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./year_1.html">First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability</a></li><li class="breadcrumb-item"><a href="./dynamic_model.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dynamic model</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -158,7 +196,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./year_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">First chapter: Analyzing accuracy of formalisms in crop model when adding shoot structural variability</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -181,19 +219,13 @@ window.Quarto = {
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dynamic model</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./light_inter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Light interception with Caribu</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./year_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Second chapter : Analyzing accuracy of formalisms in crop model when adding root structural variability</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -201,7 +233,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
       </ul>
@@ -210,7 +242,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./year_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Third chapter: Improving STICS</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -218,7 +250,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
       </ul>
@@ -242,12 +274,9 @@ window.Quarto = {
   <li><a href="#conceptual-diagram" id="toc-conceptual-diagram" class="nav-link active" data-scroll-target="#conceptual-diagram"><span class="header-section-number">4.1</span> Conceptual diagram</a></li>
   <li><a href="#time-dependent-parametrization-of-leaf-area" id="toc-time-dependent-parametrization-of-leaf-area" class="nav-link" data-scroll-target="#time-dependent-parametrization-of-leaf-area"><span class="header-section-number">4.2</span> Time-dependent parametrization of leaf area</a></li>
   <li><a href="#apparition-and-growth-of-phytomers-stem-and-leaf" id="toc-apparition-and-growth-of-phytomers-stem-and-leaf" class="nav-link" data-scroll-target="#apparition-and-growth-of-phytomers-stem-and-leaf"><span class="header-section-number">4.3</span> Apparition and growth of phytomers (stem and leaf)</a></li>
-  <li><a href="#distribution-of-constraint-over-growing-vegetative-organs-i.e.-internodes-and-leaves-within-a-plant" id="toc-distribution-of-constraint-over-growing-vegetative-organs-i.e.-internodes-and-leaves-within-a-plant" class="nav-link" data-scroll-target="#distribution-of-constraint-over-growing-vegetative-organs-i.e.-internodes-and-leaves-within-a-plant"><span class="header-section-number">4.4</span> Distribution of constraint over growing vegetative organs (i.e.&nbsp;internodes and leaves) within a plant</a>
-  <ul class="collapse">
-  <li><a href="#h0-all-growing-vegetative-organs-of-a-given-type-grow-at-the-same-speed-on-a-given-time-slot-i.e.-equal-distribution-of-the-gain-among-all-growing-vegetative-organs." id="toc-h0-all-growing-vegetative-organs-of-a-given-type-grow-at-the-same-speed-on-a-given-time-slot-i.e.-equal-distribution-of-the-gain-among-all-growing-vegetative-organs." class="nav-link" data-scroll-target="#h0-all-growing-vegetative-organs-of-a-given-type-grow-at-the-same-speed-on-a-given-time-slot-i.e.-equal-distribution-of-the-gain-among-all-growing-vegetative-organs."><span class="header-section-number">4.4.1</span> H0: All growing vegetative organs of a given type grow at the same speed on a given time slot, i.e.&nbsp;equal distribution of the gain among all growing vegetative organs.</a></li>
-  <li><a href="#h1-growing-vegetative-organs-receive-a-gain-proportional-to-their-sink-strength-related-to-their-age-until-end-of-growth." id="toc-h1-growing-vegetative-organs-receive-a-gain-proportional-to-their-sink-strength-related-to-their-age-until-end-of-growth." class="nav-link" data-scroll-target="#h1-growing-vegetative-organs-receive-a-gain-proportional-to-their-sink-strength-related-to-their-age-until-end-of-growth."><span class="header-section-number">4.4.2</span> H1: Growing vegetative organs receive a gain proportional to their sink strength related to their age until end of growth.</a></li>
-  </ul></li>
-  <li><a href="#fit-plant-growth-and-development-to-lait-and-heightt-curves-from-crop-model" id="toc-fit-plant-growth-and-development-to-lait-and-heightt-curves-from-crop-model" class="nav-link" data-scroll-target="#fit-plant-growth-and-development-to-lait-and-heightt-curves-from-crop-model"><span class="header-section-number">4.5</span> Fit plant growth and development to LAI(t) and height(t) curves from crop model</a></li>
+  <li><a href="#modifying-the-mtg-of-a-growing-plant" id="toc-modifying-the-mtg-of-a-growing-plant" class="nav-link" data-scroll-target="#modifying-the-mtg-of-a-growing-plant"><span class="header-section-number">4.4</span> Modifying the MTG of a growing plant</a></li>
+  <li><a href="#fit-plant-growth-and-development-to-lait-and-heightt-curves" id="toc-fit-plant-growth-and-development-to-lait-and-heightt-curves" class="nav-link" data-scroll-target="#fit-plant-growth-and-development-to-lait-and-heightt-curves"><span class="header-section-number">4.5</span> Fit plant growth and development to LAI(t) and height(t) curves</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps"><span class="header-section-number">4.6</span> Next steps</a></li>
   </ul>
 </nav>
     </div>
@@ -279,34 +308,41 @@ window.Quarto = {
 </header>
 
 
-<p>ReviewNB link: https://app.reviewnb.com/orianebro/PhD_Oriane/blob/main/dynamic_model.ipynb</p>
+<p>ReviewNB link: https://app.reviewnb.com/orianebro/ArchiCrop/blob/main/dynamic_model.ipynb</p>
 <section id="conceptual-diagram" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="conceptual-diagram"><span class="header-section-number">4.1</span> Conceptual diagram</h2>
-<p>The main stem grows according to the crop model’s plant height.<br>
-The appearance of a leaf is triggered by fixed phyllochron (different for tillers?).<br>
-The angle of the leaf with its axis is leaf-age dependent. The leaf blade curvature depends on the angle with the axis and the leaf length.<br>
-The reproductive organs appear from a given thermal time, when the leaves have stopped growing. Leaf senescence is constrained by crop model, as it has a direct influence on LAI (green LAI vs.&nbsp;yellow LAI ?).<br>
-The branching pattern is set (Tillers (Zhu et al., 2015)).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/shoot_FSPM_conceptual_diagram_alone.jpg" title="Conceptual diagram" class="img-fluid figure-img"></p>
+<figcaption>Conceptual diagram of shoot FSPM (not final version, some errors)</figcaption>
+</figure>
+</div>
+<p>The main stem grows according to the crop model’s plant height. At the end of the growth of an internode, a leaf appears. The appearance of a leaf is triggered by fixed phyllochron (different for tillers?).</p>
+<p>Cf Fournier et al, 2005 for leaf elongation</p>
+<p>The angle of the leaf with its axis is leaf-age dependent. The leaf blade curvature depends on the angle with the axis and the leaf length.</p>
+<p>The reproductive organs appear from a given thermal time, when the leaves have stopped growing.</p>
+<p>Leaf senescence is constrained by crop model, as it has a direct influence on LAI (green LAI vs.&nbsp;yellow LAI ?).</p>
+<p>The branching pattern is set (Tillers (Zhu et al., 2015)).</p>
 </section>
 <section id="time-dependent-parametrization-of-leaf-area" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="time-dependent-parametrization-of-leaf-area"><span class="header-section-number">4.2</span> Time-dependent parametrization of leaf area</h2>
-<p><span class="math display">\[ \mathcal{A_normalized} = 2 * \left|\int_{0}^{1} \mathcal{C}(l(u))dl(u)\right| \]</span> <span class="math display">\[ \mathcal{A} = \mathcal{A_scaled} = 2 * w * \left|\int_{0}^{L} \mathcal{C}\left(\frac{l(u)}{L}\right)\frac{dl(u)}{L}\right| \]</span> <span class="math display">\[ \frac{d\mathcal{A}}{dt} = 2 * w * \left|\int_{dl(t)/L} \mathcal{C}\left(\frac{l(u)}{L}\right)\frac{dl(u)}{L}\right| \]</span></p>
+<p><span class="math display">\[ \mathcal{A_normalized} = 2 * |\int_{0}^{1} \mathcal{C}(s(u))ds(u)| \]</span> <span class="math display">\[ \mathcal{A} = \mathcal{A_scaled} = 2 * w * |\int_{0}^{L} \mathcal{C}(\frac{s(u)}{L})d\frac{s(u)}{L}| \]</span> <span class="math display">\[ \frac{d\mathcal{A}}{dt} = 2 * w * |\int_{ds(t)/L} \mathcal{C}(\frac{s(u)}{L})d\frac{s(u)}{L}| \]</span></p>
 <ul>
 <li><span class="math inline">\(\mathcal{A}\)</span> : final leaf area (or surface), in <span class="math inline">\(cm^2\)</span> (given by crop model)</li>
 <li><span class="math inline">\(\frac{d\mathcal{A}}{dt}\)</span> : gain in area, in <span class="math inline">\(cm^2\)</span>, for a given leaf for a given time step <span class="math inline">\(dt\)</span> (given by crop model)<br>
 </li>
-<li><span class="math inline">\(\mathcal{C}\)</span> : curve of the evolution of the leaf width along the leaf, <strong>from tip to base</strong></li>
-<li><span class="math inline">\(l(t)\)</span> : curvilinear abscissa of the midrib, in <span class="math inline">\(cm\)</span>, as a function of thermal time <span class="math inline">\(t\)</span>, such that: $ dl(t) = $ (computed from leaf curvature)</li>
-<li><span class="math inline">\(w\)</span> : final maximal width of the leaf, in <span class="math inline">\(cm\)</span></li>
-<li><span class="math inline">\(L\)</span> : final length of the leaf, in <span class="math inline">\(cm\)</span></li>
+<li><span class="math inline">\(\mathcal{C}\)</span> : curve of the evolution of the leaf width along the leaf, <strong>from tip to base</strong> (literature/expert knowledge/observation)</li>
+<li><span class="math inline">\(s(t)\)</span> : curvilinear abscissa of the midrib, in <span class="math inline">\(cm\)</span>, as a function of thermal time <span class="math inline">\(t\)</span>, such that: $ ds(t) = $ (computed from leaf curvature)</li>
+<li><span class="math inline">\(w\)</span> : final maximal width of the leaf, in <span class="math inline">\(cm\)</span> (to fix/vary within a reasonable range)</li>
+<li><span class="math inline">\(L\)</span> : final length of the leaf, in <span class="math inline">\(cm\)</span> (to fix/vary within a reasonable range)</li>
 <li><span class="math inline">\(t\)</span> : thermal time, in <span class="math inline">\(^oC.day\)</span></li>
 </ul>
-<p>The objective is to find, for each growing leaf, at each time step, and for a given leaf area provided to the leaf <span class="math inline">\(\frac{d\mathcal{A}}{dt}\)</span>, how much length <span class="math inline">\(dl(t)\)</span> is added to the leaf.</p>
-<p><span class="math display">\[ \frac{d\mathcal{A}}{dt} = 2w \left|\int_{l(t-1)/L}^{l(t)/L} \mathcal{C}\left(\frac{l(u)}{L}\right)d\frac{l(u)}{L}\right| \]</span></p>
+<p>The objective is to find, for each growing leaf, at each time step, and for a given leaf area provided to the leaf <span class="math inline">\(\frac{d\mathcal{A}}{dt}\)</span>, how much length <span class="math inline">\(ds(t)\)</span> is added to the leaf.</p>
+<p><span class="math display">\[ \frac{d\mathcal{A}}{dt} = 2w |\int_{s(t-1)/L}^{s(t)/L} \mathcal{C}(\frac{s(u)}{L})d\frac{s(u)}{L}| \]</span></p>
 <p>According to the Fundamental Theorem of Calculus, <span class="math inline">\(\mathcal{C}\)</span> being at least <span class="math inline">\(C^0\)</span> on <span class="math inline">\([0,L]\)</span>, <span class="math inline">\(F\)</span> being the antiderivative of <span class="math inline">\(\mathcal{C}\)</span>, we can write:</p>
-<p><span class="math display">\[ \frac{d\mathcal{A}}{dt} = 2w \left|F\left(\frac{l(t)}{L}\right) - F\left(\frac{l(t-1)}{L}\right)\right| \]</span></p>
-<p><span class="math display">\[ F\left(\frac{l(t)}{L}\right) = \left|\frac{1}{2w} \frac{d\mathcal{A}}{dt} + F\left(\frac{l(t-1)}{L}\right)\right| \]</span></p>
-<p>Knowing the other variables, we know have to determine <span class="math inline">\(l(t)\)</span> at thermal time <span class="math inline">\(t\)</span>.</p>
+<p><span class="math display">\[ \frac{d\mathcal{A}}{dt} = 2w (|F(\frac{s(t)}{L}) - F(\frac{s(t-1)}{L})|) \]</span></p>
+<p><span class="math display">\[ F(\frac{s(t)}{L}) = |\frac{1}{2w} \frac{d\mathcal{A}}{dt} + F(\frac{s(t-1)}{L})| \]</span></p>
+<p>Knowing the other variables, we know have to determine <span class="math inline">\(s(t)\)</span> at thermal time <span class="math inline">\(t\)</span>.</p>
 </section>
 <section id="apparition-and-growth-of-phytomers-stem-and-leaf" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="apparition-and-growth-of-phytomers-stem-and-leaf"><span class="header-section-number">4.3</span> Apparition and growth of phytomers (stem and leaf)</h2>
@@ -325,28 +361,1171 @@ We consider a linear (rough approximation of beta function) growth for the leaf.
 <li>leaf expansion duration, as <span class="math inline">\(x * \phi\)</span>, in <span class="math inline">\(^oC.day\)</span> (literature, cf Clerget et al., 2008, etc)</li>
 </ul>
 <p>Cf Fournier et al, 2005; Stewart and Dwyer, 1993; Skinner and Nelson, 1995</p>
+<p>From crop model:</p>
 </section>
-<section id="distribution-of-constraint-over-growing-vegetative-organs-i.e.-internodes-and-leaves-within-a-plant" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="distribution-of-constraint-over-growing-vegetative-organs-i.e.-internodes-and-leaves-within-a-plant"><span class="header-section-number">4.4</span> Distribution of constraint over growing vegetative organs (i.e.&nbsp;internodes and leaves) within a plant</h2>
-<section id="h0-all-growing-vegetative-organs-of-a-given-type-grow-at-the-same-speed-on-a-given-time-slot-i.e.-equal-distribution-of-the-gain-among-all-growing-vegetative-organs." class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="h0-all-growing-vegetative-organs-of-a-given-type-grow-at-the-same-speed-on-a-given-time-slot-i.e.-equal-distribution-of-the-gain-among-all-growing-vegetative-organs."><span class="header-section-number">4.4.1</span> H0: All growing vegetative organs of a given type grow at the same speed on a given time slot, i.e.&nbsp;equal distribution of the gain among all growing vegetative organs.</h3>
-<p>For a growing vegetative organ <span class="math inline">\(i\)</span> over <span class="math inline">\(n\)</span> growing vegetative organs in a plant, given a constraint <span class="math inline">\(dc(t)\)</span> for the plant a time <span class="math inline">\(t\)</span> : <span class="math display">\[dc_{i}(t) = \frac{dc(t)}{n}\]</span></p>
+<section id="modifying-the-mtg-of-a-growing-plant" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="modifying-the-mtg-of-a-growing-plant"><span class="header-section-number">4.4</span> Modifying the MTG of a growing plant</h2>
+<p>There are several ways to conceive the MTG for a growing plant.</p>
+<p>At each thermal time step, the turtle visits each element and adds a value to a time series for each (almost) properties of the MTG.</p>
+<p><strong>OR</strong></p>
+<p>At each thermal time step, the MTG is replicated and the growing elements ar modified, and new elements are added if needed.</p>
+<div id="cell-17" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Imports</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># from installed packages</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openalea.plantgl.<span class="bu">all</span> <span class="im">import</span> Vector3</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> oawidgets.plantgl <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># from archicrop</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> archicrop.cereals_leaf <span class="im">import</span> parametric_leaf</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> archicrop.plant_shape <span class="im">import</span> geometric_dist, bell_shaped_dist</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> archicrop.plant_design <span class="im">import</span> leaf_azimuth</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> archicrop.cereals <span class="im">import</span> build_shoot</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> archicrop.display <span class="im">import</span> display_mtg, build_scene, display_scene</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Enable plotting with PlantGL</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>gui qt</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Set nice color for plants</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>nice_green<span class="op">=</span>Color3((<span class="dv">50</span>,<span class="dv">100</span>,<span class="dv">0</span>))</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for generating a 3D cereal shoot from descritive parameters</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters </span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>height<span class="op">=</span><span class="dv">1000</span>                 <span class="co"># from crop model</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>nb_phy<span class="op">=</span><span class="dv">17</span>                   <span class="co"># fixed max nb of phytomers</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>max_leaf_length<span class="op">=</span><span class="dv">70</span> </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>insertion_angle<span class="op">=</span><span class="dv">40</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>scurv<span class="op">=</span><span class="fl">0.7</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>curvature<span class="op">=</span><span class="dv">80</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>phyllotactic_angle<span class="op">=</span><span class="dv">180</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>spiral<span class="op">=</span><span class="va">False</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>diam_base<span class="op">=</span><span class="fl">2.5</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>diam_top<span class="op">=</span><span class="fl">1.0</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Lejeune and Bernier formula + col =</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>nb_young_phy <span class="op">=</span> <span class="bu">int</span>(<span class="bu">round</span>((nb_phy <span class="op">-</span> <span class="fl">1.95</span>) <span class="op">/</span> <span class="fl">1.84</span> <span class="op">/</span> <span class="fl">1.3</span>))</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co"># stem diameters</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>diameter <span class="op">=</span> ([diam_base] <span class="op">*</span> nb_young_phy <span class="op">+</span> np.linspace(diam_base, diam_top, nb_phy <span class="op">-</span> nb_young_phy).tolist()) </span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Functions calls</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>insertion_heights<span class="op">=</span>np.array(geometric_dist(height, </span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>                                          nb_phy, </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>                                          q<span class="op">=</span><span class="fl">1.25</span>)) <span class="co"># further separate stem and pseudo stem, cf simple maize</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>leaf_lengths<span class="op">=</span>np.array(bell_shaped_dist(max_leaf_length<span class="op">=</span>max_leaf_length, </span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>                                       nb_phy<span class="op">=</span>nb_phy, </span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>                                       rmax<span class="op">=</span><span class="fl">0.7</span>, </span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>                                       skew<span class="op">=</span><span class="fl">0.15</span>)) <span class="co"># plant area --&gt; max leaf length</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co"># leaf_areas=bell_shaped_dist(plant_area=1, nb_phy=15, rmax=0.7, skew=0.15) # cf blade_dimension</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>a_leaf <span class="op">=</span> parametric_leaf(nb_segment<span class="op">=</span><span class="dv">10</span>, </span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>                         insertion_angle<span class="op">=</span>insertion_angle, </span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>                         scurv<span class="op">=</span>scurv, </span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>                         curvature<span class="op">=</span>curvature, </span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>                         alpha<span class="op">=-</span><span class="fl">2.3</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>leaf_shapes <span class="op">=</span> [a_leaf <span class="cf">for</span> l <span class="kw">in</span> leaf_lengths] <span class="co"># possible to replace leaf_length by nb_phy or...</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>leaf_azimuths <span class="op">=</span> leaf_azimuth(size<span class="op">=</span><span class="bu">len</span>(leaf_lengths), </span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>                             phyllotactic_angle<span class="op">=</span>phyllotactic_angle, </span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>                             phyllotactic_deviation<span class="op">=</span><span class="dv">0</span>, </span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>                             plant_orientation<span class="op">=</span><span class="dv">0</span>, </span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>                             spiral<span class="op">=</span>spiral)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>shoot, g <span class="op">=</span> build_shoot(stem_diameters<span class="op">=</span>diameter, </span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>                              insertion_heights<span class="op">=</span>insertion_heights, </span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>                              leaf_lengths<span class="op">=</span>leaf_lengths, </span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>                              leaf_areas<span class="op">=</span><span class="va">None</span>, </span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>                              leaf_shapes<span class="op">=</span>leaf_shapes, </span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>                              leaf_azimuths<span class="op">=</span>leaf_azimuths)</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Build and display scene</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>scene, nump <span class="op">=</span> build_scene(g, </span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>                          leaf_material<span class="op">=</span>Material(nice_green), </span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>                          stem_material<span class="op">=</span>Material(nice_green))</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co"># display_scene(scene_single) # display in separate window</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>PlantGL(scene) <span class="co"># display in notebook</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>    plant  ntop    L_blade   W_blade     S_blade  form_factor       h_ins  \
+0       1    17  24.257403  2.425740   44.131620         0.75    4.586218   
+1       1    16  28.117999  2.811800   59.296642         0.75    5.732772   
+2       1    15  32.484958  3.248496   79.145439         0.75    7.165965   
+3       1    14  37.319154  3.731915  104.453946         0.75    8.957456   
+4       1    13  42.533063  4.253306  135.679608         0.75   11.196820   
+5       1    12  47.980052  4.798005  172.656402         0.75   13.996025   
+6       1    11  53.447544  5.344754  214.247996         0.75   17.495032   
+7       1    10  58.657235  5.865723  258.050339         0.75   21.868790   
+8       1     9  63.275562  6.327556  300.284754         0.75   27.335987   
+9       1     8  66.936782  6.693678  336.039957         0.75   34.169984   
+10      1     7  69.279037  6.927904  359.968873         0.75   42.712480   
+11      1     6  69.990783  6.999078  367.403232         0.75   53.390600   
+12      1     5  68.861371  6.886137  355.641631         0.75   66.738249   
+13      1     4  65.826396  6.582640  324.983578         0.75   83.422812   
+14      1     3  60.996918  6.099692  279.046798         0.75  104.278515   
+15      1     2  54.662930  5.466293  224.102695         0.75  130.348143   
+16      1     1  47.266009  4.726601  167.555668         0.75  162.935179   
+
+    L_sheath  W_sheath  L_internode  W_internode  leaf_azimuth  leaf_rank  \
+0          0      2.50     4.586218         2.50           0.0          1   
+1          0      2.50     1.146554         2.50         180.0          2   
+2          0      2.50     1.433193         2.50        -180.0          3   
+3          0      2.50     1.791491         2.50         180.0          4   
+4          0      2.50     2.239364         2.50        -180.0          5   
+5          0      2.50     2.799205         2.50         180.0          6   
+6          0      2.50     3.499006         2.50        -180.0          7   
+7          0      2.35     4.373758         2.35         180.0          8   
+8          0      2.20     5.467197         2.20        -180.0          9   
+9          0      2.05     6.833997         2.05         180.0         10   
+10         0      1.90     8.542496         1.90        -180.0         11   
+11         0      1.75    10.678120         1.75         180.0         12   
+12         0      1.60    13.347650         1.60        -180.0         13   
+13         0      1.45    16.684562         1.45         180.0         14   
+14         0      1.30    20.855703         1.30        -180.0         15   
+15         0      1.15    26.069629         1.15         180.0         16   
+16         0      1.00    32.587036         1.00        -180.0         17   
+
+                                           leaf_shape  
+0   ([0.006340269189362794, 0.06693716016798343, 0...  
+1   ([0.006340269189362794, 0.06693716016798343, 0...  
+2   ([0.006340269189362794, 0.06693716016798343, 0...  
+3   ([0.006340269189362794, 0.06693716016798343, 0...  
+4   ([0.006340269189362794, 0.06693716016798343, 0...  
+5   ([0.006340269189362794, 0.06693716016798343, 0...  
+6   ([0.006340269189362794, 0.06693716016798343, 0...  
+7   ([0.006340269189362794, 0.06693716016798343, 0...  
+8   ([0.006340269189362794, 0.06693716016798343, 0...  
+9   ([0.006340269189362794, 0.06693716016798343, 0...  
+10  ([0.006340269189362794, 0.06693716016798343, 0...  
+11  ([0.006340269189362794, 0.06693716016798343, 0...  
+12  ([0.006340269189362794, 0.06693716016798343, 0...  
+13  ([0.006340269189362794, 0.06693716016798343, 0...  
+14  ([0.006340269189362794, 0.06693716016798343, 0...  
+15  ([0.006340269189362794, 0.06693716016798343, 0...  
+16  ([0.006340269189362794, 0.06693716016798343, 0...  </code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"41a59f3580dd41fead33aefa6b4bc939","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+</script>
+</div>
+</div>
+<div id="cell-18" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> archicrop.plant_shape <span class="im">import</span> compute_leaf_area</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>compute_leaf_area(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>(0, [])</code></pre>
+</div>
+</div>
+<div id="cell-19" class="cell" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ipywidgets <span class="im">import</span> interact, interactive, IntSlider, fixed</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> archicrop.dynamic <span class="im">import</span> grow_plant, grow_plant_and_display</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> grow_plant_and_display_in_NB(g, time):</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    g, scene, nump<span class="op">=</span>grow_plant_and_display(g, time)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    w<span class="op">=</span>PlantGL(scene, group_by_color<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    w.wireframe<span class="op">=</span><span class="va">True</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> w</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="cell-20" class="cell" data-execution_count="8">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># max_time = max(g.property('end_tt').values())</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>interact(grow_plant_and_display_in_NB, g<span class="op">=</span>fixed(g), time<span class="op">=</span>IntSlider(<span class="bu">min</span><span class="op">=</span><span class="dv">20</span>, <span class="bu">max</span><span class="op">=</span><span class="dv">2000</span>, step<span class="op">=</span><span class="dv">100</span>, value<span class="op">=</span><span class="dv">1000</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"ca46ee192bc24c0ebe8798f8ce2cf9e4","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+</script>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>&lt;function __main__.grow_plant_and_display_in_NB(g, time)&gt;</code></pre>
+</div>
+</div>
+<div id="cell-21" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> oawidgets.mtg <span class="im">import</span> plot <span class="im">as</span> MTGw</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>MTGw(g, properties<span class="op">=</span><span class="st">'label'</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># g.display()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Local cdn resources have problems on chrome/safari when used in jupyter-notebook. </code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+
+        <iframe width="900px" height="800px" src="mtg.html" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<div id="cell-22" class="cell" data-scrolled="true" data-execution_count="10">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>g.properties()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>{'edge_type': {1: '/',
+  2: '/',
+  4: '+',
+  5: '&lt;',
+  6: '+',
+  7: '&lt;',
+  8: '+',
+  9: '&lt;',
+  10: '+',
+  11: '&lt;',
+  12: '+',
+  13: '&lt;',
+  14: '+',
+  15: '&lt;',
+  16: '+',
+  17: '&lt;',
+  18: '+',
+  19: '&lt;',
+  20: '+',
+  21: '&lt;',
+  22: '+',
+  23: '&lt;',
+  24: '+',
+  25: '&lt;',
+  26: '+',
+  27: '&lt;',
+  28: '+',
+  29: '&lt;',
+  30: '+',
+  31: '&lt;',
+  32: '+',
+  33: '&lt;',
+  34: '+',
+  35: '&lt;',
+  36: '+'},
+ 'label': {1: 'Plant',
+  2: 'MainAxis',
+  3: 'Stem',
+  4: 'Leaf',
+  5: 'Stem',
+  6: 'Leaf',
+  7: 'Stem',
+  8: 'Leaf',
+  9: 'Stem',
+  10: 'Leaf',
+  11: 'Stem',
+  12: 'Leaf',
+  13: 'Stem',
+  14: 'Leaf',
+  15: 'Stem',
+  16: 'Leaf',
+  17: 'Stem',
+  18: 'Leaf',
+  19: 'Stem',
+  20: 'Leaf',
+  21: 'Stem',
+  22: 'Leaf',
+  23: 'Stem',
+  24: 'Leaf',
+  25: 'Stem',
+  26: 'Leaf',
+  27: 'Stem',
+  28: 'Leaf',
+  29: 'Stem',
+  30: 'Leaf',
+  31: 'Stem',
+  32: 'Leaf',
+  33: 'Stem',
+  34: 'Leaf',
+  35: 'Stem',
+  36: 'Leaf'},
+ 'mature_length': {3: 4.586217578480434,
+  5: 1.1465543946201082,
+  7: 1.433192993275136,
+  9: 1.7914912415939197,
+  11: 2.239364051992398,
+  13: 2.7992050649905007,
+  15: 3.4990063312381228,
+  17: 4.373757914047655,
+  19: 5.467197392559569,
+  21: 6.833996740699458,
+  23: 8.542495925874327,
+  25: 10.67811990734291,
+  27: 13.34764988417863,
+  29: 16.684562355223292,
+  31: 20.85570294402912,
+  33: 26.069628680036402,
+  35: 32.58703585004548},
+ 'length': {3: 4.586217578480434,
+  4: 24.257403061691754,
+  5: 1.1465543946201082,
+  6: 28.11799942491916,
+  7: 1.433192993275136,
+  8: 32.48495827609186,
+  9: 1.7914912415939197,
+  10: 37.31915424785508,
+  11: 2.239364051992398,
+  12: 42.5330628879143,
+  13: 2.7992050649905007,
+  14: 47.980051622617076,
+  15: 3.4990063312381228,
+  16: 53.44754389058404,
+  17: 4.373757914047655,
+  18: 58.65723469177758,
+  19: 5.467197392559569,
+  20: 63.275561782558235,
+  21: 6.833996740699458,
+  22: 66.93678179123937,
+  23: 8.542495925874327,
+  24: 69.2790370808687,
+  25: 10.67811990734291,
+  26: 69.99078337619086,
+  27: 13.34764988417863,
+  28: 68.86137099896267,
+  29: 16.684562355223292,
+  30: 65.82639573700129,
+  31: 20.85570294402912,
+  32: 60.99691772383348,
+  33: 26.069628680036402,
+  34: 54.66293009876565,
+  35: 32.58703585004548,
+  36: 47.26600870733798},
+ 'visible_length': {3: 4.586217578480434,
+  4: 25.257403061691754,
+  5: 1.1465543946201082,
+  6: 29.11799942491916,
+  7: 1.433192993275136,
+  8: 33.48495827609186,
+  9: 1.7914912415939197,
+  10: 38.31915424785508,
+  11: 2.239364051992398,
+  12: 43.5330628879143,
+  13: 2.7992050649905007,
+  14: 48.980051622617076,
+  15: 3.4990063312381228,
+  16: 54.44754389058404,
+  17: 4.373757914047655,
+  18: 59.65723469177758,
+  19: 3.7276345858360695,
+  20: 43.14242848810788,
+  21: 0.38829526935792374,
+  22: 3.8032262381386004,
+  23: 8.542495925874327,
+  24: 70.2790370808687,
+  25: 10.67811990734291,
+  26: 70.99078337619086,
+  27: 13.34764988417863,
+  28: 69.86137099896267,
+  29: 16.684562355223292,
+  30: 66.82639573700129,
+  31: 20.85570294402912,
+  32: 61.99691772383348,
+  33: 26.069628680036402,
+  34: 55.66293009876565,
+  35: 32.58703585004548,
+  36: 48.26600870733798},
+ 'is_green': {3: True,
+  4: True,
+  5: True,
+  6: True,
+  7: True,
+  8: True,
+  9: True,
+  10: True,
+  11: True,
+  12: True,
+  13: True,
+  14: True,
+  15: True,
+  16: True,
+  17: True,
+  18: True,
+  19: True,
+  20: True,
+  21: True,
+  22: True,
+  23: True,
+  24: True,
+  25: True,
+  26: True,
+  27: True,
+  28: True,
+  29: True,
+  30: True,
+  31: True,
+  32: True,
+  33: True,
+  34: True,
+  35: True,
+  36: True},
+ 'diameter': {3: 2.5,
+  5: 2.5,
+  7: 2.5,
+  9: 2.5,
+  11: 2.5,
+  13: 2.5,
+  15: 2.5,
+  17: 2.35,
+  19: 2.2,
+  21: 2.05,
+  23: 1.9,
+  25: 1.75,
+  27: 1.6,
+  29: 1.45,
+  31: 1.3,
+  33: 1.1500000000000001,
+  35: 1.0},
+ 'azimuth': {3: 0.0,
+  5: 180.0,
+  7: -180.0,
+  9: 180.0,
+  11: -180.0,
+  13: 180.0,
+  15: -180.0,
+  17: 180.0,
+  19: -180.0,
+  21: 180.0,
+  23: -180.0,
+  25: 180.0,
+  27: -180.0,
+  29: 180.0,
+  31: -180.0,
+  33: 180.0,
+  35: -180.0},
+ 'shape': {4: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  6: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  8: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  10: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  12: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  14: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  16: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  18: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  20: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  22: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  24: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  26: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  28: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  30: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  32: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  34: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ])),
+  36: (array([0.00634027, 0.06693716, 0.12601321, 0.17710481, 0.24849582,
+          0.33409181, 0.43411926, 0.50961433, 0.5962277 , 0.68355511,
+          0.76088377, 0.83712401]),
+   array([-0.00346833,  0.0859332 ,  0.15575262,  0.20645505,  0.26519042,
+           0.31943549,  0.3622023 ,  0.3799512 ,  0.38430736,  0.37000106,
+           0.3398266 ,  0.29160093]),
+   array([0.        , 0.10800285, 0.19946175, 0.27144153, 0.36388892,
+          0.46522599, 0.57401243, 0.65156583, 0.73828868, 0.82678018,
+          0.90978753, 1.        ]),
+   array([0.73783224, 0.88135009, 0.96283256, 0.99638426, 1.00152079,
+          0.96548102, 0.88349353, 0.79021341, 0.64117414, 0.45187775,
+          0.2610025 , 0.        ]))},
+ 'shape_mature_length': {4: 24.257403061691754,
+  6: 28.11799942491916,
+  8: 32.48495827609186,
+  10: 37.31915424785508,
+  12: 42.5330628879143,
+  14: 47.980051622617076,
+  16: 53.44754389058404,
+  18: 58.65723469177758,
+  20: 63.275561782558235,
+  22: 66.93678179123937,
+  24: 69.2790370808687,
+  26: 69.99078337619086,
+  28: 68.86137099896267,
+  30: 65.82639573700129,
+  32: 60.99691772383348,
+  34: 54.66293009876565,
+  36: 47.26600870733798},
+ 'leaf_area': {4: 44.13162024730294,
+  6: 59.296641874481566,
+  8: 79.14543856495717,
+  10: 104.45394553314,
+  12: 135.67960789704546,
+  14: 172.65640152817497,
+  16: 214.24799609519312,
+  18: 258.0503386264707,
+  20: 300.28475391737584,
+  22: 336.0399567425996,
+  24: 359.9688734139286,
+  26: 367.4032318209657,
+  28: 355.64163118925825,
+  30: 324.98357817932265,
+  32: 279.0467978856083,
+  34: 224.10269452369047,
+  36: 167.55566843416125},
+ 'form_factor': {4: 0.75,
+  6: 0.75,
+  8: 0.75,
+  10: 0.75,
+  12: 0.75,
+  14: 0.75,
+  16: 0.75,
+  18: 0.75,
+  20: 0.75,
+  22: 0.75,
+  24: 0.75,
+  26: 0.75,
+  28: 0.75,
+  30: 0.75,
+  32: 0.75,
+  34: 0.75,
+  36: 0.75},
+ 'srb': {4: 0,
+  6: 0,
+  8: 0,
+  10: 0,
+  12: 0,
+  14: 0,
+  16: 0,
+  18: 0,
+  20: 0,
+  22: 0,
+  24: 0,
+  26: 0,
+  28: 0,
+  30: 0,
+  32: 0,
+  34: 0,
+  36: 0},
+ 'srt': {4: 1,
+  6: 1,
+  8: 1,
+  10: 1,
+  12: 1,
+  14: 1,
+  16: 1,
+  18: 1,
+  20: 1,
+  22: 1,
+  24: 1,
+  26: 1,
+  28: 1,
+  30: 1,
+  32: 1,
+  34: 1,
+  36: 1},
+ 'lrolled': {4: 0,
+  6: 0,
+  8: 0,
+  10: 0,
+  12: 0,
+  14: 0,
+  16: 0,
+  18: 0,
+  20: 0,
+  22: 0,
+  24: 0,
+  26: 0,
+  28: 0,
+  30: 0,
+  32: 0,
+  34: 0,
+  36: 0},
+ 'd_rolled': {4: 0,
+  6: 0,
+  8: 0,
+  10: 0,
+  12: 0,
+  14: 0,
+  16: 0,
+  18: 0,
+  20: 0,
+  22: 0,
+  24: 0,
+  26: 0,
+  28: 0,
+  30: 0,
+  32: 0,
+  34: 0,
+  36: 0},
+ 'shape_max_width': {4: 2.4257403061691756,
+  6: 2.8117999424919162,
+  8: 3.248495827609186,
+  10: 3.7319154247855084,
+  12: 4.25330628879143,
+  14: 4.798005162261708,
+  16: 5.344754389058405,
+  18: 5.865723469177759,
+  20: 6.327556178255824,
+  22: 6.693678179123937,
+  24: 6.927903708086871,
+  26: 6.999078337619086,
+  28: 6.886137099896267,
+  30: 6.5826395737001295,
+  32: 6.099691772383348,
+  34: 5.466293009876566,
+  36: 4.726600870733798},
+ 'stem_diameter': {4: 2.5,
+  6: 2.5,
+  8: 2.5,
+  10: 2.5,
+  12: 2.5,
+  14: 2.5,
+  16: 2.5,
+  18: 2.35,
+  20: 2.2,
+  22: 2.05,
+  24: 1.9,
+  26: 1.75,
+  28: 1.6,
+  30: 1.45,
+  32: 1.3,
+  34: 1.1500000000000001,
+  36: 1.0},
+ 'geometry': {3: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2273530&gt;,
+  4: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e22734c0&gt;,
+  5: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2273450&gt;,
+  6: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e22733e0&gt;,
+  7: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2273370&gt;,
+  8: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2273300&gt;,
+  9: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2273290&gt;,
+  10: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2273220&gt;,
+  11: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e22731b0&gt;,
+  12: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2273140&gt;,
+  13: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e22730d0&gt;,
+  14: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2273060&gt;,
+  15: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2272ff0&gt;,
+  16: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2272f80&gt;,
+  17: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2272f10&gt;,
+  18: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2272ea0&gt;,
+  19: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2272e30&gt;,
+  20: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e22735a0&gt;,
+  21: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2272dc0&gt;,
+  22: &lt;openalea.plantgl.scenegraph._pglsg.TriangleSet at 0x2b1e2272d50&gt;},
+ 'anchor_point': {3: Vector3(0,0,0),
+  4: Vector3(0,0,4.58622),
+  5: Vector3(0,0,4.58622),
+  6: Vector3(0,0,5.73277),
+  7: Vector3(0,0,5.73277),
+  8: Vector3(0,0,7.16596),
+  9: Vector3(0,0,7.16596),
+  10: Vector3(0,0,8.95746),
+  11: Vector3(0,0,8.95746),
+  12: Vector3(0,0,11.1968),
+  13: Vector3(0,0,11.1968),
+  14: Vector3(0,0,13.996),
+  15: Vector3(0,0,13.996),
+  16: Vector3(0,0,17.495),
+  17: Vector3(0,0,17.495),
+  18: Vector3(0,0,21.8688),
+  19: Vector3(0,0,21.8688),
+  20: Vector3(0,0,25.5964),
+  21: Vector3(0,0,25.5964),
+  22: Vector3(0,0,25.9847),
+  23: Vector3(0,0,34.17),
+  24: Vector3(0,0,42.7125),
+  25: Vector3(0,0,42.7125),
+  26: Vector3(0,0,53.3906),
+  27: Vector3(0,0,53.3906),
+  28: Vector3(0,0,66.7382),
+  29: Vector3(0,0,66.7382),
+  30: Vector3(0,0,83.4228),
+  31: Vector3(0,0,83.4228),
+  32: Vector3(0,0,104.279),
+  33: Vector3(0,0,104.279),
+  34: Vector3(0,0,130.348),
+  35: Vector3(0,0,130.348),
+  36: Vector3(0,0,162.935)},
+ 'color': {},
+ 'start_tt': {3: 0,
+  4: 0,
+  5: 110.0,
+  6: 110.0,
+  7: 220.0,
+  8: 220.0,
+  9: 330.0,
+  10: 330.0,
+  11: 440.0,
+  12: 440.0,
+  13: 550.0,
+  14: 550.0,
+  15: 660.0,
+  16: 660.0,
+  17: 770.0,
+  18: 770.0,
+  19: 880.0,
+  20: 880.0,
+  21: 990.0,
+  22: 990.0,
+  23: 1100.0,
+  24: 1100.0,
+  25: 1210.0,
+  26: 1210.0,
+  27: 1320.0,
+  28: 1320.0,
+  29: 1430.0,
+  30: 1430.0,
+  31: 1540.0,
+  32: 1540.0,
+  33: 1650.0,
+  34: 1650.0,
+  35: 1760.0,
+  36: 1760.0},
+ 'end_tt': {3: 176.0,
+  4: 176.0,
+  5: 286.0,
+  6: 286.0,
+  7: 396.0,
+  8: 396.0,
+  9: 506.0,
+  10: 506.0,
+  11: 616.0,
+  12: 616.0,
+  13: 726.0,
+  14: 726.0,
+  15: 836.0,
+  16: 836.0,
+  17: 946.0,
+  18: 946.0,
+  19: 1056.0,
+  20: 1056.0,
+  21: 1166.0,
+  22: 1166.0,
+  23: 1276.0,
+  24: 1276.0,
+  25: 1386.0,
+  26: 1386.0,
+  27: 1496.0,
+  28: 1496.0,
+  29: 1606.0,
+  30: 1606.0,
+  31: 1716.0,
+  32: 1716.0,
+  33: 1826.0,
+  34: 1826.0,
+  35: 1936.0,
+  36: 1936.0},
+ '_plant_translation': {},
+ 'position': {}}</code></pre>
+</div>
+</div>
+<div id="cell-23" class="cell" data-execution_count="11">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for generating a growing cereal shoot from descritive parameters</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize the list of plant MTGs at different stages</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>growing_plants<span class="op">=</span>[]</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># positions=[(x,0,0) for x in range(0, 3600, 100)]</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>positions<span class="op">=</span>[(x,<span class="dv">0</span>,<span class="dv">0</span>) <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">600</span>, <span class="dv">100</span>)]</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># For loop for generating plants at different stages</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> time <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">1800</span>,<span class="dv">50</span>):</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="co"># for time in range(1000,1300,50):</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    gg<span class="op">=</span>grow_plant(g, time<span class="op">=</span>time).sub_mtg(grow_plant(g, time<span class="op">=</span>time).root) </span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fill the list with MTG of growing plant</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    growing_plants.append(gg)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(compute_leaf_area(gg))</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># i=0</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># for v in g.vertices():</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     n=gg.node(v)</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     if n.label is not None and n.label.startswith('Stem'):</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">#         print(n.label, i, n.visible_length)</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     i+=1</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print('')</span></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Build and display scene</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="co"># scene_grow, nump = build_scene(growing_plants, positions, leaf_material=Material(nice_green), stem_material=Material(nice_green))</span></span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a><span class="co"># # display_scene(scene_grow)</span></span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a><span class="co"># PlantGL(scene_grow)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>(374.2249455435086, [0.0, 369.9636531617556, 4.261292381753028])
+(386.5607141544442, [12.33576861093561, 369.9636531617556, 4.261292381753028])
+(415.2932260633141, [41.06828051980549, 369.9636531617556, 4.261292381753028])
+(458.9739018562928, [73.7853448407042, 10.96361147207996, 369.9636531617556, 4.261292381753028])
+(494.50777067880506, [73.7853448407042, 46.49748029459225, 369.9636531617556, 4.261292381753028])
+(547.2293791252436, [73.7853448407042, 90.72060237418295, 8.498486366847741, 369.9636531617556, 4.261292381753028])
+(589.6669888212084, [73.7853448407042, 90.72060237418295, 50.93609606281261, 369.9636531617556, 4.261292381753028])
+(653.2960627953578, [73.7853448407042, 90.72060237418295, 109.42356888758815, 5.141601149373934, 369.9636531617556, 4.261292381753028])
+(701.5422359587084, [73.7853448407042, 90.72060237418295, 109.42356888758815, 53.387774312724446, 369.9636531617556, 4.261292381753028])
+(778.5667285274844, [73.7853448407042, 90.72060237418295, 109.42356888758815, 128.69172601161287, 1.720540869887648, 369.9636531617556, 4.261292381753028])
+(902.6108073325931, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 52.78097036028274, 369.9636531617556, 4.261292381753028])
+(996.4498035822501, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 146.61996660993972, 0.0, 369.9636531617556, 4.261292381753028])
+(1143.1682471708407, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 48.26130122830735, 369.9636531617556, 4.261292381753028])
+(1255.5786251549594, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 160.67167921242603, 369.9636531617556, 4.261292381753028])
+(1423.1910259823605, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 39.61323463867638, 369.9636531617556, 4.261292381753028])
+(1551.5804245733964, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 168.00263322971213, 369.9636531617556, 4.261292381753028])
+(1739.0744011874906, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 27.70895359910866, 369.9636531617556, 4.261292381753028])
+(1877.4404239312253, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 166.0749763428435, 369.9636531617556, 4.261292381753028])
+(1712.953792219587, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 14.781102121137222, 4.261292381753028])
+(1851.6521454686306, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 153.4794553701808, 4.261292381753028])
+(2068.136343260205, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 369.9636531617556, 4.261292381753028])
+(2404.412344202893, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 130.72351307324254])
+(2636.8249574854403, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 363.1361263557899, 0.0])
+(2981.2947103962642, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 100.61929982833047])
+(3215.657507053844, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 334.98209648590984])
+(3550.4519120214673, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 67.93076572191316])
+(3770.620505584126, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 288.0993592845718])
+(4082.816014471171, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 38.18812061626027])
+(4273.510273163781, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 228.88237930887044])
+(4552.321784516907, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 491.6970230418619, 15.996867620135223])
+(4702.428263578633, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 491.6970230418619, 166.1033466818604])
+(4940.257144629966, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 491.6970230418619, 400.3936604583109, 3.5385672748831882])
+(5272.34232376429, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 491.6970230418619, 627.4649058939882, 108.55250097352925])
+(5465.337216851954, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 491.6970230418619, 627.4649058939882, 301.54739406119285, 0.0])
+(5730.471748914659, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 491.6970230418619, 627.4649058939882, 504.04024269510165, 62.641683428796796])
+(5876.376959353999, [73.7853448407042, 90.72060237418295, 109.42356888758815, 201.67537532632647, 245.077108970223, 288.67084540115076, 327.7876562446977, 356.77089567182355, 579.7774334129538, 606.9865794382832, 601.8457357316205, 562.1067475553564, 491.6970230418619, 627.4649058939882, 504.04024269510165, 208.54689386813664])</code></pre>
+</div>
+</div>
 </section>
-<section id="h1-growing-vegetative-organs-receive-a-gain-proportional-to-their-sink-strength-related-to-their-age-until-end-of-growth." class="level3" data-number="4.4.2">
-<h3 data-number="4.4.2" class="anchored" data-anchor-id="h1-growing-vegetative-organs-receive-a-gain-proportional-to-their-sink-strength-related-to-their-age-until-end-of-growth."><span class="header-section-number">4.4.2</span> H1: Growing vegetative organs receive a gain proportional to their sink strength related to their age until end of growth.</h3>
-<p>For a growing vegetative organ <span class="math inline">\(i\)</span> over <span class="math inline">\(n\)</span> growing vegetative organs in a plant (set <span class="math inline">\(G^n\)</span>), of ages <span class="math inline">\(a_i\)</span>, sink strength beta function <span class="math inline">\(\beta (a_i)\)</span> and relative sink strength <span class="math inline">\(p_i(a_i)\)</span>, given a constraint <span class="math inline">\(dc(t)\)</span> for the plant a time <span class="math inline">\(t\)</span> : <span class="math display">\[p_i(a_i) = \frac{\beta (a_i)}{\sum_{j \in G^n} \beta (a_j)}\]</span> <span class="math display">\[dc_i(t) = p_i(a_i) dc(t)\]</span></p>
-</section>
-</section>
-<section id="fit-plant-growth-and-development-to-lait-and-heightt-curves-from-crop-model" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="fit-plant-growth-and-development-to-lait-and-heightt-curves-from-crop-model"><span class="header-section-number">4.5</span> Fit plant growth and development to LAI(t) and height(t) curves from crop model</h2>
+<section id="fit-plant-growth-and-development-to-lait-and-heightt-curves" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="fit-plant-growth-and-development-to-lait-and-heightt-curves"><span class="header-section-number">4.5</span> Fit plant growth and development to LAI(t) and height(t) curves</h2>
+<p>LAI(t) curve</p>
+<div id="cell-26" class="cell" data-execution_count="12">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> linear_LA(x, slope<span class="op">=</span><span class="dv">5</span>, intercept<span class="op">=</span><span class="fl">0.0</span>):</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Generate a linear curve.</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">    - x: Input values</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co">    - slope: Slope of the line</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co">    - intercept: Intercept of the line</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">    - y: Output values corresponding to the linear curve</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> slope <span class="op">*</span> x <span class="op">+</span> intercept</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 <p>Two constraints :</p>
-<p><span class="math display">\[ \mathcal{A} = \mathcal{A_scaled} = 2 w |\int_{L}^{0} \mathcal{C}(\frac{s(u)}{L})d\frac{s(u)}{L}| \]</span> where <span class="math display">\[\mathcal{C}(x) = \alpha x^2 - 2 (\alpha + \sqrt{-\alpha}) x + 2 \sqrt{-\alpha} + \alpha\]</span></p>
-<p>and <span class="math display">\[ \text{leaf length} = L  e^{-\log(skew) * (2 (z - zmax)^2 + (z - zmax)^3)} \]</span></p>
+<p><span class="math display">\[ \mathcal{A} = \mathcal{A_scaled} = 2 * w * |\int_{0}^{L} \mathcal{C}(\frac{s(u)}{L})d\frac{s(u)}{L}| \]</span> <span class="math display">\[ \text{leaf length} = L * e^{-\log(skew) * (2 * (r - rmax)^2 + (r - rmax)^3)} \]</span> r = np.linspace(1. / nb_phy, 1, nb_phy)</p>
+<div id="cell-28" class="cell" data-execution_count="13">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> archicrop.plant_shape <span class="im">import</span> compute_leaf_area</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>compute_leaf_area(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>(5876.376959353999,
+ [73.7853448407042,
+  90.72060237418295,
+  109.42356888758815,
+  201.67537532632647,
+  245.077108970223,
+  288.67084540115076,
+  327.7876562446977,
+  356.77089567182355,
+  579.7774334129538,
+  606.9865794382832,
+  601.8457357316205,
+  562.1067475553564,
+  491.6970230418619,
+  627.4649058939882,
+  504.04024269510165,
+  208.54689386813664])</code></pre>
+</div>
+</div>
+<div id="cell-29" class="cell" data-execution_count="14">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> curve_fit</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define your parametric model as a Python function</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> parametric_model(x):</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Define your parametric model here.</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co">    - x: Input values</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="co">    - param1, param2, ...: Parameters of your model</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="co">    - y: Output values corresponding to the model</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> </span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute your model's output based on input values and parameters</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>        <span class="co">## Code for generating a 3D cereal shoot from descritive parameters</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Parameters </span></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>        diam_base<span class="op">=</span><span class="fl">2.5</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>        diam_top<span class="op">=</span><span class="fl">1.0</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Lejeune and Bernier formula + col =</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>        nb_young_phy <span class="op">=</span> <span class="bu">int</span>(<span class="bu">round</span>((nb_phy <span class="op">-</span> <span class="fl">1.95</span>) <span class="op">/</span> <span class="fl">1.84</span> <span class="op">/</span> <span class="fl">1.3</span>))</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>        <span class="co"># stem diameters</span></span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>        diameter <span class="op">=</span> ([diam_base] <span class="op">*</span> nb_young_phy <span class="op">+</span> np.linspace(diam_base, diam_top, nb_phy <span class="op">-</span> nb_young_phy).tolist()) </span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>        height<span class="op">=</span><span class="dv">1000</span>                 <span class="co"># from crop model</span></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>        nb_phy<span class="op">=</span><span class="dv">17</span>                   <span class="co"># fixed max nb of phytomers</span></span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>        max_leaf_length<span class="op">=</span><span class="dv">70</span> </span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>        insertion_angle<span class="op">=</span><span class="dv">40</span></span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>        scurv<span class="op">=</span><span class="fl">0.7</span></span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>        curvature<span class="op">=</span><span class="dv">80</span></span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>        phyllotactic_angle<span class="op">=</span><span class="dv">180</span></span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a>        spiral<span class="op">=</span><span class="va">False</span></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Functions calls</span></span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a>        insertion_heights<span class="op">=</span>np.array(geometric_dist(height, </span>
+<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a>                                                  nb_phy, </span>
+<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a>                                                  q<span class="op">=</span><span class="fl">1.25</span>)) <span class="co"># further separate stem and pseudo stem, cf simple maize</span></span>
+<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a>        leaf_lengths<span class="op">=</span>np.array(bell_shaped_dist(max_leaf_length<span class="op">=</span>max_leaf_length, </span>
+<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a>                                               nb_phy<span class="op">=</span>nb_phy, </span>
+<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a>                                               rmax<span class="op">=</span><span class="fl">0.7</span>, </span>
+<span id="cb17-42"><a href="#cb17-42" aria-hidden="true" tabindex="-1"></a>                                               skew<span class="op">=</span><span class="fl">0.15</span>)) <span class="co"># plant area --&gt; max leaf length</span></span>
+<span id="cb17-43"><a href="#cb17-43" aria-hidden="true" tabindex="-1"></a>        <span class="co"># leaf_areas=bell_shaped_dist(plant_area=1, nb_phy=15, rmax=0.7, skew=0.15) # cf blade_dimension</span></span>
+<span id="cb17-44"><a href="#cb17-44" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-45"><a href="#cb17-45" aria-hidden="true" tabindex="-1"></a>        a_leaf <span class="op">=</span> parametric_leaf(nb_segment<span class="op">=</span><span class="dv">10</span>, </span>
+<span id="cb17-46"><a href="#cb17-46" aria-hidden="true" tabindex="-1"></a>                                 insertion_angle<span class="op">=</span>insertion_angle, </span>
+<span id="cb17-47"><a href="#cb17-47" aria-hidden="true" tabindex="-1"></a>                                 scurv<span class="op">=</span>scurv, </span>
+<span id="cb17-48"><a href="#cb17-48" aria-hidden="true" tabindex="-1"></a>                                 curvature<span class="op">=</span>curvature, </span>
+<span id="cb17-49"><a href="#cb17-49" aria-hidden="true" tabindex="-1"></a>                                 alpha<span class="op">=-</span><span class="fl">2.3</span>)</span>
+<span id="cb17-50"><a href="#cb17-50" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-51"><a href="#cb17-51" aria-hidden="true" tabindex="-1"></a>        leaf_shapes <span class="op">=</span> [a_leaf <span class="cf">for</span> l <span class="kw">in</span> leaf_lengths] <span class="co"># possible to replace leaf_length by nb_phy or...</span></span>
+<span id="cb17-52"><a href="#cb17-52" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-53"><a href="#cb17-53" aria-hidden="true" tabindex="-1"></a>        leaf_azimuths <span class="op">=</span> leaf_azimuth(size<span class="op">=</span><span class="bu">len</span>(leaf_lengths), </span>
+<span id="cb17-54"><a href="#cb17-54" aria-hidden="true" tabindex="-1"></a>                                     phyllotactic_angle<span class="op">=</span>phyllotactic_angle, </span>
+<span id="cb17-55"><a href="#cb17-55" aria-hidden="true" tabindex="-1"></a>                                     phyllotactic_deviation<span class="op">=</span><span class="dv">0</span>, </span>
+<span id="cb17-56"><a href="#cb17-56" aria-hidden="true" tabindex="-1"></a>                                     plant_orientation<span class="op">=</span><span class="dv">0</span>, </span>
+<span id="cb17-57"><a href="#cb17-57" aria-hidden="true" tabindex="-1"></a>                                     spiral<span class="op">=</span>spiral)</span>
+<span id="cb17-58"><a href="#cb17-58" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-59"><a href="#cb17-59" aria-hidden="true" tabindex="-1"></a>        shoot, g <span class="op">=</span> build_shoot(stem_diameters<span class="op">=</span>stem_radius, </span>
+<span id="cb17-60"><a href="#cb17-60" aria-hidden="true" tabindex="-1"></a>                                      insertion_heights<span class="op">=</span>insertion_heights, </span>
+<span id="cb17-61"><a href="#cb17-61" aria-hidden="true" tabindex="-1"></a>                                      leaf_lengths<span class="op">=</span>leaf_lengths, </span>
+<span id="cb17-62"><a href="#cb17-62" aria-hidden="true" tabindex="-1"></a>                                      leaf_areas<span class="op">=</span><span class="va">None</span>, </span>
+<span id="cb17-63"><a href="#cb17-63" aria-hidden="true" tabindex="-1"></a>                                      leaf_shapes<span class="op">=</span>leaf_shapes, </span>
+<span id="cb17-64"><a href="#cb17-64" aria-hidden="true" tabindex="-1"></a>                                      leaf_azimuths<span class="op">=</span>leaf_azimuths)</span>
+<span id="cb17-65"><a href="#cb17-65" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> compute_leaf_area(g)</span>
+<span id="cb17-66"><a href="#cb17-66" aria-hidden="true" tabindex="-1"></a>    <span class="co"># # Build and display scene</span></span>
+<span id="cb17-67"><a href="#cb17-67" aria-hidden="true" tabindex="-1"></a>    <span class="co"># scene, nump = build_scene(g, </span></span>
+<span id="cb17-68"><a href="#cb17-68" aria-hidden="true" tabindex="-1"></a>    <span class="co">#                           leaf_material=Material(nice_green), </span></span>
+<span id="cb17-69"><a href="#cb17-69" aria-hidden="true" tabindex="-1"></a>    <span class="co">#                           stem_material=Material(nice_green))</span></span>
+<span id="cb17-70"><a href="#cb17-70" aria-hidden="true" tabindex="-1"></a>    <span class="co"># # display_scene(scene_single) # display in separate window</span></span>
+<span id="cb17-71"><a href="#cb17-71" aria-hidden="true" tabindex="-1"></a>    <span class="co"># PlantGL(scene) # display in notebook</span></span>
+<span id="cb17-72"><a href="#cb17-72" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> y</span>
+<span id="cb17-73"><a href="#cb17-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-74"><a href="#cb17-74" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare your data</span></span>
+<span id="cb17-75"><a href="#cb17-75" aria-hidden="true" tabindex="-1"></a>x_data <span class="op">=</span> []</span>
+<span id="cb17-76"><a href="#cb17-76" aria-hidden="true" tabindex="-1"></a>y_data <span class="op">=</span> []</span>
+<span id="cb17-77"><a href="#cb17-77" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">1700</span>,<span class="dv">100</span>):</span>
+<span id="cb17-78"><a href="#cb17-78" aria-hidden="true" tabindex="-1"></a>    x_data.append(t)</span>
+<span id="cb17-79"><a href="#cb17-79" aria-hidden="true" tabindex="-1"></a>    y_data.append(linear_LA(t))</span>
+<span id="cb17-80"><a href="#cb17-80" aria-hidden="true" tabindex="-1"></a>x_data <span class="op">=</span> np.array(x_data)  <span class="co"># Your input data</span></span>
+<span id="cb17-81"><a href="#cb17-81" aria-hidden="true" tabindex="-1"></a>y_data <span class="op">=</span> np.array(y_data)  <span class="co"># Your output data</span></span>
+<span id="cb17-82"><a href="#cb17-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-83"><a href="#cb17-83" aria-hidden="true" tabindex="-1"></a><span class="co"># Use scipy.optimize.curve_fit to fit your model to the data and obtain optimal parameters</span></span>
+<span id="cb17-84"><a href="#cb17-84" aria-hidden="true" tabindex="-1"></a>initial_guess <span class="op">=</span> [...]  <span class="co"># Initial guess for your parameters</span></span>
+<span id="cb17-85"><a href="#cb17-85" aria-hidden="true" tabindex="-1"></a>optimal_params, covariance <span class="op">=</span> curve_fit(parametric_model, x_data, y_data, p0<span class="op">=</span>initial_guess)</span>
+<span id="cb17-86"><a href="#cb17-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-87"><a href="#cb17-87" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the optimal parameters</span></span>
+<span id="cb17-88"><a href="#cb17-88" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Optimal Parameters:"</span>, optimal_params)</span>
+<span id="cb17-89"><a href="#cb17-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-90"><a href="#cb17-90" aria-hidden="true" tabindex="-1"></a><span class="co"># Optionally, visualize the fit</span></span>
+<span id="cb17-91"><a href="#cb17-91" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb17-92"><a href="#cb17-92" aria-hidden="true" tabindex="-1"></a>plt.scatter(x_data, y_data, label<span class="op">=</span><span class="st">'Data'</span>)</span>
+<span id="cb17-93"><a href="#cb17-93" aria-hidden="true" tabindex="-1"></a>plt.plot(x_data, parametric_model(x_data, <span class="op">*</span>optimal_params), color<span class="op">=</span><span class="st">'red'</span>, label<span class="op">=</span><span class="st">'Fitted Curve'</span>)</span>
+<span id="cb17-94"><a href="#cb17-94" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x'</span>)</span>
+<span id="cb17-95"><a href="#cb17-95" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'y'</span>)</span>
+<span id="cb17-96"><a href="#cb17-96" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb17-97"><a href="#cb17-97" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-error">
+<pre><code>SyntaxError: invalid syntax (1157590130.py, line 15)</code></pre>
+</div>
+</div>
+</section>
+<section id="next-steps" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="next-steps"><span class="header-section-number">4.6</span> Next steps</h2>
+<ul>
+<li>Bending dynamics of leaves and tillers</li>
+</ul>
 
 
 </section>
 
 </main> <!-- /main -->
+<script type="application/vnd.jupyter.widget-state+json">
+{"state":{"41a59f3580dd41fead33aefa6b4bc939":{"model_module":"k3d","model_module_version":"2.16.1","model_name":"PlotModel","state":{"_backend_version":"2.16.1","antialias":3,"auto_rendering":true,"axes":["x","y","z"],"axes_helper":1,"axes_helper_colors":[16711680,65280,255],"background_color":16777215,"camera":[179.59283529094589,-269.7798683996757,108.53525131779104,-0.2604103088378906,0,90.5499267578125,0,0,1],"camera_animation":[],"camera_auto_fit":true,"camera_damping_factor":0,"camera_fov":60,"camera_mode":"trackball","camera_no_pan":false,"camera_no_rotate":false,"camera_no_zoom":false,"camera_pan_speed":0.3,"camera_rotate_speed":1,"camera_zoom_speed":1.2,"clipping_planes":[],"colorbar_object_id":-1,"colorbar_scientific":false,"custom_data":null,"fps":25,"fps_meter":false,"grid":[-1,-1,-1,1,1,1],"grid_auto_fit":true,"grid_color":15132390,"grid_visible":true,"height":512,"label_color":4473924,"layout":"IPY_MODEL_701a6096d397440993ac11e11c706c75","lighting":3,"logarithmic_depth_buffer":true,"manipulate_mode":"translate","menu_visibility":true,"minimum_fps":-1,"mode":"view","name":null,"object_ids":[2962998293952],"rendering_steps":1,"screenshot":"","screenshot_scale":2,"snapshot":"","snapshot_type":"full","time":0,"voxel_paint_color":0}},"60216581224548bc9d62f452a687bbd9":{"buffers":[{"data":"","encoding":"base64","path":["attribute","data"]},{"data":"AAAAAKabxDpvEgM607xjPCSXfzuZuxY7w2SqOgdfmDwkl/870ERYO+AtEDsUP8Y8ylRBPLx0kzuJ0l47/yH9PEmdgDymm8Q7dQKaOwkbHj0ukKA8SFD8O4LixztbsT89EoPAPFJJHTxIUPw7irBhPa5H4TxbsT88dQIaPEoMgj1JnQA9QmBlPDSANzxPQJM9vJYQPbn8hzxioVY8VHSkPS6QID3A7J48/mV3PMbctT2giTA9NIC3PATnjDw5Rcc97utAPYZa0zwJG548GeLYPWDlUD1F2PA8xSCwPGiz6j3T3mA9cM4IPYEmwjwkufw9RdhwPVFrGj09LNQ8cF8HPtxogD3EQi09+THmPIV8ED4Cmog9NxpAPbU3+DwHzhk+vJaQPYZaUz24HgU9ih8jPnWTmD2wA2c9u7gNPQ1xLD4ukKA9tRV7PeLpFT3G3DU+VcGoPUvIhz0tsh097nw/Pg6+sD0qOpI9nRElPRUdST7Hurg9duCcPVafKz08vVI+gLfAPZ7vpz1XWzE9mndcPjm0yD3F/rI9fa42PfkxZj5g5dA9yXa+PRHHOj2OBnA+GeLYPTojyj3tDT497MB5PtPe4D2GONY9EoNAPaW9gT6M2+g9003iPYEmQj3UmoY+RdjwPWkA7z04+EI96GqLPmwJ+T3/svs9XI9CPeAtkD4SgwA+OGcEPqW9QT2945Q+b4EEPigPCz43GkA9Y3+ZPsx/CD5O0RE+Njw9PdIAnj5fmAw+rK0YPjVeOj3uWqI+vJYQPgmKHz59rjY9uY2mPhiVFD7UmiY+6pUyPUymqj51kxg+n6stPnsULj1yiq4+0ZEcPmq8ND4Mkyk9KjqyPmWqID42zTs+nRElPY/CtT7BqCQ+OPhCPgn5ID1sCbk+HqcoPgMJSj5SSR099ii8PnqlLD7OGVE+dQIaPRIUvz7XozA+mSpYPlCNFz3c18E+arw0Pi0hXz7i6RU9HVrEPse6OD75MWY+KxgVPQu1xj4kuTw+Vg5tPisYFT2n6Mg+gLdAPuoEdD7i6RU98fTKPhTQRD5I4Xo+K/YXPc3MzD5wzkg+t9GAPlFrGj1yis4+zcxMPsoyhD4JGx49xSDQPinLUD7ek4c+nDMiPcWP0T6GyVQ+1eeKPsKGJz2q8dI+GeJYPs07jj6fqy09PSzUPnbgXD7Fj5E+fdAzPZhM1T7T3mA+veOUPhHHOj29UtY+L91kPpkqmD5cj0I9x0vXPsP1aD52cZs+qFdKPZkq2D4f9Gw+NquePs6IUj0179g+fPJwPhPyoT7RIls9tabZPtjwdD7UK6U+07xjPRpR2j4173g+lWWoPrG/bD1I4do+yAd9Plafqz5rK3Y9WmTbPhKDgD4X2a4+SS5/PVHa2z5BgoI+1xKyPgFNhD0tQ9w+b4GEPn0/tT7eAok97Z7cPp2Ahj4+ebg+u7iNPZHt3D7njIg+46W7PgWjkj0bL90+FYyKPqTfvj7iWJc9iGPdPkSLjD5KDMI+LUOcPduK3T5yio4+7zjFPgn5oD0tst0+vJaQPrByyD7mrqU9SL/dPuqVkj5Wn8s+MZmqPWTM3T4YlZQ++8vOPg5Prz1kzN0+RpSWPqH40T7qBLQ9SL/dPnWTmD5GJdU+x7q4PRKl3T6+n5o+7FHYPqRwvT3bit0+7Z6cPqyL2z6BJsI9iGPdPhuenj5SuN4+XdzGPRsv3T5JnaA+9+ThPsxdyz2t+tw+eJyiPp0R5T6pE9A9JLncPsGopD5eS+g+GJXUPX9q3D7wp6Y+A3jrPvVK2T2/Dtw+HqeoPqmk7j5kzN09/7LbPkymqj5O0fE+003iPSNK2z6Wsqw+Dwv1PrAD5z1I4do+xLGuPrU3+D4fhes9NV7aPvKwsD5aZPs+jgbwPT7o2T4hsLI+G57+Pv2H9D0QWNk+T6+0PmDlAD9sCfk948fYPpm7tj6zewI/24r9PZkq2D7Hurg+kxgEPyUGAT40gNc+9bm6PuauBT+lLAM+tMjWPiS5vD45RQc/XW0FPjQR1j5SuL4+GeIIPxSuBz60WdU+nMTAPmx4Cj/M7gk+/YfUPsrDwj5NFQw/gy8MPka20z74wsQ+n6sNPztwDj5z19I+J8LGPvJBDz/ysBA+ofjRPnDOyD7T3hA/4QsTPrMM0T6fzco+JXUSP5hMFT6pE9A+zczMPngLFD9QjRc+hA3PPvvLzj7LoRU/PugZPl8Hzj4py9A+HTgXPy1DHD4f9Mw+c9fSPnDOGD/kgx4+w9PLPqHW1D7DZBo/CfkgPmizyj7Q1dY+FvsbP/hTIz7whck+/tTYPmiRHT/mriU+XkvIPkjh2j67Jx8/CyQoPssQxz524Nw+gLcgPzGZKj4dycU+pN/ePtNNIj9WDi0+VHTEPtPe4D6Y3SM/e4MvPoofwz4B3uI+63MlP9cSMj6lvcE+S+rkPrADJz80ojQ+pU7APnnp5j51kyg/x0s3PonSvj6n6Og+rBwqPyPbOT5tVr0+1efqPnGsKz/tnjw+Udq7PgTn7D6oNS0/gEg/Pv5Duj5N8+4+bcUuP0oMQj7Hurg+fPLwPqVOMD8U0EQ+WRe3Pqrx8j5O0TE/FK5HPutztT7Y8PQ+hlozP0ymSj5hw7M+Iv32Pi/dND9NhE0+1xKyPlD8+D7ZXzY/vJZQPjJVsD5/+/o+guI3P/OOUz5yiq4+rfr8Pp5eOT+Zu1Y+sb+sPtv5/j662jo/PuhZPvH0qj4SgwA/1lY8P+QUXT75D6k+qoIBP2TMPT/AW2A+HTinPkGCAj/yQT8/07xjPiZTpT7YgQM/gLdAP+cdZz4TYaM+b4EEP4EmQj8xmWo+AG+hPpSHBT+BlUM/si5uPtJvnz4rhwY/gQRFPzPEcT6kcJ0+woYHP/RsRj/rc3U+WmSbPlmGCD/Zzkc/oyN5PhBYmT5+jAk/vjBJP8gHfT7HS5c+FYwKP6OSSj/3dYA+YTKVPqyLCz/67Us/CmiCPvwYkz5Eiww/UklNP1R0hD588pA+24oNPxueTj+dgIY++8uOPgCRDj9X7E8/ApqIPnqljD6XkA8/kzpRP4PAij7ecYo+LpAQP86IUj8E54w+Qj6IPsWPET990FM/oBqPPov9hT5cjxI/nRFVP1dbkT7vyYM+gZUTP71SVj8qqZM+N4mBPhiVFD9QjVc//faVPgCRfj6vlBU/VcFYPwdfmD5a9Xk+RpQWP1r1WT8Rx5o+tFl1PmuaFz/RIls/Gy+dPg6+cD4Cmhg/uklcP1uxnz5oImw+mpkZP6RwXT+cM6I+woZnPjGZGj8AkV4/+MKkPuXQYj7ImBs/zqpfP3Bfpz4JG14+7Z4cP5zEYD8DCao+LGVZPoSeHT/c12E/lrKsPhiVVD4bnh4/j+RiP0Rprz47308+sp0fP7PqYz8OLbI+KA9LPtejID/Y8GQ/2PC0PhQ/Rj5uoyE/b/BlP77Btz4Ab0E+BaMiP3npZj++n7o+toQ8PpyiIz/122c/v329PqK0Nz40oiQ/cM5oP/d1wD5YyjI+WKglP166aT8TYcM+DeAtPvCnJj++n2o/ZmbGPozbKD6Hpyc/kX5rP7pryT5B8SM+HqcoP9ZWbD8ofsw+wOwePrWmKT8bL20/l5DPPj7oGT7arCo/RPptPyGw0j694xQ+cawrP23Fbj+rz9U+BcUPPgisLD8Jim8/UPzYPkymCj6fqy0/pU5wPxE23D6UhwU+xLEuPyUGcT/Sb98+3GgAPluxLz+lvXE/rrbiPkaU9j3ysDA/mG5yP4v95T5oIuw9irAxP/wYcz+DUek+irDhPSGwMj/TvHM/eqXsPj0K1z1GtjM/HVp0P3L57z5fmMw93bU0P2b3dD+hZ/M+E/LBPXS1NT+Uh3U/tMj2PsdLtz0LtTY/whd2P+M2+j56paw9orQ3P2Khdj8tsv0+Lv+hPce6OD90JHc/LpAAP+JYlz1eujk/+aB3P2FUAj+Wsow99bk6P34deD8GEgQ/SgyCPYy5Oz/njHg/xtwFP9c0bz2xvzw/UPx4P/mgBz8aUVo9SL89PyxleT+6awk/FD9GPeC+Pj96x3k/ejYLP+qVMj13vj8/OiN6PzsBDT9SJyA9Dr5AP2x4ej+J0g4/TfMOPTPEQT+fzXo/ZaoQP0mdAD3Kw0I/tRV7P7N7Ej/VeOk8YcNDP8xdez+PUxQ/YqHWPPjCRD9Wn3s/aysWP6hXyjyPwkU/Udp7P0cDGD84+MI8tMhGP78OfD+x4Rk/ylTBPEvIRz+fPHw/GsAbPxQ/xjzjx0g/f2p8PxKlHT8Xt9E8esdJP0SLfD97gx8/07zjPJ/NSj8IrHw/c2ghP/8h/Tw2zUs/sb98P2pNIz9N8w49zcxMP1vTfD9hMiU/L24jPWTMTT924Hw/5x0nPxHHOj37y04/BOd8P2wJKT9hw1M9INJPPwTnfD9j7io/+8tuPbfRUD8E53w/duAsPwK8hT1O0VE/6Nl8P/vLLj/hepQ95dBSP83MfD8OvjA/CtejPQrXUz+Wsnw/k6kyPw+csz2h1lQ/X5h8P6abND9d/sM9OdZVP5p3fD9GlDY/hsnUPdDVVj9IUHw/WYY4Px3J5T1n1Vc/aCJ8P2x4Oj/+Zfc9jNtYP/rtez8NcTw/ppsEPiPbWT//sns/rWk+P/LSDT662lo/dnF7P8BbQD90JBc+UdpbP+wvez9hVEI/ZaogPujZXD9I4Xo/AU1EP8NkKj4N4F0/o5J6P6JFRj9YOTQ+pN9eP3E9ej/QREg/klw+PjvfXz+x4Xk/cT1KPzm0SD7T3mA/Y395PxE2TD9PQFM+9+RhPxUdeT+yLk4/CRtePo/kYj85tHg/UidQPzAqaT4m5GM/0ER4P/MfUj/GbXQ+veNkP9nOdz+TGFQ/AACAPlTjZT/iWHc/NBFWP1TjhT556WY/6+J2P0cDWD8W+4s+EOlnP2Zmdj/n+1k/Di2SPqfoaD/i6XU/+u1bP3WTmD4+6Gk/XW11P3/ZXT8tIZ8+1edqP9jwdD8FxV8/VOOlPvrtaz/henQ/irBhP83MrD6R7Ww/6gR0P/OOYz+z6rM+Ke1tP4GVcz9dbWU/7C+7PsDsbj8zM3M/OUVnP662wj7l8m8/Ad5yP4cWaT/DZMo+fPJwP+qVcj+62mo/RUfSPhPycT98YXI/X5hsPxpR2j6q8XI/RUdyP+lIbj9BguI+QfFzP0VHcj9X7G8/n83qPmb3dD8KaHI/HHxxPzMz8z799nU/k6lyP1MFcz/ImPs+lPZ2P28Scz9vgXQ/vAUCPyv2dz+conM/4ul1P/kxBj/D9Xg/HVp0PzlFdz+oVwo/5/t5P+84dT91k3g/rWkOP3/7ej+GOHY/ldR5PwpoEj8W+3s/4lh3PygPez+9UhY/rfp8P5CgeD+fPHw/xykaP9IAfj/n+3k/iGN9P5vmHT9pAH8/A3h7P1Z9fj83iSE/AACAP8gHfT8kl38/KxglPw==","encoding":"base64","path":["color_map","data"]},{"data":"","encoding":"base64","path":["colors","data"]},{"data":"AAAAAAIAAAABAAAAAQAAAAIAAAADAAAAAQAAAAMAAAANAAAAAAAAAAwAAAACAAAAAgAAAAQAAAADAAAAAwAAAAQAAAAFAAAAAwAAAAUAAAANAAAAAgAAAAwAAAAEAAAABAAAAAYAAAAFAAAABQAAAAYAAAAHAAAABQAAAAcAAAANAAAABAAAAAwAAAAGAAAABgAAAAgAAAAHAAAABwAAAAgAAAAJAAAABwAAAAkAAAANAAAABgAAAAwAAAAIAAAACAAAAAoAAAAJAAAACQAAAAoAAAALAAAACQAAAAsAAAANAAAACAAAAAwAAAAKAAAACgAAAAAAAAALAAAACwAAAAAAAAABAAAACwAAAAEAAAANAAAACgAAAAwAAAAAAAAADgAAABoAAAAbAAAADwAAABsAAAAcAAAAEAAAABwAAAAdAAAAEQAAAB0AAAAeAAAAEgAAAB4AAAAfAAAAEwAAAB8AAAAgAAAAFAAAACAAAAAhAAAAFQAAACEAAAAiAAAAFgAAACIAAAAjAAAAFwAAACMAAAAkAAAADgAAABsAAAAPAAAADwAAABwAAAAQAAAAEAAAAB0AAAARAAAAEQAAAB4AAAASAAAAEgAAAB8AAAATAAAAEwAAACAAAAAUAAAAFAAAACEAAAAVAAAAFQAAACIAAAAWAAAAFgAAACMAAAAXAAAAFwAAACQAAAAYAAAAGAAAACQAAAAlAAAAJgAAACgAAAAnAAAAJwAAACgAAAApAAAAJwAAACkAAAAzAAAAJgAAADIAAAAoAAAAKAAAACoAAAApAAAAKQAAACoAAAArAAAAKQAAACsAAAAzAAAAKAAAADIAAAAqAAAAKgAAACwAAAArAAAAKwAAACwAAAAtAAAAKwAAAC0AAAAzAAAAKgAAADIAAAAsAAAALAAAAC4AAAAtAAAALQAAAC4AAAAvAAAALQAAAC8AAAAzAAAALAAAADIAAAAuAAAALgAAADAAAAAvAAAALwAAADAAAAAxAAAALwAAADEAAAAzAAAALgAAADIAAAAwAAAAMAAAACYAAAAxAAAAMQAAACYAAAAnAAAAMQAAACcAAAAzAAAAMAAAADIAAAAmAAAANAAAAEAAAABBAAAANQAAAEEAAABCAAAANgAAAEIAAABDAAAANwAAAEMAAABEAAAAOAAAAEQAAABFAAAAOQAAAEUAAABGAAAAOgAAAEYAAABHAAAAOwAAAEcAAABIAAAAPAAAAEgAAABJAAAAPQAAAEkAAABKAAAANAAAAEEAAAA1AAAANQAAAEIAAAA2AAAANgAAAEMAAAA3AAAANwAAAEQAAAA4AAAAOAAAAEUAAAA5AAAAOQAAAEYAAAA6AAAAOgAAAEcAAAA7AAAAOwAAAEgAAAA8AAAAPAAAAEkAAAA9AAAAPQAAAEoAAAA+AAAAPgAAAEoAAABLAAAATAAAAE4AAABNAAAATQAAAE4AAABPAAAATQAAAE8AAABZAAAATAAAAFgAAABOAAAATgAAAFAAAABPAAAATwAAAFAAAABRAAAATwAAAFEAAABZAAAATgAAAFgAAABQAAAAUAAAAFIAAABRAAAAUQAAAFIAAABTAAAAUQAAAFMAAABZAAAAUAAAAFgAAABSAAAAUgAAAFQAAABTAAAAUwAAAFQAAABVAAAAUwAAAFUAAABZAAAAUgAAAFgAAABUAAAAVAAAAFYAAABVAAAAVQAAAFYAAABXAAAAVQAAAFcAAABZAAAAVAAAAFgAAABWAAAAVgAAAEwAAABXAAAAVwAAAEwAAABNAAAAVwAAAE0AAABZAAAAVgAAAFgAAABMAAAAWgAAAGYAAABnAAAAWwAAAGcAAABoAAAAXAAAAGgAAABpAAAAXQAAAGkAAABqAAAAXgAAAGoAAABrAAAAXwAAAGsAAABsAAAAYAAAAGwAAABtAAAAYQAAAG0AAABuAAAAYgAAAG4AAABvAAAAYwAAAG8AAABwAAAAWgAAAGcAAABbAAAAWwAAAGgAAABcAAAAXAAAAGkAAABdAAAAXQAAAGoAAABeAAAAXgAAAGsAAABfAAAAXwAAAGwAAABgAAAAYAAAAG0AAABhAAAAYQAAAG4AAABiAAAAYgAAAG8AAABjAAAAYwAAAHAAAABkAAAAZAAAAHAAAABxAAAAcgAAAHQAAABzAAAAcwAAAHQAAAB1AAAAcwAAAHUAAAB/AAAAcgAAAH4AAAB0AAAAdAAAAHYAAAB1AAAAdQAAAHYAAAB3AAAAdQAAAHcAAAB/AAAAdAAAAH4AAAB2AAAAdgAAAHgAAAB3AAAAdwAAAHgAAAB5AAAAdwAAAHkAAAB/AAAAdgAAAH4AAAB4AAAAeAAAAHoAAAB5AAAAeQAAAHoAAAB7AAAAeQAAAHsAAAB/AAAAeAAAAH4AAAB6AAAAegAAAHwAAAB7AAAAewAAAHwAAAB9AAAAewAAAH0AAAB/AAAAegAAAH4AAAB8AAAAfAAAAHIAAAB9AAAAfQAAAHIAAABzAAAAfQAAAHMAAAB/AAAAfAAAAH4AAAByAAAAgAAAAIwAAACNAAAAgQAAAI0AAACOAAAAggAAAI4AAACPAAAAgwAAAI8AAACQAAAAhAAAAJAAAACRAAAAhQAAAJEAAACSAAAAhgAAAJIAAACTAAAAhwAAAJMAAACUAAAAiAAAAJQAAACVAAAAiQAAAJUAAACWAAAAgAAAAI0AAACBAAAAgQAAAI4AAACCAAAAggAAAI8AAACDAAAAgwAAAJAAAACEAAAAhAAAAJEAAACFAAAAhQAAAJIAAACGAAAAhgAAAJMAAACHAAAAhwAAAJQAAACIAAAAiAAAAJUAAACJAAAAiQAAAJYAAACKAAAAigAAAJYAAACXAAAAmAAAAJoAAACZAAAAmQAAAJoAAACbAAAAmQAAAJsAAAClAAAAmAAAAKQAAACaAAAAmgAAAJwAAACbAAAAmwAAAJwAAACdAAAAmwAAAJ0AAAClAAAAmgAAAKQAAACcAAAAnAAAAJ4AAACdAAAAnQAAAJ4AAACfAAAAnQAAAJ8AAAClAAAAnAAAAKQAAACeAAAAngAAAKAAAACfAAAAnwAAAKAAAAChAAAAnwAAAKEAAAClAAAAngAAAKQAAACgAAAAoAAAAKIAAAChAAAAoQAAAKIAAACjAAAAoQAAAKMAAAClAAAAoAAAAKQAAACiAAAAogAAAJgAAACjAAAAowAAAJgAAACZAAAAowAAAJkAAAClAAAAogAAAKQAAACYAAAApgAAALIAAACzAAAApwAAALMAAAC0AAAAqAAAALQAAAC1AAAAqQAAALUAAAC2AAAAqgAAALYAAAC3AAAAqwAAALcAAAC4AAAArAAAALgAAAC5AAAArQAAALkAAAC6AAAArgAAALoAAAC7AAAArwAAALsAAAC8AAAApgAAALMAAACnAAAApwAAALQAAACoAAAAqAAAALUAAACpAAAAqQAAALYAAACqAAAAqgAAALcAAACrAAAAqwAAALgAAACsAAAArAAAALkAAACtAAAArQAAALoAAACuAAAArgAAALsAAACvAAAArwAAALwAAACwAAAAsAAAALwAAAC9AAAA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NgEAADwBAAA4AQAAOAEAADoBAAA5AQAAOQEAADoBAAA7AQAAOQEAADsBAAA9AQAAOAEAADwBAAA6AQAAOgEAADABAAA7AQAAOwEAADABAAAxAQAAOwEAADEBAAA9AQAAOgEAADwBAAAwAQAAPgEAAEwBAABNAQAAPwEAAE0BAABOAQAAQAEAAE4BAABPAQAAQQEAAE8BAABQAQAAQgEAAFABAABRAQAAQwEAAFEBAABSAQAARAEAAFIBAABTAQAARQEAAFMBAABUAQAARgEAAFQBAABVAQAARwEAAFUBAABWAQAASAEAAFYBAABXAQAASQEAAFcBAABYAQAAPgEAAE0BAAA/AQAAPwEAAE4BAABAAQAAQAEAAE8BAABBAQAAQQEAAFABAABCAQAAQgEAAFEBAABDAQAAQwEAAFIBAABEAQAARAEAAFMBAABFAQAARQEAAFQBAABGAQAARgEAAFUBAABHAQAARwEAAFYBAABIAQAASAEAAFcBAABJAQAASQEAAFgBAABKAQAASgEAAFgBAABZAQAAWgEAAFwBAABbAQAAWwEAAFwBAABdAQAAWwEAAF0BAABnAQAAWgEAAGYBAABcAQAAXAEAAF4BAABdAQAAXQEAAF4BAABfAQAAXQEAAF8BAABnAQAAXAEAAGYBAABeAQAAXgEAAGABAABfAQAAXwEAAGABAABhAQAAXwEAAGEBAABnAQAAXgEAAGYBAABgAQAAYAEAAGIBAABhAQAAYQEAAGIBAABjAQAAYQEAAGMBAABnAQAAYAEAAGYBAABiAQAAYgEAAGQBAABjAQAAYwEAAGQBAABlAQAAYwEAAGUBAABnAQAAYgEAAGYBAABkAQAAZAEAAFoBAABlAQAAZQEAAFoBAABbAQAAZQEAAFsBAABnAQAAZAEAAGYBAABaAQAAaAEAAGoBAABrAQAAaAEAAGsBAABpAQAAaAEAAGoBAABrAQAA","encoding":"base64","path":["indices","data"]},{"data":"AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw==","encoding":"base64","path":["model_matrix","data"]},{"data":"","encoding":"base64","path":["normals","data"]},{"data":"","encoding":"base64","path":["opacity_function","data"]},{"data":"","encoding":"base64","path":["triangles_attribute","data"]},{"data":"AADAfw==","encoding":"base64","path":["uvs","data"]},{"data":"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","encoding":"base64","path":["vertices","data"]},{"data":"","encoding":"base64","path":["volume","data"]},{"data":"","encoding":"base64","path":["volume_bounds","data"]}],"model_module":"k3d","model_module_version":"2.16.1","model_name":"ObjectModel","state":{"_view_module":null,"_view_module_version":"","_view_name":null,"attribute":{"dtype":"float32","shape":[0]},"click_callback":false,"color":3302400,"colorLegend":false,"color_map":{"dtype":"float32","shape":[1024]},"color_range":[],"colors":{"dtype":"uint32","shape":[0]},"compression_level":0,"custom_data":null,"flat_shading":true,"group":null,"hover_callback":false,"id":2963006841408,"indices":{"dtype":"uint32","shape":[436,3]},"model_matrix":{"dtype":"float32","shape":[4,4]},"name":"Mesh #1","normals":{"dtype":"float32","shape":[0]},"opacity":1,"opacity_function":{"dtype":"float32","shape":[0]},"side":"front","texture":null,"texture_file_format":null,"triangles_attribute":{"dtype":"float32","shape":[0]},"type":"Mesh","uvs":{"dtype":"float32","shape":[]},"vertices":{"dtype":"float32","shape":[364,3]},"visible":true,"volume":{"dtype":"float32","shape":[0]},"volume_bounds":{"dtype":"float32","shape":[0]},"wireframe":false}},"701a6096d397440993ac11e11c706c75":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{}},"72248f300fb840e49e1142d22c12a7b2":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{}},"7d6ce5359b3048d59dba311718b93dff":{"buffers":[{"data":"","encoding":"base64","path":["attribute","data"]},{"data":"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","encoding":"base64","path":["color_map","data"]},{"data":"","encoding":"base64","path":["colors","data"]},{"data":"AAAAAAIAAAABAAAAAQAAAAIAAAADAAAAAQAAAAMAAAANAAAAAAAAAAwAAAACAAAAAgAAAAQAAAADAAAAAwAAAAQAAAAFAAAAAwAAAAUAAAANAAAAAgAAAAwAAAAEAAAABAAAAAYAAAAFAAAABQAAAAYAAAAHAAAABQAAAAcAAAANAAAABAAAAAwAAAAGAAAABgAAAAgAAAAHAAAABwAAAAgAAAAJAAAABwAAAAkAAAANAAAABgAAAAwAAAAIAAAACAAAAAoAAAAJAAAACQAAAAoAAAALAAAACQAAAAsAAAANAAAACAAAAAwAAAAKAAAACgAAAAAAAAALAAAACwAAAAAAAAABAAAACwAAAAEAAAANAAAACgAAAAwAAAAAAAAADgAAABoAAAAbAAAADwAAABsAAAAcAAAAEAAAABwAAAAdAAAAEQAAAB0AAAAeAAAAEgAAAB4AAAAfAAAAEwAAAB8AAAAgAAAAFAAAACAAAAAhAAAAFQAAACEAAAAiAAAAFgAAACIAAAAjAAAAFwAAACMAAAAkAAAADgAAABsAAAAPAAAADwAAABwAAAAQAAAAEAAAAB0AAAARAAAAEQAAAB4AAAASAAAAEgAAAB8AAAATAAAAEwAAACAAAAAUAAAAFAAAACEAAAAVAAAAFQAAACIAAAAWAAAAFgAAACMAAAAXAAAAFwAAACQAAAAYAAAAGAAAACQAAAAlAAAAJgAAACgAAAAnAAAAJwAAACgAAAApAAAAJwAAACkAAAAzAAAAJgAAADIAAAAoAAAAKAAAACoAAAApAAAAKQAAACoAAAArAAAAKQAAACsAAAAzAAAAKAAAADIAAAAqAAAAKgAAACwAAAArAAAAKwAAACwAAAAtAAAAKwAAAC0AAAAzAAAAKgAAADIAAAAsAAAALAAAAC4AAAAtAAAALQAAAC4AAAAvAAAALQAAAC8AAAAzAAAALAAAADIAAAAuAAAALgAAADAAAAAvAAAALwAAADAAAAAxAAAALwAAADEAAAAzAAAALgAAADIAAAAwAAAAMAAAACYAAAAxAAAAMQAAACYAAAAnAAAAMQAAACcAAAAzAAAAMAAAADIAAAAmAAAANAAAAEAAAABBAAAANQAAAEEAAABCAAAANgAAAEIAAABDAAAANwAAAEMAAABEAAAAOAAAAEQAAABFAAAAOQAAAEUAAABGAAAAOgAAAEYAAABHAAAAOwAAAEcAAABIAAAAPAAAAEgAAABJAAAAPQAAAEkAAABKAAAANAAAAEEAAAA1AAAANQAAAEIAAAA2AAAANgAAAEMAAAA3AAAANwAAAEQAAAA4AAAAOAAAAEUAAAA5AAAAOQAAAEYAAAA6AAAAOgAAAEcAAAA7AAAAOwAAAEgAAAA8AAAAPAAAAEkAAAA9AAAAPQAAAEoAAAA+AAAAPgAAAEoAAABLAAAATAAAAE4AAABNAAAATQAAAE4AAABPAAAATQAAAE8AAABZAAAATAAAAFgAAABOAAAATgAAAFAAAABPAAAATwAAAFAAAABRAAAATwAAAFEAAABZAAAATgAAAFgAAABQAAAAUAAAAFIAAABRAAAAUQAAAFIAAABTAAAAUQAAAFMAAABZAAAAUAAAAFgAAABSAAAAUgAAAFQAAABTAAAAUwAAAFQAAABVAAAAUwAAAFUAAABZAAAAUgAAAFgAAABUAAAAVAAAAFYAAABVAAAAVQAAAFYAAABXAAAAVQAAAFcAAABZAAAAVAAAAFgAAABWAAAAVgAAAEwAAABXAAAAVwAAAEwAAABNAAAAVwAAAE0AAABZAAAAVgAAAFgAAABMAAAAWgAAAGYAAABnAAAAWwAAAGcAAABoAAAAXAAAAGgAAABpAAAAXQAAAGkAAABqAAAAXgAAAGoAAABrAAAAXwAAAGsAAABsAAAAYAAAAGwAAABtAAAAYQAAAG0AAABuAAAAYgAAAG4AAABvAAAAYwAAAG8AAABwAAAAWgAAAGcAAABbAAAAWwAAAGgAAABcAAAAXAAAAGkAAABdAAAAXQAAAGoAAABeAAAAXgAAAGsAAABfAAAAXwAAAGwAAABgAAAAYAAAAG0AAABhAAAAYQAAAG4AAABiAAAAYgAAAG8AAABjAAAAYwAAAHAAAABkAAAAZAAAAHAAAABxAAAAcgAAAHQAAABzAAAAcwAAAHQAAAB1AAAAcwAAAHUAAAB/AAAAcgAAAH4AAAB0AAAAdAAAAHYAAAB1AAAAdQAAAHYAAAB3AAAAdQAAAHcAAAB/AAAAdAAAAH4AAAB2AAAAdgAAAHgAAAB3AAAAdwAAAHgAAAB5AAAAdwAAAHkAAAB/AAAAdgAAAH4AAAB4AAAAeAAAAHoAAAB5AAAAeQAAAHoAAAB7AAAAeQAAAHsAAAB/AAAAeAAAAH4AAAB6AAAAegAAAHwAAAB7AAAAewAAAHwAAAB9AAAAewAAAH0AAAB/AAAAegAAAH4AAAB8AAAAfAAAAHIAAAB9AAAAfQAAAHIAAABzAAAAfQAAAHMAAAB/AAAAfAAAAH4AAAByAAAAgAAAAIwAAACNAAAAgQAAAI0AAACOAAAAggAAAI4AAACPAAAAgwAAAI8AAACQAAAAhAAAAJAAAACRAAAAhQAAAJEAAACSAAAAhgAAAJIAAACTAAAAhwAAAJMAAACUAAAAiAAAAJQAAACVAAAAiQAAAJUAAACWAAAAgAAAAI0AAACBAAAAgQAAAI4AAACCAAAAggAAAI8AAACDAAAAgwAAAJAAAACEAAAAhAAAAJEAAACFAAAAhQAAAJIAAACGAAAAhgAAAJMAAACHAAAAhwAAAJQAAACIAAAAiAAAAJUAAACJAAAAiQAAAJYAAACKAAAAigAAAJYAAACXAAAAmAAAAJoAAACZAAAAmQAAAJoAAACbAAAAmQAAAJsAAAClAAAAmAAAAKQAAACaAAAAmgAAAJwAAACbAAAAmwAAAJwAAACdAAAAmwAAAJ0AAAClAAAAmgAAAKQAAACcAAAAnAAAAJ4AAACdAAAAnQAAAJ4AAACfAAAAnQAAAJ8AAAClAAAAnAAAAKQAAACeAAAAngAAAKAAAACfAAAAnwAAAKAAAAChAAAAnwAAAKEAAAClAAAAngAAAKQAAACgAAAAoAAAAKIAAAChAAAAoQAAAKIAAACjAAAAoQAAAKMAAAClAAAAoAAAAKQAAACiAAAAogAAAJgAAACjAAAAowAAAJgAAACZAAAAowAAAJkAAAClAAAAogAAAKQAAACYAAAApgAAALIAAACzAAAApwAAALMAAAC0AAAAqAAAALQAAAC1AAAAqQAAALUAAAC2AAAAqgAAALYAAAC3AAAAqwAAALcAAAC4AAAArAAAALgAAAC5AAAArQAAALkAAAC6AAAArgAAALoAAAC7AAAArwAAALsAAAC8AAAApgAAALMAAACnAAAApwAAALQAAACoAAAAqAAAALUAAACpAAAAqQAAALYAAACqAAAAqgAAALcAAACrAAAAqwAAALgAAACsAAAArAAAALkAAACtAAAArQAAALoAAACuAAAArgAAALsAAACvAAAArwAAALwAAACwAAAAsAAAALwAAAC9AAAA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NgEAADwBAAA4AQAAOAEAADoBAAA5AQAAOQEAADoBAAA7AQAAOQEAADsBAAA9AQAAOAEAADwBAAA6AQAAOgEAADABAAA7AQAAOwEAADABAAAxAQAAOwEAADEBAAA9AQAAOgEAADwBAAAwAQAAPgEAAEoBAABLAQAAPwEAAEsBAABMAQAAQAEAAEwBAABNAQAAQQEAAE0BAABOAQAAQgEAAE4BAABPAQAAQwEAAE8BAABQAQAARAEAAFABAABRAQAARQEAAFEBAABSAQAARgEAAFIBAABTAQAARwEAAFMBAABUAQAAPgEAAEsBAAA/AQAAPwEAAEwBAABAAQAAQAEAAE0BAABBAQAAQQEAAE4BAABCAQAAQgEAAE8BAABDAQAAQwEAAFABAABEAQAARAEAAFEBAABFAQAARQEAAFIBAABGAQAARgEAAFMBAABHAQAARwEAAFQBAABIAQAASAEAAFQBAABVAQAAVgEAAFgBAABXAQAAVwEAAFgBAABZAQAAVwEAAFkBAABjAQAAVgEAAGIBAABYAQAAWAEAAFoBAABZAQAAWQEAAFoBAABbAQAAWQEAAFsBAABjAQAAWAEAAGIBAABaAQAAWgEAAFwBAABbAQAAWwEAAFwBAABdAQAAWwEAAF0BAABjAQAAWgEAAGIBAABcAQAAXAEAAF4BAABdAQAAXQEAAF4BAABfAQAAXQEAAF8BAABjAQAAXAEAAGIBAABeAQAAXgEAAGABAABfAQAAXwEAAGABAABhAQAAXwEAAGEBAABjAQAAXgEAAGIBAABgAQAAYAEAAFYBAABhAQAAYQEAAFYBAABXAQAAYQEAAFcBAABjAQAAYAEAAGIBAABWAQAAZAEAAHABAABxAQAAZQEAAHEBAAByAQAAZgEAAHIBAABzAQAAZwEAAHMBAAB0AQAAaAEAAHQBAAB1AQAAaQEAAHUBAAB2AQAAagEAAHYBAAB3AQAAawEAAHcBAAB4AQAAbAEAAHgBAAB5AQAAbQEAAHkBAAB6AQAAZAEAAHEBAABlAQAAZQEAAHIBAABmAQAAZgEAAHMBAABnAQAAZwEAAHQBAABoAQAAaAEAAHUBAABpAQAAaQEAAHYBAABqAQAAagEAAHcBAABrAQAAawEAAHgBAABsAQAAbAEAAHkBAABtAQAAbQEAAHoBAABuAQAAbgEAAHoBAAB7AQAAfAEAAH4BAAB9AQAAfQEAAH4BAAB/AQAAfQEAAH8BAACJAQAAfAEAAIgBAAB+AQAAfgEAAIABAAB/AQAAfwEAAIABAACBAQAAfwEAAIEBAACJAQAAfgEAAIgBAACAAQAAgAEAAIIBAACBAQAAgQEAAIIBAACDAQAAgQEAAIMBAACJAQAAgAEAAIgBAACCAQAAggEAAIQBAACDAQAAgwEAAIQBAACFAQAAgwEAAIUBAACJAQAAggEAAIgBAACEAQAAhAEAAIYBAACFAQAAhQEAAIYBAACHAQAAhQEAAIcBAACJAQAAhAEAAIgBAACGAQAAhgEAAHwBAACHAQAAhwEAAHwBAAB9AQAAhwEAAH0BAACJAQAAhgEAAIgBAAB8AQAAigEAAJYBAACXAQAAiwEAAJcBAACYAQAAjAEAAJgBAACZAQAAjQEAAJkBAACaAQAAjgEAAJoBAACbAQAAjwEAAJsBAACcAQAAkAEAAJwBAACdAQAAkQEAAJ0BAACeAQAAkgEAAJ4BAACfAQAAkwEAAJ8BAACgAQAAigEAAJcBAACLAQAAiwEAAJgBAACMAQAAjAEAAJkBAACNAQAAjQEAAJoBAACOAQAAjgEAAJsBAACPAQAAjwEAAJwBAACQAQAAkAEAAJ0BAACRAQAAkQEAAJ4BAACSAQAAkgEAAJ8BAACTAQAAkwEAAKABAACUAQAAlAEAAKABAAChAQAAogEAAKQBAACjAQAAowEAAKQBAAClAQAAowEAAKUBAACvAQAAogEAAK4BAACkAQAApAEAAKYBAAClAQAApQEAAKYBAACnAQAApQEAAKcBAACvAQAApAEAAK4BAACmAQAApgEAAKgBAACnAQAApwEAAKgBAACpAQAApwEAAKkBAACvAQAApgEAAK4BAACoAQAAqAEAAKoBAACpAQAAqQEAAKoBAACrAQAAqQEAAKsBAACvAQAAqAEAAK4BAACqAQAAqgEAAKwBAACrAQAAqwEAAKwBAACtAQAAqwEAAK0BAACvAQAAqgEAAK4BAACsAQAArAEAAKIBAACtAQAArQEAAKIBAACjAQAArQEAAKMBAACvAQAArAEAAK4BAACiAQAAsAEAALwBAAC9AQAAsQEAAL0BAAC+AQAAsgEAAL4BAAC/AQAAswEAAL8BAADAAQAAtAEAAMABAADBAQAAtQEAAMEBAADCAQAAtgEAAMIBAADDAQAAtwEAAMMBAADEAQAAuAEAAMQBAADFAQAAuQEAAMUBAADGAQAAsAEAAL0BAACxAQAAsQEAAL4BAACyAQAAsgEAAL8BAACzAQAAswEAAMABAAC0AQAAtAEAAMEBAAC1AQAAtQEAAMIBAAC2AQAAtgEAAMMBAAC3AQAAtwEAAMQBAAC4AQAAuAEAAMUBAAC5AQAAuQEAAMYBAAC6AQAAugEAAMYBAADHAQAAyAEAAMoBAADJAQAAyQEAAMoBAADLAQAAyQEAAMsBAADVAQAAyAEAANQBAADKAQAAygEAAMwBAADLAQAAywEAAMwBAADNAQAAywEAAM0BAADVAQAAygEAANQBAADMAQAAzAEAAM4BAADNAQAAzQEAAM4BAADPAQAAzQEAAM8BAADVAQAAzAEAANQBAADOAQAAzgEAANABAADPAQAAzwEAANABAADRAQAAzwEAANEBAADVAQAAzgEAANQBAADQAQAA0AEAANIBAADRAQAA0QEAANIBAADTAQAA0QEAANMBAADVAQAA0AEAANQBAADSAQAA0gEAAMgBAADTAQAA0wEAAMgBAADJAQAA0wEAAMkBAADVAQAA0gEAANQBAADIAQAA1gEAAOIBAADjAQAA1wEAAOMBAADkAQAA2AEAAOQBAADlAQAA2QEAAOUBAADmAQAA2gEAAOYBAADnAQAA2wEAAOcBAADoAQAA3AEAAOgBAADpAQAA3QEAAOkBAADqAQAA3gEAAOoBAADrAQAA3wEAAOsBAADsAQAA1gEAAOMBAADXAQAA1wEAAOQBAADYAQAA2AEAAOUBAADZAQAA2QEAAOYBAADaAQAA2gEAAOcBAADbAQAA2wEAAOgBAADcAQAA3AEAAOkBAADdAQAA3QEAAOoBAADeAQAA3gEAAOsBAADfAQAA3wEAAOwBAADgAQAA4AEAAOwBAADtAQAA7gEAAPABAADvAQAA7wEAAPABAADxAQAA7wEAAPEBAAD7AQAA7gEAAPoBAADwAQAA8AEAAPIBAADxAQAA8QEAAPIBAADzAQAA8QEAAPMBAAD7AQAA8AEAAPoBAADyAQAA8gEAAPQBAADzAQAA8wEAAPQBAAD1AQAA8wEAAPUBAAD7AQAA8gEAAPoBAAD0AQAA9AEAAPYBAAD1AQAA9QEAAPYBAAD3AQAA9QEAAPcBAAD7AQAA9AEAAPoBAAD2AQAA9gEAAPgBAAD3AQAA9wEAAPgBAAD5AQAA9wEAAPkBAAD7AQAA9gEAAPoBAAD4AQAA+AEAAO4BAAD5AQAA+QEAAO4BAADvAQAA+QEAAO8BAAD7AQAA+AEAAPoBAADuAQAA/AEAAAgCAAAJAgAA/QEAAAkCAAAKAgAA/gEAAAoCAAALAgAA/wEAAAsCAAAMAgAAAAIAAAwCAAANAgAAAQIAAA0CAAAOAgAAAgIAAA4CAAAPAgAAAwIAAA8CAAAQAgAABAIAABACAAARAgAABQIAABECAAASAgAA/AEAAAkCAAD9AQAA/QEAAAoCAAD+AQAA/gEAAAsCAAD/AQAA/wEAAAwCAAAAAgAAAAIAAA0CAAABAgAAAQIAAA4CAAACAgAAAgIAAA8CAAADAgAAAwIAABACAAAEAgAABAIAABECAAAFAgAABQIAABICAAAGAgAABgIAABICAAATAgAAFAIAABYCAAAVAgAAFQIAABYCAAAXAgAAFQIAABcCAAAhAgAAFAIAACACAAAWAgAAFgIAABgCAAAXAgAAFwIAABgCAAAZAgAAFwIAABkCAAAhAgAAFgIAACACAAAYAgAAGAIAABoCAAAZAgAAGQIAABoCAAAbAgAAGQIAABsCAAAhAgAAGAIAACACAAAaAgAAGgIAABwCAAAbAgAAGwIAABwCAAAdAgAAGwIAAB0CAAAhAgAAGgIAACACAAAcAgAAHAIAAB4CAAAdAgAAHQIAAB4CAAAfAgAAHQIAAB8CAAAhAgAAHAIAACACAAAeAgAAHgIAABQCAAAfAgAAHwIAABQCAAAVAgAAHwIAABUCAAAhAgAAHgIAACACAAAUAgAAIgIAAC4CAAAvAgAAIwIAAC8CAAAwAgAAJAIAADACAAAxAgAAJQIAADECAAAyAgAAJgIAADICAAAzAgAAJwIAADMCAAA0AgAAKAIAADQCAAA1AgAAKQIAADUCAAA2AgAAKgIAADYCAAA3AgAAKwIAADcCAAA4AgAAIgIAAC8CAAAjAgAAIwIAADACAAAkAgAAJAIAADECAAAlAgAAJQIAADICAAAmAgAAJgIAADMCAAAnAgAAJwIAADQCAAAoAgAAKAIAADUCAAApAgAAKQIAADYCAAAqAgAAKgIAADcCAAArAgAAKwIAADgCAAAsAgAALAIAADgCAAA5AgAAOgIAADwCAAA7AgAAOwIAADwCAAA9AgAAOwIAAD0CAABHAgAAOgIAAEYCAAA8AgAAPAIAAD4CAAA9AgAAPQIAAD4CAAA/AgAAPQIAAD8CAABHAgAAPAIAAEYCAAA+AgAAPgIAAEACAAA/AgAAPwIAAEACAABBAgAAPwIAAEECAABHAgAAPgIAAEYCAABAAgAAQAIAAEICAABBAgAAQQIAAEICAABDAgAAQQIAAEMCAABHAgAAQAIAAEYCAABCAgAAQgIAAEQCAABDAgAAQwIAAEQCAABFAgAAQwIAAEUCAABHAgAAQgIAAEYCAABEAgAARAIAADoCAABFAgAARQIAADoCAAA7AgAARQIAADsCAABHAgAARAIAAEYCAAA6AgAASAIAAFQCAABVAgAASQIAAFUCAABWAgAASgIAAFYCAABXAgAASwIAAFcCAABYAgAATAIAAFgCAABZAgAATQIAAFkCAABaAgAATgIAAFoCAABbAgAATwIAAFsCAABcAgAAUAIAAFwCAABdAgAAUQIAAF0CAABeAgAASAIAAFUCAABJAgAASQIAAFYCAABKAgAASgIAAFcCAABLAgAASwIAAFgCAABMAgAATAIAAFkCAABNAgAATQIAAFoCAABOAgAATgIAAFsCAABPAgAATwIAAFwCAABQAgAAUAIAAF0CAABRAgAAUQIAAF4CAABSAgAAUgIAAF4CAABfAgAAYAIAAGICAABhAgAAYQIAAGICAABjAgAAYQIAAGMCAABtAgAAYAIAAGwCAABiAgAAYgIAAGQCAABjAgAAYwIAAGQCAABlAgAAYwIAAGUCAABtAgAAYgIAAGwCAABkAgAAZAIAAGYCAABlAgAAZQIAAGYCAABnAgAAZQIAAGcCAABtAgAAZAIAAGwCAABmAgAAZgIAAGgCAABnAgAAZwIAAGgCAABpAgAAZwIAAGkCAABtAgAAZgIAAGwCAABoAgAAaAIAAGoCAABpAgAAaQIAAGoCAABrAgAAaQIAAGsCAABtAgAAaAIAAGwCAABqAgAAagIAAGACAABrAgAAawIAAGACAABhAgAAawIAAGECAABtAgAAagIAAGwCAABgAgAAbgIAAHoCAAB7AgAAbwIAAHsCAAB8AgAAcAIAAHwCAAB9AgAAcQIAAH0CAAB+AgAAcgIAAH4CAAB/AgAAcwIAAH8CAACAAgAAdAIAAIACAACBAgAAdQIAAIECAACCAgAAdgIAAIICAACDAgAAdwIAAIMCAACEAgAAbgIAAHsCAABvAgAAbwIAAHwCAABwAgAAcAIAAH0CAABxAgAAcQIAAH4CAAByAgAAcgIAAH8CAABzAgAAcwIAAIACAAB0AgAAdAIAAIECAAB1AgAAdQIAAIICAAB2AgAAdgIAAIMCAAB3AgAAdwIAAIQCAAB4AgAAeAIAAIQCAACFAgAA","encoding":"base64","path":["indices","data"]},{"data":"AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw==","encoding":"base64","path":["model_matrix","data"]},{"data":"","encoding":"base64","path":["normals","data"]},{"data":"","encoding":"base64","path":["opacity_function","data"]},{"data":"","encoding":"base64","path":["triangles_attribute","data"]},{"data":"AADAfw==","encoding":"base64","path":["uvs","data"]},{"data":"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","encoding":"base64","path":["vertices","data"]},{"data":"","encoding":"base64","path":["volume","data"]},{"data":"","encoding":"base64","path":["volume_bounds","data"]}],"model_module":"k3d","model_module_version":"2.16.1","model_name":"ObjectModel","state":{"_view_module":null,"_view_module_version":"","_view_name":null,"attribute":{"dtype":"float32","shape":[0]},"click_callback":false,"color":3302400,"colorLegend":false,"color_map":{"dtype":"float32","shape":[1024]},"color_range":[],"colors":{"dtype":"uint32","shape":[0]},"compression_level":0,"custom_data":null,"flat_shading":true,"group":null,"hover_callback":false,"id":2962998293952,"indices":{"dtype":"uint32","shape":[765,3]},"model_matrix":{"dtype":"float32","shape":[4,4]},"name":"Mesh #1","normals":{"dtype":"float32","shape":[0]},"opacity":1,"opacity_function":{"dtype":"float32","shape":[0]},"side":"front","texture":null,"texture_file_format":null,"triangles_attribute":{"dtype":"float32","shape":[0]},"type":"Mesh","uvs":{"dtype":"float32","shape":[]},"vertices":{"dtype":"float32","shape":[646,3]},"visible":true,"volume":{"dtype":"float32","shape":[0]},"volume_bounds":{"dtype":"float32","shape":[0]},"wireframe":false}},"96074d5941da461a97cbfb4d32cd4e25":{"buffers":[{"data":"","encoding":"base64","path":["attribute","data"]},{"data":"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","encoding":"base64","path":["color_map","data"]},{"data":"","encoding":"base64","path":["colors","data"]},{"data":"AAAAAAIAAAABAAAAAQAAAAIAAAADAAAAAQAAAAMAAAANAAAAAAAAAAwAAAACAAAAAgAAAAQAAAADAAAAAwAAAAQAAAAFAAAAAwAAAAUAAAANAAAAAgAAAAwAAAAEAAAABAAAAAYAAAAFAAAABQAAAAYAAAAHAAAABQAAAAcAAAANAAAABAAAAAwAAAAGAAAABgAAAAgAAAAHAAAABwAAAAgAAAAJAAAABwAAAAkAAAANAAAABgAAAAwAAAAIAAAACAAAAAoAAAAJAAAACQAAAAoAAAALAAAACQAAAAsAAAANAAAACAAAAAwAAAAKAAAACgAAAAAAAAALAAAACwAAAAAAAAABAAAACwAAAAEAAAANAAAACgAAAAwAAAAAAAAADgAAABwAAAAdAAAADwAAAB0AAAAeAAAAEAAAAB4AAAAfAAAAEQAAAB8AAAAgAAAAEgAAACAAAAAhAAAAEwAAACEAAAAiAAAAFAAAACIAAAAjAAAAFQAAACMAAAAkAAAAFgAAACQAAAAlAAAAFwAAACUAAAAmAAAAGAAAACYAAAAnAAAAGQAAACcAAAAoAAAADgAAAB0AAAAPAAAADwAAAB4AAAAQAAAAEAAAAB8AAAARAAAAEQAAACAAAAASAAAAEgAAACEAAAATAAAAEwAAACIAAAAUAAAAFAAAACMAAAAVAAAAFQAAACQAAAAWAAAAFgAAACUAAAAXAAAAFwAAACYAAAAYAAAAGAAAACcAAAAZAAAAGQAAACgAAAAaAAAAGgAAACgAAAApAAAAKgAAACwAAAArAAAAKwAAACwAAAAtAAAAKwAAAC0AAAA3AAAAKgAAADYAAAAsAAAALAAAAC4AAAAtAAAALQAAAC4AAAAvAAAALQAAAC8AAAA3AAAALAAAADYAAAAuAAAALgAAADAAAAAvAAAALwAAADAAAAAxAAAALwAAADEAAAA3AAAALgAAADYAAAAwAAAAMAAAADIAAAAxAAAAMQAAADIAAAAzAAAAMQAAADMAAAA3AAAAMAAAADYAAAAyAAAAMgAAADQAAAAzAAAAMwAAADQAAAA1AAAAMwAAADUAAAA3AAAAMgAAADYAAAA0AAAANAAAACoAAAA1AAAANQAAACoAAAArAAAANQAAACsAAAA3AAAANAAAADYAAAAqAAAAOAAAAEQAAABFAAAAOQAAAEUAAABGAAAAOgAAAEYAAABHAAAAOwAAAEcAAABIAAAAPAAAAEgAAABJAAAAPQAAAEkAAABKAAAAPgAAAEoAAABLAAAAPwAAAEsAAABMAAAAQAAAAEwAAABNAAAAQQAAAE0AAABOAAAAOAAAAEUAAAA5AAAAOQAAAEYAAAA6AAAAOgAAAEcAAAA7AAAAOwAAAEgAAAA8AAAAPAAAAEkAAAA9AAAAPQAAAEoAAAA+AAAAPgAAAEsAAAA/AAAAPwAAAEwAAABAAAAAQAAAAE0AAABBAAAAQQAAAE4AAABCAAAAQgAAAE4AAABPAAAAUAAAAFIAAABRAAAAUQAAAFIAAABTAAAAUQAAAFMAAABdAAAAUAAAAFwAAABSAAAAUgAAAFQAAABTAAAAUwAAAFQAAABVAAAAUwAAAFUAAABdAAAAUgAAAFwAAABUAAAAVAAAAFYAAABVAAAAVQAAAFYAAABXAAAAVQAAAFcAAABdAAAAVAAAAFwAAABWAAAAVgAAAFgAAABXAAAAVwAAAFgAAABZAAAAVwAAAFkAAABdAAAAVgAAAFwAAABYAAAAWAAAAFoAAABZAAAAWQAAAFoAAABbAAAAWQAAAFsAAABdAAAAWAAAAFwAAABaAAAAWgAAAFAAAABbAAAAWwAAAFAAAABRAAAAWwAAAFEAAABdAAAAWgAAAFwAAABQAAAAXgAAAGkAAABqAAAAXwAAAGoAAABrAAAAYAAAAGsAAABsAAAAYQAAAGwAAABtAAAAYgAAAG0AAABuAAAAYwAAAG4AAABvAAAAZAAAAG8AAABwAAAAZQAAAHAAAABxAAAAZgAAAHEAAAByAAAAXgAAAGoAAABfAAAAXwAAAGsAAABgAAAAYAAAAGwAAABhAAAAYQAAAG0AAABiAAAAYgAAAG4AAABjAAAAYwAAAG8AAABkAAAAZAAAAHAAAABlAAAAZQAAAHEAAABmAAAAZgAAAHIAAABnAAAAZwAAAHIAAABzAAAAdAAAAHYAAAB1AAAAdQAAAHYAAAB3AAAAdQAAAHcAAACBAAAAdAAAAIAAAAB2AAAAdgAAAHgAAAB3AAAAdwAAAHgAAAB5AAAAdwAAAHkAAACBAAAAdgAAAIAAAAB4AAAAeAAAAHoAAAB5AAAAeQAAAHoAAAB7AAAAeQAAAHsAAACBAAAAeAAAAIAAAAB6AAAAegAAAHwAAAB7AAAAewAAAHwAAAB9AAAAewAAAH0AAACBAAAAegAAAIAAAAB8AAAAfAAAAH4AAAB9AAAAfQAAAH4AAAB/AAAAfQAAAH8AAACBAAAAfAAAAIAAAAB+AAAAfgAAAHQAAAB/AAAAfwAAAHQAAAB1AAAAfwAAAHUAAACBAAAAfgAAAIAAAAB0AAAAggAAAIwAAACNAAAAgwAAAI0AAACOAAAAhAAAAI4AAACPAAAAhQAAAI8AAACQAAAAhgAAAJAAAACRAAAAhwAAAJEAAACSAAAAiAAAAJIAAACTAAAAiQAAAJMAAACUAAAAggAAAI0AAACDAAAAgwAAAI4AAACEAAAAhAAAAI8AAACFAAAAhQAAAJAAAACGAAAAhgAAAJEAAACHAAAAhwAAAJIAAACIAAAAiAAAAJMAAACJAAAAiQAAAJQAAACKAAAAigAAAJQAAACVAAAAlgAAAJgAAACXAAAAlwAAAJgAAACZAAAAlwAAAJkAAACjAAAAlgAAAKIAAACYAAAAmAAAAJoAAACZAAAAmQAAAJoAAACbAAAAmQAAAJsAAACjAAAAmAAAAKIAAACaAAAAmgAAAJwAAACbAAAAmwAAAJwAAACdAAAAmwAAAJ0AAACjAAAAmgAAAKIAAACcAAAAnAAAAJ4AAACdAAAAnQAAAJ4AAACfAAAAnQAAAJ8AAACjAAAAnAAAAKIAAACeAAAAngAAAKAAAACfAAAAnwAAAKAAAAChAAAAnwAAAKEAAACjAAAAngAAAKIAAACgAAAAoAAAAJYAAAChAAAAoQAAAJYAAACXAAAAoQAAAJcAAACjAAAAoAAAAKIAAACWAAAApAAAAK8AAACwAAAApQAAALAAAACxAAAApgAAALEAAACyAAAApwAAALIAAACzAAAAqAAAALMAAAC0AAAAqQAAALQAAAC1AAAAqgAAALUAAAC2AAAAqwAAALYAAAC3AAAArAAAALcAAAC4AAAApAAAALAAAAClAAAApQAAALEAAACmAAAApgAAALIAAACnAAAApwAAALMAAACoAAAAqAAAALQAAACpAAAAqQAAALUAAACqAAAAqgAAALYAAACrAAAAqwAAALcAAACsAAAArAAAALgAAACtAAAArQAAALgAAAC5AAAAugAAALwAAAC7AAAAuwAAALwAAAC9AAAAuwAAAL0AAADHAAAAugAAAMYAAAC8AAAA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NwEAADgBAAA5AQAANwEAADkBAAA7AQAANgEAADoBAAA4AQAAOAEAAC4BAAA5AQAAOQEAAC4BAAAvAQAAOQEAAC8BAAA7AQAAOAEAADoBAAAuAQAAPAEAAEgBAABJAQAAPQEAAEkBAABKAQAAPgEAAEoBAABLAQAAPwEAAEsBAABMAQAAQAEAAEwBAABNAQAAQQEAAE0BAABOAQAAQgEAAE4BAABPAQAAQwEAAE8BAABQAQAARAEAAFABAABRAQAARQEAAFEBAABSAQAAPAEAAEkBAAA9AQAAPQEAAEoBAAA+AQAAPgEAAEsBAAA/AQAAPwEAAEwBAABAAQAAQAEAAE0BAABBAQAAQQEAAE4BAABCAQAAQgEAAE8BAABDAQAAQwEAAFABAABEAQAARAEAAFEBAABFAQAARQEAAFIBAABGAQAARgEAAFIBAABTAQAAVAEAAFYBAABVAQAAVQEAAFYBAABXAQAAVQEAAFcBAABhAQAAVAEAAGABAABWAQAAVgEAAFgBAABXAQAAVwEAAFgBAABZAQAAVwEAAFkBAABhAQAAVgEAAGABAABYAQAAWAEAAFoBAABZAQAAWQEAAFoBAABbAQAAWQEAAFsBAABhAQAAWAEAAGABAABaAQAAWgEAAFwBAABbAQAAWwEAAFwBAABdAQAAWwEAAF0BAABhAQAAWgEAAGABAABcAQAAXAEAAF4BAABdAQAAXQEAAF4BAABfAQAAXQEAAF8BAABhAQAAXAEAAGABAABeAQAAXgEAAFQBAABfAQAAXwEAAFQBAABVAQAAXwEAAFUBAABhAQAAXgEAAGABAABUAQAAYgEAAGYBAABnAQAAYwEAAGcBAABoAQAAYgEAAGcBAABjAQAAYwEAAGgBAABkAQAAZAEAAGgBAABpAQAA","encoding":"base64","path":["indices","data"]},{"data":"AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw==","encoding":"base64","path":["model_matrix","data"]},{"data":"","encoding":"base64","path":["normals","data"]},{"data":"","encoding":"base64","path":["opacity_function","data"]},{"data":"","encoding":"base64","path":["triangles_attribute","data"]},{"data":"AADAfw==","encoding":"base64","path":["uvs","data"]},{"data":"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","encoding":"base64","path":["vertices","data"]},{"data":"","encoding":"base64","path":["volume","data"]},{"data":"","encoding":"base64","path":["volume_bounds","data"]}],"model_module":"k3d","model_module_version":"2.16.1","model_name":"ObjectModel","state":{"_view_module":null,"_view_module_version":"","_view_name":null,"attribute":{"dtype":"float32","shape":[0]},"click_callback":false,"color":3302400,"colorLegend":false,"color_map":{"dtype":"float32","shape":[1024]},"color_range":[],"colors":{"dtype":"uint32","shape":[0]},"compression_level":0,"custom_data":null,"flat_shading":true,"group":null,"hover_callback":false,"id":2963041568048,"indices":{"dtype":"uint32","shape":[432,3]},"model_matrix":{"dtype":"float32","shape":[4,4]},"name":"Mesh #1","normals":{"dtype":"float32","shape":[0]},"opacity":1,"opacity_function":{"dtype":"float32","shape":[0]},"side":"front","texture":null,"texture_file_format":null,"triangles_attribute":{"dtype":"float32","shape":[0]},"type":"Mesh","uvs":{"dtype":"float32","shape":[]},"vertices":{"dtype":"float32","shape":[362,3]},"visible":true,"volume":{"dtype":"float32","shape":[0]},"volume_bounds":{"dtype":"float32","shape":[0]},"wireframe":false}},"9698614b54ca475cab54684302d8a3b1":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"IntSliderModel","state":{"behavior":"drag-tap","description":"time","layout":"IPY_MODEL_a77b07919ea74bcdba053571f8030a98","max":2000,"min":20,"step":100,"style":"IPY_MODEL_e4d8a70b6c044199830b2138a48c91b9","value":1020}},"9991f8bf2bb7425bb043c37943c97a09":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{}},"9a365e3c46c341d3bf25c332ab596cfb":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{}},"a6775857ab404f6fac4fedbc28363089":{"model_module":"@jupyter-widgets/output","model_module_version":"1.0.0","model_name":"OutputModel","state":{"layout":"IPY_MODEL_eeb2e8ad203b4231bafdb63e59e201d8","outputs":[{"data":{"application/vnd.jupyter.widget-view+json":{"model_id":"be1f265b07e84efda3fe9128ee7d76c9","version_major":2,"version_minor":0},"text/plain":"Plot(antialias=3, axes=['x', 'y', 'z'], axes_helper=1.0, axes_helper_colors=[16711680, 65280, 255], background…"},"metadata":{},"output_type":"display_data"}]}},"a77b07919ea74bcdba053571f8030a98":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{}},"be1f265b07e84efda3fe9128ee7d76c9":{"model_module":"k3d","model_module_version":"2.16.1","model_name":"PlotModel","state":{"_backend_version":"2.16.1","antialias":3,"auto_rendering":true,"axes":["x","y","z"],"axes_helper":1,"axes_helper_colors":[16711680,65280,255],"background_color":16777215,"camera":[79.1861883567244,-114.10823055602168,30.9103617327062,3.114034652709961,0,23.303146362304688,0,0,1],"camera_animation":[],"camera_auto_fit":true,"camera_damping_factor":0,"camera_fov":60,"camera_mode":"trackball","camera_no_pan":false,"camera_no_rotate":false,"camera_no_zoom":false,"camera_pan_speed":0.3,"camera_rotate_speed":1,"camera_zoom_speed":1.2,"clipping_planes":[],"colorbar_object_id":-1,"colorbar_scientific":false,"custom_data":null,"fps":25,"fps_meter":false,"grid":[-1,-1,-1,1,1,1],"grid_auto_fit":true,"grid_color":15132390,"grid_visible":true,"height":512,"label_color":4473924,"layout":"IPY_MODEL_9991f8bf2bb7425bb043c37943c97a09","lighting":3,"logarithmic_depth_buffer":true,"manipulate_mode":"translate","menu_visibility":true,"minimum_fps":-1,"mode":"view","name":null,"object_ids":[2963041568048],"rendering_steps":1,"screenshot":"","screenshot_scale":2,"snapshot":"","snapshot_type":"full","time":0,"voxel_paint_color":0}},"c7303604b76a49348c09eda9aa3325d5":{"model_module":"k3d","model_module_version":"2.16.1","model_name":"PlotModel","state":{"_backend_version":"2.16.1","antialias":3,"auto_rendering":true,"axes":["x","y","z"],"axes_helper":1,"axes_helper_colors":[16711680,65280,255],"background_color":16777215,"camera":[88.03190296816173,-135.26247408877825,33.884599941896816,-2.1430797576904297,0,24.867101669311523,0,0,1],"camera_animation":[],"camera_auto_fit":true,"camera_damping_factor":0,"camera_fov":60,"camera_mode":"trackball","camera_no_pan":false,"camera_no_rotate":false,"camera_no_zoom":false,"camera_pan_speed":0.3,"camera_rotate_speed":1,"camera_zoom_speed":1.2,"clipping_planes":[],"colorbar_object_id":-1,"colorbar_scientific":false,"custom_data":null,"fps":25,"fps_meter":false,"grid":[-1,-1,-1,1,1,1],"grid_auto_fit":true,"grid_color":15132390,"grid_visible":true,"height":512,"label_color":4473924,"layout":"IPY_MODEL_72248f300fb840e49e1142d22c12a7b2","lighting":3,"logarithmic_depth_buffer":true,"manipulate_mode":"translate","menu_visibility":true,"minimum_fps":-1,"mode":"view","name":null,"object_ids":[2963006841408],"rendering_steps":1,"screenshot":"","screenshot_scale":2,"snapshot":"","snapshot_type":"full","time":0,"voxel_paint_color":0}},"ca46ee192bc24c0ebe8798f8ce2cf9e4":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"VBoxModel","state":{"_dom_classes":["widget-interact"],"children":["IPY_MODEL_9698614b54ca475cab54684302d8a3b1","IPY_MODEL_a6775857ab404f6fac4fedbc28363089"],"layout":"IPY_MODEL_9a365e3c46c341d3bf25c332ab596cfb"}},"e4d8a70b6c044199830b2138a48c91b9":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"SliderStyleModel","state":{"description_width":""}},"eeb2e8ad203b4231bafdb63e59e201d8":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{}}},"version_major":2,"version_minor":0}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -382,7 +1561,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -414,27 +1604,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -442,7 +1612,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -539,6 +1709,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -771,8 +1942,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./light_inter.html" class="pagination-link" aria-label="Light interception with Caribu">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Light interception with Caribu</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./year_2.html" class="pagination-link" aria-label="Second chapter : Analyzing accuracy of formalisms in crop model when adding root structural variability">
+        <span class="nav-page-text">Second chapter : Analyzing accuracy of formalisms in crop model when adding root structural variability</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
