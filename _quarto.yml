@@ -13,7 +13,7 @@ book:
       chapters:
       - intro_1.qmd
       - structural_cereal_model.ipynb
-      - dynamic_model.ipynb
+      - algo_leaf_growth.ipynb
       - light_inter.ipynb
     - part: year_2.qmd
       chapters:
