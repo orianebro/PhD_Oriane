@@ -75,9 +75,9 @@ datedeb_irrigauto
 datefin_irrigauto
 0
 stage_start_irrigauto
-0
+null
 stage_end_irrigauto
-0
+null
 codedateappH2O
 2
 nbinterventions
