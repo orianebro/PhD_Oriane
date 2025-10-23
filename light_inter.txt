@@ -1,2 +1,0 @@
-automatiser simulations qnqlyse de sensibilite et sauvegarde
-pattern caribu plus petit pour meme densite

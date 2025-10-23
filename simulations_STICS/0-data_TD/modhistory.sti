@@ -1,5 +1,5 @@
  -----------------------------------------------------------------------------------------
- Stics history file            Creation date: 2025/04/14-08:52:48
+ Stics history file            Creation date: 2025/09/03-17:31:06
  STICS Version: V10.0.0_r3391_2022-10-26                          
  -----------------------------------------------------------------------------------------
  
@@ -295,7 +295,7 @@
  P_phosat    12.7500000    
  P_adens    0.00000000    
  P_bdens    6.00000000    
- P_hautbase   0.500000000    
+ P_hautbase    0.00000000    
  P_hautmax    2.00000000    
  P_khaut  0.699999988    
  P_durvieF    420.000000    
@@ -417,5 +417,5 @@ Initial values over the soil depth (155 cm):     SWC = 197. mm     SMN =  8.0 kg
  attention: there are no longer any effective roots, on day :          50
  Program end ... 
  -----------------------------------------------------------------------------------------
- Stics history file end            End date: 2025/04/14-08:52:48
+ Stics history file end            End date: 2025/09/03-17:31:07
  -----------------------------------------------------------------------------------------

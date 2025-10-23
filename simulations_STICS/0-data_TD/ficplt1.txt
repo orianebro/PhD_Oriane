@@ -517,7 +517,7 @@ adens
 bdens
 6
 hautbase
-0.5
+0
 hautmax
 2
 khaut
@@ -623,7 +623,7 @@ adens
 bdens
 6
 hautbase
-0.5
+0
 hautmax
 2
 khaut
