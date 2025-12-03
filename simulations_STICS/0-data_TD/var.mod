@@ -2,11 +2,9 @@ somupvtsem
 laimax
 laisen(n)
 hauteur
-tempeff
-tmoy(n)
 raint
 trg(n)
 ilevs
 iamfs
 ilaxs
-nbfeuille
+densite
